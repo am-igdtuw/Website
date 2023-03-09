@@ -60,6 +60,7 @@ export const HeroH1 = styled.h1`
     text-align: center; */
     
     margin-bottom: 24px;
+    font-family: 'Inter';
     color: #FFFDFA;
     font-style: normal;
     font-size: 64px;
