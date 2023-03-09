@@ -3,21 +3,18 @@ import {Link as LinkR} from 'react-router-dom'
 import {Link as LinkS} from 'react-scroll'
 
 export const Nav = styled.nav`
-  background: #000;
-<<<<<<< Updated upstream
-  height: 80px;
-  margin-top : -80px; 
-=======
-  height: 60px;
-  margin-top : -80px;
->>>>>>> Stashed changes
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1rem;
-  position: sticky;
-  top: 0;
-  z-index: 10;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 60px 240px 40px;
+gap: 10px;
+
+position: relative;
+width: 1440px;
+height: 142px;
+
+background: #0D0A03;
 
   @media screen and (max-width: 960px){
     transition: 0.8s all ease;
@@ -25,13 +22,18 @@ export const Nav = styled.nav`
 `
 
 export const NavbarContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-  height: 80px;
-  z-index: 1;
-  width: 100%;
-  padding: 0 24px;
-  max-width: 1100px;
+display: flex;
+flex-direction: row;
+// align-items: flex-end;
+padding: 0px;
+gap: 32px;
+
+width: 501px;
+height: 34px;
+
+flex: none;
+order: 1;
+flex-grow: 0;
 `
 
 export const NavLogo = styled(LinkR)`
@@ -41,7 +43,7 @@ export const NavLogo = styled(LinkR)`
   font-size: 1.5rem;
   display: flex;
   align-items: center;
-  margin-left: 24px;
+  // margin-left: 24px;
   font-weight: bold;
   text-decoration: none;
 `
@@ -60,29 +62,87 @@ export const MobileIcon = styled.div`
   }
 `
 export const NavMenu = styled.ul`
-  display: flex;
-  align-items: center;
-  list-style: none;
-  text-align: center;
-  margin-right: -22px; 
+display: flex;
+flex-direction: row;
+// align-items: flex-end;
+padding: 0px;
+gap: 22px;
+
+width: 501px;
+height: 34px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
 
   @media screen and  (max-width: 768px){
     display: none;
   }
 
 `
+export const SubLogo = styled.div`
+width: 172px;
+height: 17px;
 
+// font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+color: #FFFDFA;
+flex: none;
+order: 1;
+flex-grow: 0;
+`
 export const Navitem = styled.li`
-  height: 80px;
+ 
+box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 6px 24px;
+gap: 7px;
+
+width: 121px;
+height: 34px;
+
+background: #0D0A03;
+border-radius: 22px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+`
+
+export const NavImg = styled.div`
+width: 42px;
+height: 42px;
+
+flex: none;
+order: 0;
+flex-grow: 0;
 `
 export const NavLinks = styled(LinkS)`
-  color: #fff;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  padding: 0 1rem;
-  height: 100%;
-  cursor: pointer;
+width: 73px;
+height: 22px;
+
+// font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 22px;
+color: #FFC640;
+flex: none;
+order: 0;
+flex-grow: 0;
 
   &.active {
     border-bottom: 3px solid #01bf71;

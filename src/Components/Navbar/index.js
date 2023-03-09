@@ -1,33 +1,39 @@
 import React from 'react'
 import {FaBars} from 'react-icons/fa'
-import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, Navitem, NavLinks,NavBtn, NavBtnLink} from './NavbarElements';
+import Logo2 from '../../images/Logo2.png'
+import {Nav, NavbarContainer, NavLogo,NavImg,SubLogo,  NavMenu, Navitem, NavLinks,NavBtn, NavBtnLink} from './NavbarElements';
 
 const Navbar = ({toggle}) => {
   return (
     <>
       <Nav>
         <NavbarContainer>
-            <NavLogo to='/'>UMatter</NavLogo>
-            <MobileIcon onClick={toggle}>
+            <NavImg>
+              <img src={Logo2}/>
+            </NavImg>
+            <NavLogo  to='/'>AssetMantle&nbsp;
+              <SubLogo>Student Chapter IGDTUW</SubLogo>
+            </NavLogo>
+            {/* <MobileIcon onClick={toggle}>
                 <FaBars/>
-            </MobileIcon>
+            </MobileIcon> */}
             <NavMenu>
                 <Navitem>
-                    <NavLinks to='home'>Home</NavLinks>
+                    <NavLinks to='home'>ABOUT US</NavLinks>
                 </Navitem>
                 <Navitem>
-                    <NavLinks to='about'>About</NavLinks>
+                    <NavLinks to='about'>EVENTS</NavLinks>
                 </Navitem>
                 <Navitem>
-                    <NavLinks to='services'>Services</NavLinks>
+                    <NavLinks to='services'>BLOGS</NavLinks>
                 </Navitem>
                 <Navitem>
-                    <NavLinks to='signup'>Sign Up</NavLinks>
+                    <NavLinks to='signup'>FAQs</NavLinks>
                 </Navitem>
             </NavMenu>
-            <NavBtn>
+            {/* <NavBtn>
                 <NavBtnLink to='/signin'>Sign In</NavBtnLink>
-            </NavBtn>
+            </NavBtn> */}
         </NavbarContainer>
       </Nav>
     </>
