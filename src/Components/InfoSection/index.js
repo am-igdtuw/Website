@@ -1,39 +1,23 @@
 import React from 'react'
-import {Button} from '../ButtonElements'
-import { AboutContainer, AboutWrapper, AboutRow,Column1, Column2, TextWrapper, TopLine, Heading, SubTitle, BtnWrap , ImgWrap, Img } from './InfoElements'
+// import {Button} from '../ButtonElements'
+import { AboutContainer, AboutWrapper,  AboutCard, AboutH1, AboutIcon, AboutH2, AboutP } from './InfoElements'
 
-const About = ({lightBg, id, imgStart, topLine, headline, description, buttonLabel, lightText, darkText, img, alt, primary, dark, dark2 }) => {
+const About = () => {
   return (
     <>
-      <AboutContainer lightBg={lightBg} id={id}>
+      <AboutContainer>
+        <AboutH1>What We Do</AboutH1>
         <AboutWrapper>
-            <AboutRow imgStart={imgStart}>
-                <Column1>
-                <TextWrapper>
-                    <TopLine>{topLine}</TopLine>
-                    <Heading lightText = {lightText}>{headline}</Heading>
-                    <SubTitle darkText={darkText}>{description}</SubTitle>
-                    <BtnWrap>
-                        <Button to='home'
-                        smooth = {true}
-                        duration = {500}
-                        spy={true}
-                        exact="true"
-                        offset={-80}
-                        primary={primary ? 1 : 0}
-                        dark={dark ? 1 : 0}
-                        dark2={dark2 ? 1: 0}
-                        
-                        >{buttonLabel} </Button>
-                    </BtnWrap>
-                </TextWrapper>
-                </Column1>
-                <Column2>
-                <ImgWrap>
-                <Img src={img} alt={alt}/> 
-                </ImgWrap>
-                </Column2>
-            </AboutRow>
+         <AboutCard>
+          <AboutIcon></AboutIcon>
+          <AboutH2>COLLABORATE</AboutH2>
+          <AboutP>Unlock the full potential of blockchain and web3 technology by building projects through collaboration and knowledge-sharing with peers in our society.</AboutP>
+          </AboutCard> 
+          <AboutCard>
+          <AboutIcon></AboutIcon>
+          <AboutH2>EDUCATE</AboutH2>
+          <AboutP>Discover the latest trends and knowledge in blockchain and web3 through the events and workshops we organize</AboutP>
+          </AboutCard>  
         </AboutWrapper>
 
       </AboutContainer>
