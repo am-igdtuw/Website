@@ -4,15 +4,18 @@ import {Link as LinkS} from 'react-scroll'
 
 export const Nav = styled.nav`
 display: flex;
-flex-direction: column;
+/* flex-direction: column; */
+/* position: sticky; */
 justify-content: center;
 align-items: center;
-padding: 60px 240px 40px;
-gap: 10px;
+/* padding: 60px 240px 40px; */
+/* column-gap: 10px; */
 
 position: relative;
-width: 1440px;
+/* width: 100%; */
 height: 142px;
+top: 0;
+  z-index: 10;
 
 background: #0D0A03;
 
@@ -26,9 +29,9 @@ display: flex;
 flex-direction: row;
 // align-items: flex-end;
 padding: 0px;
-gap: 32px;
+row-gap: 32px;
 
-width: 501px;
+width:auto;
 height: 34px;
 
 flex: none;
@@ -43,7 +46,7 @@ export const NavLogo = styled(LinkR)`
   font-size: 1.5rem;
   display: flex;
   align-items: center;
-  // margin-left: 24px;
+   margin-left: 28px;
   font-weight: bold;
   text-decoration: none;
 `
@@ -68,7 +71,7 @@ flex-direction: row;
 padding: 0px;
 gap: 22px;
 
-width: 501px;
+width: auto;
 height: 34px;
 
 
@@ -86,7 +89,7 @@ flex-grow: 0;
 export const SubLogo = styled.div`
 width: 172px;
 height: 17px;
-
+display:flex;
 // font-family: 'Inter';
 font-style: normal;
 font-weight: 500;
@@ -109,7 +112,7 @@ align-items: flex-start;
 padding: 6px 24px;
 gap: 7px;
 
-width: 121px;
+width:100px;
 height: 34px;
 
 background: #0D0A03;
