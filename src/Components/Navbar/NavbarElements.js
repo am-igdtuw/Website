@@ -70,8 +70,7 @@ display: flex;
 flex-direction: row;
 // align-items: flex-end;
 padding: 0px;
-gap: 22px;
-
+gap: 21px;
 width: auto;
 height: 34px;
 
