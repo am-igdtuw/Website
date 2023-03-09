@@ -10,7 +10,7 @@ export const Button = styled(Link)`
     font-size: ${({fontBig})=> (fontBig ? '28px' : '28px')};
     outline: none;
     border: none;
-    curson: pointer;
+    cursor: pointer;
     width: 391px;
     height: 64px;
     display: flex;

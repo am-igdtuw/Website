@@ -45,6 +45,7 @@ export const NavLogo = styled(LinkR)`
   cursor: pointer;
   font-size: 1.5rem;
   display: flex;
+  flex-direction:column;
   align-items: center;
    margin-left: 28px;
   font-weight: bold;
@@ -90,6 +91,7 @@ export const SubLogo = styled.div`
 width: 172px;
 height: 17px;
 display:flex;
+justify-content:center;
 // font-family: 'Inter';
 font-style: normal;
 font-weight: 500;
