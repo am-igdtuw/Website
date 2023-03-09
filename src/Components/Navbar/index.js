@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import {FaBars} from 'react-icons/fa'
 import Logo2 from '../../images/Logo2.png'
 import {Nav, NavbarContainer, NavLogo,NavImg,SubLogo,  NavMenu, Navitem, NavLinks,NavBtn, MobileIcon,NavBtnLink} from './NavbarElements';
@@ -22,18 +23,26 @@ const Navbar = ({toggle}) => {
             </MobileIcon> */}
             <NavMenu>
                 <Navitem>
-                    <NavLinks to='home'>ABOUT US</NavLinks>
+                    <NavLinks >
+                      ABOUT US
+                    </NavLinks>
                 </Navitem>
                 <Navitem>
-                    <NavLinks to='about'>EVENTS</NavLinks>
+                    <NavLinks>
+                      <Link to="/event">EVENTS</Link>
+                    </NavLinks>
 
                 </Navitem>
 
                 <Navitem>
-                    <NavLinks to='services'>BLOGS</NavLinks>
+                    <NavLinks>
+                      <Link to="/blogs">BLOGS</Link>
+                    </NavLinks>
                 </Navitem>
                 <Navitem>
-                    <NavLinks to='signup'>FAQs</NavLinks>
+                    <NavLinks >
+                    <Link to="/faq">FAQs</Link>
+                    </NavLinks>
                 </Navitem>
             </NavMenu>
             {/* <NavBtn>
