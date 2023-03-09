@@ -6,23 +6,28 @@ import { ServicesContainer, ServicesH1, ServicesH2,ServicesWrapper,ServicesCard,
 const Services = () => {
   return (
     <ServicesContainer id="services">
-        <ServicesH1>Our Services</ServicesH1>
+        <ServicesH1>Our Team</ServicesH1>
        
         <ServicesWrapper>
             <ServicesCard> 
                 <ServicesIcon src={Icon1}/>
-                <ServicesH2><b>Consult With Doctor</b></ServicesH2>
-                <ServicesP>Consult with professional doctors and therapists regarding your health.</ServicesP>
+                <ServicesH2><b>TECH TEAM</b></ServicesH2>
+                
             </ServicesCard>
             <ServicesCard> 
                 <ServicesIcon src={Icon2}/>
-                <ServicesH2><b>Attend workshops</b></ServicesH2>
-                <ServicesP>Book your slot now for amazing therapies and sessions that will make your life better.</ServicesP>
+                <ServicesH2><b>EVENT MANAGEMENT TEAM</b></ServicesH2>
+                
             </ServicesCard>
             <ServicesCard> 
                 <ServicesIcon src={Icon3}/>
-                <ServicesH2><b>Connect with friends</b></ServicesH2>
-                <ServicesP>Be the part of the amazing community and connect with them. </ServicesP>
+                <ServicesH2><b>MEDIA TEAM</b></ServicesH2>
+                
+            </ServicesCard>
+            <ServicesCard> 
+                <ServicesIcon src={Icon3}/>
+                <ServicesH2><b>RESEARCH AND CONTENT TEAM</b></ServicesH2>
+                
             </ServicesCard>
         </ServicesWrapper>
     </ServicesContainer>
