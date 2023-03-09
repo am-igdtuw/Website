@@ -56,11 +56,11 @@ background:linear-gradient(180deg, rgba(255, 198, 64, 0.16) 0%, rgba(255, 198, 6
 
 `
 export  const ServicesIcon=styled.img`
-height:170px;
-width:180px;
-margin-bottom:10px;
-border:0.5px solid #FFC640;
-box-shadow:3px 3px 3px #FFC640;
+height:120px;
+width:130px;
+margin-bottom:20px;
+// border:0.5px solid #FFC640;
+// box-shadow:3px 3px 3px #FFC640;
 `
 export const ServicesH1=styled.h1`
 /* font-size:5rem;
