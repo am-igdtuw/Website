@@ -5,7 +5,7 @@ display:flex;
 flex-direction:column;
 justify-content:center;
 align-items: center;
-background:black;
+background: black;
 
 @media screen and (max-width:768px){
     height:1100px;
@@ -53,7 +53,6 @@ transition: all 0.2s ease-in-out;
     transform:scale(1.02);
     transition: all 0.2s ease-in-out;
     cursor:pointer;
-
 }
 
 `
