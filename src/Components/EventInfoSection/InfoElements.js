@@ -68,13 +68,25 @@ export const SubTitle = styled.p`
     color: ${({darkText})=> (darkText ? '#010606' : '#fff')}; 
 `
 export const AboutWrapper=styled.div`
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 60px 40px;
+gap: 36px;
+border:0.5px solid #FFC640;
+
+width: 800px;
+height: 400px;
+background: linear-gradient(180deg, rgba(255, 198, 64, 0.16) 0%, rgba(255, 198, 64, 0.1024) 100%);
+border-radius: 24px;
+/*
 max-width:10000;
 margin: 0 auto;
 display: grid;
 grid-template-columns: 1fr 1fr ;
 align-items:center;
 grid-column-gap:100px;
-padding: 40px 24px;
+padding: 40px 24px;*/
 @media screen and (max-width:1000px){
     grid-template-columns: 1fr 1fr ;
 }
@@ -91,31 +103,19 @@ align-items:center;
 display:flex;
 flex-direction:column;
 justify-content:flex-start;
-border-radius:10px;
-width: 320px;
+width: 404px;
+font-size: 32px;
 height: 320px;
-border:0.5px solid #FFC640;
-
-padding:30px;
-/* gap:50px; */
-box-shadow: 0 1px 3px gray;
-transition: all 0.2s ease-in-out;
-background:black;
-&:hover{
-    transform:scale(1.02);
-    transition: all 0.2s ease-in-out;
-    cursor:pointer;
-
-}
-
+font-weight: 600;
+font-family: 'Inter';
+font-style: normal;
 
 `
 export  const AboutIcon=styled.img`
-height:120px;
-width:130px;
+height:280px;
+width:280px;
+align: left;
 margin-bottom:20px;
-// border:0.5px solid #FFC640;
-// box-shadow:3px 3px 3px #FFC640;
 `
 export const AboutH1=styled.h1`
 /* font-size:5rem;
@@ -134,9 +134,9 @@ margin-bottom: 64px;
 `
 export const AboutH2=styled.h2`
 font-weight: 600;
-font-size: 24px;
+font-size: 32px;
 line-height: 32px;
-color:white;
+color:#FFFDFA;
 margin-bottom:10px;
 
 
@@ -145,12 +145,32 @@ export const AboutP=styled.p`
 font-family: 'Inter';
 font-style: normal;
 font-weight: 400;
-font-size: 16px;
-line-height: 20px;
-text-align:center;
-color:white;
+font-size: 14px;
+line-height: 18px;
+gap: 36px;
+text-align:left;
+color:#FFFDFA;
 `;
+export const HeroBtnWrapper = styled.div`
+    margin-top: 32px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    // background: radial-gradient(50% 50% at 50% 50%, #FFC640 47.4%, #F2AF13 100%);
+`
 
+export const Heroimg = styled.img`
+height:40px;
+widht:40px;
+margin-right: 10px;
+outline: none;
+border: none;
+curson: pointer;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: all 0.2s ease-in-out;
+`
 export const BtnWrap = styled.div`
     display: flex;
     justify-content: flex-start;

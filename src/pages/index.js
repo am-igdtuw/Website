@@ -19,7 +19,6 @@ const Home = () => {
      <Navbar toggle={toggle}/> 
      <HeroSection/>
      <InfoSection/>
-     
     <Services/>
     <Footer/>
 
