@@ -24,10 +24,23 @@ const Navbar = ({toggle}) => {
                 <Navitem>
                     <NavLinks to='home'>ABOUT US</NavLinks>
                 </Navitem>
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+                <Navitem>
+                    <NavLinks to='about'>EVENTS</NavLinks>
+
+                </Navitem>
+=======
+>>>>>>> Stashed changes
                 <NavBtn>
                     <NavBtnLink to='/event'>EVENTS</NavBtnLink>
                     {/* <NavLinks to='/event'>Event</NavLinks> */}
                 </NavBtn>
+<<<<<<< Updated upstream
+=======
+>>>>>>> 377c8fbb8382c6accc0694dcdc5e17952532059b
+>>>>>>> Stashed changes
                 <Navitem>
                     <NavLinks to='services'>BLOGS</NavLinks>
                 </Navitem>

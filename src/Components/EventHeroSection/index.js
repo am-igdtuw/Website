@@ -1,8 +1,30 @@
-import React from 'react'
+import React, {useState} from 'react'
+import { HeroContainer, HeroContent, HeroBtnWrapper,HeroH1, HeroP, ArrowForward, ArrowRight } from './EventElement'
+import {Button} from '../ButtonElements'
 
 const EventHeroSection = () => {
+    const[hover, setHover] = useState(false)
+
+    const onHover = () => {
+        setHover(!hover)
+    }
+
   return (
-    <div> EventHeroSection</div>
+    <HeroContainer>
+        <HeroContent>
+            <HeroH1>We host robust events </HeroH1>
+            <HeroH1>that helps leverage the</HeroH1>
+            <HeroH1>web3 infrastructure.</HeroH1>
+            <HeroP>
+                WE STRIVE TO CREATE A COMMUNITY OF STUDENTS PASSIONATE ABOUT BLOCKCHAIN AND WEB3 TECHNOLOGY
+            </HeroP>
+            <HeroBtnWrapper>
+                <Button to='signup' onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='true'>
+               Colaborate with us
+                </Button>
+            </HeroBtnWrapper>
+        </HeroContent>
+    </HeroContainer>
   )
 }
 
