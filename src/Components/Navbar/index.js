@@ -22,7 +22,11 @@ const Navbar = ({toggle}) => {
                     <NavLinks to='home'>ABOUT US</NavLinks>
                 </Navitem>
                 <Navitem>
+<<<<<<< Updated upstream
                     <NavLinks to='about'>EVENTS</NavLinks>
+=======
+                    <NavLinks to='/event'>Event</NavLinks>
+>>>>>>> Stashed changes
                 </Navitem>
                 <Navitem>
                     <NavLinks to='services'>BLOGS</NavLinks>
