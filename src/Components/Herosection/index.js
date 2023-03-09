@@ -13,16 +13,17 @@ const HeroSection = () => {
   return (
     <HeroContainer>
         <HeroBg>
-            <VideoBg  autoPlay loop muted src={Video} type='video/mp4'/> 
+            {/*<VideoBg  autoPlay loop muted src={Video} type='video/mp4'/> */}
         </HeroBg>
         <HeroContent>
-            <HeroH1>Make your life more Blissful</HeroH1>
+            <HeroH1>Your Gateway to the</HeroH1>
+            <HeroH1>Web3 World</HeroH1>
             <HeroP>
-                Sign up now and give your life a second chance
+                WE STRIVE TO CREATE A COMMUNITY OF STUDENTS PASSIONATE ABOUT BLOCKCHAIN AND WEB3 TECHNOLOGY
             </HeroP>
             <HeroBtnWrapper>
                 <Button to='signup' onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='true'>
-                    Get Started {hover ? <ArrowForward /> : <ArrowRight />}
+               JOIN COMMUNITY {hover ? <ArrowForward /> : <ArrowRight />}
                 </Button>
             </HeroBtnWrapper>
         </HeroContent>
