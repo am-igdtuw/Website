@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const AboutContainer = styled.div`
-   height:800px;
+   height:500px;
 display:flex;
 flex-direction:column;
 justify-content:center;

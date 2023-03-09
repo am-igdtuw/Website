@@ -14,7 +14,7 @@ const Navbar = ({toggle}) => {
             <MobileIcon onClick={toggle}>
                 <FaBars/>
             </MobileIcon>
-            <NavLogo  to='/'>AssetMantle&nbsp;
+            <NavLogo  to='/'>AssetMantle
               <SubLogo>Student Chapter IGDTUW</SubLogo>
             </NavLogo>
             <NavMenu>

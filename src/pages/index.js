@@ -7,6 +7,7 @@ import Navbar from '../Components/Navbar';
 import Services from '../Components/Services';
 import FollowSection from '../Components/FollowSection';
 
+import Team from '../Components/Team'
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -22,6 +23,7 @@ const Home = () => {
      <InfoSection/>
      <FollowSection/>
     <Services/>
+    <Team/>
     <Footer/>
 
 
