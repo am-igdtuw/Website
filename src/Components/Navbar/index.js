@@ -1,8 +1,7 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
 import {FaBars} from 'react-icons/fa'
 import Logo2 from '../../images/Logo2.png'
-import {Nav, NavbarContainer, NavLogo,NavImg,SubLogo,  NavMenu, Navitem, NavLinks,NavBtn, MobileIcon,NavBtnLink} from './NavbarElements';
+import {Nav, NavbarContainer, NavLogo,NavImg,SubLogo,  NavMenu, Navitem, NavLinks, MobileIcon} from './NavbarElements';
 
 const Navbar = ({toggle}) => {
   return (
@@ -18,30 +17,24 @@ const Navbar = ({toggle}) => {
             <NavLogo  to='/'>AssetMantle&nbsp;
               <SubLogo>Student Chapter IGDTUW</SubLogo>
             </NavLogo>
-            {/* <MobileIcon onClick={toggle}>
-                <FaBars/>
-            </MobileIcon> */}
             <NavMenu>
                 <Navitem>
                     <NavLinks >
-                      ABOUT US
+                      ABOUT
                     </NavLinks>
                 </Navitem>
                 <Navitem>
-                    <NavLinks>
-                      <Link to="/event">EVENTS</Link>
+                    <NavLinks to="/event">EVENTS
                     </NavLinks>
 
                 </Navitem>
 
                 <Navitem>
-                    <NavLinks>
-                      <Link to="/blogs">BLOGS</Link>
+                    <NavLinks to="/blogs">BLOGS
                     </NavLinks>
                 </Navitem>
                 <Navitem>
-                    <NavLinks >
-                    <Link to="/faq">FAQs</Link>
+                    <NavLinks to="/faq">FAQs
                     </NavLinks>
                 </Navitem>
             </NavMenu>
