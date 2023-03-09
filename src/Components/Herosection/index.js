@@ -22,7 +22,6 @@ const HeroSection = () => {
                 WE STRIVE TO CREATE A COMMUNITY OF STUDENTS PASSIONATE ABOUT BLOCKCHAIN AND WEB3 TECHNOLOGY
             </HeroP>
             <HeroBtnWrapper>
-                
                 <Button  to='signup' onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='true'>
                 <Heroimg src={discordLogo}/> 
                JOIN COMMUNITY 
