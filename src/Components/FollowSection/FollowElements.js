@@ -9,6 +9,7 @@ export const FollowContainer = styled.div`
     height: 150px;
     position: relative;
     z-index: 1;
+    
 
     :before{
         content: '';
@@ -30,6 +31,7 @@ export const FollowContent = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+
 `
 export const FollowP = styled.p`
 width: 720px;
@@ -74,6 +76,7 @@ export const SocialLogo = styled(Link)`
 export const SocialIcons = styled.div`
  display: flex;
  justify-content: space-evenly;
+ margin-top: 24px;
  align-items: center;
  font-size: 30px;
  width: 250px;
