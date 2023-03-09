@@ -1,12 +1,12 @@
-import React, {useState} from 'react';
+import React, {useState ,  useEffect} from 'react';
 import Footer from '../Components/Footer';
 import HeroSection from '../Components/Herosection';
 import InfoSection from '../Components/InfoSection';
-import { homeObjOne } from '../Components/InfoSection/Data';
+// import { homeObjOne } from '../Components/InfoSection/Data';
 import Navbar from '../Components/Navbar';
 import Services from '../Components/Services';
 import FollowSection from '../Components/FollowSection';
-
+import PopUp from "../Components/PopUp/Modal";
 import Team from '../Components/Team'
 
 const Home = () => {
@@ -15,10 +15,23 @@ const Home = () => {
     const toggle = () => {
         setIsOpen(!isOpen)
     };
+    const [timedPopup, setTimedPopup] = useState(false);
+
+    useEffect(() => {
+      setTimeout(() => {
+        setTimedPopup(true);
+      } , 1000);
+    } , []);
+     
 
   return (
     <>
      <Navbar toggle={toggle}/> 
+     <PopUp trigger={timedPopup} setTrigger = {setTimedPopup}>
+        <h1>My popup</h1>
+        <p> This is my time trigerred pop up</p>
+        <a href="#"> Lets Go</a>
+      </PopUp>
      <HeroSection/>
      <InfoSection/>
      <FollowSection/>
