@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from '../Components/Navbar';
 import EventHeroSection from '../Components/EventHeroSection';
 
-const SigninPage = () => {
+const EventPage = () => {
   return (
     <div>
         <Navbar/>
@@ -11,4 +11,4 @@ const SigninPage = () => {
   );
 };
 
-export default SigninPage;
+export default EventPage;

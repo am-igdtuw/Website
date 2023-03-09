@@ -1,7 +1,7 @@
 import React from 'react'
 import {FaBars} from 'react-icons/fa'
 import Logo2 from '../../images/Logo2.png'
-import {Nav, NavbarContainer, NavLogo,NavImg,SubLogo,  NavMenu, Navitem, NavLinks,NavBtn, MobileIcon} from './NavbarElements';
+import {Nav, NavbarContainer, NavLogo,NavImg,SubLogo,  NavMenu, Navitem, NavLinks,NavBtn, MobileIcon,NavBtnLink} from './NavbarElements';
 
 const Navbar = ({toggle}) => {
   return (
@@ -24,10 +24,10 @@ const Navbar = ({toggle}) => {
                 <Navitem>
                     <NavLinks to='home'>ABOUT US</NavLinks>
                 </Navitem>
-                <Navitem>
-                    <NavLinks to='about'>EVENTS</NavLinks>
+                <NavBtn>
+                    <NavBtnLink to='/event'>EVENTS</NavBtnLink>
                     {/* <NavLinks to='/event'>Event</NavLinks> */}
-                </Navitem>
+                </NavBtn>
                 <Navitem>
                     <NavLinks to='services'>BLOGS</NavLinks>
                 </Navitem>
