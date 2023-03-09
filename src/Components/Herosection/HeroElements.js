@@ -11,6 +11,8 @@ export const HeroContainer = styled.div`
     position: relative;
     z-index: 1;
 
+
+
     :before{
         content: '';
         position: absolute;
@@ -59,7 +61,7 @@ export const HeroH1 = styled.h1`
     font-size: 48px;
     text-align: center; */
     
-    margin-bottom: 24px;
+    margin-bottom: 30px;
     font-family: 'Inter';
     color: #FFFDFA;
     font-style: normal;
@@ -67,6 +69,7 @@ export const HeroH1 = styled.h1`
     line-height: 0.5;
     font-weight: 600;
     color: white;
+    
 
     @media screen and (max-width: 768px){
         font-size: 40px;
@@ -108,8 +111,22 @@ line-height: 28px;
 export const HeroBtnWrapper = styled.div`
     margin-top: 32px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    // background: radial-gradient(50% 50% at 50% 50%, #FFC640 47.4%, #F2AF13 100%);
+`
+
+export const Heroimg = styled.img`
+height:40px;
+widht:40px;
+margin-right: 10px;
+outline: none;
+border: none;
+curson: pointer;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: all 0.2s ease-in-out;
 `
 
 export const ArrowForward = styled(MdArrowForward)`

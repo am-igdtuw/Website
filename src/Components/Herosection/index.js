@@ -1,7 +1,8 @@
 import React, {useState} from 'react'
 import Video from '../../videos/video1.mp4'
-import { HeroContainer, HeroBg, VideoBg, HeroContent, HeroBtnWrapper,HeroH1, HeroP, ArrowForward, ArrowRight } from './HeroElements'
+import { HeroContainer, HeroBg, VideoBg, HeroContent,Heroimg, HeroBtnWrapper,HeroH1, HeroP, ArrowForward, ArrowRight } from './HeroElements'
 import {Button} from '../ButtonElements'
+import discordLogo from '../../images/discordLogo.png'
 
 const HeroSection = () => {
     const[hover, setHover] = useState(false)
@@ -22,8 +23,10 @@ const HeroSection = () => {
                 WE STRIVE TO CREATE A COMMUNITY OF STUDENTS PASSIONATE ABOUT BLOCKCHAIN AND WEB3 TECHNOLOGY
             </HeroP>
             <HeroBtnWrapper>
-                <Button to='signup' onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='true'>
-               JOIN COMMUNITY {hover ? <ArrowForward /> : <ArrowRight />}
+                {/* <Heroimg src={discordLogo}/> */}
+                <Button  to='signup' onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='true'>
+                <Heroimg src={discordLogo}/> 
+               JOIN COMMUNITY 
                 </Button>
             </HeroBtnWrapper>
         </HeroContent>
