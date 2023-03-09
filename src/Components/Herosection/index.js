@@ -1,5 +1,4 @@
 import React, {useState} from 'react'
-import Video from '../../videos/video1.mp4'
 import { HeroContainer, HeroBg, VideoBg, HeroContent,Heroimg, HeroBtnWrapper,HeroH1, HeroP, ArrowForward, ArrowRight } from './HeroElements'
 import {Button} from '../ButtonElements'
 import discordLogo from '../../images/discordLogo.png'
@@ -23,7 +22,7 @@ const HeroSection = () => {
                 WE STRIVE TO CREATE A COMMUNITY OF STUDENTS PASSIONATE ABOUT BLOCKCHAIN AND WEB3 TECHNOLOGY
             </HeroP>
             <HeroBtnWrapper>
-                {/* <Heroimg src={discordLogo}/> */}
+                
                 <Button  to='signup' onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='true'>
                 <Heroimg src={discordLogo}/> 
                JOIN COMMUNITY 

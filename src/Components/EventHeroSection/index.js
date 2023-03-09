@@ -1,6 +1,8 @@
 import React, {useState} from 'react'
-import { HeroContainer, HeroContent, HeroBtnWrapper,HeroH1, HeroP, ArrowForward, ArrowRight } from './EventElement'
+import { HeroContainer, HeroContent, HeroBtnWrapper,HeroH1, HeroP, Heroimg } from './EventElement'
 import {Button} from '../ButtonElements'
+import CollaborateLogo from '../../images/CollaborateLogo.png'
+
 
 const EventHeroSection = () => {
     const[hover, setHover] = useState(false)
@@ -20,6 +22,7 @@ const EventHeroSection = () => {
             </HeroP>
             <HeroBtnWrapper>
                 <Button to='signup' onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='true'>
+                  <Heroimg src={CollaborateLogo}/>
                Colaborate with us
                 </Button>
             </HeroBtnWrapper>
