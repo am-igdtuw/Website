@@ -1,7 +1,7 @@
 import React from 'react'
 import FaqSection from '../Components/FaqSection';
 import Navbar from '../Components/Navbar';
-import PastEventsection from '../Components/PastEventsection';
+import FollowSection from '../Components/FollowSection';
 
 
 const FaqPage = () => {
@@ -9,7 +9,7 @@ const FaqPage = () => {
     <div>
         <Navbar/>
         <FaqSection/>
-        <PastEventsection/>
+        <FollowSection/>
     </div>
   );
 };
