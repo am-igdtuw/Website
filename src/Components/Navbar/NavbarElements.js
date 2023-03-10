@@ -10,7 +10,11 @@ justify-content: center;
 align-items: center;
 /* padding: 60px 240px 40px; */
 /* column-gap: 10px; */
-
+position: absolute;
+width: auto;
+left: 0px;
+height: 142px;
+top: 0px;
 position: relative;
 /* width: 100%; */
 height: 142px;
@@ -27,7 +31,7 @@ background: #0D0A03;
 export const NavbarContainer = styled.div`
 display: flex;
 flex-direction: row;
-// align-items: flex-end;
+align-items: flex-start;
 padding: 0px;
 row-gap: 32px;
 
@@ -43,7 +47,7 @@ export const NavLogo = styled(LinkR)`
   color: #fff;
   justify-self: flex-start;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 1.0rem;
   display: flex;
   flex-direction:column;
   align-items: center;
@@ -60,7 +64,7 @@ export const MobileIcon = styled.div`
     top: 0;
     right: 0;
     transform: translate(-100%, 60%);
-    font-size: 1.8rem;
+    font-size: 2.8rem;
     cursor: pointer;
     color: #fff;
   }
@@ -68,8 +72,8 @@ export const MobileIcon = styled.div`
 export const NavMenu = styled.ul`
 display: flex;
 flex-direction: row;
-// align-items: flex-end;
-padding: 0px;
+ align-items: center;
+padding: 0px 10px 0px 230px;
 gap: 21px;
 width: auto;
 height: 34px;
@@ -109,9 +113,9 @@ box-sizing: border-box;
 
 display: flex;
 flex-direction: row;
-align-items: flex-start;
-padding: 6px 24px;
-gap: 7px;
+align-items: center;
+padding: 0px 20px;
+gap: 10px;
 border:0.5px solid #FFC640;
 width:100px;
 height: 34px;
@@ -127,9 +131,9 @@ flex-grow: 0;
 `
 
 export const NavImg = styled.div`
-width: 42px;
-height: 42px;
-
+width: 32px;
+height: 32px;
+margin-right: 1px;
 flex: none;
 order: 0;
 flex-grow: 0;
@@ -137,7 +141,7 @@ flex-grow: 0;
 export const NavLinks = styled(LinkR)`
 width: 73px;
 height: 22px;
-
+padding: 2px ;
 // font-family: 'Inter';
 font-style: normal;
 font-weight: 600;
