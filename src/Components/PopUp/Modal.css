@@ -20,7 +20,8 @@
     
     width: 100%; 
     /* max-width: 640px;  */
-    background-color: #FFF;
+    background-color: #FFC640
+    ;
     border-radius: 8px; 
 }
 .popup-inner  .close-btn{

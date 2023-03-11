@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { HeroContainer, HeroBg, VideoBg, HeroContent,Heroimg, HeroBtnWrapper,HeroH1, HeroP, ArrowForward, ArrowRight } from './HeroElements'
+import { HeroContainer, HeroBg, HeroD, HeroContent,Heroimg, HeroBtnWrapper,HeroH1, HeroP, ArrowForward, ArrowRight } from './HeroElements'
 import {Button} from '../ButtonElements'
 import discordLogo from '../../images/discordLogo.png'
 
@@ -17,7 +17,7 @@ const HeroSection = () => {
         </HeroBg>
         <HeroContent>
             <HeroH1>Your Gateway to the</HeroH1>
-            <HeroH1>Web3 World</HeroH1>
+            <HeroH1><HeroD>Web3</HeroD> World</HeroH1>
             <HeroP>
                 WE STRIVE TO CREATE A COMMUNITY OF STUDENTS PASSIONATE ABOUT BLOCKCHAIN AND WEB3 TECHNOLOGY
             </HeroP>

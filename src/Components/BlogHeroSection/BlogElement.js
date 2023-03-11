@@ -76,7 +76,11 @@ export const HeroH1 = styled.h1`
         font-size: 32px;
     }
 `
-
+export const HeroD = styled.span`
+    color: #FFC640;
+    font-family: 'Inter';
+font-style: normal;
+`
 export const HeroP = styled.p`
 width: 640px;
 height: 56px;

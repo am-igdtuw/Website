@@ -104,6 +104,11 @@ line-height: 28px;
         font-size: 18px;
     }
 `
+export const HeroD = styled.span`
+    color: #FFC640;
+    font-family: 'Inter';
+font-style: normal;
+`
 export const Heroimg = styled.img`
 height:40px;
 widht:40px;

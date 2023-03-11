@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { HeroContainer, HeroContent, HeroBtnWrapper,HeroH1, HeroP, Heroimg } from './EventElement'
+import { HeroContainer, HeroContent,HeroD, HeroBtnWrapper,HeroH1, HeroP, Heroimg } from './EventElement'
 import {Button} from '../ButtonElements'
 import CollaborateLogo from '../../images/CollaborateLogo.png'
 
@@ -14,7 +14,7 @@ const EventHeroSection = () => {
   return (
     <HeroContainer>
         <HeroContent>
-            <HeroH1>We host robust events </HeroH1>
+            <HeroH1>We host robust <HeroD>events</HeroD></HeroH1>
             <HeroH1>that helps leverage the</HeroH1>
             <HeroH1>web3 infrastructure.</HeroH1>
             <HeroP>
