@@ -57,14 +57,17 @@ export const NavLogo = styled(LinkR)`
 `
 export const MobileIcon = styled.div`
   display: none;
-
+  align-items: center;
+  margin-bottom: 60px;
   @media screen and (max-width: 768px){
     display: block;
     position: absolute;
     top: 0;
+    bottom: 0;
+    
     right: 0;
     transform: translate(-100%, 60%);
-    font-size: 2.8rem;
+    font-size: 1.8rem;
     cursor: pointer;
     color: #fff;
   }
@@ -73,7 +76,7 @@ export const NavMenu = styled.ul`
 display: flex;
 flex-direction: row;
  align-items: center;
-padding: 0px 10px 0px 230px;
+padding: 0px 30px 0px 200px;
 gap: 21px;
 width: auto;
 height: 34px;
@@ -117,7 +120,7 @@ align-items: center;
 padding: 0px 20px;
 gap: 10px;
 border:0.5px solid #FFC640;
-width:100px;
+width:110px;
 height: 34px;
 
 background: #0D0A03;
@@ -131,9 +134,14 @@ flex-grow: 0;
 `
 
 export const NavImg = styled.div`
-width: 32px;
-height: 32px;
-margin-right: 1px;
+width: 440px;
+height: 84px;
+
+flex-direction: row;
+align-items: start;
+padding-left: 100px;
+margin-bottom: 35px;
+display: flex;
 flex: none;
 order: 0;
 flex-grow: 0;
