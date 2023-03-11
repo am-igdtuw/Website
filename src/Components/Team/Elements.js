@@ -20,7 +20,7 @@ margin: 0 auto;
 display: grid;
 grid-template-columns: 1fr 1fr 1fr 1fr;
 align-items:center;
-grid-column-gap:20px;
+grid-column-gap:40px;
 padding:0 50px;
 @media screen and (max-width:1000px){
     grid-template-columns: 1fr 1fr ;

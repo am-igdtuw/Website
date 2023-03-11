@@ -44,9 +44,9 @@ const Footer = () => {
          </FooterLinksContainer>
          <SocialMedia>
             <SocialMediaWrap>
-                <SocialLogo to='/'>
+                {/* <SocialLogo >
                     AssetMantle
-                </SocialLogo>
+                </SocialLogo> */}
                 <WebsiteRights>Assetmantle © {new Date().getFullYear()}
                 All rights reserved.</WebsiteRights>
                 <SocialIcons>

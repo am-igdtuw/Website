@@ -8,7 +8,7 @@ const About = () => {
   return (
     <>
       <AboutContainer>
-        <AboutH1>What We Do</AboutH1>
+        {/* <AboutH1>What We Do</AboutH1> */}
         <AboutWrapper>
          <AboutCard>
           <AboutIcon src={Collaborate}></AboutIcon>

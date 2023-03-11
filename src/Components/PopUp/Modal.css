@@ -27,8 +27,12 @@
     /* height: 80vh; */
     width: 100%; 
     /* max-width: 640px;  */
-    background-color: #a87d17;
-    background-color: #FFC640;
+    background-image: linear-gradient(
+        0deg,
+        hsl(39, 64%, 25%) 30%,
+        hsl(39, 85%, 53%) 58%,
+        hsl(37, 62%, 24%) 100%
+      );
 
     border-radius: 8px; 
     /* font-family:'Courier New', Courier, monospace; */

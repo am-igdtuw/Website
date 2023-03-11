@@ -1,7 +1,9 @@
 import React, {useState} from 'react'
 import { HeroContainer, HeroBg, HeroD, HeroContent,Heroimg, HeroBtnWrapper,HeroH1, HeroP, ArrowForward, ArrowRight } from './HeroElements'
 import {Button} from '../ButtonElements'
+import { AboutH1 } from '../InfoSection/InfoElements'
 import discordLogo from '../../images/discordLogo.png'
+import bg from '../../images/bg.svg'
 
 const HeroSection = () => {
     const[hover, setHover] = useState(false)
@@ -13,7 +15,7 @@ const HeroSection = () => {
   return (
     <HeroContainer>
         <HeroBg>
-            {/*<VideoBg  autoPlay loop muted src={Video} type='video/mp4'/> */}
+            
         </HeroBg>
         <HeroContent>
             <HeroH1>Your Gateway to the</HeroH1>
@@ -27,6 +29,7 @@ const HeroSection = () => {
                JOIN COMMUNITY 
                 </Button>
             </HeroBtnWrapper>
+            <AboutH1>Your Gateway to the</AboutH1>            
         </HeroContent>
     </HeroContainer>
   )

@@ -14,24 +14,19 @@ const Team = () => {
         <TeamWrapper>
             <TeamCard> 
                 <TeamIcon src={t1}/>
-                <TeamH2><b>Name</b></TeamH2>
-                <TeamP>Designation</TeamP>
+                <TeamH2><b>Unnati</b></TeamH2>
+                <TeamP>President</TeamP>
                 
             </TeamCard>
             <TeamCard> 
                 <TeamIcon src={t2}/>
-                <TeamH2><b>EVENT MANAGEMENT TEAM</b></TeamH2>
-                <TeamP>Designation</TeamP>
+                <TeamH2><b>Geetika Gupta</b></TeamH2>
+                <TeamP>Vice-president</TeamP>
             </TeamCard>
             <TeamCard> 
                 <TeamIcon src={t3}/>
-                <TeamH2><b>MEDIA TEAM</b></TeamH2>
-                <TeamP>Designation</TeamP>
-            </TeamCard>
-            <TeamCard> 
-                <TeamIcon src={t4}/>
-                <TeamH2><b>RESEARCH AND CONTENT TEAM</b></TeamH2>
-                <TeamP>Designation</TeamP>
+                <TeamH2><b>Astha Bhaskar</b></TeamH2>
+                <TeamP>Vice-president</TeamP>
             </TeamCard>
         </TeamWrapper>
     </TeamContainer>

@@ -102,7 +102,7 @@ justify-content:center;
 font-style: normal;
 font-weight: 500;
 font-size: 14px;
-line-height: 17px;
+// line-height: 17px;
 color: #FFFDFA;
 flex: none;
 order: 1;

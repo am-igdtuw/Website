@@ -12,15 +12,15 @@ const FollowSection = () => {
           </FollowP>
         </FollowContent>
         <SocialIcons>
-            <SocialIconsLink href="/" target="_blank"
+            <SocialIconsLink href="https://www.instagram.com/assetmantle.igdtuw/" target="_blank"
               area-label="Instagram">
               <FaInstagram />
             </SocialIconsLink>
-            <SocialIconsLink href="/" target="_blank"
+            <SocialIconsLink href="https://twitter.com/AM_igdtuw" target="_blank"
               area-label="Twitter">
               <FaTwitter />
             </SocialIconsLink>
-            <SocialIconsLink href="/" target="_blank"
+            <SocialIconsLink href="https://www.linkedin.com/company/asset-mantle-igdtuw/" target="_blank"
               area-label="Linkedin">
               <FaLinkedin />
             </SocialIconsLink>

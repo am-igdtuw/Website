@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import {MdArrowForward, MdKeyboardArrowRight} from 'react-icons/md'
+import bg from '../../images/bg.svg'
 
 export const HeroContainer = styled.div`
     background: black;
@@ -29,20 +30,22 @@ export const HeroContainer = styled.div`
 export const HeroBg = styled.div`
     position: absolute;
     top: 0;
-    right: 0;
+    right: 0 ;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: 140%;
     height: 100vh;
     overflow: hidden;
+    background-image: url(${bg});
    
 `
 
-export const VideoBg = styled.video`
+export const Imgbg = styled.div`
     width: 100%;
     height: 100vh;
     -o-object-fit: cover;
     object-fit: cover;
+    // background-image: url(${bg});
    
 `
 
@@ -81,14 +84,14 @@ export const HeroH1 = styled.h1`
 `
 export const HeroD = styled.span`
     color: #FFC640;
-    font-family: 'Inter';
+    font-family: 'sans-serif';
 font-style: normal;
 `
 export const HeroP = styled.p`
 width: 640px;
 height: 56px;
 
-font-family: 'Inter';
+font-family: 'sans-serif';
 font-style: normal;
 font-weight: 600;
 font-size: 20px;
