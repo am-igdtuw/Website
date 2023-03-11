@@ -28,10 +28,9 @@ const Home = () => {
     <>
      <Navbar toggle={toggle}/> 
      <PopUp trigger={timedPopup} setTrigger = {setTimedPopup}>
-        <h2>HOLA! UPCOMING EVENT!</h2>
-        <h3> BFF HACKATHON</h3>
-        <p><img></img></p>
-        <a href="/event"> VIEW HERE!</a>
+        <h2> <strong> HOLA! UPCOMING EVENT! </strong></h2>
+        <h3> BFF HACKATHON </h3>
+        {/* <a href="/event"> VIEW HERE!</a> */}
       </PopUp>
      <HeroSection/>
      <InfoSection/>
