@@ -48,7 +48,7 @@ export const FooterLinkItems = styled.div`
 `
 export const FooterLinkTitle = styled.h1`
  font-size: 14px;
- margin-bottom: 16px;
+//  margin-bottom: 16px;
 `
 export const FooterLink = styled(Link)`
  color: #fff;

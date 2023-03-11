@@ -76,7 +76,7 @@ export const NavMenu = styled.ul`
 display: flex;
 flex-direction: row;
  align-items: center;
-padding: 0px 30px 0px 200px;
+padding: 0px 30px 0px 90px;
 gap: 21px;
 width: auto;
 height: 34px;
