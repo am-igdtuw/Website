@@ -3,6 +3,7 @@ import {MdArrowForward, MdKeyboardArrowRight} from 'react-icons/md'
 import bg from '../../images/bg.svg'
 
 export const HeroContainer = styled.div`
+    width: 100%;
     background: black;
     display: flex;
     justify-content: center;
@@ -36,16 +37,18 @@ export const HeroBg = styled.div`
     width: 140%;
     height: 100vh;
     overflow: hidden;
-    background-image: url(${bg});
+   // background-image: url(${bg});
    
 `
 
 export const Imgbg = styled.div`
+    
     width: 100%;
-    height: 100vh;
+    height: 1200px;
     -o-object-fit: cover;
     object-fit: cover;
-    // background-image: url(${bg});
+    margin-right: 0px;
+    background-image: url(${bg});
    
 `
 

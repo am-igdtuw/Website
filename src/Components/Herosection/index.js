@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { HeroContainer, HeroBg, HeroD, HeroContent,Heroimg, HeroBtnWrapper,HeroH1, HeroP, ArrowForward, ArrowRight } from './HeroElements'
+import { HeroContainer, HeroBg, Imgbg, HeroD, HeroContent,Heroimg, HeroBtnWrapper,HeroH1, HeroP, ArrowForward, ArrowRight } from './HeroElements'
 import {Button} from '../ButtonElements'
 import { AboutH1 } from '../InfoSection/InfoElements'
 import discordLogo from '../../images/discordLogo.png'
@@ -15,7 +15,7 @@ const HeroSection = () => {
   return (
     <HeroContainer>
         <HeroBg>
-            
+           <Imgbg src={bg} type='image/svg'/>
         </HeroBg>
         <HeroContent>
             <HeroH1>Your Gateway to the</HeroH1>
@@ -28,8 +28,7 @@ const HeroSection = () => {
                 <Heroimg src={discordLogo}/> 
                JOIN COMMUNITY 
                 </Button>
-            </HeroBtnWrapper>
-            <AboutH1>Your Gateway to the</AboutH1>            
+            </HeroBtnWrapper>         
         </HeroContent>
     </HeroContainer>
   )
