@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaFacebook, FaLinkedin, FaYoutube, FaInstagram, FaTwitter } from 'react-icons/fa';
 import { FooterContainer,FooterWrap, FooterLinksContainer,FooterLinksWrapper,FooterLinkItems, FooterLinkTitle, FooterLink, SocialMedia, SocialMediaWrap, SocialLogo, WebsiteRights, SocialIconsLink, SocialIcons } from './FooterElements';
-
+import Logo from '../../images/Logo.png'
 const Footer = () => {
   return (
     <FooterContainer>
@@ -44,32 +44,21 @@ const Footer = () => {
          </FooterLinksContainer>
          <SocialMedia>
             <SocialMediaWrap>
-                {/* <SocialLogo >
-                    AssetMantle
-                </SocialLogo> */}
+                <SocialLogo >
+                   <img src={Logo} height={32}/>
+                </SocialLogo>
                 <WebsiteRights>Assetmantle © {new Date().getFullYear()}
                 All rights reserved.</WebsiteRights>
                 <SocialIcons>
-                {/* <SocialIconsLink href="/" target="_blank"
-                area-label="Facebook">
-                  <FaFacebook />
-                </SocialIconsLink> */}
-                <SocialIconsLink href="/" target="_blank"
+                <SocialIconsLink href="https://www.instagram.com/assetmantle.igdtuw/" target="_blank"
                 area-label="Instagram">
                   <FaInstagram />
                 </SocialIconsLink>
-                {/* <SocialIconsLink href="/" target="_blank"
-                area-label="Youtube">
-                  <FaYoutube />
-                </SocialIconsLink><SocialIconsLink href="/" target="_blank"
-                area-label="Youtube">
-                  <FaYoutube />
-                </SocialIconsLink> */}
-                <SocialIconsLink href="/" target="_blank"
+                <SocialIconsLink href="https://twitter.com/AM_igdtuw" target="_blank"
                 area-label="Twitter">
                   <FaTwitter />
                 </SocialIconsLink>
-                <SocialIconsLink href="/" target="_blank"
+                <SocialIconsLink href="https://www.linkedin.com/company/asset-mantle-igdtuw/" target="_blank"
                 area-label="Linkedin">
                   <FaLinkedin />
                 </SocialIconsLink>

@@ -18,7 +18,7 @@ export const TeamWrapper=styled.div`
 max-width:10000;
 margin: 0 auto;
 display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-columns: 1fr 1fr 1fr;
 align-items:center;
 grid-column-gap:40px;
 padding:0 50px;
