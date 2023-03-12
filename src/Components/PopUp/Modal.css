@@ -3,8 +3,8 @@
     position: fixed;
     z-index: 1000;
     top: 1%;
-    left: 39.7%;
-    width: 500px;
+    left: 74%;
+    width: 480px;
   
     /* height: 80vh; */
     /* background-color: aliceblue; */
@@ -23,7 +23,7 @@
     align-items: center;  
     flex-direction: column;
     position: relative;
-    padding: 32px;
+    padding: 18px;
     /* height: 80vh; */
     width: 100%; 
     /* max-width: 640px;  */
@@ -51,13 +51,13 @@ h2{
     border: none;
     outline: none;
     cursor: pointer;
-    top: 2px;
-    right: 16px;
+    top: 1.4px;
+    right: 11px;
 }
 .popup a{
     display: block;
     margin-top: 12px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     width: 180px;
     /* margin: 10%; */
     text-align: center;

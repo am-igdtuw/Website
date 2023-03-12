@@ -8,7 +8,7 @@ const OVERLAY = {
   right: 0,
   top: 0,
   bottom: 0,
-  backgroundColor: 'rgba(0 , 0 ,0 ,0.4)',
+  backgroundColor: 'rgba(0 , 0 ,0 ,0.7)',
   zIndex: 1000
 }
 export default function Modal(props) {
