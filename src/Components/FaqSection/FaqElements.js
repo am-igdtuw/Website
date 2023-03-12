@@ -75,12 +75,13 @@ export const Item = styled.div`
 export const Title = styled.div`
     border-radius: 24px 24px 0px 0px;
     padding: 24px 16px;
+    
     // width: 640px;
     height: 72px;
     display: flex;
     background: #F2AF13;
     color: black;
-    display: flex;
+    // display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;

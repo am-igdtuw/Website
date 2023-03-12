@@ -41,23 +41,38 @@ const FaqSection = () => {
 
 const data = [
     {
-        question: 'Frequently asked Question 1',
-        answer: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
+        question: 'When was AssetMantle IGDTUW established?',
+        answer: 'In January of 2023'
     },
 
     {
-        question: 'Frequently asked Question 2',
-        answer: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
+        question: 'What is AssetMantle?',
+        answer: 'AssetMantle is your go-to platform for all things NFT. They empower creators and collectors to build, innovate, and securely transact digital assets on the blockchain.'
     },
 
     {
-        question: 'Frequently asked Question 3',
-        answer: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
+        question: 'What is the aim of AssetMantle IGDTUW?',
+        answer: 'Our aim is to create a web3 and blockchain oriented teaching and learning group to answer all your queries related to the blockchain technology.'
     },
 
     {
-        question: 'Frequently asked Question 4',
-        answer: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
+        question: 'Can I be a part of AssetMantle IGDTUW?',
+        answer: 'Yes, you can join our whatsapp community and be a part of AssetMantle IGDTUW.'
+    },
+
+    {
+        question: ' I am from BBA, can I still be a part of this community?        ',
+        answer: 'Of course! Some members  of our team are from non-tech branches.'
+    },
+
+    {
+        question: ' I know nothing about web3, can I be a part of AssetMantle IGDTUW?',
+        answer: 'Surely! We are here to clear up your doubts with mentor sessions, workshops etc.'
+    },
+
+    {
+        question: 'Is AssetMantle only about web3?',
+        answer: ' No! We aim to educate everyone about web3, but we delve in other technologies too.'
     },
 
 
