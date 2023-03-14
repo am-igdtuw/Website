@@ -85,7 +85,7 @@ export const HeroP = styled.p`
 width: 640px;
 height: 56px;
 
-font-family: 'Quicksand', sans-serif;
+font-family: 'Poppins', sans-serif;
 font-style: normal;
 font-weight: 600;
 font-size: 20px;

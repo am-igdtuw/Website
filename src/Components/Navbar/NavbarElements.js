@@ -151,7 +151,7 @@ width: 73px;
 height: 22px;
 padding: 2px ;
 
-font-style: normal;
+// font-style: normal;
 font-weight: 600;
 font-size: 14px;
 line-height: 22px;

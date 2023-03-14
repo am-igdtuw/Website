@@ -83,7 +83,7 @@ export const ServicesH2=styled.h2`
 width: 256px;
 height: 64px;
 color: #FFFDFA;
-font-family: 'Quicksand', sans-serif;
+font-family: 'Poppins', sans-serif;
 font-style: normal;
 font-weight: 600;
 font-size: 24px;

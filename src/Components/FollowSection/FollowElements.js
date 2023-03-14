@@ -37,7 +37,7 @@ export const FollowP = styled.p`
 width: 720px;
 height: 56px;
 
-font-family: 'Quicksand', sans-serif;
+font-family: 'Poppins', sans-serif;
 font-style: normal;
 font-weight: 600;
 font-size: 20px;
