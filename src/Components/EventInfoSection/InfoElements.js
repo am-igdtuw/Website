@@ -107,7 +107,7 @@ width: 404px;
 font-size: 32px;
 height: 320px;
 font-weight: 600;
-font-family: 'Inter';
+font-family:'Poppins', sans-serif;
 font-style: normal;
 
 `
@@ -142,7 +142,7 @@ margin-bottom:10px;
 
 `
 export const AboutP=styled.p`
-font-family: 'sans-serif';
+font-family: 'Poppins', sans-serif';
 font-style: normal;
 font-weight: 450;
 font-size: 20px;

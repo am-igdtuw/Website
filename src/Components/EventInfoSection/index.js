@@ -16,9 +16,11 @@ const About = () => {
         <AboutWrapper>
         <AboutIcon src={BFF}></AboutIcon>
          <AboutCard> 
-          <AboutH1>BFF HACKATHON</AboutH1>
-          <AboutP>Our latest collaboration with DTU AUV brings to you a 24 hour offline hackathon in DTU premises! Mark your calendar on 1st and 2 nd April 2023 and join us with your team to build your solution to the problem statements and have it reviewed by seasoned mentors who will provide you with proper guidance.
-.</AboutP>
+          
+          <AboutH2>Build For the Future (BFF) Hackathon</AboutH2>
+          <AboutP>Our latest collaboration with DTU AUV brings to you a 24 hour offline hackathon in DTU premises! Mark your calender on 1st and 2nd April 2023 and join us
+            with your team to build your solution to the problem statements and have it reviewed by seasoned mentors.
+          </AboutP>
           <HeroBtnWrapper>   
                 <Button  to='signup' onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='true'>
                 <Heroimg src={''}/> 

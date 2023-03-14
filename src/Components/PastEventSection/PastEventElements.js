@@ -39,7 +39,7 @@ flex-direction:column;
 justify-content:flex-start;
 border-radius:10px;
 width: 304px;
-height: 428px;
+height: 490px;
 background: #0D0A03;
 border-radius: 24px;
 border:0.5px solid #FFC640;
@@ -83,7 +83,7 @@ export const ServicesH2=styled.h2`
 width: 256px;
 height: 64px;
 color: #FFFDFA;
-font-family: 'Inter';
+font-family: 'Poppins', sans-serif;
 font-style: normal;
 font-weight: 600;
 font-size: 24px;
