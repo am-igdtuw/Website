@@ -107,7 +107,7 @@ width: 404px;
 font-size: 32px;
 height: 320px;
 font-weight: 600;
-font-family: 'Inter';
+font-family: 'Quicksand', sans-serif;
 font-style: normal;
 
 `

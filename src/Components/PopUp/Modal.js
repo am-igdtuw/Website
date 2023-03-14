@@ -5,7 +5,7 @@ import t1 from '../../images/BFF.jpg'
 const OVERLAY = {
   position: 'fixed',
   left: 0,
-  right: 0,
+  right: 5,
   top: 0,
   bottom: 0,
   backgroundColor: 'rgba(0 , 0 ,0 ,0.7)',

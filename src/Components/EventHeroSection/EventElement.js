@@ -60,7 +60,7 @@ export const HeroH1 = styled.h1`
     text-align: center; */
     
     margin-bottom: 24px;
-    font-family: 'Inter';
+    font-family: 'Quicksand', sans-serif;
     color: #FFFDFA;
     font-style: normal;
     font-size: 64px;
@@ -81,7 +81,7 @@ export const HeroP = styled.p`
 width: 640px;
 height: 56px;
 
-font-family: 'Inter';
+font-family: 'Quicksand', sans-serif;
 font-style: normal;
 font-weight: 600;
 font-size: 20px;
@@ -106,7 +106,7 @@ line-height: 28px;
 `
 export const HeroD = styled.span`
     color: #FFC640;
-    font-family: 'Inter';
+    font-family: 'Quicksand', sans-serif;
 font-style: normal;
 `
 export const Heroimg = styled.img`

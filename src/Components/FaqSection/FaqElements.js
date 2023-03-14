@@ -45,7 +45,7 @@ export const HeroH1 = styled.h1`
     width: 712px;
     // height: 5px;
     
-    font-family: 'Inter';
+    font-family: 'Quicksand', sans-serif;
     color: #FFFDFA;
     font-style: normal;
     font-size: 64px;

@@ -142,7 +142,7 @@ margin-bottom:10px;
 
 `
 export const AboutP=styled.p`
-font-family: 'Inter';
+font-family:'Quicksand', sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
