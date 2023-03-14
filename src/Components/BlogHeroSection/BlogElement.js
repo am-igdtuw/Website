@@ -60,7 +60,7 @@ export const HeroH1 = styled.h1`
     text-align: center; */
     
     margin-bottom: 24px;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: #FFFDFA;
     font-style: normal;
     font-size: 64px;
@@ -78,7 +78,7 @@ export const HeroH1 = styled.h1`
 `
 export const HeroD = styled.span`
     color: #FFC640;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Poppins', sans-serif;
 font-style: normal;
 `
 export const HeroP = styled.p`

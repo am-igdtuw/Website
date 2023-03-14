@@ -39,7 +39,7 @@ flex-direction:column;
 justify-content:flex-start;
 border-radius:10px;
 width: 304px;
-height: 428px;
+height: 490px;
 background: #0D0A03;
 border-radius: 24px;
 border:0.5px solid #FFC640;
