@@ -121,10 +121,10 @@ export const AboutH1=styled.h1`
 /* font-size:5rem;
 color:black;
 margin-bottom:64px; */
-margin-bottom: 64px;
-    font-size: 50px;
-    line-height: 1.1;
-    font-weight: 600;
+margin-bottom: 20px;
+    font-size: 44px;
+    line-height: 1.2;
+    font-weight: 610;
     text-transform: uppercase;
     color: white;
 
@@ -142,17 +142,17 @@ margin-bottom:10px;
 
 `
 export const AboutP=styled.p`
-font-family: 'Inter';
+font-family: 'sans-serif';
 font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 18px;
+font-weight: 450;
+font-size: 20px;
+line-height: 24px;
 gap: 36px;
-text-align:left;
+text-align: center;
 color:#FFFDFA;
 `;
 export const HeroBtnWrapper = styled.div`
-    margin-top: 32px;
+    margin-top: 8px;
     display: flex;
     flex-direction: row;
     align-items: center;
