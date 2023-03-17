@@ -2,7 +2,6 @@ import React, {useState} from 'react'
 import blackWhite from'../../images/BlackWhite.png'
 import { AboutContainer, AboutWrapper,  AboutCard, AboutH1, AboutIcon, AboutH2, AboutP,HeroBtnWrapper, Heroimg } from './InfoElements'
 import { Button } from '../ButtonElements'
-import BFF from '../../images/BFF.jpg'
 const About = () => {
   const[hover, setHover] = useState(false)
 
@@ -14,8 +13,10 @@ const About = () => {
       <AboutContainer>
         <AboutH1>Upcoming Events</AboutH1>
         <AboutWrapper>
-        <AboutIcon src={BFF}></AboutIcon>
+        <AboutIcon src={blackWhite}></AboutIcon>
          <AboutCard> 
+          <AboutH2>Heading/Name of the Event</AboutH2>
+          <AboutP>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</AboutP>
           
           <AboutH2>Build For the Future (BFF) Hackathon</AboutH2>
           <AboutP>Our latest collaboration with DTU AUV brings to you a 24 hour offline hackathon in DTU premises! Mark your calender on 1st and 2nd April 2023 and join us
