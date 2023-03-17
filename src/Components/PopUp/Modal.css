@@ -2,10 +2,11 @@
 .popup{
     position: fixed;
     z-index: 1000;
-    top: 28%;
-    left: 34%;
-    width: 680px;
-    height: 120px;
+    top: 1%;
+    left: 74%;
+    width: 480px;
+  
+    /* height: 80vh; */
     /* background-color: aliceblue; */
   
     /* background-color:red; */
@@ -22,7 +23,7 @@
     align-items: center;  
     flex-direction: column;
     position: relative;
-    padding: 24px;
+    padding: 18px;
     /* height: 80vh; */
     width: 100%; 
     /* max-width: 640px;  */
@@ -55,7 +56,7 @@ h2{
 }
 .popup a{
     display: block;
-    margin-top: 16px;
+    margin-top: 12px;
     margin-bottom: 5px;
     width: 180px;
     /* margin: 10%; */
