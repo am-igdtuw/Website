@@ -45,7 +45,7 @@ export const HeroH1 = styled.h1`
     width: 712px;
     // height: 5px;
     
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter';
     color: #FFFDFA;
     font-style: normal;
     font-size: 64px;

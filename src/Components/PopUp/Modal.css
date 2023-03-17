@@ -5,8 +5,7 @@
     top: 28%;
     left: 34%;
     width: 680px;
-  
-    /* height: 80vh; */
+    height: 120px;
     /* background-color: aliceblue; */
   
     /* background-color:red; */
@@ -39,7 +38,7 @@
     /* text-align: center; */
 }
 h2{
-    font-family: 'Poppins', sans-serif;
+    font-family: monospace;
 }
 .popup-inner  .close-btn{
     position: absolute;

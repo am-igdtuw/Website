@@ -10,17 +10,17 @@ const Services = () => {
         <ServicesWrapper>
             <ServicesCard> 
                 <ServicesIcon src={BlackWhite}/>
-                <ServicesH2><b>Orientation and Treasure Hunt</b></ServicesH2>
+                <ServicesH2><b>Heading/Name of the Event</b></ServicesH2>
                 
             </ServicesCard>
             <ServicesCard> 
                 <ServicesIcon src={BlackWhite}/>
-                <ServicesH2><b>Find Global Career opportunities on Web3 and Metaverse</b></ServicesH2>
+                <ServicesH2><b>Heading/Name of the Event</b></ServicesH2>
                 
             </ServicesCard>
             <ServicesCard> 
                 <ServicesIcon src={BlackWhite}/>
-                <ServicesH2><b>Intro to Web3 and its Career Scope</b></ServicesH2>
+                <ServicesH2><b>Heading/Name of the Event</b></ServicesH2>
                 
             </ServicesCard>
         </ServicesWrapper>
