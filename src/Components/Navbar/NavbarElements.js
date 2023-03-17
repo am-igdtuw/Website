@@ -98,7 +98,7 @@ width: 172px;
 height: 17px;
 display:flex;
 justify-content:center;
-// font-family: 'Inter';
+
 font-style: normal;
 font-weight: 500;
 font-size: 14px;
@@ -150,8 +150,8 @@ export const NavLinks = styled(LinkR)`
 width: 73px;
 height: 22px;
 padding: 2px ;
-// font-family: 'Inter';
-font-style: normal;
+
+// font-style: normal;
 font-weight: 600;
 font-size: 14px;
 line-height: 22px;
