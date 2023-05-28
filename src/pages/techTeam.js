@@ -1,12 +1,12 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
-import TechTeam from '../components/TechTeam';
+import Navbar from '../Components/Navbar';
+import techTeam from '../Components/techTeam';
 
 const TechTeamPage = () => {
   return (
     <div>
         <Navbar/>
-        {/*<TechTeam/>*/}
+        <techTeam/>
     </div>
   )
 }

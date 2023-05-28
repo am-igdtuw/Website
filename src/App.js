@@ -6,6 +6,7 @@ import EventPage from './pages/event'
 import BlogPage from './pages/blogs'
 import TechTeamPage from './pages/techTeam';
 import FaqPage from './pages/faq'
+import Outreach from './pages/outreachTeam';
 // window.$crisp=[];
 // window.CRISP_WEBSITE_ID="e79efdd2-abee-4a1e-b868-c7929585ebd9";
 
@@ -18,6 +19,7 @@ function App() {
         <Route exact path="/blogs" element={<BlogPage/>}/>
         <Route exact path="/faq" element={<FaqPage/>}/>
         <Route exact path="/techTeam" element={<TechTeamPage/>}/>
+        <Route exact path="/outreachTeam" element={<Outreach/>}/>
       </Routes>
     </BrowserRouter>
   );

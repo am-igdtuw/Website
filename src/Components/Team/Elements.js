@@ -1,5 +1,5 @@
-import styled from "styled-components"
-export const TeamContainer=styled.div`
+import styled from "styled-components";
+export const TeamContainer = styled.div`
 height:800px;
 display:flex;
 flex-direction:column;
