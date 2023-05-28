@@ -7,6 +7,7 @@ justify-content:center;
 align-items: center;
 background:black;
 
+
 @media screen and (max-width:768px){
     height:1100px;
 }
@@ -15,7 +16,8 @@ background:black;
 }
 `
 export const ServicesWrapper=styled.div`
-max-width:10000;
+// background:blue;
+max-width:100%;
 margin: 0 auto;
 display: grid;
 grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -33,16 +35,19 @@ padding:0 50px;
 
 `
 export const ServicesCard=styled.div`
-/* background:black; */
+// background:blue; 
 align-items:center;
 display:flex;
 flex-direction:column;
-justify-content:flex-start;
+//  justify-content:flex-start;
+
+justify-content:center;
 border-radius:10px;
 max-height:320px;
 border:0.5px solid #FFC640;
 
 padding:30px;
+margin-bottom:20px;
 /* gap:50px; */
 box-shadow: 0 1px 3px gray;
 transition: all 0.2s ease-in-out;

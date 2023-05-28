@@ -1,4 +1,4 @@
-import React, {useState ,  useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import Footer from '../Components/Footer';
 import HeroSection from '../Components/Herosection';
 import InfoSection from '../Components/InfoSection';
@@ -10,34 +10,36 @@ import PopUp from "../Components/PopUp/Modal";
 import Team from '../Components/Team'
 
 const Home = () => {
-    const [isOpen, setIsOpen] = useState(false)
+  // const [isOpen, setIsOpen] = useState(false)
 
-    const toggle = () => {
-        setIsOpen(!isOpen)
-    };
-    const [timedPopup, setTimedPopup] = useState(false);
+  // const toggle = () => {
+  //     setIsOpen(!isOpen)
+  // };
+  // const [timedPopup, setTimedPopup] = useState(false);
 
-    useEffect(() => {
-      setTimeout(() => {
-        setTimedPopup(true);
-      } , 1000);
-    } , []);
-     
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setTimedPopup(true);
+  //   } , 1000);
+  // } , []);
+
 
   return (
     <>
-     <Navbar toggle={toggle}/> 
-     <PopUp trigger={timedPopup} setTrigger = {setTimedPopup}>
+      {/* <Navbar toggle={toggle}/>  */}
+
+      {/* <PopUp trigger={timedPopup} setTrigger = {setTimedPopup}>
         <h2> <strong> HOLA! UPCOMING EVENT! </strong></h2>
         <h3> BFF HACKATHON </h3>
-        {/* <a href="/event"> VIEW HERE!</a> */}
-      </PopUp>
-     <HeroSection/>
-     <InfoSection/>
-     <FollowSection/>
-    <Services/>
-    <Team/>
-    <Footer/>
+        <a href="/event"> VIEW HERE!</a>
+      </PopUp>  */}
+      <Navbar />
+      <HeroSection />
+      <InfoSection />
+      <FollowSection />
+      <Services />
+      <Team />
+      <Footer />
 
 
     </>
