@@ -17,7 +17,7 @@ height: 142px;
 top: 0px;
 position: relative;
 /* width: 100%; */
-height: 142px;
+height: 80px;
 top: 0;
   z-index: 10;
 
