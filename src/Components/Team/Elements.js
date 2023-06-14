@@ -1,6 +1,6 @@
 import styled from "styled-components";
 export const TeamContainer = styled.div`
-height:800px;
+height:2000px;
 display:flex;
 flex-direction:column;
 justify-content:center;
@@ -14,11 +14,53 @@ background:black;
     height:1300 px;
 }
 `
-export const TeamWrapper=styled.div`
+export const TeamWrapper1=styled.div`
 max-width:10000;
+line-height:5px;
+height: 350px;
 margin: 0 auto;
 display: grid;
-grid-template-columns: 1fr 1fr 1fr;
+grid-template-columns: 1fr;
+align-items:center;
+grid-column-gap:40px;
+padding:0 50px;
+@media screen and (max-width:1000px){
+    grid-template-columns: 1fr 1fr ;
+}
+@media screen and (max-width:768px){
+    grid-template-columns: 1fr;
+    padding:0 20px;
+}
+
+
+`
+export const TeamWrapper2=styled.div`
+max-width:10000;
+line-height:5px;
+height: 350px;
+margin-top: 30px;
+display: grid;
+grid-template-columns: 1fr 1fr;
+align-items:center;
+grid-column-gap:40px;
+padding:0 50px;
+@media screen and (max-width:1000px){
+    grid-template-columns: 1fr 1fr ;
+}
+@media screen and (max-width:768px){
+    grid-template-columns: 1fr;
+    padding:0 20px;
+}
+
+
+`
+export const TeamWrapper3=styled.div`
+max-width:10000;
+line-height:5px;
+height: 350px;
+margin-top: 30px;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
 align-items:center;
 grid-column-gap:40px;
 padding:0 50px;
@@ -89,5 +131,5 @@ text-align:center;
 export const TeamP=styled.p`
 font-size:1rem;
 text-align:center;
-color:white;
+color:#FFC640;
 `;
