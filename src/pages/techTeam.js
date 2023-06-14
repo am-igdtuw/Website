@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from '../Components/Navbar';
-import techTeam from '../Components/techTeam';
+import techTeam from '../Components/TechTeam';
 
 const TechTeamPage = () => {
   return (
