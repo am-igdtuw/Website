@@ -107,7 +107,7 @@ line-height: 28px;
     @media screen and (max-width: 480px){
         font-size: 18px;
     }
-`
+`;
 export const Heroimg = styled.img`
 height:40px;
 widht:40px;
@@ -119,7 +119,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 transition: all 0.2s ease-in-out;
-`
+`;
 
 export const HeroBtnWrapper = styled.div`
     margin-top: 32px;
