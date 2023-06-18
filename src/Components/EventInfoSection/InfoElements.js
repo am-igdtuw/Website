@@ -142,7 +142,7 @@ margin-bottom:10px;
 
 `
 export const AboutP=styled.p`
-font-family: 'Poppins', sans-serif';
+font-family: 'Poppins', sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 14px;
@@ -154,9 +154,10 @@ color:#FFFDFA;
 export const HeroBtnWrapper = styled.div`
     margin-top: 32px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    // background: radial-gradient(50% 50% at 50% 50%, #FFC640 47.4%, #F2AF13 100%);
+    border-radius: 5px;
+    ${'' /* background: radial-gradient(50% 50% at 50% 50%, #FFC640 47.4%, #F2AF13 100%); */}
 `
 
 export const Heroimg = styled.img`

@@ -61,8 +61,8 @@ width: 256px;
 height: 256px;
 border-radius: 16px;
 margin-bottom:20px;
-// border:0.5px solid #FFC640;
-// box-shadow:3px 3px 3px #FFC640;
+border:0.5px solid #FFC640;
+box-shadow:3px 3px 3px #FFC640;
 `
 export const ServicesH1=styled.h1`
 /* font-size:5rem;
