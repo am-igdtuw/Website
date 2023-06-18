@@ -7,7 +7,7 @@ export const HeroContainer = styled.div`
     justify-content: center;
     align-items: center;
     padding: 0 30px;
-    height: 1500px;
+    height: 1588px;
     position: relative;
     z-index: 1;
 
@@ -30,6 +30,7 @@ export const HeroContent = styled.div`
     position: absolute;
     padding: 8px 24px;
     display: flex;
+    flex-wrap:wrap;
     flex-direction: column;
     align-items: center;
 `
@@ -37,15 +38,15 @@ export const HeroContent = styled.div`
 export const HeroH1 = styled.h1`
     
     text-align: center; 
-    // display:flex;
+     display:flex;
     
     padding: 50px;
     
 
     width: 712px;
-    // height: 5px;
+     /* height: 5px; */
     
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter';
     color: #FFFDFA;
     font-style: normal;
     font-size: 64px;
@@ -64,24 +65,28 @@ export const HeroH1 = styled.h1`
 
 export const Accordian = styled.div`
     width: 800px;
+    /* display:flex;
+    flex-wrap:wrap; */
 
 `
 
 export const Item = styled.div`
-    // background: #F2AF13;
+     /* background: #F2AF13; */
     margin-bottom:5px;
     padding: 10px 20px;
+    
 `
 export const Title = styled.div`
     border-radius: 24px 24px 0px 0px;
-    padding: 24px 16px;
-    
-    // width: 640px;
-    height: 72px;
+    padding: 47px 16px;
+     /* width: 640px; */
+    height: 75px;
     display: flex;
+    /* padding:5px; */
+    margin-top:10px;
     background: #F2AF13;
     color: black;
-    // display: flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
@@ -92,11 +97,11 @@ export const Content = styled.div`
     padding: 24px 56px;
     gap: 10px;
 
-    // width: 640px;
-    // height: 144px;
-    // max-height: 0;
-    // overflow: hidden;
-    // transition: all 0.5s cubic-bezier(0,1,0,1);
+     /* width: 640px; */
+     height: 70px; 
+     /* max-height: 0; */
+      /* overflow: hidden; */
+    transition: all 0.5s cubic-bezier(0,1,0,1); 
 
     border-radius: 0px 0px 24px 24px;
     background: linear-gradient(180deg, rgba(255, 198, 64, 0.16) 0%, rgba(255, 198, 64, 0.1024) 100%);
