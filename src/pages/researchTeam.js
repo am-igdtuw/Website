@@ -1,16 +1,16 @@
 import React from 'react';
 import Navbar from '../Components/Navbar';
-import TechTeam from '../Components/TechTeam';
+import ResearchTeam from '../Components/OutreachTeam';
 import FollowSection from '../Components/FollowSection';
 
-const TechTeamPage = () => {
+const Research = () => {
   return (
     <div>
         <Navbar/>
-        <TechTeam/>
+        <ResearchTeam/>
         <FollowSection />
     </div>
   )
 }
 
-export default TechTeamPage;
+export default Research;
