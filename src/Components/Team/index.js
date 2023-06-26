@@ -2,7 +2,7 @@ import React from 'react'
 import t1 from '../../images/t1.png'
 import t2 from '../../images/t2.png'
 import t3 from '../../images/t3.png'
-import t4 from '../../images/t4.png'
+//import t4 from '../../images/t4.png'
 
 
 import { TeamContainer, TeamH1, TeamH2,TeamWrapper1,TeamWrapper2,TeamWrapper3, TeamCard,TeamIcon, TeamP} from './Elements'
