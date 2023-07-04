@@ -7,7 +7,7 @@ export const ServicesContainer = styled.div`
   align-items: center;
   background: black;
   padding: 80px 0;
-
+  text-decoration: none;
   @media screen and (max-width: 768px) {
     padding: 60px 0;
   }
@@ -21,6 +21,7 @@ export const ServicesWrapper = styled.div`
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
+  text-decoration: none;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   justify-content: center;
@@ -41,6 +42,7 @@ export const ServicesCard = styled.div`
   align-items: center;
   display: flex;
   flex-direction: column;
+  text-decoration: none;
   justify-content: center;
   border-radius: 10px;
   height: 300px;

@@ -150,8 +150,8 @@ export const NavLinks = styled(LinkR)`
 width: 73px;
 height: 22px;
 padding: 2px ;
-
-// font-style: normal;
+text-decoration: none;
+ font-style: normal;
 font-weight: 600;
 font-size: 14px;
 line-height: 22px;
