@@ -5,17 +5,6 @@
     top: 1%;
     left: 74%;
     width: 480px;
-  
-    
-    /* height: 80vh; */
-    /* background-color: aliceblue; */
-  
-    /* background-color:red; */
-/* 
-    display: center;
-    justify-content: center;
-    align-items: center;   */
-    /* transform: translate(-45% , -50%); */
 }
 .popup-inner{
     display: flex;
@@ -36,8 +25,7 @@
       );
 
     border-radius: 8px; 
-    /* font-family:'Courier New', Courier, monospace; */
-    /* text-align: center; */
+   
 }
 h2{
     font-family: 'Poppins', sans-serif;
