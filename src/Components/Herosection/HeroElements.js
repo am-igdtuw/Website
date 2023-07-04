@@ -9,7 +9,7 @@ width: 100%;
     justify-content: center;
     align-items: center;
     padding: 0 30px;
-    height: 800px;
+    height: 100vh;
     position: relative;
     z-index: 1;
 
@@ -35,7 +35,7 @@ export const HeroBg = styled.div`
     right: 0 ;
     bottom: 0;
     left: 0;
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
     background-image: url(${bg});
    
@@ -91,32 +91,42 @@ export const HeroD = styled.span`
 font-style: normal;
 `
 export const HeroP = styled.p`
-width: 640px;
-height: 56px;
-
-font-family: 'Poppins', sans-serif;
-font-style: normal;
-font-weight: 600;
-font-size: 20px;
-line-height: 28px;
-   /* or 140% */
-
-   text-align: center;
-
-    background: linear-gradient(180deg, rgba(255, 198, 64, 0.6) 0%, rgba(242, 175, 19, 0.6) 100%);
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
+  width: 100%;
+  max-width: 640px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 198, 64, 0.6) 0%,
+    rgba(242, 175, 19, 0.6) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
 
-    @media screen and (max-width: 768px){
-        font-size: 24px;
-    }
+  @media screen and (max-width: 1024px) {
+    font-size: 18px;
+    line-height: 26px;
+  }
 
-    @media screen and (max-width: 480px){
-        font-size: 18px;
-    }
-`
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 14px;
+    line-height: 22px;
+  }
+`;
+
 
 export const HeroBtnWrapper = styled.div`
     margin-top: 32px;
@@ -124,6 +134,7 @@ export const HeroBtnWrapper = styled.div`
     flex-direction: row;
     align-items: center;
     // background: radial-gradient(50% 50% at 50% 50%, #FFC640 47.4%, #F2AF13 100%);
+
 `
 
 export const Heroimg = styled.img`
@@ -137,6 +148,10 @@ display: flex;
 justify-content: center;
 align-items: center;
 transition: all 0.2s ease-in-out;
+@media screen and (max-width: 480px) {
+    height: 30px;
+    width: 30px;
+  }
 `
 
 export const ArrowForward = styled(MdArrowForward)`

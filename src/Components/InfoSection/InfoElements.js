@@ -67,24 +67,25 @@ export const SubTitle = styled.p`
     line-height: 24px;
     color: ${({darkText})=> (darkText ? '#010606' : '#fff')}; 
 `
-export const AboutWrapper=styled.div`
-max-width:10000;
-margin: 0 auto;
-display: grid;
-grid-template-columns: 1fr 1fr ;
-align-items:center;
-grid-column-gap:100px;
-padding: 40px 24px;
-@media screen and (max-width:1000px){
-    grid-template-columns: 1fr 1fr ;
-}
-@media screen and (max-width:768px){
+
+
+export const AboutWrapper = styled.div`
+  max-width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  align-items: center;
+  grid-gap: 30px;
+  padding: 40px 24px;
+
+  @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
-    padding:0 20px;
-}
+    padding: 0 20px;
+  }
+`;
 
 
-`
+
 export const AboutCard=styled.div`
 // background: #0D0A03; 
 align-items:center;

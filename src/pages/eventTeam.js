@@ -1,16 +1,16 @@
 import React from 'react';
 import Navbar from '../Components/Navbar';
-import TechTeam from '../Components/TechTeam';
+import EventTeam from '../Components/OutreachTeam';
 import FollowSection from '../Components/FollowSection';
 
-const TechTeamPage = () => {
+const Event = () => {
   return (
     <div>
         <Navbar/>
-        <TechTeam/>
+        <EventTeam/>
         <FollowSection />
     </div>
   )
 }
 
-export default TechTeamPage;
+export default Event;
