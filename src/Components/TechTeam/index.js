@@ -9,7 +9,7 @@ const Tech = () => {
         <TechH1>Team Lead</TechH1>
         <TechWrapper>
           <TechCard>
-            <TechIcon src="https://res.cloudinary.com/djv5kc7as/image/upload/v1688488847/Asset%20Mantle%20-%20Team%202023/Leads/Harshita%20Deep.jpg" />
+            <TechIcon src="https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1688488847/Asset%20Mantle%20-%20Team%202023/Leads/Harshita%20Deep.jpg" />
             <TechH2>Harshita Deep</TechH2>
             <TechP>
               <a className='linkiden' href="https://www.linkedin.com/in/harshita-d-8a352722a/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
@@ -22,7 +22,7 @@ const Tech = () => {
         <TechH1>Team Cores</TechH1>
         <TechWrapper>
           <TechCard>
-            <TechIcon src="https://res.cloudinary.com/djv5kc7as/image/upload/v1688526862/Asset%20Mantle%20-%20Team%202023/Technical/Mansi.jpg" />
+            <TechIcon src="https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1688526862/Asset%20Mantle%20-%20Team%202023/Technical/Mansi.jpg" />
             <TechH2>Mansi</TechH2>
             <TechP>
                <a className='linkiden' href="https://www.linkedin.com/in/mansi-jangra-33a77622a" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
@@ -52,7 +52,7 @@ const Tech = () => {
             </TechP>
           </TechCard>
           <TechCard>
-            <TechIcon src="https://res.cloudinary.com/djv5kc7as/image/upload/v1688491388/Asset%20Mantle%20-%20Team%202023/Technical/Mehek%20Prabhakar.webp" />
+            <TechIcon src="https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1688491388/Asset%20Mantle%20-%20Team%202023/Technical/Mehek%20Prabhakar.webp" />
             <TechH2>Mehek Prabhakar </TechH2>
             <TechP>
             <a className='linkiden' href="[LinkedIn Profile URL]" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
@@ -61,7 +61,7 @@ const Tech = () => {
             </TechP>
           </TechCard>
           <TechCard>
-            <TechIcon src="https://res.cloudinary.com/djv5kc7as/image/upload/v1688527494/Asset%20Mantle%20-%20Team%202023/Technical/Manjusha%20Iyer.jpg" />
+            <TechIcon src="https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1688527494/Asset%20Mantle%20-%20Team%202023/Technical/Manjusha%20Iyer.jpg" />
             <TechH2>Manjusha Iyer </TechH2>
             <TechP>
             <a className='linkiden' href="[LinkedIn Profile URL]" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
@@ -70,7 +70,7 @@ const Tech = () => {
             </TechP>
           </TechCard>
           <TechCard>
-            <TechIcon src="https://res.cloudinary.com/djv5kc7as/image/upload/v1688491387/Asset%20Mantle%20-%20Team%202023/Technical/Apoorva.jpg" />
+            <TechIcon src="https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1688491387/Asset%20Mantle%20-%20Team%202023/Technical/Apoorva.jpg" />
             <TechH2>Apoorva </TechH2>
             <TechP>
             <a className='linkiden' href="https://www.linkedin.com/in/apoorva-a65a18256/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>

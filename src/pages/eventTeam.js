@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from '../Components/Navbar';
-import EventTeam from '../Components/OutreachTeam';
+import EventTeam from '../Components/EventsTeam';
 import FollowSection from '../Components/FollowSection';
 
 const Event = () => {

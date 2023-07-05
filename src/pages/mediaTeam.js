@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from '../Components/Navbar';
-import MediaTeam from '../Components/OutreachTeam';
+import MediaTeam from '../Components/MediaTeam';
 import FollowSection from '../Components/FollowSection';
 
 const Media = () => {

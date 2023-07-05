@@ -26,7 +26,7 @@ const Services = () => {
                 <Link to="/mediaTeam">
                     <ServicesCard>
                         <ServicesIcon src={MediaTeam} />
-                        <ServicesH2><b>MEDIA TEAM</b></ServicesH2>
+                        <ServicesH2><b>GRAPHICS & MEDIA TEAM</b></ServicesH2>
                     </ServicesCard>
                 </Link>
 
