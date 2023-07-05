@@ -1,8 +1,5 @@
 import React from 'react'
 import t1 from '../../images/t1.png'
-import t2 from '../../images/t2.png'
-import t3 from '../../images/t3.png'
-//import t4 from '../../images/t4.png'
 
 
 import { TeamContainer, TeamH1, TeamH2,TeamWrapper1,TeamWrapper2,TeamWrapper3, TeamCard,TeamIcon, TeamP} from './Elements'
@@ -21,49 +18,54 @@ const Team = () => {
         <TeamWrapper2>       
             
             <TeamCard> 
-                <TeamIcon src={t2}/>
+                <TeamIcon src="https://res.cloudinary.com/djv5kc7as/image/upload/v1688488847/Asset%20Mantle%20-%20Team%202023/Leads/Geetika%20Gupta.jpg" />
                 <TeamH2><b>Geetika Gupta</b></TeamH2>
-                <TeamP>president</TeamP>
+                <TeamP>President</TeamP>
             </TeamCard>
             <TeamCard> 
-                <TeamIcon src={t3}/>
+                <TeamIcon src="https://res.cloudinary.com/djv5kc7as/image/upload/v1688488861/Asset%20Mantle%20-%20Team%202023/Leads/Astha%20Bhaskar.jpg"/>
                 <TeamH2><b>Astha Bhaskar</b></TeamH2>
-                <TeamP>president</TeamP>
+                <TeamP>President</TeamP>
             </TeamCard>
         </TeamWrapper2>
         <TeamWrapper2>       
             
             <TeamCard> 
-                <TeamIcon src={t2}/>
-                <TeamH2><b>Geetika Gupta</b></TeamH2>
-                <TeamP>president</TeamP>
+                <TeamIcon src="https://res.cloudinary.com/djv5kc7as/image/upload/v1688488875/Asset%20Mantle%20-%20Team%202023/Leads/Kamya%20Varshney.png"/>
+                <TeamH2><b>Kamya Varshney</b></TeamH2>
+                <TeamP>Vice-President</TeamP>
             </TeamCard>
             <TeamCard> 
-                <TeamIcon src={t3}/>
-                <TeamH2><b>Astha Bhaskar</b></TeamH2>
-                <TeamP>president</TeamP>
+                <TeamIcon src="https://res.cloudinary.com/djv5kc7as/image/upload/v1688488846/Asset%20Mantle%20-%20Team%202023/Leads/Garima.jpg"/>
+                <TeamH2><b>Garima</b></TeamH2>
+                <TeamP>Vice-President</TeamP>
             </TeamCard>
         </TeamWrapper2>
         <TeamWrapper3>
         <TeamCard> 
-                <TeamIcon src={t3}/>
-                <TeamH2><b>Astha Bhaskar</b></TeamH2>
-                <TeamP>president</TeamP>
+                <TeamIcon src="https://res.cloudinary.com/djv5kc7as/image/upload/v1688488848/Asset%20Mantle%20-%20Team%202023/Leads/Hiteshi%20Dattatrey.jpg"/>
+                <TeamH2><b>Hiteshi Dattatrey</b></TeamH2>
+                <TeamP>Event Management Lead</TeamP>
             </TeamCard>
             <TeamCard> 
-                <TeamIcon src={t3}/>
-                <TeamH2><b>Astha Bhaskar</b></TeamH2>
-                <TeamP>president</TeamP>
+                <TeamIcon src="https://res.cloudinary.com/djv5kc7as/image/upload/v1688488853/Asset%20Mantle%20-%20Team%202023/Leads/Srimayee%20Satapathy.jpg"/>
+                <TeamH2><b>Srimayee Satapathy </b></TeamH2>
+                <TeamP>Research & Content Lead</TeamP>
             </TeamCard>
             <TeamCard> 
-                <TeamIcon src={t3}/>
-                <TeamH2><b>Astha Bhaskar</b></TeamH2>
-                <TeamP>president</TeamP>
+                <TeamIcon src="https://res.cloudinary.com/djv5kc7as/image/upload/v1688488847/Asset%20Mantle%20-%20Team%202023/Leads/Harshita%20Deep.jpg"/>
+                <TeamH2><b>Harshita Deep</b></TeamH2>
+                <TeamP>Technical Lead</TeamP>
             </TeamCard>
             <TeamCard> 
-                <TeamIcon src={t3}/>
-                <TeamH2><b>Astha Bhaskar</b></TeamH2>
-                <TeamP>president</TeamP>
+                <TeamIcon src="https://res.cloudinary.com/djv5kc7as/image/upload/v1688488845/Asset%20Mantle%20-%20Team%202023/Leads/Nikhila%20K%20S.jpg"/>
+                <TeamH2><b>Nikhila K S</b></TeamH2>
+                <TeamP>Outreach Lead</TeamP>
+            </TeamCard>
+            <TeamCard> 
+                <TeamIcon src="https://res.cloudinary.com/djv5kc7as/image/upload/v1688488854/Asset%20Mantle%20-%20Team%202023/Leads/Sanya%20Gupta.jpg"/>
+                <TeamH2><b>Sanya Gupta </b></TeamH2>
+                <TeamP>Graphics and Media Lead </TeamP>
             </TeamCard>
         </TeamWrapper3>
     </TeamContainer>
