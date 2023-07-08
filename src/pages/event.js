@@ -10,7 +10,7 @@ const EventPage = () => {
     <div>
         <Navbar/>
         <EventHeroSection/>
-        <EventInfoSection/>
+        {/* <EventInfoSection/> */}
         <PastEventSection/>
         <FollowSection/>
     </div>

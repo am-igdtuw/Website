@@ -1,7 +1,7 @@
 import React from 'react'
 import {FaBars} from 'react-icons/fa'
 import Logo from '../../images/Logo.png'
-import {Nav, NavbarContainer, NavLogo,NavImg,SubLogo,  NavMenu, Navitem, NavLinks, MobileIcon} from './NavbarElements';
+import {Nav, NavbarContainer,NavImg,  NavMenu, Navitem, NavLinks, MobileIcon} from './NavbarElements';
 
 const Navbar = ({toggle}) => {
   return (
