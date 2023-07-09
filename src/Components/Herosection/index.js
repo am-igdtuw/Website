@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import { HeroContainer, HeroBg, Imgbg, HeroD, HeroContent,Heroimg, HeroBtnWrapper,HeroH1, HeroP, ArrowForward, ArrowRight } from './HeroElements'
 import {Button} from '../ButtonElements'
-import { AboutH1 } from '../InfoSection/InfoElements'
 import discordLogo from '../../images/discordLogo.png'
 import bg from '../../images/bg.svg'
 
@@ -10,6 +9,11 @@ const HeroSection = () => {
 
     const onHover = () => {
         setHover(!hover)
+    }
+
+    const joinGroup = () => {
+        const watsGroupLink = 'https://chat.whatsapp.com/Cp0ppTJBmOS4vgDze8XMPq';
+        window.open(watsGroupLink, '_blank')
     }
 
   return (
@@ -24,8 +28,8 @@ const HeroSection = () => {
                 WE STRIVE TO CREATE A COMMUNITY OF STUDENTS PASSIONATE ABOUT BLOCKCHAIN AND WEB3 TECHNOLOGY
             </HeroP>
             <HeroBtnWrapper>
-                <Button  to='signup' onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='true'>
-                <Heroimg src={discordLogo}/> 
+                <Button  to='signup' onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='true' onClick={joinGroup}>
+                <Heroimg src={discordLogo} /> 
                JOIN COMMUNITY 
                 </Button>
             </HeroBtnWrapper>         
