@@ -30,11 +30,11 @@ const Tech = () => {
               <a className='insta' href="[Instagram Profile URL]" target="_blank" rel="noopener noreferrer"><FaInstagram /></a></TechP>
           </TechCard>
           <TechCard>
-            <TechIcon src="{Icon1}" />
+            <TechIcon src="https://res.cloudinary.com/dx0dgujbj/image/upload/c_scale,h_600,w_614/v1688875544/My%20Image/Untitled_design_1_bqfeyo.png" />
             <TechH2>Sneha Chauhan</TechH2>
             <TechP>
-            <a className='linkiden' href="[LinkedIn Profile URL]" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-              <a className='twitter' href="[Twitter Profile URL]" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+            <a className='linkiden' href="https://www.linkedin.com/in/sneha-chauhan-986a21213/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+              <a className='twitter' href="https://twitter.com/_Sneha_Chauhan" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
               <a className='insta' href="[Instagram Profile URL]" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
             </TechP>
           </TechCard>
