@@ -1,27 +1,24 @@
 {
-  "homepage": "https://github.com/am-igdtuw/Website",
   "name": "website",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://am-website-kappa.vercel.app/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "gh-pages": "^4.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
     "react-router-dom": "^6.8.2",
     "react-scripts": "^5.0.1",
     "react-scroll": "^1.8.9",
-    "scripts": "^0.1.0",
     "styled-components": "^5.3.6",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
