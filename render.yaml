@@ -1,3 +1,0 @@
-name: asset-mantle
-buildCommand: npm ci && npm run build
-staticPublishPath: build
