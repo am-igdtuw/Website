@@ -94,20 +94,26 @@ flex-grow: 0;
 
 `
 export const SubLogo = styled.div`
-width: 172px;
-height: 17px;
-display:flex;
-justify-content:center;
+  width: 172px;
+  height: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-// line-height: 17px;
-color: #FFFDFA;
-flex: none;
-order: 1;
-flex-grow: 0;
-`
+  font-style: italic;
+  font-weight: 600;
+  font-size: 16px;
+  color: #FFC640;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+
+  background: linear-gradient(45deg, #000000, #1c1b19);
+  border-radius: 8px;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+`;
+
 export const Navitem = styled.li`
  
 box-sizing: border-box;
@@ -123,7 +129,7 @@ border:0.5px solid #FFC640;
 width:110px;
 height: 34px;
 
-background: #0D0A03;
+background: linear-gradient(45deg, #000000, #1c1b19);
 border-radius: 22px;
 
 /* Inside auto layout */
@@ -147,21 +153,26 @@ order: 0;
 flex-grow: 0;
 `
 export const NavLinks = styled(LinkR)`
-width: 73px;
-height: 22px;
-padding: 2px ;
-text-decoration: none;
- font-style: normal;
-font-weight: 600;
-font-size: 14px;
-line-height: 22px;
-color: #FFC640;
-flex: none;
-order: 0;
-flex-grow: 0;
+  width: 73px;
+  height: 22px;
+  padding: 2px;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  color: #FFC640;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 
   &.active {
     border-bottom: 3px solid #01bf71;
   }
-`
+
+  &:hover {
+    color: #FFDF00;
+  }
+`;
+
 

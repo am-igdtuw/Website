@@ -16,7 +16,7 @@ const Navbar = ({toggle}) => {
             </MobileIcon>
             <NavMenu>
                 <Navitem>
-                    <NavLinks to="/UMatter">
+                    <NavLinks to="/">
                       ABOUT
                     </NavLinks>
                 </Navitem>
