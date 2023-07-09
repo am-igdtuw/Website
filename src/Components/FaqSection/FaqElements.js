@@ -10,7 +10,7 @@ export const HeroContainer = styled.div`
     height: 1588px;
     position: relative;
     z-index: 1;
-
+    align-item: center;
     :before{
         content: '';
         position: absolute;
@@ -38,9 +38,8 @@ export const HeroContent = styled.div`
 export const HeroH1 = styled.h1`
     
     text-align: center; 
-     display:flex;
-    
-    padding: 50px;
+    display:flex;
+    padding: 50px 280px ;
     
 
     width: 712px;
@@ -76,6 +75,8 @@ export const Item = styled.div`
 export const Title = styled.div`
 border-radius: 24px 24px 0px 0px;
 padding: 47px 16px;
+font-family: 'Open Sans', sans-serif;
+font-weight: 600;
 height: 75px;
 display: flex;
 margin-top: 10px;
@@ -89,6 +90,8 @@ cursor: pointer;
 export const Content = styled.div`
   color: white;
   padding: 24px 56px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
   height: ${({ selected }) => (selected ? 'auto' : '0')};
   opacity: ${({ selected }) => (selected ? '1' : '0')};
   overflow: hidden;
