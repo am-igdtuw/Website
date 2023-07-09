@@ -54,6 +54,7 @@ export const SocialIcons = styled.div`
   font-size: 30px;
   width: 100%;
 
+  
   @media screen and (max-width: 768px) {
     margin-top: 24px;
     
@@ -64,6 +65,13 @@ export const SocialIconsLink = styled.a`
   color: #fff;
   font-size: 30px;
   margin: 0 10px;
+  &:hover {
+    opacity: 0.8;
+    transform: scale(1.2);
+    color: #C0C0C0;
+    color: hsl(0, 0%, 90%);
+    filter: brightness(150%);
+  }
 
   @media screen and (max-width: 768px) {
     font-size: 24px;

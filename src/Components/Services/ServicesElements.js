@@ -18,14 +18,14 @@ export const ServicesContainer = styled.div`
 `;
 
 export const ServicesWrapper = styled.div`
-  max-width: 1200px;
+  max-width: 600px;
   margin: 0 auto;
   display: grid;
   text-decoration: none;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 20px;
   padding: 0 30px;
 
   @media screen and (max-width: 1000px) {
@@ -44,20 +44,19 @@ export const ServicesCard = styled.div`
   flex-direction: column;
   text-decoration: none;
   justify-content: center;
-  border-radius: 10px;
-  height: 300px;
-  width: 300px;
-  border: 0.5px solid #ffc640;
-  padding: 30px;
+  width: 220px;
+  height: 220px;
+  border-radius: 24px;
+  border: 1px solid #ffc640;
+  padding: 40px 24px;
   margin-bottom: 20px;
   box-shadow: 0 1px 3px gray;
-  transition: all 0.2s ease-in-out;
+  transition: transform 0.3s ease-in-out;
   background: linear-gradient(180deg, rgba(255, 198, 64, 0.16) 0%, rgba(255, 198, 64, 0.1024) 100%);
 
   &:hover {
-    transform: scale(1.02);
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 `;
 
@@ -85,6 +84,7 @@ export const ServicesH2 = styled.h2`
   color: white;
   margin-bottom: 10px;
   text-decoration: none;
+  text-align: center;
 
   b {
     color: white;
