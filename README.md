@@ -1,12 +1,9 @@
-# UMatter
+<h1 align='Center'>AssetMantle: Student Chapter IGDTUW</h1>
 
-**Check the Website [here](https://i-am-SnehaChauhan.github.io/BugSmashers)**.
 
-UMatter is an one and all platform to help people quitting bad habits by providing them personalized sessions and one to one consultations with professionals.
 
 **Tech Stack Used**
 
- Html,Css,Javascript,ReactJs,Bootstrap.
  
 **Components of Website**
  
@@ -14,7 +11,8 @@ UMatter is an one and all platform to help people quitting bad habits by providi
  
  This page appears when user clicks on the site and lands on the page.
  
- ![image](https://user-images.githubusercontent.com/99353300/211297117-6c088613-ba7b-445a-97e8-3ab0f73fa37a.png)
+ ![image](https://github.com/am-igdtuw/Website/assets/94298791/121463a1-762d-424b-b4cd-7d2fb62ea3c9)
+
 
 **About Us**
  
