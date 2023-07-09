@@ -57,10 +57,10 @@ padding:0 50px;
 export const TeamWrapper3=styled.div`
 max-width:10000;
 line-height:5px;
-height: 350px;
+height: 380px;
 margin-top: 30px;
 display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 align-items:center;
 grid-column-gap:40px;
 padding:0 50px;
@@ -81,7 +81,7 @@ display:flex;
 flex-direction:column;
 justify-content:flex-start;
 border-radius:10px;
-height:243px;
+height:265px;
 width:203px;
 border:0.5px solid #FFC640;
 
