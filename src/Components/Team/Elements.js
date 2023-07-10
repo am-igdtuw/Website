@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 export const TeamContainer = styled.div`
 height:2000px;
 display:flex;
@@ -90,13 +91,16 @@ border:0.5px solid #FFC640;
 box-shadow: 0 1px 3px gray;
 transition: all 0.2s ease-in-out;
 background:linear-gradient(180deg, rgba(255, 198, 64, 0.16) 0%, rgba(255, 198, 64, 0.1024) 100%);
-&:hover{
-    transform:scale(1.02);
+&:hover {
+    transform: scale(1.02);
     transition: all 0.2s ease-in-out;
-    cursor:pointer;
+    cursor: pointer;
 
-}
-
+    .social-icons {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 `
 export  const TeamIcon=styled.img`
 height:240px;
@@ -132,4 +136,42 @@ export const TeamP=styled.p`
 font-size:1rem;
 text-align:center;
 color:#FFC640;
+`;
+
+export const IconWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    transition: color 0.2s ease-in-out;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    border-color: #ffc640;
+    background-color: rgba(255, 198, 64, 0.2);
+    transition: border-color 0.2s ease-in-out;
+
+    &.linkiden:hover {
+      color: #0077b5;
+    }
+    &.twitter:hover {
+      color: #1da1f2;
+    }
+    &.insta:hover {
+      color: #e4405f;
+    }
+  }
+}
 `;
