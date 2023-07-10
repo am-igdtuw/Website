@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import { HeroContainer, HeroBg, Imgbg, HeroD, HeroContent,Heroimg, HeroBtnWrapper,HeroH1, HeroP, ArrowForward, ArrowRight } from './HeroElements'
 import {Button} from '../ButtonElements'
-import discordLogo from '../../images/discordLogo.png'
+import { FaWhatsapp } from 'react-icons/fa';
 import bg from '../../images/bg.svg'
 
 const HeroSection = () => {
@@ -29,7 +29,7 @@ const HeroSection = () => {
             </HeroP>
             <HeroBtnWrapper>
                 <Button  to='signup' onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='true' onClick={joinGroup}>
-                <Heroimg src={discordLogo} /> 
+                <Heroimg as={FaWhatsapp} />
                JOIN COMMUNITY 
                 </Button>
             </HeroBtnWrapper>         

@@ -23,7 +23,7 @@ const EventHeroSection = () => {
             <HeroBtnWrapper>
                 <Button to='signup' onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='true'>
                   <Heroimg src={CollaborateLogo}/>
-               Colaborate with us
+               Collaborate with us
                 </Button>
             </HeroBtnWrapper>
         </HeroContent>

@@ -1,17 +1,17 @@
 import React from 'react'
-import t1 from '../../images/t1.png'
 
 
 import { TeamContainer, TeamH1, TeamH2,TeamWrapper1,TeamWrapper2,TeamWrapper3, TeamCard,TeamIcon, TeamP} from './Elements'
 const Team = () => {
+    
   return (
     <TeamContainer id="team">
         <TeamH1>The faces behind these teams</TeamH1>
        
         <TeamWrapper1>
             <TeamCard> 
-                <TeamIcon src={t1}/>
-                <TeamH2><b>Unnati</b></TeamH2>
+                <TeamIcon src="https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1688969490/Asset%20Mantle%20-%20Team%202023/Leads/WhatsApp_Image_2023-07-10_at_11.31.50_pfiaub.jpg"/>
+                <TeamH2><b>Unnati Chhabra</b></TeamH2>
                 <TeamP>Advisor</TeamP>
             </TeamCard>
         </TeamWrapper1>

@@ -75,7 +75,7 @@ export const ServicesH1 = styled.h1`
 `;
 
 export const ServicesH2 = styled.h2`
-  color: #fffdfa;
+  color: #fffdfa !important;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -86,7 +86,12 @@ export const ServicesH2 = styled.h2`
   word-wrap: break-word;
   overflow-wrap: break-word;
   hyphens: auto;
+  text-decoration: none !important;
+  border-bottom: none;
 `;
+
+
+
 
 export const ServicesP = styled.p`
   font-size: 1rem;
