@@ -3,7 +3,7 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages';
 import EventPage from './pages/event'
-import BlogPage from './pages/blogs'
+// import BlogPage from './pages/blogs'
 import TechTeamPage from './pages/techTeam';
 import FaqPage from './pages/faq'
 import OutreachTeamPage from './pages/outreachTeam';
@@ -19,7 +19,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home/>} />
         <Route exact path="/event" element={<EventPage/>}/>
-        <Route exact path="/blogs" element={<BlogPage/>}/>
+        {/* <Route exact path="/blogs" element={<BlogPage/>}/> */}
         <Route exact path="/faq" element={<FaqPage/>}/>
         <Route exact path="/techTeam" element={<TechTeamPage/>}/>
         <Route exact path="/eventTeam" element={<EventTeamPage/>}/>

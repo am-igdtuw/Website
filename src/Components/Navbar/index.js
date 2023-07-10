@@ -25,10 +25,10 @@ const Navbar = ({toggle}) => {
                     </NavLinks>
                 </Navitem>
 
-                <Navitem>
+                {/* <Navitem>
                     <NavLinks to="/blogs">BLOGS
                     </NavLinks>
-                </Navitem>
+                </Navitem> */}
                 <Navitem>
                     <NavLinks to="/faq">FAQs
                     </NavLinks>
