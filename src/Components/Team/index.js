@@ -26,9 +26,9 @@ const Team = () => {
           <TeamH2><b>Unnati Chhabra</b></TeamH2>
           <TeamP>Advisor</TeamP>
           <IconWrapper className="social-icons">
-            <a className='linkiden' href="https://www.linkedin.com/in/unnati-chhabra-909bb9196/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-            <a className='twitter' href="https://twitter.com/Unnati_Chhabra_" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
-            <a className='insta' href="https://www.instagram.com/unnatichhabra/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+            <a className='linkiden' href="https://www.linkedin.com/in/unnati-chhabra" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+            <a className='twitter' href="https://twitter.com/Unnati_twts" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+            <a className='insta' href="https://www.instagram.com/unnatiisig/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
           </IconWrapper>
         </TeamCard>
       </TeamWrapper1>
