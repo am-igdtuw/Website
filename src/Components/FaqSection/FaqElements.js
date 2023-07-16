@@ -62,11 +62,12 @@ export const HeroH1 = styled.h1`
   text-align: center;
   display: flex;
   padding: 50px 50px;
-  width: 712px;
+  padding-top: 3px;
+  width: 300px;
   font-family: 'Inter';
   ${'' /* color: #fffdfa; */}
   font-style: normal;
-  font-size: 64px;
+  font-size: 54px;
   font-weight: 600;
   color: white;
 
@@ -115,8 +116,9 @@ export const Item = styled.div`
 export const Title = styled.div`
   border-radius: 24px 24px 0px 0px;
   padding: 20px;
+  font-size: 3rem;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -130,7 +132,7 @@ export const Title = styled.div`
   }
 
   span {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   &:hover {

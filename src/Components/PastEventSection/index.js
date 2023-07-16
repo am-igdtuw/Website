@@ -19,8 +19,6 @@ const Services = () => {
             <ServicesH2><b>Find Global Career opportunities on Web3 and Metaverse</b></ServicesH2>
           </ServicesCard>
         </a>
-      </ServicesWrapper>
-      <ServicesWrapper>
         <a href="https://www.instagram.com/p/CoeHzBkSLWY/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer">
             <ServicesCard > 
                 <ServicesIcon src="https://res.cloudinary.com/djv5kc7as/image/upload/v1688802647/Asset%20Mantle%20-%20Team%202023/Events/Screenshot_302_pgrxxz.png"/>

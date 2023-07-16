@@ -9,10 +9,10 @@ align-items: center;
 background:black;
 
 @media screen and (max-width:768px){
-    height:1100px;
+    height:100rem;
 }
 @media screen and (max-width:480px){
-    height:1300 px;
+    height:70rem;
 }
 `
 export const TeamWrapper1=styled.div`
@@ -45,12 +45,20 @@ grid-template-columns: 1fr 1fr;
 align-items:center;
 grid-column-gap:40px;
 padding:0 50px;
+position: relative;
 @media screen and (max-width:1000px){
     grid-template-columns: 1fr 1fr ;
+    grid-gap: 3rem;
+    grid-column:2rem;
+    grid-row: 2rem;
 }
 @media screen and (max-width:768px){
     grid-template-columns: 1fr;
     padding:0 20px;
+    z-index: 3;
+    grid-column:2rem;
+    grid-gap: 3rem;
+    grid-row: 2rem; 
 }
 
 
@@ -67,10 +75,19 @@ grid-column-gap:40px;
 padding:0 50px;
 @media screen and (max-width:1000px){
     grid-template-columns: 1fr 1fr ;
+    grid-gap: 3.5rem;
 }
 @media screen and (max-width:768px){
     grid-template-columns: 1fr;
     padding:0 20px;
+    grid-gap: 3.2rem;
+    grid-column:2rem;
+    ${'' /* height: 30rem; */}
+}
+@media screen and (max-width:480px){
+    grid-template-columns: 1fr;
+    padding:0 20px;
+    grid-gap: 3rem;
 }
 
 
@@ -101,29 +118,45 @@ background:linear-gradient(180deg, rgba(255, 198, 64, 0.16) 0%, rgba(255, 198, 6
       transform: translateY(0);
     }
   }
+
+  @media screen and (max-width:768px){
+    display: flex;
+  }
+   
+  @media screen and (max-width:480px){
+    display: flex;
+  }
+
+
 `
 export  const TeamIcon=styled.img`
 height:240px;
 width:200px;
 margin-bottom:20px;
 border-radius:10px;
-// border:0.5px solid #FFC640;
-// box-shadow:3px 3px 3px #FFC640;
+border:0.5px solid #FFC640;
+box-shadow:3px 3px 3px #FFC640;
 `
 export const TeamH1=styled.h1`
 /* font-size:5rem;
 color:black;
 margin-bottom:64px; */
-margin-bottom: 64px;
+    margin-bottom: 64px;
     font-size: 50px;
     line-height: 1.1;
     font-weight: 600;
     text-transform: uppercase;
     color: white;
+    @media screen and (max-width:768px){
+        font-size:2rem;
+        text-align: center;
+    }
 
-@media screen and (max-width:480px){
-    font-size:2rem;
-}
+
+    @media screen and (max-width:480px){
+        font-size:1.8rem;
+        text-align: center;
+    }
 `
 export const TeamH2=styled.h2`
 font-size:1rem;
@@ -173,5 +206,5 @@ export const IconWrapper = styled.div`
       color: #e4405f;
     }
   }
-}
+
 `;
