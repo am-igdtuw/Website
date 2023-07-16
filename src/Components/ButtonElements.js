@@ -50,4 +50,16 @@ export const Button = styled(Link)`
         background: ${({ primary }) => (primary ? '#948356' : '#e3bc54')};
         box-shadow: 0 0 #e3bc54;
     }
+
+    @media screen and (max-width: 768px){
+        font-size: 1.5rem;
+        width: 20rem;
+        height: 3.5rem;
+    }
+
+    @media screen and (max-width: 480px){
+        font-size: 1.3rem;
+        width: 1.8rem;
+        height: 3.2rem;
+    }
 `

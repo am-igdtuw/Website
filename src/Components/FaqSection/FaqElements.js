@@ -27,6 +27,23 @@ export const HeroContainer = styled.div`
       linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
     z-index: 2;
   }
+
+
+  @media screen and (max-width: 1024px) {
+    ${'' /* font-size: 48px; */}
+    padding: 50px 150px;
+  }
+
+  @media screen and (max-width: 768px) {
+    ${'' /* font-size: 40px; */}
+    padding: 50px 50px;
+  }
+
+  @media screen and (max-width: 480px) {
+    ${'' /* font-size: 32px; */}
+    padding: 50px 30px;
+  }
+
 `;
 
 
@@ -44,10 +61,10 @@ export const HeroContent = styled.div`
 export const HeroH1 = styled.h1`
   text-align: center;
   display: flex;
-  padding: 50px 280px;
+  padding: 50px 50px;
   width: 712px;
   font-family: 'Inter';
-  color: #fffdfa;
+  ${'' /* color: #fffdfa; */}
   font-style: normal;
   font-size: 64px;
   font-weight: 600;
@@ -56,27 +73,35 @@ export const HeroH1 = styled.h1`
   @media screen and (max-width: 1024px) {
     font-size: 48px;
     padding: 50px 150px;
+    text-align: center;
+    ${'' /* width: 50rem; */}
   }
 
   @media screen and (max-width: 768px) {
     font-size: 40px;
-    padding: 50px 50px;
+    padding: 20px 2px;
+    text-align: center;
+    display: flex;
+    width: 3rem;
   }
 
   @media screen and (max-width: 480px) {
     font-size: 32px;
-    padding: 50px 30px;
+    padding: 20px 20px;
+    text-align: center;
+    display: flex;
+    width: 3rem;
   }
 `;
 
 export const Accordian = styled.div`
     width: 800px;
     @media screen and (max-width: 768px){
-        width: 500px;
+        width: 430px;
     }
 
     @media screen and (max-width: 480px){
-        width: 400px;
+        width: 380px;
     }
 
 `

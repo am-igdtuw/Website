@@ -52,6 +52,10 @@ export const HeroContent = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media screen and (max-width: 768px){
+        max-width: 800px;
+    }
 `
 
 export const HeroH1 = styled.h1`
@@ -69,7 +73,7 @@ export const HeroH1 = styled.h1`
     color: white;
 
     @media screen and (max-width: 768px){
-        font-size: 40px;
+        font-size: 2rem;
     }
 
     @media screen and (max-width: 480px){
@@ -97,7 +101,9 @@ line-height: 28px;
   text-fill-color: transparent;
 
     @media screen and (max-width: 768px){
-        font-size: 24px;
+        font-size: 1.8rem;
+        width: 30rem;
+        height: 7rem;
     }
 
     @media screen and (max-width: 480px){
@@ -127,6 +133,15 @@ export const HeroBtnWrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media screen and (max-width: 768px){
+        width: 30rem;
+        height: 7rem;
+    }
+
+    @media screen and (max-width: 480px){
+        font-size: 18px;
+    }
 `
 
 

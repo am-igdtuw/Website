@@ -69,8 +69,14 @@ export const ServicesH1 = styled.h1`
   text-transform: uppercase;
   color: white;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     font-size: 2rem;
+    height: 1rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 1.8rem;
+    height: 1rem;
   }
 `;
 
@@ -78,7 +84,7 @@ export const ServicesH2 = styled.h2`
   color: #fffdfa !important;
   font-family: "Poppins", sans-serif;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 550;
   font-size: 24px;
   line-height: 32px;
   text-align: center;
@@ -88,6 +94,18 @@ export const ServicesH2 = styled.h2`
   hyphens: auto;
   text-decoration: none !important;
   border-bottom: none;
+
+  @media screen and (max-width: 768px) {
+    font-size: 1.8rem;
+    height: 0.5rem;
+
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 1.5rem;
+    height: 0.5rem;
+  }
+
 `;
 
 
