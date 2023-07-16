@@ -77,7 +77,7 @@ export const HeroH1 = styled.h1`
     }
 
     @media screen and (max-width: 480px){
-        font-size: 32px;
+        font-size: 1.5rem;
     }
 `
 
@@ -107,7 +107,9 @@ line-height: 28px;
     }
 
     @media screen and (max-width: 480px){
-        font-size: 18px;
+        font-size: 1.4rem;
+        width: 24rem;
+        height: 5rem;
     }
 `
 export const HeroD = styled.span`

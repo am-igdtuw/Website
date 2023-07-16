@@ -41,7 +41,7 @@ export const HeroContainer = styled.div`
 
   @media screen and (max-width: 480px) {
     ${'' /* font-size: 32px; */}
-    padding: 50px 30px;
+    padding: 30px 20px;
   }
 
 `;
@@ -87,10 +87,10 @@ export const HeroH1 = styled.h1`
 
   @media screen and (max-width: 480px) {
     font-size: 32px;
-    padding: 20px 20px;
+    padding: 10px 10px;
     text-align: center;
     display: flex;
-    width: 3rem;
+    width: 2rem;
   }
 `;
 
