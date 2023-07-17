@@ -89,7 +89,7 @@ order: 1;
 flex-grow: 0;
 
   @media screen and  (max-width: 768px){
-    display: ${({ isOpen }) => (isOpen ? 'flex' : 'none')};
+     display: ${({ isOpen }) => (isOpen ? 'flex' : 'none')};
     flex-direction: column;
     padding: 0;
     width: 100%;
