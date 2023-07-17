@@ -89,7 +89,12 @@ order: 1;
 flex-grow: 0;
 
   @media screen and  (max-width: 768px){
-    display: none;
+    display: ${({ isOpen }) => (isOpen ? 'flex' : 'none')};
+    flex-direction: column;
+    padding: 0;
+    width: 100%;
+    height: auto;
+
   }
 
 `
@@ -137,6 +142,11 @@ border-radius: 22px;
 flex: none;
 order: 0;
 flex-grow: 0;
+&:hover {
+  background: linear-gradient(45deg, #FFC640, #FFC640);
+  border: 0.5px solid #000000;
+  color: #000000;
+}
 `
 
 export const NavImg = styled.div`
@@ -171,8 +181,6 @@ export const NavLinks = styled(LinkR)`
   }
 
   &:hover {
-    color: #FFDF00;
+    color: #000000;
   }
 `;
-
-
