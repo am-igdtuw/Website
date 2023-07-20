@@ -2,8 +2,15 @@ import React from 'react'
 import {FaBars} from 'react-icons/fa'
 import Logo from '../../images/Logo.png'
 import {Nav, NavbarContainer,NavImg,  NavMenu, Navitem, NavLinks, MobileIcon} from './NavbarElements';
+import  { useState } from 'react';
 
-const Navbar = ({toggle}) => {
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () =>
+  {
+    setIsOpen(!isOpen);
+  };
   return (
     <>
       <Nav>
@@ -14,7 +21,7 @@ const Navbar = ({toggle}) => {
             <MobileIcon onClick={toggle}>
                 <FaBars/>
             </MobileIcon>
-            <NavMenu>
+            <NavMenu isOpen={isOpen}>
                 <Navitem>
                     <NavLinks to="/">
                       ABOUT
@@ -24,6 +31,7 @@ const Navbar = ({toggle}) => {
                     <NavLinks to="/event">EVENTS
                     </NavLinks>
                 </Navitem>
+               
 
                 {/* <Navitem>
                     <NavLinks to="/blogs">BLOGS
@@ -33,12 +41,16 @@ const Navbar = ({toggle}) => {
                     <NavLinks to="/faq">FAQs
                     </NavLinks>
                 </Navitem>
+               
+
+
             </NavMenu>
             {/* <NavBtn>
                 <NavBtnLink to='/signin'>Sign In</NavBtnLink>
             </NavBtn> */}
         </NavbarContainer>
       </Nav>
+   
     </>
   )
 }
