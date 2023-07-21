@@ -94,9 +94,7 @@ export const ServicesH2 = styled.h2`
   hyphens: auto;
   text-decoration: none !important;
   border-bottom: none;
-  span {
-    text-decoration: none;
-  }
+  
 
   @media screen and (max-width: 768px) {
     font-size: 1.8rem;
