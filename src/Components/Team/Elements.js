@@ -9,10 +9,10 @@ align-items: center;
 background:black;
 
 @media screen and (max-width:768px){
-    height:75rem;
+    height:auto;
 }
 @media screen and (max-width:480px){
-    height:150rem;
+    height:auto;
 }
 `
 export const TeamWrapper1=styled.div`

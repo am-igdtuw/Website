@@ -1,6 +1,7 @@
 import styled from "styled-components"
 export const ServicesContainer = styled.div`
   height: auto;
+  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,10 +10,14 @@ export const ServicesContainer = styled.div`
   padding: 80px 0;
   text-decoration: none;
   @media screen and (max-width: 768px) {
+    height: auto;
+    width: auto;
     padding: 60px 0;
   }
 
   @media screen and (max-width: 480px) {
+    height: auto;
+    width: auto;
     padding: 40px 0;
   }
 `;
@@ -28,11 +33,11 @@ export const ServicesWrapper = styled.div`
   gap: 20px;
   padding: 0 30px;
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 768px) {
     grid-template-columns: 1fr 1fr;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 480px) {
     grid-template-columns: 1fr;
     padding: 0 20px;
   }
@@ -57,6 +62,16 @@ export const ServicesCard = styled.div`
   &:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  @media screen and (max-width: 768px) {
+    height: auto;
+    width: auto;
+  }
+
+  @media screen and (max-width: 480px) {
+    height: auto;
+    width: auto;
   }
 `;
 
