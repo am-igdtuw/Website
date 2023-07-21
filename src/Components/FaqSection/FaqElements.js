@@ -64,6 +64,7 @@ export const HeroH1 = styled.h1`
   padding: 50px 50px;
   padding-top: 3px;
   width: 300px;
+  
   font-family: 'Inter';
   ${'' /* color: #fffdfa; */}
   font-style: normal;
@@ -112,13 +113,18 @@ export const Item = styled.div`
     padding: 10px 20px;
     
     
+    
 `
 export const Title = styled.div`
   border-radius: 24px 24px 0px 0px;
   padding: 20px;
-  font-size: 3rem;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 500;
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cardo&family=Edu+NSW+ACT+Foundation&display=swap" rel="stylesheet">
+  font-family: 'Cardo', serif;
+  font-family: 'Edu NSW ACT Foundation', cursive;  font-weight: 500;
+  font-size: 4 rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -129,6 +135,8 @@ export const Title = styled.div`
 
   h2 {
     margin: 0;
+    font-size: 20px;
+
   }
 
   span {
@@ -145,8 +153,12 @@ export const Title = styled.div`
 export const Content = styled.div`
   color: white;
   padding: 24px 56px;
-  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cardo&family=Edu+NSW+ACT+Foundation&display=swap" rel="stylesheet">
+  font-family: 'Cardo', serif;
+  font-family: 'Edu NSW ACT Foundation', cursive;
   height: ${({ selected }) => (selected ? 'auto' : '0')};
   opacity: ${({ selected }) => (selected ? '1' : '0')};
   overflow: hidden;
