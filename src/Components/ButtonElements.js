@@ -59,7 +59,7 @@ export const Button = styled(Link)`
 
     @media screen and (max-width: 480px){
         font-size: 1.3rem;
-        width: 1.8rem;
+        width: 18rem;
         height: 3.2rem;
     }
 `
