@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const TeamContainer = styled.div`
-height:2000px;
+height:1400px;
 display:flex;
 flex-direction:column;
 justify-content:center;
@@ -9,10 +9,10 @@ align-items: center;
 background:black;
 
 @media screen and (max-width:768px){
-    height:100rem;
+    height:75rem;
 }
 @media screen and (max-width:480px){
-    height:70rem;
+    height:150rem;
 }
 `
 export const TeamWrapper1=styled.div`
@@ -25,10 +25,11 @@ grid-template-columns: 1fr;
 align-items:center;
 grid-column-gap:40px;
 padding:0 50px;
-@media screen and (max-width:1000px){
+@media screen and (max-width:768px){
     grid-template-columns: 1fr 1fr ;
 }
-@media screen and (max-width:768px){
+@media screen and (max-width:480px){
+  margin-bottom: 30px;
     grid-template-columns: 1fr;
     padding:0 20px;
 }
@@ -46,13 +47,14 @@ align-items:center;
 grid-column-gap:40px;
 padding:0 50px;
 position: relative;
-@media screen and (max-width:1000px){
+@media screen and (max-width:768px){
     grid-template-columns: 1fr 1fr ;
     grid-gap: 3rem;
     grid-column:2rem;
     grid-row: 2rem;
 }
-@media screen and (max-width:768px){
+@media screen and (max-width:480px){
+    height: 700px;
     grid-template-columns: 1fr;
     padding:0 20px;
     z-index: 3;

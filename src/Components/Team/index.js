@@ -78,7 +78,7 @@ const Team = () => {
                 </IconWrapper>
             </TeamCard>
         </TeamWrapper2>
-        <TeamWrapper3>
+        {/* <TeamWrapper3>
         <TeamCard> 
                 <TeamIcon src="https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1688488848/Asset%20Mantle%20-%20Team%202023/Leads/Hiteshi%20Dattatrey.jpg"/>
                 <TeamH2><b>Hiteshi Dattatrey</b></TeamH2>
@@ -129,7 +129,7 @@ const Team = () => {
               <a className='insta' href="https://www.instagram.com/_.sanya.__19/?next=%2F" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
                 </IconWrapper>
             </TeamCard>
-        </TeamWrapper3>
+        </TeamWrapper3> */}
     </TeamContainer>
     
   )
