@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaFacebook, FaLinkedin, FaYoutube, FaInstagram, FaTwitter } from 'react-icons/fa';
-import { FooterContainer,FooterWrap, FooterLinksContainer,FooterLinksWrapper,FooterLinkItems, FooterLinkTitle, FooterLink, SocialMedia, SocialMediaWrap, SocialLogo, WebsiteRights, SocialIconsLink, SocialIcons } from './FooterElements';
+import { FooterContainer,FooterWrap, FooterLinksContainer,FooterLinksWrapper,FooterLinkItems, FooterLinkTitle, FooterLink, SocialMedia, SocialMediaWrap, SocialLogo, WebsiteRights, SocialIconsLink, SocialIcons, Gap } from './FooterElements';
 import Logo from '../../images/Logo.png'
 const Footer = () => {
   return (
@@ -16,6 +16,7 @@ const Footer = () => {
                        <FooterLink to="/signin">Investors</FooterLink>
                        <FooterLink to="/signin">Terms of Services</FooterLink> */}
                 </FooterLinkItems>
+                <Gap />
                 <FooterLinkItems>
                     <FooterLinkTitle>Contact Us</FooterLinkTitle>
                        <FooterLink to="/">Contact</FooterLink>
@@ -23,6 +24,7 @@ const Footer = () => {
                        {/* <FooterLink to="/">Destinations</FooterLink> */}
                        <FooterLink to="/">Sponsorships</FooterLink>
                 </FooterLinkItems>
+                <Gap />
             </FooterLinksWrapper>
             <FooterLinksWrapper>
                 {/* <FooterLinkItems>

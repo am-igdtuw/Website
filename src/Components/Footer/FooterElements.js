@@ -5,9 +5,6 @@ import {Link} from 'react-router-dom'
 export const FooterContainer = styled.footer`
   background-color: #0D0A03;
 
-  @media screen and (max-width: 768px) {
-    ${'' /* height: 1rem; */}
- }
 `
 
 export const FooterWrap = styled.div`
@@ -38,9 +35,10 @@ export const FooterLinksContainer = styled.div`
 `
 export const FooterLinksWrapper = styled.div`
   display: flex;
-  @media screen and(max-width: 768px) {
-    flex-direction: column;
-  }
+  flex-wrap: wrap;
+//   @media screen and(max-width: 768px) {
+//    flex-wrap: wrap;
+//   }
 `
 
 export const FooterLinkItems = styled.div`
@@ -54,8 +52,8 @@ export const FooterLinkItems = styled.div`
  color: #fff;
 
  @media screen and (max-width: 420px) {
-    margin: 0;
-    padding: 10px;
+    margin: 10px;
+    padding: 5px;
     width: 100%;
  }
 `
@@ -88,6 +86,7 @@ export const SocialMediaWrap = styled.div`
 
  @media screen and (max-width: 768px) {
     flex-direction: column;
+    align-items: center;
  }
 `
 
@@ -119,3 +118,7 @@ export const SocialIconsLink = styled.a`
  color: #fff;
  font-size: 24px;
 `
+
+export const Gap = styled.div`
+  margin: 24px 0; 
+`;
