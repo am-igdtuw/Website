@@ -173,6 +173,7 @@ export const NavLinks = styled(LinkR)`
   line-height: 22px;
   color: #FFC640;
   flex: none;
+  align-items: center;
   order: 0;
   flex-grow: 0;
 
