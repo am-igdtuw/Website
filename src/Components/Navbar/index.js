@@ -7,8 +7,7 @@ import  { useState } from 'react';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggle = () =>
-  {
+  const toggle = () => {
     setIsOpen(!isOpen);
   };
   return (

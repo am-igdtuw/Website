@@ -23,6 +23,7 @@ top: 0;
 
 background: #0D0A03;
 
+
   @media screen and (max-width: 960px){
     transition: 0.8s all ease;
   }
@@ -75,7 +76,7 @@ export const MobileIcon = styled.div`
 export const NavMenu = styled.ul`
 display: flex;
 flex-direction: row;
- align-items: center;
+align-items: center;
 padding: 0px 30px 0px 90px;
 gap: 21px;
 width: auto;
@@ -89,11 +90,18 @@ order: 1;
 flex-grow: 0;
 
   @media screen and  (max-width: 768px){
-     display: ${({ isOpen }) => (isOpen ? 'flex' : 'none')};
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 0;
     width: 100%;
-    height: auto;
+    height: 30vh; 
+    position: absolute;
+    top: ${({ isOpen }) => (isOpen ? '80px' : '-30vh')};
+    left: 0;
+    transition: 0.3s ease-in-out;
+    background-color: #0D0A03;
 
   }
 
