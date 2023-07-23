@@ -10,8 +10,8 @@ const Footer = () => {
             <FooterLinksWrapper>
                 <FooterLinkItems>
                     <FooterLinkTitle>Useful Links</FooterLinkTitle>
-                       <FooterLink to="/signin">About</FooterLink>
-                       <FooterLink to="/signin">Events</FooterLink>
+                       <FooterLink to="/">About</FooterLink>
+                       <FooterLink to="/event">Events</FooterLink>
                        {/* <FooterLink to="/signin">Careers</FooterLink>
                        <FooterLink to="/signin">Investors</FooterLink>
                        <FooterLink to="/signin">Terms of Services</FooterLink> */}
@@ -49,7 +49,7 @@ const Footer = () => {
                 <SocialLogo >
                    <img src={Logo} height={32}/>
                 </SocialLogo>
-                <WebsiteRights>Assetmantle © {new Date().getFullYear()}
+                <WebsiteRights>Assetmantle © {new Date().getFullYear()}  . 
                 All rights reserved.</WebsiteRights>
                 <SocialIcons>
                 <SocialIconsLink href="https://www.instagram.com/assetmantle.igdtuw/" target="_blank"
