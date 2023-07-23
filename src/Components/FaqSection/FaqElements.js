@@ -85,7 +85,7 @@ export const HeroH1 = styled.h1`
     padding: 20px 2px;
     text-align: center;
     display: flex;
-    width: 3rem;
+    width: 2rem;
   }
 
   @media screen and (max-width: 480px) {
@@ -93,7 +93,8 @@ export const HeroH1 = styled.h1`
     padding: 10px 10px;
     text-align: center;
     display: flex;
-    width: 2rem;
+    width: 5rem;
+    ${'' /* padding-left: 1rem; */}
   }
 `;
 
