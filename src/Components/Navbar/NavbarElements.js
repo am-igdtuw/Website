@@ -166,9 +166,9 @@ flex-grow: 0;
 `
 export const NavLinks = styled(LinkR)`
 
-  width: 73px;
-  height: 34px;
-  padding: 2px;
+  width: 74px;
+  height: 36px;
+  padding: 8px;
   text-decoration: none;
   font-style: normal;
   font-weight: 600;
