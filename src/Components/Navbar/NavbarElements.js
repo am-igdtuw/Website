@@ -23,7 +23,6 @@ top: 0;
 
 background: #0D0A03;
 
-
   @media screen and (max-width: 960px){
     transition: 0.8s all ease;
   }
@@ -36,25 +35,23 @@ align-items: flex-start;
 padding: 0px;
 row-gap: 32px;
 
-width:auto;
-height: 34px;
+width: auto;
+height: 54px;
 
 flex: none;
 order: 1;
 flex-grow: 0;
 `
 
-export const NavLogo = styled(LinkR)`
+export const NavLogo = styled.div`
   color: #fff;
-  justify-self: flex-start;
-  cursor: pointer;
-  font-size: 1.0rem;
+  justify-self: flex-start;  
+  font-size: 1.3rem;
   display: flex;
-  flex-direction:column;
-  align-items: center;
-   margin-left: 28px;
-  font-weight: bold;
-  text-decoration: none;
+  flex-direction:column; 
+   margin-left: 8px;
+  font-weight: bold;  
+  text-decoration: none;  
 `
 export const MobileIcon = styled.div`
   display: none;
@@ -76,7 +73,7 @@ export const MobileIcon = styled.div`
 export const NavMenu = styled.ul`
 display: flex;
 flex-direction: row;
-align-items: center;
+ align-items: center;
 padding: 0px 30px 0px 90px;
 gap: 21px;
 width: auto;
@@ -90,37 +87,28 @@ order: 1;
 flex-grow: 0;
 
   @media screen and  (max-width: 768px){
-    display: flex;
+     display: ${({ isOpen }) => (isOpen ? 'flex' : 'none')};
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     padding: 0;
     width: 100%;
-    height: 30vh; 
-    position: absolute;
-    top: ${({ isOpen }) => (isOpen ? '80px' : '-30vh')};
-    left: 0;
-    transition: 0.3s ease-in-out;
-    background-color: #0D0A03;
+    height: auto;
 
   }
 
 `
 export const SubLogo = styled.div`
-  width: 172px;
-  height: 17px;
+  width: auto;
+  height: 14px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-
-  font-style: italic;
-  font-weight: 600;
-  font-size: 16px;
-  color: #FFC640;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  justify-content: flex-start;
+    
+  font-weight: 100;
+  font-size: 10px;
+  color: #FFF;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 
   background: linear-gradient(45deg, #000000, #1c1b19);
-  border-radius: 8px;
+  border-radius: 1px;
 
   flex: none;
   order: 1;
@@ -159,8 +147,7 @@ flex-grow: 0;
 
 export const NavImg = styled.div`
 width: 440px;
-height: 84px;
-
+height: 19px;
 flex-direction: row;
 align-items: start;
 padding-left: 100px;
@@ -171,8 +158,9 @@ order: 0;
 flex-grow: 0;
 `
 export const NavLinks = styled(LinkR)`
+
   width: 73px;
-  height: 22px;
+  height: 34px;
   padding: 2px;
   text-decoration: none;
   font-style: normal;
@@ -181,6 +169,7 @@ export const NavLinks = styled(LinkR)`
   line-height: 22px;
   color: #FFC640;
   flex: none;
+  align-items: center;
   order: 0;
   flex-grow: 0;
 

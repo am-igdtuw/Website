@@ -1,13 +1,14 @@
 import React from 'react'
 import {FaBars} from 'react-icons/fa'
-import Logo from '../../images/Logo.png'
-import {Nav, NavbarContainer,NavImg,  NavMenu, Navitem, NavLinks, MobileIcon} from './NavbarElements';
+import Logo2 from '../../images/Logo2.png'
+import {Nav, NavbarContainer,NavImg,  NavMenu, Navitem, NavLinks, MobileIcon, NavLogo, SubLogo} from './NavbarElements';
 import  { useState } from 'react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggle = () => {
+  const toggle = () =>
+  {
     setIsOpen(!isOpen);
   };
   return (
@@ -15,15 +16,20 @@ const Navbar = () => {
       <Nav>
         <NavbarContainer>
             <NavImg>
-              <img src={Logo} height={32}/>
+              <img src={Logo2} height={35}/>
+              <NavLogo>
+                AssetMantle          
+                <SubLogo>Student Chapter IGDTUW </SubLogo>
+              </NavLogo>                              
             </NavImg>
+                                      
             <MobileIcon onClick={toggle}>
                 <FaBars/>
             </MobileIcon>
             <NavMenu isOpen={isOpen}>
                 <Navitem>
                     <NavLinks to="/">
-                      ABOUT
+                       ABOUT
                     </NavLinks>
                 </Navitem>
                 <Navitem>
@@ -37,7 +43,7 @@ const Navbar = () => {
                     </NavLinks>
                 </Navitem> */}
                 <Navitem>
-                    <NavLinks to="/faq">FAQs
+                    <NavLinks to="/faq">FAQS
                     </NavLinks>
                 </Navitem>
                
