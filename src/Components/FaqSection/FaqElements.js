@@ -7,7 +7,7 @@ export const HeroContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 30px;
-  height: 1588px;
+  height: 1250px;
   position: relative;
   z-index: 1;
   align-items: center;
@@ -62,10 +62,11 @@ export const HeroH1 = styled.h1`
   text-align: center;
   display: flex;
   padding: 50px 50px;
-  padding-top: 3px;
-  width: 300px;
+  padding-top: 1px;
+  width: 200px;
+  font-family: 'Poppins', sans-serif;
   
-  font-family: 'Inter';
+  ${'' /* font-family: 'Inter'; */}
   ${'' /* color: #fffdfa; */}
   font-style: normal;
   font-size: 54px;
