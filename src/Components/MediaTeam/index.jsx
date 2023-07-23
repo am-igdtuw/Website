@@ -53,9 +53,9 @@ const media = () => {
           </TechCard>
           <TechCard>
             <TechIcon src="https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1688491189/Asset%20Mantle%20-%20Team%202023/Graphics%20and%20Media/Divansha%20Agrawal.jpg" />
-            <TechH2>Dibyansha Agrawal </TechH2>
+            <TechH2>Divyansha Agrawal </TechH2>
             <TechP>
-            <a className='linkiden' href="https://www.linkedin.com/help/linkedin/?trk=p_settings_helpcenter_globalnav_android" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+            <a className='linkiden' href="http://linkedin.com/in/divyansha-agrawal-b18b8b247"><FaLinkedin /></a>
               <a className='twitter' href="https://twitter.com/DivyanshaAgraw5?t=kW-J_qHw2moufXeZ_7Ar9g&s=09" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
               <a className='insta' href="https://instagram.com/agrawal_divyansha?igshid=NGExMmI2YTkyZg==" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
             </TechP>

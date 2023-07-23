@@ -26,7 +26,7 @@ const research = () => {
             <TechH2>Aarna Singhal</TechH2>
             <TechP>
                <a className='linkiden' href="https://www.linkedin.com/in/aarnasinghal" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-              <a className='twitter' href="[Twitter Profile URL]" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+              <a className='twitter' href="https://twitter.com/aarnasinghal09" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
               <a className='insta' href="https://www.instagram.com/aarnasinghal09/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a></TechP>
           </TechCard>
           <TechCard>
@@ -55,7 +55,7 @@ const research = () => {
             <TechIcon src="https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1688491032/Asset%20Mantle%20-%20Team%202023/Content/Sakshi.jpg" />
             <TechH2>Sakshi</TechH2>
             <TechP>
-            <a className='linkiden' href="[LinkedIn Profile URL]" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+            <a className='linkiden' href="https://www.linkedin.com/in/sakshi-mishra-86618a24b" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
               <a className='twitter' href="https://twitter.com/sakshimiishra" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
               <a className='insta' href="https://www.instagram.com/miishrasakshii9/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
             </TechP>
@@ -65,7 +65,7 @@ const research = () => {
             <TechH2>Anushree Bondia</TechH2>
             <TechP>
             <a className='linkiden' href="https://www.linkedin.com/in/anushree-bondia-b16139219" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-              <a className='twitter' href="[Twitter Profile URL]" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+              <a className='twitter' href="https://twitter.com/AnushreeBondia?t=CkeWSHsm_UtVJoEiBZlr-g&s=08" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
               <a className='insta' href="https://www.instagram.com/seraphic_anushree/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
             </TechP>
           </TechCard>

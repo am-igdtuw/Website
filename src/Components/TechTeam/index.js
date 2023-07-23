@@ -46,7 +46,7 @@ const Tech = () => {
             <TechIcon src="https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1688968744/Asset%20Mantle%20-%20Team%202023/Technical/Monalika.jpg "/>
             <TechH2>Monalika Patnaik </TechH2>
             <TechP>
-            <a className='linkiden' href="#" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+            <a className='linkiden' href="https://www.linkedin.com/in/monalika-patnaik-b38931230" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
               <a className='twitter' href="https://twitter.com/MonalikaPatnaik" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
               <a className='insta' href="https://www.instagram.com/monalika_0101/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
             </TechP>
@@ -64,8 +64,8 @@ const Tech = () => {
             <TechIcon src="https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1688527494/Asset%20Mantle%20-%20Team%202023/Technical/Manjusha%20Iyer.jpg" />
             <TechH2>Manjusha Iyer </TechH2>
             <TechP>
-            <a className='linkiden' href="#" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-              <a className='twitter' href="#" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+            <a className='linkiden' href="https://www.linkedin.com/in/manjusha-iyer-83b4a01a7/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+              <a className='twitter' href=" https://twitter.com/ManjushaIyer" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
               <a className='insta' href="https://www.instagram.com/iyermanjusha/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
             </TechP>
           </TechCard>

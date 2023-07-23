@@ -24,8 +24,8 @@ const eventT = () => {
             <TechIcon src="https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1688490160/Asset%20Mantle%20-%20Team%202023/EM/Disha%20Verma.jpg" />
             <TechH2>Disha Verma</TechH2>
             <TechP>
-               <a className='linkiden' href="[LinkedIn Profile URL]" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-              <a className='twitter' href="[Twitter Profile URL]" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+               <a className='linkiden' href="https://www.linkedin.com/in/disha-verma-415435231" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+              <a className='twitter' href="https://twitter.com/theflank08" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
               <a className='insta' href="https://www.instagram.com/the.flank/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a></TechP>
           </TechCard>
         </TechWrapper>
@@ -45,7 +45,7 @@ const eventT = () => {
             <TechIcon src="https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1688490160/Asset%20Mantle%20-%20Team%202023/EM/Avni%20Singh.jpg" />
             <TechH2>Avni Singh</TechH2>
             <TechP>
-            <a className='linkiden' href="[LinkedIn Profile URL]" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+            <a className='linkiden' href="https://www.linkedin.com/in/avni-singh-723700259" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
               <a className='twitter' href="[Twitter Profile URL]" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
               <a className='insta' href="https://www.instagram.com/avnii.singh_/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
             </TechP>
@@ -65,7 +65,7 @@ const eventT = () => {
             <TechP>
             <a className='linkiden' href="https://www.linkedin.com/in/gunjanvaishnavijangra/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
               <a className='twitter' href="https://twitter.com/gunjanvjangra" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
-              <a className='insta' href="www.instagram.com/gunjanvjangra/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+              <a className='insta' href="https://www.instagram.com/gunjanvjangra/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
             </TechP>
           </TechCard>
         </TechWrapper>
