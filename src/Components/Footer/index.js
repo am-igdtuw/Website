@@ -10,8 +10,8 @@ const Footer = () => {
             <FooterLinksWrapper>
                 <FooterLinkItems>
                     <FooterLinkTitle>Useful Links</FooterLinkTitle>
-                       <FooterLink to="/signin">Content</FooterLink>
-                       <FooterLink to="/signin">Explore</FooterLink>
+                       <FooterLink to="/signin">About</FooterLink>
+                       <FooterLink to="/signin">Events</FooterLink>
                        {/* <FooterLink to="/signin">Careers</FooterLink>
                        <FooterLink to="/signin">Investors</FooterLink>
                        <FooterLink to="/signin">Terms of Services</FooterLink> */}
@@ -20,9 +20,9 @@ const Footer = () => {
                 <FooterLinkItems>
                     <FooterLinkTitle>Contact Us</FooterLinkTitle>
                        <FooterLink to="/">Contact</FooterLink>
-                       <FooterLink to="/">Support</FooterLink>
-                       {/* <FooterLink to="/">Destinations</FooterLink> */}
-                       <FooterLink to="/">Sponsorships</FooterLink>
+                       {/* <FooterLink to="/">Support</FooterLink>
+                        <FooterLink to="/">Destinations</FooterLink> */}
+                       <FooterLink to="/">Collaborate</FooterLink>
                 </FooterLinkItems>
                 <Gap />
             </FooterLinksWrapper>
