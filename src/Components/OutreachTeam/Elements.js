@@ -12,6 +12,7 @@ export const TechContainer = styled.div`
 export const TechWrapper = styled.div`
     background:black;
     max-width: 100%;
+    height: 100%;
     margin: 0 auto;
     display: flex;
     // grid-template-columns: 2fr 1fr 1fr;
@@ -38,7 +39,7 @@ export const TechCard = styled.div`
     justify-content: center;
     margin-left: 20px;
     border-radius: 10px;
-    height: 250px;
+    height: 270px;
     width: 250px;
     border: 0.5px solid #ffc640;
     /* padding:10px; */
@@ -71,6 +72,7 @@ export const TechIcon = styled.img`
 export const TechH1 = styled.h1`
     font-size: 2.5rem;
     color: #ffc640;
+    content-fit: 100%;
     color:white;
     margin: 50px;
     @media screen and (max-width: 480px) {
