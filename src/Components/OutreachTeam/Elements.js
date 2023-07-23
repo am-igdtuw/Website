@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 export const TechContainer = styled.div`
     height: 100%;
     width: 100%;
@@ -15,19 +15,20 @@ export const TechWrapper = styled.div`
     margin: 0 auto;
     display: flex;
     // grid-template-columns: 2fr 1fr 1fr;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     // grid-column-gap: 40px;
     padding: 0 50px;
     margin-bottom: 50px;
 
-    @media screen and (max-width: 1000px) {
-        grid-template-columns: 1fr 1fr;
-    }
-    @media screen and (max-width: 768px) {
-        grid-template-columns: 1fr;
-        padding: 0 20px;
-    }
+    // @media screen and (max-width: 1000px) {
+    //     grid-template-columns: 1fr 1fr;
+    // }
+    // @media screen and (max-width: 768px) {
+    //     grid-template-columns: 1fr;
+    //     padding: 0 20px;
+    // }
 `;
 export const TechCard = styled.div`
     background:black; 
@@ -50,6 +51,12 @@ export const TechCard = styled.div`
         rgba(255, 198, 64, 0.16) 0%,
         rgba(255, 198, 64, 0.1024) 100%
     );
+    ${props =>
+        css`
+          @media screen and (max-width: 768px) {
+            margin: 40px; 
+          }
+        `}
     &:hover {
         transform: scale(1.02);
         transition: all 0.2s ease-in-out;
