@@ -29,7 +29,7 @@ const outreach = () => {
               <a className='twitter' href="https://twitter.com/Tanisha46394055?t=bGmj2PXgA8wy63RoN1oP0Q&s=09" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
               <a className='insta' href="https://instagram.com/tanis_ha9907?igshid=MzNlNGNkZWQ4Mg==" target="_blank" rel="noopener noreferrer"><FaInstagram /></a></TechP>
           </TechCard>
-          <TechCard>
+           {/* <TechCard>
             <TechIcon src="https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1688489587/Asset%20Mantle%20-%20Team%202023/Outreachy/Stuti%20Arya.jpg" />
             <TechH2>Stuti Arya </TechH2>
             <TechP>
@@ -37,7 +37,8 @@ const outreach = () => {
               <a className='twitter' href="https://twitter.com/_stutay" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
               <a className='insta' href="https://www.instagram.com/_stutiarya/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
             </TechP>
-          </TechCard>
+          </TechCard>*/}
+          
         </TechWrapper>
 
         <TechH1>Team Co-Ordinators</TechH1>
