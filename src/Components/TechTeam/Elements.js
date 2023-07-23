@@ -44,7 +44,7 @@ export const TechCard = styled.div`
     border: 0.5px solid #ffc640;
     /* padding:10px; */
     /* gap:50px; */
-     margin-bottom: 10px;
+    margin-bottom: 10px;
     box-shadow: 0 1px 3px gray;
     transition: all 0.2s ease-in-out;
     background: linear-gradient(
