@@ -6,13 +6,13 @@ const Services = () => {
     <ServicesContainer id="services">
       <ServicesH1>Past Events</ServicesH1>
       <ServicesWrapper>
-        <ServicesLink href="https://www.instagram.com/p/CnbUEn8Ss2s/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer">
+        <ServicesLink href="https://www.instagram.com/reel/Cnrgq8Jha-p/" target="_blank" rel="noopener noreferrer">
           <ServicesCard>
             <ServicesIcon src="https://res.cloudinary.com/djv5kc7as/image/upload/v1688802647/Asset%20Mantle%20-%20Team%202023/Events/Screenshot_300_mgqx8x.png" />
             <ServicesH2><b>Orientation and Treasure Hunt</b></ServicesH2>
           </ServicesCard>
         </ServicesLink>
-        <ServicesLink href="https://www.instagram.com/p/CoBxdCNynKB/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer">
+        <ServicesLink href="https://www.instagram.com/reel/Coy0FTINtEt/" target="_blank" rel="noopener noreferrer">
           <ServicesCard>
             <ServicesIcon src="https://res.cloudinary.com/djv5kc7as/image/upload/v1688802648/Asset%20Mantle%20-%20Team%202023/Events/Screenshot_301_oeeode.png" />
             <ServicesH2><b>Find Global Career opportunities on Web3 and Metaverse</b></ServicesH2>
@@ -26,7 +26,7 @@ const Services = () => {
         </ServicesLink>
       </ServicesWrapper>
       <ServicesWrapper>
-        <ServicesLink href="https://www.instagram.com/p/CpP0N7mJqcn/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer">
+        <ServicesLink href="https://www.instagram.com/reel/Cs3nO1yN3-6/" target="_blank" rel="noopener noreferrer">
           <ServicesCard>
             <ServicesIcon src="https://res.cloudinary.com/djv5kc7as/image/upload/v1688802646/Asset%20Mantle%20-%20Team%202023/Events/Screenshot_303_cpvgip.png" />
             <ServicesH2><b>BFF Hackathon</b></ServicesH2>
