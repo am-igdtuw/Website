@@ -92,13 +92,14 @@ export const ServicesH2 = styled.h2`
   word-wrap: break-word;
   overflow-wrap: break-word;
   hyphens: auto;
-  text-decoration: none !important;
   border-bottom: none;
-  
+  text-decoration: none !important;
+
 
   @media screen and (max-width: 768px) {
     font-size: 1.8rem;
     height: 0.5rem;
+    text-decoration: none important;
 
   }
 
@@ -109,6 +110,11 @@ export const ServicesH2 = styled.h2`
 
 `;
 
+
+export const ServicesLink = styled.a`
+  text-decoration: none;
+  color: inherit;
+`;
 
 
 
