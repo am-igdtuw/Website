@@ -12,7 +12,7 @@ const HeroSection = () => {
     }
 
     const joinGroup = () => {
-        const watsGroupLink = 'https://chat.whatsapp.com/Cp0ppTJBmOS4vgDze8XMPq';
+        const watsGroupLink = 'https://chat.whatsapp.com/KUvfa2sCnYO8Z8GZ1llj2H';
         window.open(watsGroupLink, '_blank')
     }
 
