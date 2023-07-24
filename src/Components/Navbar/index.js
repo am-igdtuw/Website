@@ -1,6 +1,6 @@
 import React from 'react'
 import {FaBars} from 'react-icons/fa'
-import Logo2 from '../../images/Logo2.png'
+import Logo2 from '../../images/Logo3.png'
 import {Nav, NavbarContainer,NavImg,  NavMenu, Navitem, NavLinks, MobileIcon, NavLogo, SubLogo} from './NavbarElements';
 import  { useState } from 'react';
 

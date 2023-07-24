@@ -36,20 +36,26 @@ padding: 0px;
 row-gap: 32px;
 
 width: auto;
-height: 54px;
+height: auto;
 
 flex: none;
 order: 1;
 flex-grow: 0;
+@media screen and (max-width: 480px){
+  width: auto;
+  height: auto;
+}
 `
 
 export const NavLogo = styled.div`
+  height: auto;
+  width: 150px;
   color: #fff;
   justify-self: flex-start;  
-  font-size: 1.3rem;
+  font-size: 0.9rem;
   display: flex;
   flex-direction:column; 
-   margin-left: 8px;
+  margin-left: 6px;
   font-weight: bold;  
   text-decoration: none;  
 `
@@ -103,23 +109,26 @@ flex-grow: 0;
   }
 
 `
-export const SubLogo = styled.div`
-  width: auto;
-  height: 14px;
-  display: flex;
-  justify-content: flex-start;
-    
-  font-weight: 100;
-  font-size: 10px;
-  color: #FFF;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+export const SubLogo = styled.span`
+font-size: 9px; /* Adjust the font size as per your preference */
+color: #fff;
+// margin-top: 0px;
+  // width: auto;
+  // height: 14px;
+  // display: flex;
+  // justify-content: flex-start;
+  //  margin-top: 0px; 
+  // font-weight: 100;
+  // font-size: 10px;
+  // color: #FFF;
+  // text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 
-  background: linear-gradient(45deg, #000000, #1c1b19);
-  border-radius: 1px;
+  // background: linear-gradient(45deg, #000000, #1c1b19);
+  // border-radius: 1px;
 
-  flex: none;
-  order: 1;
-  flex-grow: 0;
+  // flex: none;
+  // order: 1;
+  // flex-grow: 0;
 `;
 
 export const Navitem = styled.li`
@@ -153,17 +162,18 @@ flex-grow: 0;
 `
 
 export const NavImg = styled.div`
-width: 440px;
+width: 350px;
 height: 19px;
-flex-direction: row;
-align-items: start;
-padding-left: 100px;
-margin-bottom: 35px;
 display: flex;
+align-items: flex-start;
+flex-direction: row;
+padding-left: 20px;
+margin-right: auto; /* Pushes the container to the left */
+margin-bottom: 20px;
 flex: none;
 order: 0;
 flex-grow: 0;
-`
+`;
 export const NavLinks = styled(LinkR)`
 
   width: 74px;
