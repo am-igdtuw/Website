@@ -46,7 +46,7 @@ const Footer = () => {
          </FooterLinksContainer>
          <SocialMedia>
             <SocialMediaWrap>
-                <SocialLogo href="/" target="_blank">
+                <SocialLogo href="/">
                    <img src={Logo} height={62}/>
                 </SocialLogo>
                 <WebsiteRights>Assetmantle © {new Date().getFullYear()}  . 

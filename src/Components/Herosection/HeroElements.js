@@ -38,6 +38,9 @@ export const HeroBg = styled.div`
     height: 100%;
     overflow: hidden;
     background-image: url(${bg});
+    @media screen and (max-width: 480px){
+        background: #000;
+    }
    
 `
 
@@ -78,11 +81,11 @@ export const HeroH1 = styled.h1`
     
 
     @media screen and (max-width: 768px){
-        font-size: 40px;
+        font-size: 42px;
     }
 
     @media screen and (max-width: 480px){
-        font-size: 32px;
+        font-size: 33px;
     }
 `
 export const HeroD = styled.span`
@@ -122,7 +125,7 @@ export const HeroP = styled.p`
   }
 
   @media screen and (max-width: 480px) {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 22px;
   }
 `;
@@ -152,6 +155,7 @@ transition: all 0.2s ease-in-out;
     height: 30px;
     width: 30px;
   }
+  
 `
 
 export const ArrowForward = styled(MdArrowForward)`
