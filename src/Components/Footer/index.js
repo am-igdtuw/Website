@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaFacebook, FaLinkedin, FaYoutube, FaInstagram, FaTwitter } from 'react-icons/fa';
 import { FooterContainer,FooterWrap, FooterLinksContainer,FooterLinksWrapper,FooterLinkItems, FooterLinkTitle, FooterLink, SocialMedia, SocialMediaWrap, SocialLogo, WebsiteRights, SocialIconsLink, SocialIcons, Gap } from './FooterElements';
-import Logo from '../../images/Logo.png'
+import Logo from '../../images/2.png'
 const Footer = () => {
   return (
     <FooterContainer>
@@ -46,8 +46,8 @@ const Footer = () => {
          </FooterLinksContainer>
          <SocialMedia>
             <SocialMediaWrap>
-                <SocialLogo >
-                   <img src={Logo} height={32}/>
+                <SocialLogo href="/" target="_blank">
+                   <img src={Logo} height={62}/>
                 </SocialLogo>
                 <WebsiteRights>Assetmantle © {new Date().getFullYear()}  . 
                 All rights reserved.</WebsiteRights>
