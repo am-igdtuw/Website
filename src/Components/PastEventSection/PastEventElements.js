@@ -17,7 +17,7 @@ export const ServicesContainer = styled.div`
 export const ServicesWrapper = styled.div`
   max-width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(304px, 1fr));
+  grid-template-columns: repeat(2, minmax(304px, 1fr));
   grid-auto-rows: minmax(1fr, auto);
   align-items: flex-start;
   justify-items: center;
