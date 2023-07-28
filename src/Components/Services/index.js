@@ -8,25 +8,35 @@ import { useNavigate } from "react-router-dom";
 
 import { ServicesContainer, ServicesH1, ServicesH2, ServicesWrapper, ServicesCard, ServicesIcon } from './ServicesElements'
 const Services = () => {
+
+    const scrollToTop = () => {
+        window.scrollTo(0, 0);
+    };
+
     const navigate = useNavigate();
 
     const techTeam = () => {
+       scrollToTop();
        navigate('/techTeam');
     }
  
     const eventTeam = () => {
+        scrollToTop();
         navigate('/eventTeam');
     }
 
     const mediaTeam = () => {
+        scrollToTop();
         navigate('/mediaTeam');
     }
     
     const researchTeam = () => {
+        scrollToTop();
         navigate('/researchTeam');
     }
 
     const outreachTeam = () => {
+        scrollToTop();
         navigate('/outreachTeam');
     }
     return (
