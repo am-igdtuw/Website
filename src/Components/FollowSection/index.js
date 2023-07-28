@@ -8,10 +8,10 @@ const FollowSection = () => {
       <FollowContainer>
         <FollowContent>
           <FollowP>
-            FOLLOW US ON OUR SOCIALS TO STAY UPDATED ON WHAT’S HAPPENING IN WEB3-VERSE
+            {/* FOLLOW US ON OUR SOCIALS TO STAY UPDATED ON WHAT’S HAPPENING IN WEB3-VERSE */}
           </FollowP>
         </FollowContent>
-        <SocialIcons>
+        {/* <SocialIcons>
             <SocialIconsLink href="https://www.instagram.com/assetmantle.igdtuw/" target="_blank"
               area-label="Instagram">
               <FaInstagram />
@@ -24,7 +24,7 @@ const FollowSection = () => {
               area-label="Linkedin">
               <FaLinkedin />
             </SocialIconsLink>
-          </SocialIcons>
+          </SocialIcons> */}
       </FollowContainer>
       
     </>
