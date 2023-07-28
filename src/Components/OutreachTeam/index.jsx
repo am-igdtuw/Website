@@ -6,7 +6,8 @@ const outreach = () => {
   return (
     <>
       <TechContainer id="team">
-        <TechH1>Team Lead</TechH1>
+        <TechH1>Outreach Team </TechH1>
+        <TechH1>Lead</TechH1>
         <TechWrapper>
           <TechCard>
             <TechIcon src="https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1688488845/Asset%20Mantle%20-%20Team%202023/Leads/Nikhila%20K%20S.jpg" />
@@ -19,7 +20,7 @@ const outreach = () => {
           </TechCard>
         </TechWrapper>
 
-        <TechH1>Team Cores</TechH1>
+        <TechH1>Cores</TechH1>
         <TechWrapper>
           <TechCard>
             <TechIcon src="https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1688489575/Asset%20Mantle%20-%20Team%202023/Outreachy/Tanisha%20Bansal.jpg" />
@@ -41,7 +42,7 @@ const outreach = () => {
           
         </TechWrapper>
 
-        <TechH1>Team Co-Ordinators</TechH1>
+        <TechH1>Co-Ordinators</TechH1>
         <TechWrapper>
           <TechCard>
             <TechIcon src="https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1688489575/Asset%20Mantle%20-%20Team%202023/Outreachy/Aiman.jpg" />
