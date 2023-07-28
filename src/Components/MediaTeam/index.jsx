@@ -6,7 +6,8 @@ const media = () => {
   return (
     <>
       <TechContainer id="team">
-        <TechH1>Team Lead</TechH1>
+        <TechH1>Graphics and Media Team</TechH1>
+        <TechH1>Lead</TechH1>
         <TechWrapper>
           <TechCard>
             <TechIcon src="https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1688488854/Asset%20Mantle%20-%20Team%202023/Leads/Sanya%20Gupta.jpg" />
@@ -19,7 +20,7 @@ const media = () => {
           </TechCard>
         </TechWrapper>
 
-        <TechH1>Team Cores</TechH1>
+        <TechH1>Cores</TechH1>
         <TechWrapper>
           <TechCard>
             <TechIcon src="https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1688491530/Asset%20Mantle%20-%20Team%202023/Graphics%20and%20Media/Deepakshi.jpg" />
@@ -40,7 +41,7 @@ const media = () => {
           </TechCard>
         </TechWrapper>
 
-        <TechH1>Team Co-Ordinators</TechH1>
+        <TechH1>Co-Ordinators</TechH1>
         <TechWrapper>
           <TechCard>
             <TechIcon src="https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1688490608/Asset%20Mantle%20-%20Team%202023/Graphics%20and%20Media/Pooja.jpg" />
