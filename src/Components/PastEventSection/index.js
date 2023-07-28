@@ -24,8 +24,6 @@ const Services = () => {
             <ServicesH2><b>Intro to Web3 and its Career Scope</b></ServicesH2>
           </ServicesCard>
         </ServicesLink>
-      </ServicesWrapper>
-      <ServicesWrapper>
         <ServicesLink href="https://www.instagram.com/reel/Cs3nO1yN3-6/" target="_blank" rel="noopener noreferrer">
           <ServicesCard>
             <ServicesIcon src="https://res.cloudinary.com/djv5kc7as/image/upload/v1688802646/Asset%20Mantle%20-%20Team%202023/Events/Screenshot_303_cpvgip.png" />
