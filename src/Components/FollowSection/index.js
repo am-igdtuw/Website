@@ -13,7 +13,7 @@ const FollowSection = () => {
         </FollowContent>
         {/* <SocialIcons>
             <SocialIconsLink href="https://www.instagram.com/assetmantle.igdtuw/" target="_blank"
-              area-label="Instagram">
+              area-label="Instagram"
               <FaInstagram />
             </SocialIconsLink>
             <SocialIconsLink href="https://twitter.com/AM_igdtuw" target="_blank"
