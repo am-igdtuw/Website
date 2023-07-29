@@ -34,12 +34,12 @@ const Home = () => {
         <a href="/event"> VIEW HERE!</a>
       </PopUp>  */}
       <Navbar />
-      <HeroSection />
-      <InfoSection />
-      <FollowSection />
-      <Services />
-      <Team />
-      <Footer />
+        <HeroSection  />
+        <InfoSection />
+        {/* <FollowSection /> */}
+        <Services />
+        <Team />
+        <Footer />
 
 
     </>

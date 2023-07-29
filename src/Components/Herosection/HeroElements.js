@@ -2,34 +2,34 @@ import styled from 'styled-components'
 import {MdArrowForward, MdKeyboardArrowRight} from 'react-icons/md'
 import bg from '../../images/bg.svg'
 
+
 export const HeroContainer = styled.div`
 width: 100%;
-    background: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 30px;
-    height: 100vh;
-    position: relative;
-    z-index: 1;
+background: black;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 0 30px;
+height: 100vh;
+position: relative;
+overflow: hidden;
 
 
-
-    :before{
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 100%),
-        linear-gradient(180deg, rgba(0,0,0,0.2) 0%, transparent 100%);
-        z-index: 2;
-    }
+    // :before{
+    //     content: '';
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     right: 0;
+    //     bottom: 0;
+    //     background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 100%),
+    //     linear-gradient(180deg, rgba(0,0,0,0.2) 0%, transparent 100%);
+    //     z-index: 2;
+    // }
 `
 
 export const HeroBg = styled.div`
-    height:1500px;
+    // height:1500px;
     position: absolute;
     top: 0;
     right: 0 ;
@@ -37,7 +37,7 @@ export const HeroBg = styled.div`
     left: 0;
     height: 100%;
     overflow: hidden;
-    background-image: url(${bg});
+    // background-image: url(${bg});
     @media screen and (max-width: 480px){
         background: #000;
     }

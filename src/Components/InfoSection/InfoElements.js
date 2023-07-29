@@ -7,6 +7,7 @@ flex-direction:column;
 justify-content:center;
 align-items: center;
 background:black;
+z-index: 3;
 
 @media screen and (max-width:768px){
     height:1100px;
@@ -22,7 +23,7 @@ export const AboutRow = styled.div`
     grid-auto-columns: minmax(auto, 1fr);
     align-items: center;
     grid-template-areas: ${({imgStart})=> (imgStart ? `'col2 col1'` : `'col1 col2'`)};
-
+    z-index: 3;
     @media screen and (max-width: 768px){
         grid-template-areas: ${({imgStart})=> (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)};
 
@@ -32,12 +33,14 @@ export const Column1 = styled.div`
     margin-bottom: 15px;
     padding: 0 15px;
     grid-area: col1;
+    z-index: 3;
 `;
 
 export const TextWrapper = styled.div`
     max-width: 540px;
     padding-top: 0;
     padding-bottom: 60px;
+    z-index: 3;
 `
 export const TopLine = styled.p`
     color: #01bf71;
@@ -47,6 +50,7 @@ export const TopLine = styled.p`
     letter-spacing: 1.4px;
     text-transform: uppercase;
     margin-bottom: 16px;
+    z-index: 3;
 `
 
 export const Heading = styled.h1`
@@ -54,6 +58,7 @@ export const Heading = styled.h1`
     font-size: 48px;
     line-height: 1.1;
     font-weight: 600;
+    z-index: 3;
     color: ${({lightText})=> (lightText ? '#f7f8fa' : '#010606')};
 
     @media screen and (max-width: 480px){
@@ -65,6 +70,7 @@ export const SubTitle = styled.p`
     margin-bottom: 35px;
     font-size: 18px;
     line-height: 24px;
+    z-index: 3;
     color: ${({darkText})=> (darkText ? '#010606' : '#fff')}; 
 `
 
@@ -77,6 +83,7 @@ export const AboutWrapper = styled.div`
   align-items: center;
   grid-gap: 30px;
   padding: 40px 24px;
+  z-index: 3;
 
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
@@ -96,6 +103,7 @@ border-radius:10px;
 width: 320px;
 height: 320px;
 border:0.5px solid #FFC640;
+z-index: 3;
 
 padding:30px;
 /* gap:50px; */
@@ -115,6 +123,7 @@ export  const AboutIcon=styled.img`
 height:120px;
 width:130px;
 margin-bottom:20px;
+z-index: 3;
 // border:0.5px solid #FFC640;
 // box-shadow:3px 3px 3px #FFC640;
 `
@@ -122,6 +131,7 @@ export const AboutH1=styled.h1`
 /* font-size:5rem;
 color:black;
 margin-bottom:64px; */
+z-index: 3;
 margin-bottom: 64px;
     font-size: 50px;
     line-height: 1.1;
@@ -137,6 +147,7 @@ export const AboutH2=styled.h2`
 font-weight: 600;
 font-size: 24px;
 line-height: 32px;
+z-index: 3;
 color:white;
 margin-bottom:10px;
 
@@ -148,6 +159,7 @@ font-style: normal;
 font-weight: 400;
 font-size: 16px;
 line-height: 20px;
+z-index: 3;
 text-align:center;
 color:white;
 `;
@@ -155,13 +167,16 @@ color:white;
 export const BtnWrap = styled.div`
     display: flex;
     justify-content: flex-start;
+    z-index: 3;
 `
 export const ImgWrap = styled.div`
     max-width: 555px;
     height: 100%
+    z-index: 3;
 `
 export  const Img = styled.img`
     width: 100%;
     margin: 0 0 10px 0;
     padding-right: 0;
+    z-index: 3;
 `

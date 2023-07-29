@@ -1,8 +1,9 @@
-import React, {useState} from 'react'
+import React, {useState} from 'react';
 import { HeroContainer, HeroBg, Imgbg, HeroD, HeroContent,Heroimg, HeroBtnWrapper,HeroH1, HeroP, ArrowForward, ArrowRight } from './HeroElements'
 import {Button} from '../ButtonElements'
 import { FaWhatsapp } from 'react-icons/fa';
 import bg from '../../images/bg.svg'
+import DynamicBackground from './DynamicBg';
 
 const HeroSection = () => {
     const[hover, setHover] = useState(false)
@@ -17,10 +18,11 @@ const HeroSection = () => {
     }
 
   return (
-    <HeroContainer>
-        <HeroBg>
-           <Imgbg src={bg} type='image/svg'/>
-        </HeroBg>
+    <HeroContainer >
+        <DynamicBackground  />
+        {/* <HeroBg>
+           {/* <Imgbg src={bg} type='image/svg'/>
+        </HeroBg> */}
         <HeroContent>
             <HeroH1>Your Gateway to the</HeroH1>
             <HeroH1><HeroD>Web3</HeroD> World</HeroH1>

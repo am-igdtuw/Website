@@ -10,7 +10,7 @@ justify-content: center;
 align-items: center;
 /* padding: 60px 240px 40px; */
 /* column-gap: 10px; */
-position: absolute;
+position: fixed;
 width: auto;
 left: 0px;
 height: 142px;
@@ -162,8 +162,8 @@ flex-grow: 0;
 `
 
 export const NavImg = styled.div`
-width: 350px;
-height: 19px;
+width: 400px;
+height: 200x;
 display: flex;
 align-items: flex-start;
 flex-direction: row;

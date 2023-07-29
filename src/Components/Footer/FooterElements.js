@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom'
 
 export const FooterContainer = styled.footer`
   background-color: #0D0A03;
+  z-index: 2;
 
 `
 
@@ -15,6 +16,7 @@ export const FooterWrap = styled.div`
  align-items: center;
  max-width: 1100px;
  margin: 0 auto;
+ z-index: 2;
  
  @media screen and (max-width: 768px) {
     ${'' /* height: auto; */}
@@ -28,6 +30,7 @@ export const FooterWrap = styled.div`
 export const FooterLinksContainer = styled.div`
  display: flex;
  justify-content: center;
+ z-index: 2;
 
  @media screen and (max-width: 768px) {
     padding-top: 32px;
@@ -36,6 +39,7 @@ export const FooterLinksContainer = styled.div`
 export const FooterLinksWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
+  z-index: 2;
 //   @media screen and(max-width: 768px) {
 //    flex-wrap: wrap;
 //   }
@@ -50,6 +54,7 @@ export const FooterLinkItems = styled.div`
  width: 160px;
  box-sizing: border-box;
  color: #fff;
+ z-index: 2;
 
  @media screen and (max-width: 420px) {
     margin: 10px;
@@ -60,12 +65,14 @@ export const FooterLinkItems = styled.div`
 export const FooterLinkTitle = styled.h1`
  font-size: 14px;
  margin-bottom: 16px;
+ z-index: 2;
 `
 export const FooterLink = styled(Link)`
  color: #fff;
  text-decoration: none;
  margin-bottom: 0.5rem;
  font-size: 14px;
+ z-index: 2;
 
  &:hover {
     color: #01bf71;
@@ -75,6 +82,7 @@ export const FooterLink = styled(Link)`
 export const SocialMedia = styled.section`
  max-width: 1000px;
  width: 100%;
+ z-index: 2;
 `
 
 export const SocialMediaWrap = styled.div`
@@ -83,6 +91,7 @@ export const SocialMediaWrap = styled.div`
  align-items: center;
  max-width: 1100px;
  margin: 40px auto 0 auto;
+ z-index: 2;
 
  @media screen and (max-width: 768px) {
     flex-direction: column;
@@ -100,11 +109,13 @@ export const SocialMediaWrap = styled.div`
  align-items: center;
   margin-bottom: 16px;
   font-weight: bold;
+  z-index: 2;
   
  `
 export const WebsiteRights = styled.small`
  color: #fff;
  margin-bottom: 16px;
+ z-index: 2;
 `
 
 export const SocialIcons = styled.div`
@@ -112,13 +123,16 @@ export const SocialIcons = styled.div`
  justify-content: space-between;
  align-items: center;
  width: 100px;
+ z-index: 2;
 `
 
 export const SocialIconsLink = styled.a`
  color: #fff;
+ z-index: 2;
  font-size: 24px;
 `
 
 export const Gap = styled.div`
   margin: 24px 0; 
+  z-index: 2;
 `;

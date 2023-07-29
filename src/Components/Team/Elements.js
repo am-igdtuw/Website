@@ -7,6 +7,7 @@ flex-direction:column;
 justify-content:center;
 align-items: center;
 background:black;
+z-index: 3;
 
 @media screen and (max-width:768px){
     height:auto;
@@ -25,6 +26,7 @@ grid-template-columns: 1fr;
 align-items:center;
 grid-column-gap:40px;
 padding:0 50px;
+z-index: 3;
 @media screen and (max-width:768px){
     grid-template-columns: 1fr 1fr ;
 }
@@ -47,6 +49,7 @@ align-items:center;
 grid-column-gap:40px;
 padding:0 50px;
 position: relative;
+z-index: 3;
 @media screen and (max-width:768px){
     grid-template-columns: 1fr 1fr ;
     grid-gap: 3rem;
@@ -57,7 +60,6 @@ position: relative;
     height: 700px;
     grid-template-columns: 1fr;
     padding:0 20px;
-    z-index: 3;
     grid-column:2rem;
     grid-gap: 3rem;
     grid-row: 2rem; 
@@ -75,6 +77,7 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 align-items:center;
 grid-column-gap:40px;
 padding:0 50px;
+z-index: 3;
 @media screen and (max-width:1000px){
     grid-template-columns: 1fr 1fr ;
     grid-gap: 3.5rem;
@@ -104,6 +107,7 @@ border-radius:10px;
 height:265px;
 width:203px;
 border:0.5px solid #FFC640;
+z-index: 3;
 
 /* padding:10px; */
 /* gap:50px; */
@@ -138,6 +142,7 @@ margin-bottom:20px;
 border-radius:10px;
 border:0.5px solid #FFC640;
 box-shadow:3px 3px 3px #FFC640;
+z-index: 3;
 `
 export const TeamH1=styled.h1`
 /* font-size:5rem;
@@ -149,6 +154,7 @@ margin-bottom:64px; */
     font-weight: 600;
     text-transform: uppercase;
     color: white;
+    z-index: 3;
     @media screen and (max-width:768px){
         font-size:2rem;
         text-align: center;
@@ -165,12 +171,14 @@ font-size:1rem;
 color:white;
 margin-bottom:10px;
 text-align:center;
+z-index: 3;
 
 `
 export const TeamP=styled.p`
 font-size:1rem;
 text-align:center;
 color:#FFC640;
+z-index: 3;
 `;
 
 export const IconWrapper = styled.div`
@@ -183,6 +191,7 @@ export const IconWrapper = styled.div`
   color: white;
   transition: opacity 0.3s ease-in-out;
   opacity: 0;
+  z-index: 3;
   a {
     display: flex;
     justify-content: center;
