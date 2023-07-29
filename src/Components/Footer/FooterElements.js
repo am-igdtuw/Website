@@ -40,6 +40,8 @@ export const FooterLinksWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   z-index: 2;
+
+  gap:20px;
 //   @media screen and(max-width: 768px) {
 //    flex-wrap: wrap;
 //   }
@@ -48,10 +50,11 @@ export const FooterLinksWrapper = styled.div`
 export const FooterLinkItems = styled.div`
  display: flex;
  flex-direction: column;
- align-items: flex-start;
+ align-items: centre;
  margin: 16px;
- text-align: left;
- width: 160px;
+ margin-left: 20px;
+ text-align: centre;
+ width: 260px;
  box-sizing: border-box;
  color: #fff;
  z-index: 2;
@@ -63,9 +66,10 @@ export const FooterLinkItems = styled.div`
  }
 `
 export const FooterLinkTitle = styled.h1`
- font-size: 14px;
+ font-size: 18px;
  margin-bottom: 16px;
  z-index: 2;
+ font-weight:600;
 `
 export const FooterLink = styled(Link)`
  color: #fff;
@@ -73,6 +77,7 @@ export const FooterLink = styled(Link)`
  margin-bottom: 0.5rem;
  font-size: 14px;
  z-index: 2;
+ font-size: 16px;
 
  &:hover {
     color: #01bf71;
