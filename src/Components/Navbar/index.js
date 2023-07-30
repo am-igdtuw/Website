@@ -16,7 +16,7 @@ const Navbar = () => {
       <Nav>
         <NavbarContainer>
             <NavImg>
-              <img src={Logo2} height={35}/>
+              <img src={Logo2} height={44}/>
               <NavLogo>
                 AssetMantle          
                 <SubLogo>Student Chapter IGDTUW </SubLogo>

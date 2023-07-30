@@ -43,7 +43,7 @@ export const NavLogo = styled.div`
   width: 150px;
   color: #fff;
   justify-self: flex-start;  
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   display: flex;
   flex-direction:column; 
   margin-left: 6px;
@@ -101,7 +101,7 @@ flex-grow: 0;
 
 `
 export const SubLogo = styled.span`
-font-size: 9px; /* Adjust the font size as per your preference */
+font-size: 12px; /* Adjust the font size as per your preference */
 color: #fff;
 // margin-top: 0px;
   // width: auto;
