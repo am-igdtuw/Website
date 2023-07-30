@@ -13,7 +13,7 @@ z-index: 3;
     height:1100px;
 }
 @media screen and (max-width:480px){
-    height:800px;
+    height:750px;
 }
 `
 
@@ -117,6 +117,10 @@ background:black;
 
 }
 
+@media screen and (max-width:480px){
+    height:300px;
+}
+
 
 `
 export  const AboutIcon=styled.img`
@@ -126,6 +130,12 @@ margin-bottom:20px;
 z-index: 3;
 // border:0.5px solid #FFC640;
 // box-shadow:3px 3px 3px #FFC640;
+
+@media screen and (max-width:480px){
+    height:100px;
+}
+
+
 `
 export const AboutH1=styled.h1`
 /* font-size:5rem;
@@ -140,7 +150,7 @@ margin-bottom: 64px;
     color: white;
 
 @media screen and (max-width:480px){
-    font-size:2rem;
+    font-size:1.5rem;
 }
 `
 export const AboutH2=styled.h2`
@@ -150,7 +160,10 @@ line-height: 32px;
 z-index: 3;
 color:white;
 margin-bottom:10px;
-
+@media screen and (max-width:480px){
+    font-size:1.3rem;
+    line-height: 30px;
+}
 
 `
 export const AboutP=styled.p`
@@ -162,6 +175,12 @@ line-height: 20px;
 z-index: 3;
 text-align:center;
 color:white;
+@media screen and (max-width:480px){
+    font-size:0.9rem;
+    ${'' /* line-height: 30px; */}
+}
+
+
 `;
 
 export const BtnWrap = styled.div`

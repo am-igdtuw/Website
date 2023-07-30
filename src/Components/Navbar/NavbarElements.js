@@ -3,6 +3,7 @@ import {Link as LinkR} from 'react-router-dom'
 //import {Link as LinkS} from 'react-scroll'
 
 export const Nav = styled.nav`
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 display: flex;
 justify-content: center;
 align-items: center;
@@ -13,9 +14,14 @@ height: 80px;
 top: 0;
 z-index: 10;
 background: #0D0A03;
-  @media screen and (max-width: 960px){
+overflow-y: hidden;
+  overflow-x: auto;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  @media screen and (max-width: 768px){
     transition: 0.8s all ease;
-    
+    overflow: visible;
   }
 `
 
