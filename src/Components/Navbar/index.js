@@ -43,7 +43,7 @@ const Navbar = () => {
                     </NavLinks>
                 </Navitem> */}
                 <Navitem>
-                    <NavLinks to="/faq">FAQS
+                    <NavLinks to="/faq" >FAQS
                     </NavLinks>
                 </Navitem>
                

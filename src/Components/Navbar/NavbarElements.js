@@ -71,7 +71,7 @@ export const NavMenu = styled.ul`
 display: flex;
 flex-direction: row;
  align-items: center;
-padding: 0px 30px 0px 90px;
+padding: 16px 50px 0px 90px;
 gap: 21px;
 width: auto;
 height: 34px;
@@ -131,6 +131,7 @@ box-sizing: border-box;
 display: flex;
 flex-direction: row;
 align-items: center;
+${'' /* justify-content: center; */}
 padding: 0px 20px;
 gap: 10px;
 border:0.5px solid #FFC640;
@@ -160,7 +161,7 @@ align-items: flex-start;
 flex-direction: row;
 padding-left: 20px;
 margin-right: auto; /* Pushes the container to the left */
-margin-bottom: 20px;
+${'' /* margin-bottom: 20px; */}
 flex: none;
 order: 0;
 flex-grow: 0;
@@ -172,14 +173,17 @@ export const NavLinks = styled(LinkR)`
   width: 74px;
   height: 36px;
   padding: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
   text-decoration: none;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 22px;
   color: #FFC640;
-  flex: none;
+  ${'' /* flex: none; */}
   align-items: center;
+  justify-content: center;
   order: 0;
   flex-grow: 0;
 
