@@ -19,7 +19,7 @@ const DynamicBackground = () => {
       },
       "particles": {
           "number": {
-              "value": 7,
+              "value": 10,
               "density": {
                   "enable": false,
                   "value_area": 1000
@@ -29,7 +29,7 @@ const DynamicBackground = () => {
               "value": "#fff"
           },
           "shape": {
-              "type": "star",
+              "type": "polygon",
               "options": {
                   "sides": 5
               }

@@ -64,7 +64,8 @@ export const HeroH1 = styled.h1`
   padding: 50px 50px;
   padding-top: 1px;
   width: 200px;
-  font-family: 'Poppins', sans-serif;
+  //font-family: 'Poppins', sans-serif;
+  font-family: 'Exo 2', sans-serif;
   
   ${'' /* font-family: 'Inter'; */}
   ${'' /* color: #fffdfa; */}

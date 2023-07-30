@@ -71,7 +71,8 @@ export const HeroH1 = styled.h1`
     text-align: center; */
     
     margin-bottom: 30px;
-    font-family: 'Poppins', sans-serif;
+    //font-family: 'Poppins', sans-serif;
+    font-family: 'Exo 2', sans-serif;
     color: #FFFDFA;
     font-style: normal;
     font-size: 64px;
@@ -90,7 +91,8 @@ export const HeroH1 = styled.h1`
 `
 export const HeroD = styled.span`
     color: #FFC640;
-    font-family: 'Poppins', sans-serif;
+    //font-family: 'Poppins', sans-serif;
+    font-family: 'Exo 2', sans-serif;
 font-style: normal;
 `
 export const HeroP = styled.p`
@@ -98,7 +100,8 @@ export const HeroP = styled.p`
   max-width: 640px;
   padding: 0 20px;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  //font-family: 'Poppins', sans-serif;
+  font-family: 'Exo 2', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -136,6 +139,7 @@ export const HeroBtnWrapper = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
+    
     // background: radial-gradient(50% 50% at 50% 50%, #FFC640 47.4%, #F2AF13 100%);
 
 `
@@ -151,6 +155,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 transition: all 0.2s ease-in-out;
+
 @media screen and (max-width: 480px) {
     height: 30px;
     width: 30px;

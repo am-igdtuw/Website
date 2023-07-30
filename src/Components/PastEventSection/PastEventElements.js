@@ -68,6 +68,7 @@ export const ServicesH1 = styled.h1`
   font-weight: 600;
   text-transform: uppercase;
   color: white;
+  font-family: 'Exo 2', sans-serif;
 
   @media screen and (max-width: 768px) {
     font-size: 2rem;
@@ -82,7 +83,8 @@ export const ServicesH1 = styled.h1`
 
 export const ServicesH2 = styled.h2`
   color: #fffdfa !important;
-  font-family: "Poppins", sans-serif;
+  //font-family: "Poppins", sans-serif;
+  font-family: 'Exo 2', sans-serif;
   font-style: normal;
   font-weight: 550;
   font-size: 24px;
