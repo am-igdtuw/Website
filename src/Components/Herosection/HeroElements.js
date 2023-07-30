@@ -14,6 +14,10 @@ height: 100vh;
 position: relative;
 overflow: hidden;
 
+@media screen and (max-width: 480px){
+    height: 60vh;
+    }
+
 
     // :before{
     //     content: '';

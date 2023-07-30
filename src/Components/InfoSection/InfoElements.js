@@ -13,7 +13,7 @@ z-index: 3;
     height:1100px;
 }
 @media screen and (max-width:480px){
-    height:1300 px;
+    height:800px;
 }
 `
 
