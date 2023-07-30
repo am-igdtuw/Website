@@ -4,27 +4,18 @@ import {Link as LinkR} from 'react-router-dom'
 
 export const Nav = styled.nav`
 display: flex;
-/* flex-direction: column; */
-/* position: sticky; */
 justify-content: center;
 align-items: center;
-/* padding: 60px 240px 40px; */
-/* column-gap: 10px; */
-position: fixed;
-width: auto;
-left: 0px;
-height: 142px;
+width: 100%;
 top: 0px;
-position: relative;
-/* width: 100%; */
+position: sticky; 
 height: 80px;
 top: 0;
-  z-index: 10;
-
+z-index: 10;
 background: #0D0A03;
-
   @media screen and (max-width: 960px){
     transition: 0.8s all ease;
+    
   }
 `
 
@@ -68,7 +59,7 @@ export const MobileIcon = styled.div`
     position: absolute;
     top: 0;
     bottom: 0;
-    
+    ${'' /* width: auto; */}
     right: 0;
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
@@ -174,6 +165,8 @@ flex: none;
 order: 0;
 flex-grow: 0;
 `;
+
+
 export const NavLinks = styled(LinkR)`
 
   width: 74px;
