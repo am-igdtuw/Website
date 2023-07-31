@@ -10,6 +10,7 @@ import OutreachTeamPage from './pages/outreachTeam';
 import EventTeamPage from './pages/eventTeam';
 import MediaTeamPage from './pages/mediaTeam';
 import ResearchTechTeam from './pages/researchTeam';
+
 //window.$crisp=[];
 //window.CRISP_WEBSITE_ID="e79efdd2-abee-4a1e-b868-c7929585ebd9";
 
