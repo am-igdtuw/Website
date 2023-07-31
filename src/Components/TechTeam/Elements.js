@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled, { css, keyframes } from "styled-components";
 // export const TechContainer = styled.div`
 //     height: 100%;
 //     width: 100%;
@@ -119,7 +119,6 @@ import styled, { css } from "styled-components";
 //     }
 // `;
 
-
 export const OuterBorder = styled.div`
   border: 3px solid #ffc640;  
   padding: 5px;
@@ -160,19 +159,54 @@ export const TechContainer = styled.div`
   justify-content: space-between;
 `;
 
+export const InfoText = styled.p`
+  font-size: 13px;
+  color: black;
+`;
+
+export const TechH2 = styled.h2`
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  padding: 3px;
+  margin-top: 15px
+`;
+
+export const AdditionalInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  left: 2%;
+  background-color: #ffc640;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  height: 50px;
+`;
+
+
 export const TechCard = styled.div`
   background: black;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
   border: 0.5px solid #ffc640;
   box-shadow: 0 1px 3px gray;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
-  height: 240px;
-  width: 180px;
+  padding: 7px;
+  padding-left: 0px;
+  padding-top: 3px;
+  padding-bottom: 0px;
+  height: 170px;
+  width: 190px;
   transition: all 0.2s ease-in-out;
+  transform: ${({ showCube }) => (showCube ? 'rotateX(0deg) rotateY(0deg)' : 'none')};
+  //opacity: ${({ showCube }) => (showCube ? '1' : '0')};
+  cursor: pointer;
+  position: relative;
   background: linear-gradient(
     180deg,
     rgba(255, 198, 64, 0.16) 0%,
@@ -184,41 +218,48 @@ export const TechCard = styled.div`
     transition: all 0.2s ease-in-out;
     cursor: pointer;
   }
+
+`;
+
+export const TechContent = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
 `;
 
 export const TechIcon = styled.img`
-height: 130px;
-width: 120px;
-border-radius: 5%;
-margin-bottom: 7px;
+  height: 140px;
+  width: 137px;
+  border-radius: 5%;
+  margin-bottom: 0px;
 `;
 
-export const TechH2 = styled.h2`
-  font-size: 18px;
-  text-align: center;
-  color: white;
-`;
 
 export const TechP = styled.p`
   font-size: 1rem;
   text-align: center;
-  display: flex;
-  gap: 10px;
   font-size: 18px;
   justify-content: center;
+  margin-top: 15px;
 
   a {
     color: white;
-    font-size: 20px;
+    font-size: 17px;
     transition: color 0.2s ease-in-out;
-
-    height: 36px;
-    width: 36px;
+    height: 33px;
+    width: 33px;
     border-radius: 50%;
     border: 2px solid transparent;
     border-color: #ffc640;
     background-color: rgba(255, 198, 64, 0.2);
     transition: border-color 0.2s ease-in-out;
+    margin-bottom: 9px; 
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     &.linkiden:hover {
       color: #0077b5;
@@ -231,6 +272,7 @@ export const TechP = styled.p`
     }
   }
 `;
+
 
 export const TechWrapper = styled.div`
   display: flex;
@@ -255,3 +297,110 @@ export const TechWrapper = styled.div`
       }
     `}
 `;
+
+export const CubeWrapper = styled.div`
+  position: absolute;
+  top: 30%;
+  left: 320%;
+  width: 130px;
+  height: 130px;
+  perspective: 800px;
+  transition: transform 1s;
+  display: ${({ show }) => (show ? 'block' : 'none')};
+
+  ${({ show }) =>
+    show
+      ? css`
+          transform: translateX(-50%) rotateX(0deg) rotateY(0deg);
+          z-index: 1;
+          pointer-events: none;
+        `
+      : css`
+          transform: translateX(100%) rotateX(30deg) rotateY(-45deg);
+          z-index: -1;
+          pointer-events: none;
+        `}
+
+
+  .cube-container {
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    top: 0;
+    right: 160%;
+    transform: translateX(${({ show }) => (show ? '10%' : '100%')}) rotateX(30deg) rotateY(-45deg);
+    transition: transform 2s;
+    transform-origin: right;
+    perspective: 800px;
+    ${({ show }) => show && 'transform: translateX(-50%) rotateX(0deg) rotateY(0deg);'}
+  }
+  
+  .cube {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: ${({ show }) => (show ? 'spin 7s linear infinite' : 'none')};
+  }
+  
+  .cube-side {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: 1px solid #ffc640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background: rgba(0, 0, 0, 0.8);
+    transform-style: preserve-3d;
+  }
+
+  .cube-text-wrapper {
+    position: absolute;
+    top: 0%;
+    left: -210%;
+    width: 130%;
+    height: 130%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cube-text {
+    font-size: 17px;
+    font-weight: semi-bold;
+    color: white;
+  }
+  .cube-text-des {
+    font-size: 13px;
+    color: white;
+  }
+  
+  .cube-side.front {
+    transform: translateZ(85px);
+  }
+  .cube-side.back {
+    transform: rotateX(180deg) translateZ(85px);
+  }
+  .cube-side.right {
+    transform: rotateY(-90deg) translateZ(85px);
+  }
+  .cube-side.left {
+    transform: rotateY(90deg) translateZ(85px);
+  }
+  .cube-side.top {
+    transform: rotateX(-90deg) translateZ(85px);
+  }
+  .cube-side.bottom {
+    transform: rotateX(90deg) translateZ(85px);
+  }
+  
+  @keyframes spin {
+    0% { transform: rotateX(0deg) rotateY(0deg); }
+    100% { transform: rotateX(360deg) rotateY(360deg); }
+  }
+
+`;
+

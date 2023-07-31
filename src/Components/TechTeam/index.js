@@ -1,5 +1,5 @@
-import React from 'react'
-import { TechContainer, TechH1, OuterBorder, InnerBorder, TechWrapper, TechCard, TechIcon, TechH2, TechP, VerticalText, Section } from './Elements';
+import React, { useEffect, useState } from 'react'
+import { TechContainer, TechH1, CubeWrapper, TechContent, AdditionalInfo, InfoText, OuterBorder, InnerBorder, TechWrapper, TechCard, TechIcon, TechH2, TechP, VerticalText, Section } from './Elements';
 import { FaLinkedin, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 // const Tech = () => {
@@ -89,23 +89,73 @@ import { FaLinkedin, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 
 const Tech = () => {
+  const [showCube, setShowCube] = useState(false);
+
+  const handleCardClick = () => {
+    setShowCube(!showCube);
+  };
+
   return (
     <OuterBorder>
       <InnerBorder>
       <Section>
       <VerticalText>Technical Team</VerticalText>
       <TechContainer>
-        <TechCard>
-          <TechIcon src="https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1688488847/Asset%20Mantle%20-%20Team%202023/Leads/Harshita%20Deep.jpg" />
-          <TechH2>Harshita Deep</TechH2>
-          <TechP>
-            <a className='linkiden' href="https://www.linkedin.com/in/harshita-d-8a352722a/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-            <a className='twitter' href="https://twitter.com/harshita_7777" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
-            <a className='insta' href="https://www.instagram.com/ha_rshita4387/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-          </TechP>
+        <TechCard onClick={handleCardClick} showCube={showCube} >
+          <TechContent>
+            <TechIcon src="https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1688488847/Asset%20Mantle%20-%20Team%202023/Leads/Harshita%20Deep.jpg" />
+            <TechP>
+              <a
+                className="linkiden"
+                href="https://www.linkedin.com/in/harshita-d-8a352722a/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedin />
+              </a>
+              <a
+                className="twitter"
+                href="https://twitter.com/harshita_7777"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaTwitter />
+              </a>
+              <a
+                className="insta"
+                href="https://www.instagram.com/ha_rshita4387/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaInstagram />
+              </a>
+            </TechP>
+          </TechContent>
+          <AdditionalInfo >
+            <TechH2>Harshita Deep</TechH2>
+            <InfoText>Lead, Technical Team</InfoText>
+          </AdditionalInfo>
+          <CubeWrapper show={showCube}>
+             <div className="cube-container">
+                <div className="cube">
+                  <div className="cube-side front"></div>
+                  <div className="cube-side back"></div>
+                  <div className="cube-side right"></div>
+                  <div className="cube-side left"></div>
+                  <div className="cube-side top"></div>
+                  <div className="cube-side bottom"></div>
+                </div>
+              </div>
+              <div className="cube-text-wrapper">
+                <div className="cube-text">Blockchain Maestro</div>
+                <p className='cube-text-des'>Maestro of blockchain development, orchestrating innovative solutions.</p>
+              </div>
+          </CubeWrapper>
+
         </TechCard>
 
-        <TechWrapper>
+
+        {/* <TechWrapper>
           <TechCard>
             <TechIcon src="https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1688526862/Asset%20Mantle%20-%20Team%202023/Technical/Mansi.jpg" />
             <TechH2>Mansi</TechH2>
@@ -166,7 +216,7 @@ const Tech = () => {
               <a className='insta' href="https://www.instagram.com/verve_infinite/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
             </TechP>
           </TechCard>
-        </TechWrapper>
+        </TechWrapper> */}
 
       </TechContainer>
     </Section>
