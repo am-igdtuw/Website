@@ -7,7 +7,7 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 display: flex;
 justify-content: center;
 align-items: center;
-width: 100%;
+width: auto;
 top: 0px;
 position: sticky; 
 height: 80px;
@@ -21,6 +21,10 @@ overflow-y: hidden;
   @media screen and (max-width: 768px){
     transition: 0.8s all ease;
     overflow: visible;
+  }
+  @media screen and (max-width: 480px){
+    width: auto;
+    height: auto;
   }
 `
 

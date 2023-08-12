@@ -4,17 +4,18 @@ import bg from '../../images/bg.svg'
 
 
 export const HeroContainer = styled.div`
-width: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
-padding: 0 30px;
-height: 100vh;
-position: relative;
-overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    text-align: left; /* Adjusted to align text to the left */
+    padding: 0 30px;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
 
-@media screen and (max-width: 480px){
-    height: 60vh;
+    @media screen and (max-width: 480px) {
+        height: 60vh;
     }
 
 
@@ -65,31 +66,33 @@ export const HeroContent = styled.div`
     padding: 8px 24px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
 `
 
 export const HeroH1 = styled.h1`
     /* color: #fff;
     font-size: 32rem;
-    text-align: center; */
-    
+     */
+    text-align: left;
     margin-bottom: 30px;
     //font-family: 'Poppins', sans-serif;
     font-family: 'Exo 2', sans-serif;
     color: #FFFDFA;
     font-style: normal;
     font-size: 64px;
-    line-height: 0.5;
+    line-height: 0.7;
     font-weight: 600;
     color: white;
     
 
     @media screen and (max-width: 768px){
-        font-size: 42px;
+        font-size: 50px;
+        font-weight:600;
     }
 
     @media screen and (max-width: 480px){
-        font-size: 33px;
+        font-size: 45px;
+        font-weight:600;
     }
 `
 export const HeroD = styled.span`
@@ -101,7 +104,7 @@ font-style: normal;
 export const HeroP = styled.p`
   width: 100%;
   max-width: 640px;
-  padding: 0 20px;
+  margin-top: 1.5rem;
   box-sizing: border-box;
   //font-family: 'Poppins', sans-serif;
   font-family: 'Exo 2', sans-serif;
@@ -109,7 +112,7 @@ export const HeroP = styled.p`
   font-weight: 600;
   font-size: 20px;
   line-height: 28px;
-  text-align: center;
+  text-align: left;
   background: linear-gradient(
     180deg,
     rgba(255, 198, 64, 0.6) 0%,
