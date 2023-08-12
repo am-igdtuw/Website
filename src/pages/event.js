@@ -4,6 +4,7 @@ import EventHeroSection from '../Components/EventHeroSection';
 import EventInfoSection from '../Components/EventInfoSection';
 import PastEventSection from '../Components/PastEventSection';
 import FollowSection from '../Components/FollowSection';
+import Footer from '../Components/Footer';
 
 const EventPage = () => {
   return (
@@ -12,7 +13,8 @@ const EventPage = () => {
         <EventHeroSection/>
         {/* <EventInfoSection/> */}
         <PastEventSection/>
-        <FollowSection/>
+        {/* <FollowSection/> */}
+        <Footer/>
     </div>
   );
 };

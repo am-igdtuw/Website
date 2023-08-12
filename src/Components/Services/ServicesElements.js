@@ -6,7 +6,6 @@ export const ServicesContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: black;
   padding: 80px 0;
   text-decoration: none;
   z-index: 3;
