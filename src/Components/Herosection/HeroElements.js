@@ -5,7 +5,6 @@ import bg from '../../images/bg.svg'
 
 export const HeroContainer = styled.div`
 width: 100%;
-background: black;
 display: flex;
 justify-content: center;
 align-items: center;

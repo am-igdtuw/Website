@@ -6,7 +6,6 @@ display:flex;
 flex-direction:column;
 justify-content:center;
 align-items: center;
-background:black;
 z-index: 3;
 
 @media screen and (max-width:768px){

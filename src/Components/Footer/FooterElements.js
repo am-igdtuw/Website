@@ -3,7 +3,6 @@ import {Link} from 'react-router-dom'
 // import logo from 'src/logo.svg'
 
 export const FooterContainer = styled.footer`
-  background-color: #0D0A03;
   z-index: 2;
 
 `

@@ -19,7 +19,7 @@ const HeroSection = () => {
 
   return (
     <HeroContainer >
-        <DynamicBackground  />
+        {/* <DynamicBackground  /> */}
         {/* <HeroBg>
            {/* <Imgbg src={bg} type='image/svg'/>
         </HeroBg> */}
