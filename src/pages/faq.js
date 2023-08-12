@@ -2,7 +2,7 @@ import React from 'react'
 import FaqSection from '../Components/FaqSection';
 import Navbar from '../Components/Navbar';
 import FollowSection from '../Components/FollowSection';
-
+import Footer from '../Components/Footer';
 
 const FaqPage = () => {
   return (
@@ -10,6 +10,7 @@ const FaqPage = () => {
         <Navbar/>
         <FaqSection/>
         <FollowSection/>
+        <Footer/>
     </div>
   );
 };

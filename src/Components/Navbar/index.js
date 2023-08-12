@@ -28,8 +28,7 @@ const Navbar = () => {
             </MobileIcon>
             <NavMenu isOpen={isOpen}>
                 <Navitem>
-                    <NavLinks to="/">
-                       ABOUT
+                    <NavLinks to="/">ABOUT
                     </NavLinks>
                 </Navitem>
                 <Navitem>
@@ -38,10 +37,10 @@ const Navbar = () => {
                 </Navitem>
                
 
-                {/* <Navitem>
-                    <NavLinks to="/blogs">BLOGS
+                <Navitem>
+                    <NavLinks to="/TeamPage">TEAM
                     </NavLinks>
-                </Navitem> */}
+                </Navitem>
                 <Navitem>
                     <NavLinks to="/faq" >FAQS
                     </NavLinks>
