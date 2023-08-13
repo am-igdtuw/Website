@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { HeroContainer, HeroBg, Imgbg, HeroD, HeroContent, Heroimg, HeroBtnWrapper, HeroH1, HeroP, ArrowForward, ArrowRight } from './HeroElements'
+import { HeroContainer, HeroBg, CubeWrapper, Imgbg, HeroD, HeroContent, Heroimg, HeroBtnWrapper, HeroH1, HeroP, ArrowForward, ArrowRight } from './HeroElements'
 import { Container } from "@mui/system";
 import {
     Box,
@@ -105,6 +105,16 @@ const HeroSection = () => {
                     </Grid>
                     <Grid item xs={12} md={7} sx={{ backgroundColor: "transparent" }}>
                         {RightSubSectionJSX}
+                        {/* <CubeWrapper >
+                <div className="cube">
+                  <div className="cube-side front"></div>
+                  <div className="cube-side back"></div>
+                  <div className="cube-side right"></div>
+                  <div className="cube-side left"></div>
+                  <div className="cube-side top"></div>
+                  <div className="cube-side bottom"></div>
+                </div>
+      </CubeWrapper> */}
                     </Grid>
                 </Grid>
             </Container>

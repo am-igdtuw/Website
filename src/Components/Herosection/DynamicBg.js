@@ -8,7 +8,8 @@ const DynamicBackground = () => {
         await loadFull(main);
   };
   return (
-    <div style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', zIndex: 2 }}>
+    <div style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', zIndex: 1 }}>
+
     <Particles
     id="tsparticles"
     init={particlesInit}
@@ -124,10 +125,10 @@ const DynamicBackground = () => {
       },
       "retina_detect": true,
       "background": {
-          "color": "#111",
-          "image": "",
+        //   "color": "#111",
+          "image": "url('/image/Background_tile.webp')",
           "position": "50% 50%",
-          "repeat": "no-repeat",
+          "repeat": "repeat-y",
           "size": "cover"
       }
   }}

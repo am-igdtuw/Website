@@ -6,6 +6,7 @@ display:flex;
 flex-direction:column;
 justify-content:center;
 align-items: center;
+z-index:10;
 
 @media screen and (max-width:768px){
     height:1100px;
@@ -20,6 +21,7 @@ export const AboutRow = styled.div`
     display: grid;
     grid-auto-columns: minmax(auto, 1fr);
     align-items: center;
+    z-index:10;
     grid-template-areas: ${({imgStart})=> (imgStart ? `'col2 col1'` : `'col1 col2'`)};
 
     @media screen and (max-width: 768px){
@@ -31,12 +33,14 @@ export const Column1 = styled.div`
     margin-bottom: 15px;
     padding: 0 15px;
     grid-area: col1;
+    z-index:10;
 `;
 
 export const TextWrapper = styled.div`
     max-width: 540px;
     padding-top: 0;
     padding-bottom: 60px;
+    z-index:10;
 `
 export const TopLine = styled.p`
     color: #01bf71;
@@ -46,6 +50,7 @@ export const TopLine = styled.p`
     letter-spacing: 1.4px;
     text-transform: uppercase;
     margin-bottom: 16px;
+    z-index:10;
 `
 
 export const Heading = styled.h1`
@@ -53,6 +58,7 @@ export const Heading = styled.h1`
     font-size: 48px;
     line-height: 1.1;
     font-weight: 600;
+    z-index:10;
     color: ${({lightText})=> (lightText ? '#f7f8fa' : '#010606')};
 
     @media screen and (max-width: 480px){
@@ -64,6 +70,7 @@ export const SubTitle = styled.p`
     margin-bottom: 35px;
     font-size: 18px;
     line-height: 24px;
+    z-index:10;
     color: ${({darkText})=> (darkText ? '#010606' : '#fff')}; 
 `
 export const AboutWrapper=styled.div`
@@ -79,6 +86,7 @@ height: 400px;
 background: linear-gradient(180deg, rgba(255, 198, 64, 0.16) 0%, rgba(255, 198, 64, 0.1024) 100%);
 border-radius: 24px;
 /*
+z-index:10;
 max-width:10000;
 margin: 0 auto;
 display: grid;
@@ -108,6 +116,7 @@ height: 320px;
 font-weight: 600;
 font-family:'Poppins', sans-serif;
 font-style: normal;
+z-index:10;
 
 `
 export  const AboutIcon=styled.img`
@@ -115,10 +124,12 @@ height:280px;
 width:280px;
 align: left;
 margin-bottom:20px;
+z-index:10;
 `
 export const AboutH1=styled.h1`
 /* font-size:5rem;
 color:black;
+z-index:10;
 margin-bottom:64px; */
 margin-bottom: 64px;
     font-size: 50px;
@@ -137,6 +148,7 @@ font-size: 32px;
 line-height: 32px;
 color:#FFFDFA;
 margin-bottom:10px;
+z-index:10;
 
 
 `
@@ -149,6 +161,7 @@ line-height: 18px;
 gap: 36px;
 text-align:left;
 color:#FFFDFA;
+z-index:10;
 `;
 export const HeroBtnWrapper = styled.div`
     margin-top: 32px;
@@ -156,6 +169,7 @@ export const HeroBtnWrapper = styled.div`
     flex-direction: column;
     align-items: center;
     border-radius: 5px;
+    z-index:10;
     ${'' /* background: radial-gradient(50% 50% at 50% 50%, #FFC640 47.4%, #F2AF13 100%); */}
 `
 
@@ -169,6 +183,7 @@ curson: pointer;
 display: flex;
 justify-content: center;
 align-items: center;
+z-index:10;
 transition: all 0.2s ease-in-out;
 `
 export const BtnWrap = styled.div`

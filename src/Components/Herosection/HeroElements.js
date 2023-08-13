@@ -177,3 +177,73 @@ export const ArrowRight = styled(MdKeyboardArrowRight)`
     margin-left: 8px;
     font-size: 20px;
 `
+
+export const CubeWrapper = styled.div`
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%, -50%);
+    width: 180px;
+    height: 150px;
+    perspective: 800px;
+    transition: transform 1s;
+    pointer-events: none;
+
+    .cube {
+        width: 120px;
+        height: 120px;
+        position: relative;
+        transform-style: preserve-3d;
+        animation: spin 9s linear infinite; /* Add this animation */
+    }
+  
+  .cube-side {
+    width: 110%;
+    height: 110%;
+    position: absolute;
+    border: 2px solid #ffc640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background: rgba(0, 0, 0, 0.8);
+    transform-style: preserve-3d;
+  }
+
+  
+  .cube-side.front {
+    transform: translateZ(85px);
+  }
+  .cube-side.back {
+    transform: rotateX(180deg) translateZ(85px);
+  }
+  .cube-side.right {
+    transform: rotateY(-90deg) translateZ(85px);
+  }
+  .cube-side.left {
+    transform: rotateY(90deg) translateZ(85px);
+  }
+  .cube-side.top {
+    transform: rotateX(-90deg) translateZ(85px);
+  }
+  .cube-side.bottom {
+    transform: rotateX(90deg) translateZ(85px);
+  }
+
+    @media screen and (max-width: 768px) {
+        top: 85%; 
+    }
+
+    @media screen and (max-width: 480px) {
+        top: 85%; 
+    }
+  
+  @keyframes spin {
+    0% { transform: rotateX(0deg) rotateY(0deg); }
+    100% { transform: rotateX(360deg) rotateY(360deg); }
+  }
+
+`;
+

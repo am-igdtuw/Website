@@ -1,7 +1,8 @@
 import React, {useState} from 'react'
 import { HeroContainer, HeroContent,HeroD, HeroBtnWrapper,HeroH1, HeroP, Heroimg } from './EventElement'
 import {Button} from '../ButtonElements'
-import CollaborateLogo from '../../images/CollaborateLogo.png'
+import CollaborateLogo from '../../images/CollaborateLogo.png';
+import DynamicBackground from '../Herosection/DynamicBg.js';
 
 
 const EventHeroSection = () => {
@@ -13,6 +14,7 @@ const EventHeroSection = () => {
 
   return (
     <HeroContainer>
+        <DynamicBackground  />
         <HeroContent>
             <HeroH1>We host robust <HeroD>events</HeroD></HeroH1>
             <HeroH1>that helps leverage the</HeroH1>

@@ -12,7 +12,8 @@ top: 0px;
 position: sticky; 
 height: 80px;
 top: 0;
-z-index: 10;
+z-index: 19;
+
 overflow-y: hidden;
   overflow-x: auto;
   &::-webkit-scrollbar {

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import { HeroContainer, HeroH1, HeroContent, Accordian, Title, Content, Item } from './FaqElements';
+import DynamicBackground from '../Herosection/DynamicBg.js';
 
 const data = [
     {
@@ -46,6 +47,7 @@ const FaqSection = () => {
 
     return (
         <HeroContainer>
+            <DynamicBackground  />
             <HeroContent>
                 <HeroH1>FAQs</HeroH1>
                 <Accordian>
