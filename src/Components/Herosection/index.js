@@ -50,7 +50,7 @@ const HeroSection = () => {
             },
         },
         '@media screen and (max-width: 480px)': {
-            fontSize: '48px', 
+            fontSize: '45px', 
         },
     };
 
