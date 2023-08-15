@@ -80,7 +80,7 @@ export const FooterLink = styled(Link)`
  font-size: 16px;
 
  &:hover {
-    color: #01bf71;
+    color: #d6d21a ;
     transition: 0.3s ease-out;
  }
 `
