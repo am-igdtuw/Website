@@ -84,16 +84,38 @@ export const TeamWrapper = styled.div`
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(10px);
 `
+export const TeamListWrapper3 = styled.div`
+    display: flex;
+    gap: 1rem;
+    width: 60rem;
+    justify-items: center; 
+    align-items: center; 
+    justify-content: center; 
+    margin: 0 auto;
+`
+
+export const TeamListWrapper2 = styled.div`
+    display: grid;
+    grid-template-columns: repeat(2, minmax(320px, 1fr)); 
+    gap: 1rem;
+    width: 60rem;
+    justify-items: center; 
+    align-items: center; 
+    justify-content: center; 
+    margin: 0 auto;
+`
 
 export const TeamListWrapper = styled.div`
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(320px, 1fr)); 
+    gap: 1rem;
     width: 60rem;
-    justify-content: center;
-    align: center;
-    margin-left: 2.5rem;
-       
+    justify-items: center; 
+    align-items: center; 
+    justify-content: center; 
+    margin: 0 auto;
 `
+
 export const TeamName = styled.h2`
     text-align: center;
     font-family: 'Exo 2', sans-serif;
