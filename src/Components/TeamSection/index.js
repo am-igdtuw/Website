@@ -1,6 +1,6 @@
 import React from 'react'
 import TeamMemberCard from './TeamMemberCard';
-import { TeamContainer, TeamHead, TeamWrapper, TeamListWrapper, TeamName} from './TeamElements';
+import { TeamContainer, TeamHead, TeamWrapper, TeamListWrapper,TeamListWrapper2,TeamListWrapper3, TeamName} from './TeamElements';
 
 
 const TeamPage = () => {
@@ -213,7 +213,7 @@ const TeamPage = () => {
       <TeamName>
         Advisor
       </TeamName>
-      <TeamListWrapper>
+      <TeamListWrapper3>
           {advisor.map((member, index) => (
             <TeamMemberCard
               key={index}
@@ -222,14 +222,14 @@ const TeamPage = () => {
               imageUrl={member.imageUrl}
             />
           ))}
-        </TeamListWrapper>
+        </TeamListWrapper3>
       </TeamWrapper>
 
       <TeamWrapper>
       <TeamName>
         President
       </TeamName>
-      <TeamListWrapper>
+      <TeamListWrapper2>
           {president.map((member, index) => (
             <TeamMemberCard
               key={index}
@@ -238,14 +238,14 @@ const TeamPage = () => {
               imageUrl={member.imageUrl}
             />
           ))}
-        </TeamListWrapper>
+        </TeamListWrapper2>
       </TeamWrapper>
 
       <TeamWrapper>
       <TeamName>
         Vice President
       </TeamName>
-      <TeamListWrapper>
+      <TeamListWrapper2>
           {vicePresident.map((member, index) => (
             <TeamMemberCard
               key={index}
@@ -254,7 +254,7 @@ const TeamPage = () => {
               imageUrl={member.imageUrl}
             />
           ))}
-        </TeamListWrapper>
+        </TeamListWrapper2>
       </TeamWrapper>
 
       <TeamWrapper>
