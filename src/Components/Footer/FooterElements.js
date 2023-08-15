@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 // import logo from 'src/logo.svg'
 
 export const FooterContainer = styled.footer`
-  background-color: #0D0A03;
+background: rgba(255, 255, 255,0.15);
   z-index: 2;
 
 `
@@ -54,7 +54,7 @@ export const FooterLinkItems = styled.div`
  margin: 16px;
  margin-left: 20px;
  text-align: centre;
- width: 260px;
+ width: 160px;
  box-sizing: border-box;
  color: #fff;
  z-index: 2;

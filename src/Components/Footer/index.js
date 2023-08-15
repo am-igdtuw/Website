@@ -6,8 +6,27 @@ const Footer = () => {
   return (
     <FooterContainer>
        <FooterWrap>
-         <FooterLinksContainer>
+         <FooterLinksContainer >
             <FooterLinksWrapper>
+           
+            <FooterLinkItems>
+                
+                <SocialIcons>
+                <SocialIconsLink href="https://www.instagram.com/assetmantle.igdtuw/" target="_blank"
+                area-label="Instagram">
+                  <FaInstagram />
+                </SocialIconsLink>
+                <SocialIconsLink href="https://twitter.com/AM_igdtuw" target="_blank"
+                area-label="Twitter">
+                  <FaTwitter />
+                </SocialIconsLink>
+                <SocialIconsLink href="https://www.linkedin.com/company/asset-mantle-igdtuw/" target="_blank"
+                area-label="Linkedin">
+                  <FaLinkedin />
+                </SocialIconsLink>
+                </SocialIcons> 
+                </FooterLinkItems>
+              
                 <FooterLinkItems>
                     <FooterLinkTitle>Useful Links</FooterLinkTitle>
                        <FooterLink to="/">About</FooterLink>
@@ -51,7 +70,7 @@ const Footer = () => {
                 </SocialLogo>
                 <WebsiteRights>Assetmantle © {new Date().getFullYear()}  . 
                 All rights reserved.</WebsiteRights>
-                <SocialIcons>
+                {/* <SocialIcons>
                 <SocialIconsLink href="https://www.instagram.com/assetmantle.igdtuw/" target="_blank"
                 area-label="Instagram">
                   <FaInstagram />
@@ -64,7 +83,7 @@ const Footer = () => {
                 area-label="Linkedin">
                   <FaLinkedin />
                 </SocialIconsLink>
-                </SocialIcons> 
+                </SocialIcons>  */}
             </SocialMediaWrap>
          </SocialMedia>
        </FooterWrap>
@@ -73,3 +92,5 @@ const Footer = () => {
 }
 
 export default Footer;
+
+
