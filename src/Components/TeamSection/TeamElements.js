@@ -41,23 +41,25 @@ export const TeamHead = styled.h1`
     font-size: 40px;
     padding: 20px 2px;
     text-align: center;
+    justify-content: center;
     display: flex;
-    width: 2rem;
+    width: auto;
   }
 
   @media screen and (max-width: 480px) {
     font-size: 32px;
     padding: 10px 10px;
     text-align: center;
+    justify-content: center;
     display: flex;
-    width: 5rem;
+    width: 15rem;
     ${'' /* padding-left: 1rem; */}
   }
 
 `
 
 export const TeamMembersCard = styled.div`
-    height: 20rem;
+    height: 23rem;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
@@ -72,6 +74,7 @@ export const TeamMembersCard = styled.div`
 `
 export const TeamWrapper = styled.div`
     height: auto;
+    width: auto;
     display: flex;
     flex-direction: column;
     margin: 5rem 5rem 5rem 5rem;
@@ -83,6 +86,26 @@ export const TeamWrapper = styled.div`
     color: white;
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(10px);
+
+    @media screen and (max-width: 1024px){
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+    }
+    @media screen and (max-width: 768px){
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+    }
+    @media screen and (max-width: 480px){
+        display: flex;
+        flex-direction: column;
+        width: 17rem;
+        height: auto;
+    }
+
 `
 export const TeamListWrapper3 = styled.div`
     display: flex;
@@ -92,7 +115,59 @@ export const TeamListWrapper3 = styled.div`
     align-items: center; 
     justify-content: center; 
     margin: 0 auto;
+
+    @media screen and (max-width: 480px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 10px;
+        ${'' /* grid-template-columns: repeat(1, minmax(320px, 1fr));  */}
+    }
+    @media screen and (max-width: 768px){
+        
+    }
+    @media screen and (max-width: 1024px){
+        
+    }
+
+
 `
+
+export const TechP = styled.p`
+    font-size: 1rem;
+    text-align: center;
+    color:white;
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+    justify-content: center;
+    text-align: center;
+
+    a {
+        color: white;
+        font-size: 20px;
+        transition: color 0.2s ease-in-out;
+
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        border: 2px solid transparent;
+        border-color:#ffc640;
+        background-color:  rgba(255, 198, 64, 0.2);
+        transition: border-color 0.2s ease-in-out;
+    
+        &.linkiden:hover {
+          color: #0077B5; 
+        }
+        &.twitter:hover {
+            color: #1DA1F2;
+        }
+        &.insta:hover {
+            color:#E4405F;
+        }
+
+    }
+`;
 
 export const TeamListWrapper2 = styled.div`
     display: grid;
