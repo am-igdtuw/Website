@@ -12,6 +12,7 @@ const Footer = () => {
             <FooterLinkItems>
                 
                 <SocialIcons>
+                  
                 <SocialIconsLink href="https://www.instagram.com/assetmantle.igdtuw/" target="_blank"
                 area-label="Instagram">
                   <FaInstagram />

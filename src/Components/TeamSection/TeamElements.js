@@ -22,7 +22,7 @@ export const TeamHead = styled.h1`
     display: flex;
     padding: 50px 50px;
     padding-top: 40px;
-    width: 80rem;
+    width: 95rem;
     color: white;
     height: 8rem;
     font-family: 'Exo 2', sans-serif;
