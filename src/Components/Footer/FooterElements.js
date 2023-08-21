@@ -56,7 +56,7 @@ export const FooterLinkItems = styled.div`
  text-align: centre;
  width: 160px;
  box-sizing: border-box;
- color: #fff;
+ color: #FFC640;
  z-index: 2;
 
  @media screen and (max-width: 420px) {
@@ -72,7 +72,7 @@ export const FooterLinkTitle = styled.h1`
  font-weight:600;
 `
 export const FooterLink = styled(Link)`
- color: #fff;
+ color: #FFC640;
  text-decoration: none;
  margin-bottom: 0.5rem;
  font-size: 14px;
@@ -80,8 +80,9 @@ export const FooterLink = styled(Link)`
  font-size: 16px;
 
  &:hover {
-    color: #d6d21a ;
+   color: #FFC640;
     transition: 0.3s ease-out;
+    text-decoration: underline;
  }
 `
 export const SocialMedia = styled.section`
