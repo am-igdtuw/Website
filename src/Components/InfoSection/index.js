@@ -1,7 +1,7 @@
 import React from 'react'
 // import {Button} from '../ButtonElements'
-import Collaborate from'../../images/Collaborate.png'
-import Educate from'../../images/Educate.png'
+import Collaborate from'../../images/Community_Initiatives.png'
+import Educate from'../../images/MantleExplorer.png'
 import { AboutContainer, AboutWrapper,  AboutCard, AboutH1, AboutIcon, AboutH2, AboutP } from './InfoElements'
 
 const About = () => {
