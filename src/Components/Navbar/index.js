@@ -1,6 +1,3 @@
-
-
-
 import React from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa'; // Import the close icon as well
 import Logo2 from '../../images/Logo3.png';
@@ -16,6 +13,7 @@ import {
   SubLogo,
 } from './NavbarElements';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,12 +22,18 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  const handleLogoClick = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <>
       <Nav>
         <NavbarContainer>
           <NavImg>
-            <img src={Logo2} height={44} alt="Logo" />
+            <Link to="/" onClick={handleLogoClick}> 
+              <img src={Logo2} height={44} alt="Logo" />
+            </Link>
             <NavLogo>
               AssetMantle
               <SubLogo>Student Chapter IGDTUW</SubLogo>
