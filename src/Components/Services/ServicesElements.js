@@ -54,8 +54,8 @@ export const ServicesCard = styled.div`
   height: 220px;
   border-radius: 24px;
   border: 1px solid #ffc640;
-  padding: 40px 24px;
-  margin-bottom: 20px;
+  padding: 30px 25px;
+  margin-bottom: 18px;
   box-shadow: 0 1px 3px gray;
   transition: transform 0.3s ease-in-out;
   background: linear-gradient(180deg, rgba(255, 198, 64, 0.16) 0%, rgba(255, 198, 64, 0.1024) 100%);
@@ -78,9 +78,9 @@ export const ServicesCard = styled.div`
 `;
 
 export const ServicesIcon = styled.img`
-  height: 120px;
-  width: 130px;
-  margin-bottom: 20px;
+  height: 150px;
+  width: 160px;
+  margin-bottom: 13px;
   z-index: 3;
 `;
 
