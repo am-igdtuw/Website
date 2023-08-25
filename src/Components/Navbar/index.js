@@ -51,10 +51,10 @@ const Navbar = () => {
               <NavLinks to="/event">EVENTS</NavLinks>
             </Navitem>
 
-            <Navitem>
+            <Navitem className='custom'>
               <NavLinks to="/TeamPage">TEAM</NavLinks>
             </Navitem>
-            <Navitem>
+            <Navitem className='custom'>
               <NavLinks to="/faq">FAQS</NavLinks>
             </Navitem>
           </NavMenu>
