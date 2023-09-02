@@ -22,6 +22,8 @@ overflow-y: hidden;
   @media screen and (max-width: 768px){
     transition: 0.8s all ease;
     overflow: visible;
+    padding-top: 20px;
+    padding-left: 10px;
   }
   @media screen and (max-width: 480px){
     // width: auto;
@@ -75,6 +77,7 @@ export const MobileIcon = styled.div`
     font-size: 1.8rem;
     cursor: pointer;
     color: #fff;
+    padding-top: 10px;
   }
 `
 export const NavMenu = styled.ul`
@@ -139,6 +142,7 @@ box-sizing: border-box;
 /* Auto layout */
 
 display: flex;
+justify-content: center;
 flex-direction: row;
 align-items: center;
 ${'' /* justify-content: center; */}
@@ -160,6 +164,11 @@ flex-grow: 0;
   background: linear-gradient(45deg, #FFC640, #FFC640);
   border: 0.5px solid #000000;
   color: #000000;
+}
+
+&.custom {
+  padding-left: 22px; 
+  padding-right: 10px; 
 }
 `
 

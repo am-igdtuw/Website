@@ -100,11 +100,11 @@ flex-direction:column;
 justify-content:flex-start;
 border-radius:10px;
 width: 320px;
-height: 320px;
+height: 330px;
 border:0.5px solid #FFC640;
 z-index: 3;
 
-padding:30px;
+padding:21px;
 /* gap:50px; */
 box-shadow: 0 1px 3px gray;
 transition: all 0.2s ease-in-out;
@@ -123,15 +123,15 @@ background:black;
 
 `
 export  const AboutIcon=styled.img`
-height:120px;
-width:130px;
-margin-bottom:20px;
+height:160px;
+width:170px;
+margin-bottom:0px;
 z-index: 3;
 // border:0.5px solid #FFC640;
 // box-shadow:3px 3px 3px #FFC640;
 
 @media screen and (max-width:480px){
-    height:100px;
+    height:150px;
 }
 
 
@@ -158,7 +158,7 @@ font-size: 24px;
 line-height: 32px;
 z-index: 3;
 color:white;
-margin-bottom:10px;
+margin-bottom:3px;
 @media screen and (max-width:480px){
     font-size:1.3rem;
     line-height: 30px;

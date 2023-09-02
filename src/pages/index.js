@@ -4,7 +4,8 @@ import HeroSection from '../Components/Herosection';
 import InfoSection from '../Components/InfoSection';
 // import { homeObjOne } from '../Components/InfoSection/Data';
 import Navbar from '../Components/Navbar';
-// import Services from '../Components/Services';
+import Services from '../Components/Services';
+import Testimonial from '../Components/Testimonial';
 // import FollowSection from '../Components/FollowSection';
 //import PopUp from "../Components/PopUp/Modal";
 // import Team from '../Components/Team'
@@ -37,8 +38,8 @@ const Home = () => {
         <HeroSection  />
         <InfoSection />
         {/* <FollowSection /> */}
-        {/* <Services /> */}
-        
+        <Services />
+        <Testimonial/>
         <Footer />
 
 
