@@ -6,6 +6,7 @@
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
+    "@material-ui/core": "^4.12.4",
     "@mui/icons-material": "^5.14.3",
     "@mui/material": "^5.14.4",
     "@mui/system": "^5.14.4",
@@ -15,10 +16,13 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.10.1",
+    "react-multi-carousel": "^2.8.4",
     "react-router-dom": "^6.8.2",
     "react-scripts": "^5.0.1",
     "react-scroll": "^1.8.9",
+    "react-slick": "^0.29.0",
     "react-tsparticles": "^2.11.0",
+    "slick-carousel": "^1.8.1",
     "styled-components": "^5.3.6",
     "tsparticles": "^2.11.1",
     "web-vitals": "^2.1.4"
