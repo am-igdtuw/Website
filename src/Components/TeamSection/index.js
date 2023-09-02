@@ -49,7 +49,7 @@ const TeamPage = () => {
     {
       name: 'Kamya Varshney',
       role: 'Vice President',
-      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1688488875/Asset%20Mantle%20-%20Team%202023/Leads/Kamya%20Varshney.png', 
+      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/v1693146880/Asset%20Mantle%20-%20Team%202023/Leads/Screenshot_2023-08-27_200314_xtmash.png', 
       techProfiles : (
         <TechP>
           <a className='linkiden' href="https://www.linkedin.com/in/unnati-chhabra-909bb9196/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
@@ -61,7 +61,7 @@ const TeamPage = () => {
     {
       name: 'Garima Pahwa',
       role: 'Vice President',
-      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1688488846/Asset%20Mantle%20-%20Team%202023/Leads/Garima.jpg', 
+      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/v1693146892/Asset%20Mantle%20-%20Team%202023/Leads/Screenshot_2023-08-27_200325_wnmi0v.png', 
       techProfiles : (
         <TechP>
           <a className='linkiden' href="https://www.linkedin.com/in/garima-pahwa-68416a22a/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
@@ -87,7 +87,7 @@ const TeamPage = () => {
     {
       name: 'Mansi',
       role: 'Technical Core',
-      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1688526862/Asset%20Mantle%20-%20Team%202023/Technical/Mansi.jpg', 
+      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/v1693146647/Asset%20Mantle%20-%20Team%202023/Technical/mansi_naqlkc.png', 
       techProfiles : (
         <TechP>
           <a className='linkiden' href="https://www.linkedin.com/in/mansi-jangra-33a77622a" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
@@ -108,22 +108,22 @@ const TeamPage = () => {
        </TechP>
       )
     },
-    {
-      name: 'Manjusha Iyer',
-      role: 'Co-Ordinator',
-      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1688527494/Asset%20Mantle%20-%20Team%202023/Technical/Manjusha%20Iyer.jpg', 
-      techProfiles : (
-        <TechP>
-           <a className='linkiden' href="https://www.linkedin.com/in/manjusha-iyer-83b4a01a7/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-               <a className='twitter' href=" https://twitter.com/ManjushaIyer" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
-               <a className='insta' href="https://www.instagram.com/iyermanjusha/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-        </TechP>
-      )
-    },
+    // {
+    //   name: 'Manjusha Iyer',
+    //   role: 'Co-Ordinator',
+    //   imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1688527494/Asset%20Mantle%20-%20Team%202023/Technical/Manjusha%20Iyer.jpg', 
+    //   techProfiles : (
+    //     <TechP>
+    //        <a className='linkiden' href="https://www.linkedin.com/in/manjusha-iyer-83b4a01a7/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+    //            <a className='twitter' href=" https://twitter.com/ManjushaIyer" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+    //            <a className='insta' href="https://www.instagram.com/iyermanjusha/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+    //     </TechP>
+    //   )
+    // },
     {
       name: 'Apoorva ',
       role: 'Co-Ordinator',
-      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1688491387/Asset%20Mantle%20-%20Team%202023/Technical/Apoorva.jpg', 
+      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/v1693146223/Asset%20Mantle%20-%20Team%202023/Technical/apoorva_u2qoq3.png', 
       techProfiles : (
         <TechP>
              <a className='linkiden' href="https://www.linkedin.com/in/apoorva-a65a18256/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
@@ -132,18 +132,18 @@ const TeamPage = () => {
          </TechP>
       )
     },
-    {
-      name: 'Mehek Prabhakar',
-      role: 'Co-Ordinator',
-      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1688491388/Asset%20Mantle%20-%20Team%202023/Technical/Mehek%20Prabhakar.webp', 
-      techProfiles : (
-        <TechP>
-                    <a className='linkiden' href="#" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-                       <a className='twitter' href="https://twitter.com/mehekprabhakar" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
-                       <a className='insta' href="https://www.instagram.com/mehekprabhakar/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-          </TechP>
-      )
-    },
+    // {
+    //   name: 'Mehek Prabhakar',
+    //   role: 'Co-Ordinator',
+    //   imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1688491388/Asset%20Mantle%20-%20Team%202023/Technical/Mehek%20Prabhakar.webp', 
+    //   techProfiles : (
+    //     <TechP>
+    //                 <a className='linkiden' href="#" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+    //                    <a className='twitter' href="https://twitter.com/mehekprabhakar" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+    //                    <a className='insta' href="https://www.instagram.com/mehekprabhakar/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+    //       </TechP>
+    //   )
+    // },
         
   ];
 
@@ -227,7 +227,7 @@ const TeamPage = () => {
     {
       name: 'Srimayee Satapathy',
       role: 'Research Lead',
-      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1688488853/Asset%20Mantle%20-%20Team%202023/Leads/Srimayee%20Satapathy.jpg', 
+      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/v1693148974/Asset%20Mantle%20-%20Team%202023/Leads/Screenshot_2023-08-27_203811_metg4b.png', 
       techProfiles : (
         <TechP>
               <a className='linkiden' href="https://www.linkedin.com/in/srimayee-satapathy-915bb0227/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
@@ -302,7 +302,7 @@ const TeamPage = () => {
     {
       name: 'Sanya Gupta',
       role: 'Media Lead',
-      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1688488854/Asset%20Mantle%20-%20Team%202023/Leads/Sanya%20Gupta.jpg', 
+      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/v1693148975/Asset%20Mantle%20-%20Team%202023/Leads/Screenshot_2023-08-27_203657_ozt5kq.png', 
       techProfiles : (
         <TechP>
               <a className='linkiden' href="https://www.linkedin.com/in/sanya-gupta-1a422b24a/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
