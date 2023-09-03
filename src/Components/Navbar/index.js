@@ -45,17 +45,17 @@ const Navbar = () => {
           </MobileIcon>
           <NavMenu isOpen={isOpen}>
             <Navitem>
-              <NavLinks to="/">ABOUT</NavLinks>
+              <NavLinks to="/" onClick={handleLogoClick}>ABOUT</NavLinks>
             </Navitem>
             <Navitem>
-              <NavLinks to="/event">EVENTS</NavLinks>
+              <NavLinks to="/event" onClick={handleLogoClick}>EVENTS</NavLinks>
             </Navitem>
 
             <Navitem className='custom'>
-              <NavLinks to="/TeamPage">TEAM</NavLinks>
+              <NavLinks to="/TeamPage" onClick={handleLogoClick}>TEAM</NavLinks>
             </Navitem>
             <Navitem className='custom'>
-              <NavLinks to="/faq">FAQS</NavLinks>
+              <NavLinks to="/faq" onClick={handleLogoClick}>FAQS</NavLinks>
             </Navitem>
           </NavMenu>
         </NavbarContainer>

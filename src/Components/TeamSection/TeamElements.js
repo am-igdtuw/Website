@@ -44,12 +44,12 @@ export const TeamHead = styled.h1`
 `
 
 export const TeamMembersCard = styled.div`
-    height: 23rem;
+    height: 22rem;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
     overflow: hidden;
-    margin: 20px;
+    margin: 18px;
     color: #F2AF13;
     transition: transform 0.3s ease;
     width: 17rem;
@@ -74,7 +74,7 @@ export const TeamWrapper = styled.div`
     padding: 2rem;
     justify-content: center;
     align-items: center;
-    border-radius: 3rem;
+    border-radius: 2rem;
     color: white;
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(10px);
@@ -187,17 +187,17 @@ export const TeamListWrapper = styled.div`
 export const TeamName = styled.h2`
     text-align: center;
     font-family: 'Exo 2', sans-serif;
-    font-size: 3rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
+    font-size: 2.3rem;
+    font-weight: 100;
+    margin-bottom: 0.5rem;
 `
 
 export const MemberImg = styled.img`
-    width: 15rem;
-    height: 15rem;
+    width: 13rem;
+    height: 13rem;
     border-radius: 50%;
     border: 2px solid transparent;
-    margin: 20px auto 0;
+    margin: 17px auto 0;
     overflow: hidden;
 `
 

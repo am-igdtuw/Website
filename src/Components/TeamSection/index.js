@@ -1,14 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import TeamMemberCard from './TeamMemberCard';
 import { TeamContainer,TechP, TeamHead, TeamWrapper, TeamListWrapper,TeamListWrapper2,TeamListWrapper3, TeamName} from './TeamElements';
 import { FaLinkedin, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { useLocation } from 'react-router-dom';
+import { scroller } from 'react-scroll';
 
 const TeamPage = () => {
 
   const advisor = [
     {
       name: 'Unnati Chabra',
-      role: 'Founding Member',
+      role: 'Advisor',
       imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_12px_solid_rgb:F2AF13,b_rgb:262c35/v1688969490/Asset%20Mantle%20-%20Team%202023/Leads/WhatsApp_Image_2023-07-10_at_11.31.50_pfiaub.jpg', 
       techProfiles: (
         <TechP>
@@ -474,12 +476,27 @@ const TeamPage = () => {
         
   ];
 
+  const location = useLocation();
+  const teamNameQueryParam = new URLSearchParams(location.search).get('team');
+
+  useEffect(() => {
+    if (teamNameQueryParam) {
+      const decodedTeamName = decodeURIComponent(teamNameQueryParam);
+      setTimeout(() => {
+        scroller.scrollTo(`${decodedTeamName}Section`, {
+          duration: 50, 
+          // smooth: true,
+        });
+      }, 500);
+    }
+  }, [teamNameQueryParam]);
+
   return (
     <TeamContainer>
     <TeamHead>MEET THE TEAM</TeamHead>
     <TeamWrapper>
       <TeamName>
-        Advisor
+        Founding Member
       </TeamName>
       <TeamListWrapper3>
           {advisor.map((member, index) => (
@@ -530,7 +547,7 @@ const TeamPage = () => {
         </TeamListWrapper2>
       </TeamWrapper>
 
-      <TeamWrapper>
+      <TeamWrapper id="emTeamSection">
       <TeamName>
         Event Management Team
       </TeamName>
@@ -547,7 +564,7 @@ const TeamPage = () => {
         </TeamListWrapper>
       </TeamWrapper>
 
-      <TeamWrapper>
+      <TeamWrapper id="mediaTeamSection">
       <TeamName>
         Graphics and Media Team
       </TeamName>
@@ -564,7 +581,7 @@ const TeamPage = () => {
         </TeamListWrapper>
       </TeamWrapper>
 
-      <TeamWrapper>
+      <TeamWrapper id="contentTeamSection">
       <TeamName>
         Research and Content Team
       </TeamName>
@@ -581,7 +598,7 @@ const TeamPage = () => {
         </TeamListWrapper>
       </TeamWrapper>
 
-      <TeamWrapper>
+      <TeamWrapper id="outreachTeamSection">
       <TeamName>
         Outreach Team
       </TeamName>
@@ -598,7 +615,7 @@ const TeamPage = () => {
         </TeamListWrapper>
       </TeamWrapper>
 
-      <TeamWrapper>
+      <TeamWrapper id="techTeamSection">
       <TeamName>
         Technical Team
       </TeamName>
