@@ -137,7 +137,7 @@ const TeamPage = () => {
     {
       name: 'Pooja Ramnaney ',
       role: 'Co-Ordinator',
-      imageUrl: '', 
+      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693825841/Asset%20Mantle%20-%20Team%202023/Technical/IMG20230423181811_kjlm8l.jpg', 
       techProfiles : (
         <TechP>
              <a className='linkiden' href="https://www.linkedin.com/in/pooja-ramnaney/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
