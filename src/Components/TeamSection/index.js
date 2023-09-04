@@ -134,6 +134,18 @@ const TeamPage = () => {
          </TechP>
       )
     },
+    {
+      name: 'Pooja Ramnaney ',
+      role: 'Co-Ordinator',
+      imageUrl: '', 
+      techProfiles : (
+        <TechP>
+             <a className='linkiden' href="https://www.linkedin.com/in/pooja-ramnaney/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+               <a className='twitter' href="https://twitter.com/pooja_ramnaney" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+               <a className='insta' href="https://www.instagram.com/pooja_ramnaney/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+         </TechP>
+      )
+    },
     // {
     //   name: 'Mehek Prabhakar',
     //   role: 'Co-Ordinator',
