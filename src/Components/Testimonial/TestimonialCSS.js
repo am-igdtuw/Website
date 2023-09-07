@@ -3,18 +3,29 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
     width: 100%;
-    height: 740px;
+    height: 800px;
     ${'' /* display: flex; */}
-    background: rgba(255, 255, 255, 0.15);
+    flex-direction: column; 
+    justify-content: center;
+    @media screen and (max-width: 480px) {
+        height: 1150px;
+        }
+        
+    
 `;
 export const HomeContainer = styled.div`
     display: flex;
-    height: 740px;
+    height: 800px;
     justify-content: center;
     ${'' /* margin-top: 30px; */}
     margin-bottom: 80px;
     padding-bottom: 30px;
-    background: rgba(255, 255, 255, 0.15);
+    ${''/* background gradient */}
+    @media screen and (max-width: 480px) {
+        height: 1200px;
+        margin-bottom: 0px;
+        }
+   
 `;
 
 export const Heading = styled.div`
@@ -30,6 +41,11 @@ export const Heading = styled.div`
     font-style: normal;
     font-size: 54px;
     font-weight: 600;
+    @media screen and (max-width: 480px) {
+        padding-top:10px;
+        padding: 0px 0px;
+        margin-bottom: 80px;
+    }
 `;
 
 export const ContainerSlider = styled.div`
