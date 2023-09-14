@@ -247,3 +247,20 @@ export const CubeWrapper = styled.div`
 
 `;
 
+
+// social media links
+export const SocialIcons = styled.div`
+ padding: 4rem 0rem;
+ margin-left: 10px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ width: 150px;
+ z-index: 2;
+`
+
+export const SocialIconsLink = styled.a`
+ color: #fff;
+ z-index: 2;
+ font-size: 36px;
+`

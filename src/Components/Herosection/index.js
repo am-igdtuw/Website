@@ -14,6 +14,8 @@ import { Button } from '../ButtonElements'
 import { FaWhatsapp } from 'react-icons/fa';
 import bg from '../../images/bg.svg'
 import DynamicBackground from './DynamicBg';
+import { FaFacebook, FaLinkedin, FaYoutube, FaInstagram, FaTwitter } from 'react-icons/fa';
+import{ SocialIconsLink, SocialIcons } from './HeroElements';
 
 const HeroSection = () => {
     const [hover, setHover] = useState(false)
@@ -100,6 +102,20 @@ const HeroSection = () => {
                                         JOIN COMMUNITY
                                     </Button>
                                 </HeroBtnWrapper>
+                                <SocialIcons>
+                                    <SocialIconsLink href="https://www.instagram.com/assetmantle.igdtuw/" target="_blank"
+                                    area-label="Instagram">
+                                        <FaInstagram />
+                                    </SocialIconsLink>
+                                    <SocialIconsLink href="https://twitter.com/AM_igdtuw" target="_blank"
+                                    area-label="Twitter">
+                                        <FaTwitter />
+                                    </SocialIconsLink>
+                                    <SocialIconsLink href="https://www.linkedin.com/company/asset-mantle-igdtuw/" target="_blank"
+                                    area-label="Linkedin">
+                                        <FaLinkedin />
+                                    </SocialIconsLink>
+                                </SocialIcons> 
                             </HeroContent>
                         </HeroContainer>
                     </Grid>
