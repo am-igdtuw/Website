@@ -56,7 +56,7 @@ export const FooterLinkItems = styled.div`
  text-align: centre;
  width: 160px;
  box-sizing: border-box;
- color: #FFC640;
+ color: #FFFFFF;
  z-index: 2;
 
  @media screen and (max-width: 420px) {
