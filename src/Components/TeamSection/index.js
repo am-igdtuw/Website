@@ -146,6 +146,66 @@ const TeamPage = () => {
          </TechP>
       )
     },
+    {
+      name: 'Manya',
+      role: 'Co-Ordinator',
+      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693825841/Asset%20Mantle%20-%20Team%202023/Technical/IMG20230423181811_kjlm8l.jpg', 
+      techProfiles : (
+        <TechP>
+             <a className='linkiden' href="https://www.linkedin.com/in/manya-455796284" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+               <a className='twitter' href="https://x.com/hi_manya_?t=OSpzRfmP-obfRidF2E4fxg&s=09" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+               <a className='insta' href="https://instagram.com/its_manya_23?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+         </TechP>
+      )
+    },
+    {
+      name: 'Advitiya Sharma',
+      role: 'Co-Ordinator',
+      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693825841/Asset%20Mantle%20-%20Team%202023/Technical/IMG20230423181811_kjlm8l.jpg', 
+      techProfiles : (
+        <TechP>
+             <a className='linkiden' href="https://www.linkedin.com/in/advitiya993/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+               <a className='twitter' href="" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+               <a className='insta' href="https://instagram.com/advitiya__?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+         </TechP>
+      )
+    },
+    {
+      name: 'Vidushi Agarwal',
+      role: 'Co-Ordinator',
+      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693825841/Asset%20Mantle%20-%20Team%202023/Technical/IMG20230423181811_kjlm8l.jpg', 
+      techProfiles : (
+        <TechP>
+             <a className='linkiden' href="https://www.linkedin.com/in/vidushi-agarwal-a95885256" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+               <a className='twitter' href="https://x.com/Vidushit143?t=JfyHPP-GAZXzTNcTQ5HFUw&s=09" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+               <a className='insta' href="https://instagram.com/agarwal.vidu?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+         </TechP>
+      )
+    },
+    {
+      name: 'Shambhanvi Sinha',
+      role: 'Co-Ordinator',
+      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693825841/Asset%20Mantle%20-%20Team%202023/Technical/IMG20230423181811_kjlm8l.jpg', 
+      techProfiles : (
+        <TechP>
+             <a className='linkiden' href="" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+               <a className='twitter' href="" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+               <a className='insta' href="" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+         </TechP>
+      )
+    },
+    {
+      name: 'Himanshi',
+      role: 'Co-Ordinator',
+      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693825841/Asset%20Mantle%20-%20Team%202023/Technical/IMG20230423181811_kjlm8l.jpg', 
+      techProfiles : (
+        <TechP>
+             <a className='linkiden' href="https://www.linkedin.com/in/himanshi-prajapati-070bb6280/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+               <a className='twitter' href="https://x.com/hiihimanshi?t=5HDh3fRWuO6yNIsPeDF5OQ&s=09" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+               <a className='insta' href="" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+         </TechP>
+      )
+    },
     // {
     //   name: 'Mehek Prabhakar',
     //   role: 'Co-Ordinator',
@@ -212,7 +272,7 @@ const TeamPage = () => {
     },
     {
       name: 'Avni Singh',
-      role: 'Co-Ordinator',
+      role: 'EM Core',
       imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1688490160/Asset%20Mantle%20-%20Team%202023/EM/Avni%20Singh.jpg', 
       techProfiles : (
         <TechP>
@@ -224,7 +284,7 @@ const TeamPage = () => {
     },
     {
       name: 'Arshita ',
-      role: 'Co-Ordinator',
+      role: 'EM Core',
       imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693723631/Asset%20Mantle%20-%20Team%202023/EM/IMG-20230802-WA0008_ulxyfi.jpg', 
       techProfiles : (
         <TechP>
@@ -236,7 +296,7 @@ const TeamPage = () => {
     },
     {
       name: 'Gunjan Vaishnavi Jangra',
-      role: 'Co-Ordinator',
+      role: 'EM Core',
       imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693723634/Asset%20Mantle%20-%20Team%202023/EM/Picture_kcxbsj.jpg', 
       techProfiles : (
         <TechP>
@@ -258,7 +318,222 @@ const TeamPage = () => {
             </TechP>
       )
     },
-        
+    {
+      name: 'Kashish Rastogi',
+      role: 'Co-Ordinator',
+      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693723636/Asset%20Mantle%20-%20Team%202023/EM/Riya_bouigi.jpg', 
+      techProfiles : (
+        <TechP>
+            <a className='linkiden' href="" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+              <a className='twitter' href="" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+              <a className='insta' href="" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+            </TechP>
+      )
+    },
+    {
+      name: 'Ananya Pal',
+      role: 'Co-Ordinator',
+      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693723636/Asset%20Mantle%20-%20Team%202023/EM/Riya_bouigi.jpg', 
+      techProfiles : (
+        <TechP>
+            <a className='linkiden' href="" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+              <a className='twitter' href="" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+              <a className='insta' href="" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+            </TechP>
+      )
+    },
+    {
+      name: 'Vaneeta Ahlawat',
+      role: 'Co-Ordinator',
+      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693723636/Asset%20Mantle%20-%20Team%202023/EM/Riya_bouigi.jpg', 
+      techProfiles : (
+        <TechP>
+            <a className='linkiden' href="" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+              <a className='twitter' href="" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+              <a className='insta' href="" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+            </TechP>
+      )
+    },
+    {
+      name: 'Bhoomi Aggarwal',
+      role: 'Co-Ordinator',
+      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693723636/Asset%20Mantle%20-%20Team%202023/EM/Riya_bouigi.jpg', 
+      techProfiles : (
+        <TechP>
+            <a className='linkiden' href="" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+              <a className='twitter' href="" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+              <a className='insta' href="" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+            </TechP>
+      )
+    },
+    {
+      name: 'Priya Verma',
+      role: 'Co-Ordinator',
+      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693723636/Asset%20Mantle%20-%20Team%202023/EM/Riya_bouigi.jpg', 
+      techProfiles : (
+        <TechP>
+            <a className='linkiden' href="" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+              <a className='twitter' href="" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+              <a className='insta' href="" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+            </TechP>
+      )
+    },
+    {
+      name: 'Manasvi Mittal',
+      role: 'Co-Ordinator',
+      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693723636/Asset%20Mantle%20-%20Team%202023/EM/Riya_bouigi.jpg', 
+      techProfiles : (
+        <TechP>
+            <a className='linkiden' href="" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+              <a className='twitter' href="" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+              <a className='insta' href="" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+            </TechP>
+      )
+    },
+    {
+      name: 'Shraddha Sharma',
+      role: 'Co-Ordinator',
+      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693723636/Asset%20Mantle%20-%20Team%202023/EM/Riya_bouigi.jpg', 
+      techProfiles : (
+        <TechP>
+            <a className='linkiden' href="" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+              <a className='twitter' href="" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+              <a className='insta' href="" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+            </TechP>
+      )
+    },
+    {
+      name: 'Shruti Pathak',
+      role: 'Co-Ordinator',
+      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693723636/Asset%20Mantle%20-%20Team%202023/EM/Riya_bouigi.jpg', 
+      techProfiles : (
+        <TechP>
+            <a className='linkiden' href="" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+              <a className='twitter' href="" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+              <a className='insta' href="" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+            </TechP>
+      )
+    }, 
+    {
+      name: 'Manya Sachdeva',
+      role: 'Co-Ordinator',
+      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693723636/Asset%20Mantle%20-%20Team%202023/EM/Riya_bouigi.jpg', 
+      techProfiles : (
+        <TechP>
+            <a className='linkiden' href="" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+              <a className='twitter' href="" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+              <a className='insta' href="" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+            </TechP>
+      )
+    }, 
+    {
+      name: 'Suchika Mishra',
+      role: 'Co-Ordinator',
+      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693723636/Asset%20Mantle%20-%20Team%202023/EM/Riya_bouigi.jpg', 
+      techProfiles : (
+        <TechP>
+            <a className='linkiden' href="" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+              <a className='twitter' href="" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+              <a className='insta' href="" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+            </TechP>
+      )
+    },  
+    {
+      name: 'Garima Gupta',
+      role: 'Co-Ordinator',
+      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693723636/Asset%20Mantle%20-%20Team%202023/EM/Riya_bouigi.jpg', 
+      techProfiles : (
+        <TechP>
+            <a className='linkiden' href="" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+              <a className='twitter' href="" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+              <a className='insta' href="" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+            </TechP>
+      )
+    },
+    {
+      name: 'Ekta',
+      role: 'Co-Ordinator',
+      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693723636/Asset%20Mantle%20-%20Team%202023/EM/Riya_bouigi.jpg', 
+      techProfiles : (
+        <TechP>
+            <a className='linkiden' href="" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+              <a className='twitter' href="" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+              <a className='insta' href="" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+            </TechP>
+      )
+    },
+    {
+      name: 'Ridhima Choudhary',
+      role: 'Co-Ordinator',
+      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693723636/Asset%20Mantle%20-%20Team%202023/EM/Riya_bouigi.jpg', 
+      techProfiles : (
+        <TechP>
+            <a className='linkiden' href="" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+              <a className='twitter' href="" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+              <a className='insta' href="" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+            </TechP>
+      )
+    },
+    {
+      name: 'Palak',
+      role: 'Co-Ordinator',
+      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693723636/Asset%20Mantle%20-%20Team%202023/EM/Riya_bouigi.jpg', 
+      techProfiles : (
+        <TechP>
+            <a className='linkiden' href="" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+              <a className='twitter' href="" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+              <a className='insta' href="" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+            </TechP>
+      )
+    },
+    {
+      name: 'Kejal Garg',
+      role: 'Co-Ordinator',
+      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693723636/Asset%20Mantle%20-%20Team%202023/EM/Riya_bouigi.jpg', 
+      techProfiles : (
+        <TechP>
+            <a className='linkiden' href="" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+              <a className='twitter' href="" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+              <a className='insta' href="" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+            </TechP>
+      )
+    },
+    {
+      name: 'Saie Prakhar Pawar',
+      role: 'Co-Ordinator',
+      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693723636/Asset%20Mantle%20-%20Team%202023/EM/Riya_bouigi.jpg', 
+      techProfiles : (
+        <TechP>
+            <a className='linkiden' href="" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+              <a className='twitter' href="" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+              <a className='insta' href="" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+            </TechP>
+      )
+    },
+    {
+      name: 'Khushi',
+      role: 'Co-Ordinator',
+      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693723636/Asset%20Mantle%20-%20Team%202023/EM/Riya_bouigi.jpg', 
+      techProfiles : (
+        <TechP>
+            <a className='linkiden' href="" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+              <a className='twitter' href="" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+              <a className='insta' href="" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+            </TechP>
+      )
+    },
+    {
+      name: 'Deepika',
+      role: 'Co-Ordinator',
+      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693723636/Asset%20Mantle%20-%20Team%202023/EM/Riya_bouigi.jpg', 
+      techProfiles : (
+        <TechP>
+            <a className='linkiden' href="" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+              <a className='twitter' href="" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+              <a className='insta' href="" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+            </TechP>
+      )
+    },
   ];
 
   const researchTeam = [
@@ -275,17 +550,6 @@ const TeamPage = () => {
       )
     },
     {
-      name: 'Aarna Singhal',
-      role: 'Research Core',
-      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1688491031/Asset%20Mantle%20-%20Team%202023/Content/Aarna%20Singhal.jpg', 
-      techProfiles : (
-        <TechP>
-               <a className='linkiden' href="https://www.linkedin.com/in/aarnasinghal" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-              <a className='twitter' href="https://twitter.com/aarnasinghal09" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
-              <a className='insta' href="https://www.instagram.com/aarnasinghal09/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a></TechP>
-      )
-    },
-    {
       name: 'Shreya gupta ',
       role: 'Research Core',
       imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1688491042/Asset%20Mantle%20-%20Team%202023/Content/Shreya%20gupta.png', 
@@ -299,7 +563,7 @@ const TeamPage = () => {
     },
     {
       name: 'Megha yadav',
-      role: 'Co-Ordinator',
+      role: 'Research Core',
       imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1688541471/Asset%20Mantle%20-%20Team%202023/Content/Megha%20Yadav.jpg', 
       techProfiles : (
         <TechP>
@@ -330,6 +594,90 @@ const TeamPage = () => {
             <a className='linkiden' href="https://www.linkedin.com/in/anushree-bondia-b16139219" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
               <a className='twitter' href="https://twitter.com/AnushreeBondia?t=CkeWSHsm_UtVJoEiBZlr-g&s=08" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
               <a className='insta' href="https://www.instagram.com/seraphic_anushree/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+            </TechP>
+      )
+    },
+    {
+      name: 'Jiya',
+      role: 'Co-Ordinator',
+      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693723636/Asset%20Mantle%20-%20Team%202023/EM/Riya_bouigi.jpg', 
+      techProfiles : (
+        <TechP>
+            <a className='linkiden' href="" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+              <a className='twitter' href="" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+              <a className='insta' href="" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+            </TechP>
+      )
+    },
+    {
+      name: 'Anushka Rai',
+      role: 'Co-Ordinator',
+      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693723636/Asset%20Mantle%20-%20Team%202023/EM/Riya_bouigi.jpg', 
+      techProfiles : (
+        <TechP>
+            <a className='linkiden' href="" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+              <a className='twitter' href="" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+              <a className='insta' href="" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+            </TechP>
+      )
+    },
+    {
+      name: 'Samiksha Singh',
+      role: 'Co-Ordinator',
+      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693723636/Asset%20Mantle%20-%20Team%202023/EM/Riya_bouigi.jpg', 
+      techProfiles : (
+        <TechP>
+            <a className='linkiden' href="" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+              <a className='twitter' href="" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+              <a className='insta' href="" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+            </TechP>
+      )
+    },
+    {
+      name: 'Neha Junewal',
+      role: 'Co-Ordinator',
+      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693723636/Asset%20Mantle%20-%20Team%202023/EM/Riya_bouigi.jpg', 
+      techProfiles : (
+        <TechP>
+            <a className='linkiden' href="" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+              <a className='twitter' href="" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+              <a className='insta' href="" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+            </TechP>
+      )
+    },
+    {
+      name: 'Mehak Garg',
+      role: 'Co-Ordinator',
+      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693723636/Asset%20Mantle%20-%20Team%202023/EM/Riya_bouigi.jpg', 
+      techProfiles : (
+        <TechP>
+            <a className='linkiden' href="" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+              <a className='twitter' href="" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+              <a className='insta' href="" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+            </TechP>
+      )
+    },
+    {
+      name: 'Anusha Arora',
+      role: 'Co-Ordinator',
+      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693723636/Asset%20Mantle%20-%20Team%202023/EM/Riya_bouigi.jpg', 
+      techProfiles : (
+        <TechP>
+            <a className='linkiden' href="" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+              <a className='twitter' href="" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+              <a className='insta' href="" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+            </TechP>
+      )
+    },
+    {
+      name: 'Anjali Sharma',
+      role: 'Co-Ordinator',
+      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693723636/Asset%20Mantle%20-%20Team%202023/EM/Riya_bouigi.jpg', 
+      techProfiles : (
+        <TechP>
+            <a className='linkiden' href="" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+              <a className='twitter' href="" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+              <a className='insta' href="" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
             </TechP>
       )
     },
@@ -409,6 +757,102 @@ const TeamPage = () => {
         </TechP>
       )
     },
+    {
+      name: 'Muskan Garg',
+      role: 'Co-Ordinator',
+      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693723636/Asset%20Mantle%20-%20Team%202023/EM/Riya_bouigi.jpg', 
+      techProfiles : (
+        <TechP>
+            <a className='linkiden' href="" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+              <a className='twitter' href="" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+              <a className='insta' href="" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+            </TechP>
+      )
+    },
+    {
+      name: 'Mansi Sachdeva',
+      role: 'Co-Ordinator',
+      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693723636/Asset%20Mantle%20-%20Team%202023/EM/Riya_bouigi.jpg', 
+      techProfiles : (
+        <TechP>
+            <a className='linkiden' href="" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+              <a className='twitter' href="" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+              <a className='insta' href="" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+            </TechP>
+      )
+    },
+    {
+      name: 'Raizel Khanna',
+      role: 'Co-Ordinator',
+      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693723636/Asset%20Mantle%20-%20Team%202023/EM/Riya_bouigi.jpg', 
+      techProfiles : (
+        <TechP>
+            <a className='linkiden' href="" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+              <a className='twitter' href="" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+              <a className='insta' href="" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+            </TechP>
+      )
+    },
+    {
+      name: 'Mahak',
+      role: 'Co-Ordinator',
+      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693723636/Asset%20Mantle%20-%20Team%202023/EM/Riya_bouigi.jpg', 
+      techProfiles : (
+        <TechP>
+            <a className='linkiden' href="" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+              <a className='twitter' href="" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+              <a className='insta' href="" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+            </TechP>
+      )
+    },
+    {
+      name: 'Priya',
+      role: 'Co-Ordinator',
+      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693723636/Asset%20Mantle%20-%20Team%202023/EM/Riya_bouigi.jpg', 
+      techProfiles : (
+        <TechP>
+            <a className='linkiden' href="" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+              <a className='twitter' href="" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+              <a className='insta' href="" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+            </TechP>
+      )
+    },
+    {
+      name: 'Prakriti Negi',
+      role: 'Co-Ordinator',
+      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693723636/Asset%20Mantle%20-%20Team%202023/EM/Riya_bouigi.jpg', 
+      techProfiles : (
+        <TechP>
+            <a className='linkiden' href="" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+              <a className='twitter' href="" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+              <a className='insta' href="" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+            </TechP>
+      )
+    },
+    {
+      name: 'Shambhavi Sahoo',
+      role: 'Co-Ordinator',
+      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693723636/Asset%20Mantle%20-%20Team%202023/EM/Riya_bouigi.jpg', 
+      techProfiles : (
+        <TechP>
+            <a className='linkiden' href="" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+              <a className='twitter' href="" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+              <a className='insta' href="" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+            </TechP>
+      )
+    },
+    {
+      name: 'Disha Malhotra',
+      role: 'Co-Ordinator',
+      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693723636/Asset%20Mantle%20-%20Team%202023/EM/Riya_bouigi.jpg', 
+      techProfiles : (
+        <TechP>
+            <a className='linkiden' href="" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+              <a className='twitter' href="" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+              <a className='insta' href="" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+            </TechP>
+      )
+    },
         
   ];
 
@@ -438,6 +882,18 @@ const TeamPage = () => {
       )
     },
     {
+      name: 'Sripriya Agarwal',
+      role: 'Outreach Core',
+      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1688489578/Asset%20Mantle%20-%20Team%202023/Outreachy/Sripriya%20Agarwal.jpg',
+      techProfiles : (
+        <TechP>
+            <a className='linkiden' href="https://www.linkedin.com/in/sripriya-agarwal-483475261" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+              <a className='twitter' href="https://twitter.com/Agarwa1Sripriya?t=m7vwumEP8g3DQWYHN7G3AA&s=09" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+              <a className='insta' href="https://instagram.com/sripriyaagarwal16?igshid=MzNlNGNkZWQ4Mg==" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+            </TechP>
+      )
+    },
+    {
       name: 'Aiman ',
       role: 'Co-Ordinator',
       imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1688489575/Asset%20Mantle%20-%20Team%202023/Outreachy/Aiman.jpg',
@@ -449,18 +905,7 @@ const TeamPage = () => {
         </TechP>
       )
     },
-    {
-      name: 'Sripriya Agarwal',
-      role: 'Co-Ordinator',
-      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1688489578/Asset%20Mantle%20-%20Team%202023/Outreachy/Sripriya%20Agarwal.jpg',
-      techProfiles : (
-        <TechP>
-            <a className='linkiden' href="https://www.linkedin.com/in/sripriya-agarwal-483475261" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-              <a className='twitter' href="https://twitter.com/Agarwa1Sripriya?t=m7vwumEP8g3DQWYHN7G3AA&s=09" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
-              <a className='insta' href="https://instagram.com/sripriyaagarwal16?igshid=MzNlNGNkZWQ4Mg==" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-            </TechP>
-      )
-    },
+    
     {
       name: 'Sneha ',
       role: 'Co-Ordinator',
@@ -485,7 +930,92 @@ const TeamPage = () => {
         </TechP>
       )
     },
-        
+    {
+      name: 'Arshi Gupta',
+      role: 'Co-Ordinator',
+      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693723636/Asset%20Mantle%20-%20Team%202023/EM/Riya_bouigi.jpg', 
+      techProfiles : (
+        <TechP>
+            <a className='linkiden' href="" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+              <a className='twitter' href="" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+              <a className='insta' href="" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+            </TechP>
+      )
+    },
+    {
+      name: 'Shradha Jain',
+      role: 'Co-Ordinator',
+      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693723636/Asset%20Mantle%20-%20Team%202023/EM/Riya_bouigi.jpg', 
+      techProfiles : (
+        <TechP>
+            <a className='linkiden' href="" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+              <a className='twitter' href="" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+              <a className='insta' href="" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+            </TechP>
+      )
+    },
+    {
+      name: 'Shivika Bathla',
+      role: 'Co-Ordinator',
+      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693723636/Asset%20Mantle%20-%20Team%202023/EM/Riya_bouigi.jpg', 
+      techProfiles : (
+        <TechP>
+            <a className='linkiden' href="" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+              <a className='twitter' href="" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+              <a className='insta' href="" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+            </TechP>
+      )
+    },
+    {
+      name: 'Pari Gupta',
+      role: 'Co-Ordinator',
+      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693723636/Asset%20Mantle%20-%20Team%202023/EM/Riya_bouigi.jpg', 
+      techProfiles : (
+        <TechP>
+            <a className='linkiden' href="" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+              <a className='twitter' href="" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+              <a className='insta' href="" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+            </TechP>
+      )
+    },
+    {
+      name: 'Sanya Solanki',
+      role: 'Co-Ordinator',
+      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693723636/Asset%20Mantle%20-%20Team%202023/EM/Riya_bouigi.jpg', 
+      techProfiles : (
+        <TechP>
+            <a className='linkiden' href="" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+              <a className='twitter' href="" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+              <a className='insta' href="" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+            </TechP>
+      )
+    },
+    {
+      name: 'Vaishnavi',
+      role: 'Co-Ordinator',
+      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693723636/Asset%20Mantle%20-%20Team%202023/EM/Riya_bouigi.jpg', 
+      techProfiles : (
+        <TechP>
+            <a className='linkiden' href="" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+              <a className='twitter' href="" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+              <a className='insta' href="" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+            </TechP>
+      )
+    },
+    {
+      name: 'Anaya Jain',
+      role: 'Co-Ordinator',
+      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693723636/Asset%20Mantle%20-%20Team%202023/EM/Riya_bouigi.jpg', 
+      techProfiles : (
+        <TechP>
+            <a className='linkiden' href="" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+              <a className='twitter' href="" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+              <a className='insta' href="" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+            </TechP>
+      )
+    },
+
+      
   ];
 
   const location = useLocation();
