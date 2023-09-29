@@ -56,7 +56,7 @@ export const FooterLinkItems = styled.div`
  text-align: centre;
  width: 160px;
  box-sizing: border-box;
- color: #FFFFFF;
+ color:#fff;
  z-index: 2;
 
  @media screen and (max-width: 420px) {
@@ -136,6 +136,10 @@ export const SocialIconsLink = styled.a`
  color: #fff;
  z-index: 2;
  font-size: 24px;
+ &:hover{
+   color:#ffc640;
+   transition: 0.3s ease-out;
+ }
 `
 
 export const Gap = styled.div`
