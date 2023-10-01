@@ -42,9 +42,9 @@ export const FooterLinksWrapper = styled.div`
   z-index: 2;
 
   gap:20px;
-//   @media screen and(max-width: 768px) {
-//    flex-wrap: wrap;
-//   }
+  @media screen and(max-width: 768px) {
+    flex-wrap: wrap;
+   }
 `
 
 export const FooterLinkItems = styled.div`
@@ -56,6 +56,7 @@ export const FooterLinkItems = styled.div`
  text-align: centre;
  width: 160px;
  box-sizing: border-box;
+
  color:#fff;
  z-index: 2;
 
