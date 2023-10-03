@@ -10,7 +10,7 @@ const Footer = () => {
             <FooterLinksWrapper>
            
             <FooterLinkItems>
-                
+            <FooterLink to="assetmantleigdtuw@gmail.com">assetmantleigdtuw@gmail.com</FooterLink>
                 <SocialIcons>
                   
                 <SocialIconsLink href="https://www.instagram.com/assetmantle.igdtuw/" target="_blank"

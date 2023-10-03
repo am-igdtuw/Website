@@ -51,7 +51,7 @@ export const FooterLinkItems = styled.div`
  display: flex;
  flex-direction: column;
  align-items: centre;
- margin: 16px;
+ margin: 45px;
  margin-left: 20px;
  text-align: centre;
  width: 160px;
@@ -97,7 +97,7 @@ export const SocialMediaWrap = styled.div`
  justify-content: space-between;
  align-items: center;
  max-width: 1100px;
- margin: 40px auto 0 auto;
+ margin: 45px 40px 0 auto;
  z-index: 2;
 
  @media screen and (max-width: 768px) {
