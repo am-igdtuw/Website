@@ -70,6 +70,7 @@ export const FooterLinkTitle = styled.h1`
  margin-bottom: 16px;
  z-index: 2;
  font-weight:600;
+ color:#fff;
 `
 export const FooterLink = styled(Link)`
  color: #FFC640;
@@ -136,6 +137,10 @@ export const SocialIconsLink = styled.a`
  color: #fff;
  z-index: 2;
  font-size: 24px;
+ &:hover{
+   color:#ffc640;
+   transition: 0.3s ease-out;
+ }
 `
 
 export const Gap = styled.div`
