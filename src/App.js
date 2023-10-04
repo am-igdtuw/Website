@@ -11,6 +11,7 @@ import EventTeamPage from './pages/eventTeam';
 import MediaTeamPage from './pages/mediaTeam';
 import ResearchTechTeam from './pages/researchTeam';
 import TeamPage from './pages/team';
+import SponsorUsForm from './Components/FormSection/SponsorUs';
 
 
 //window.$crisp=[];
@@ -30,6 +31,7 @@ function App() {
         <Route exact path="/researchTeam" element={<ResearchTechTeam/>}/>
         <Route exact path="/outreachTeam" element={<OutreachTeamPage/>}/>
         <Route exact path="/TeamPage" element={<TeamPage/>}/>
+        <Route exact path='/sponsorPage' element={<SponsorUsForm/>}/>
       </Routes>
     </BrowserRouter>
   );
