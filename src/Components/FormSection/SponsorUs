@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sponsor us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./logo.png">
+    <link rel="stylesheet" href="form.css">
+    
+</head>
+<body>
+    <h1>Sponsor Us</h1>
+    <div class="form-container">
+        <form>
+
+            <div class="form-element">
+                <label for="name"><i class="fa-solid fa-user"></i></label>
+                <input type="text" placeholder="Name" id="name" name="name"><br>
+            </div>
+
+            <div class="form-element">
+                <label for="email"><i class="fa-solid fa-envelope"></i></label>
+                <input type="email" placeholder="Email" id="email" name="email"><br>
+            </div>
+
+            <div class="form-element">
+                <label for="Phone_no"><i class="fa-solid fa-phone"></i></label>
+                <input type="number" placeholder="Phone No." id="phone_no" name="phone_no"><br>
+            </div>
+            
+            <div class="form-element">
+                <label for="Company/Organisation"><i class="fa-solid fa-building"></i></label>
+                <input type="text" placeholder="Company/Organisation" id="Company/Organisation" name="Company/Organisation"><br>
+            </div>
+            
+            <div class="form-element">
+                <label for="textarea"><i class="fa-solid fa-memo"></i></label>
+                <textarea placeholder="Sponsorship related query" id="textarea" name="textarea" rows="4" cols="50"></textarea></br>
+            </div>
+
+            <div class="form-element">
+                <label for="Social_twitter"><i class="fa-brands fa-x-twitter"></i></label>
+                <input type="text" placeholder="Twitter" id="twitter_id" name="twitter_id"><br>
+            </div>
+
+            <div class="form-element">
+                <label for="Social_insta"><i class="fa-brands fa-instagram"></i></label>
+                <input type="text" placeholder="Instagram" id="instagram_id" name="instagram_id"><br>
+            </div>
+
+            <div class="form-element">
+                <label for="Social_linkedin"><i class="fa-brands fa-linkedin"></i></label>
+                <input type="text" placeholder="LinkedIn" id="linkedin_id" name="linkedin_id"><br>
+            </div>
+
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
