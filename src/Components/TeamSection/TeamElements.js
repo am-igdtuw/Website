@@ -6,6 +6,7 @@ export const TeamContainer = styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;
+    text-align: center
     justify-content: center;
     align-items: center;
     z-index: 3;
@@ -24,7 +25,7 @@ export const TeamHead = styled.h1`
     padding: 40px 50px 50px;
     color: white;
     font-family: 'Exo 2', sans-serif;
-    font-size: 54px;
+    font-size: 47px;
     font-weight: 600;
 
     @media screen and (max-width: 1024px) {
@@ -69,6 +70,7 @@ export const TeamWrapper = styled.div`
     height: auto;
     width: auto;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     margin: 5rem;
     padding: 2rem;
@@ -95,15 +97,20 @@ export const TeamWrapper = styled.div`
 
 export const TeamListWrapper3 = styled.div`
     display: flex;
+    fex-wrap: wrap;
     gap: 1rem;
     width: 60rem;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
 
+    @media screen and (max-width: 1024px) {
+        grid-template-columns: repeat(2, minmax(320px, 1fr));
+        width: 100%;
+    }
+
     @media screen and (max-width: 480px) {
-        flex-direction: column;
-        align-items: center;
+        grid-template-columns: repeat(1, minmax(320px, 1fr));
         width: 100%;
     }
 `
@@ -144,13 +151,19 @@ export const TechP = styled.p`
 `;
 
 export const TeamListWrapper2 = styled.div`
-    display: grid;
+    display: flex;
+    flex-wrap:wrap;
     grid-template-columns: repeat(2, minmax(320px, 1fr));
-    gap: 1rem;
+    gap: 1.5rem;
     width: 60rem;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+
+    @media screen and (max-width: 1024px) {
+        grid-template-columns: repeat(2, minmax(320px, 1fr));
+        width: 100%;
+    }
 
     @media screen and (max-width: 480px) {
         grid-template-columns: repeat(1, minmax(320px, 1fr));
@@ -160,7 +173,8 @@ export const TeamListWrapper2 = styled.div`
 `
 
 export const TeamListWrapper = styled.div`
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     grid-template-columns: repeat(3, minmax(320px, 1fr));
     gap: 1rem;
     width: 60rem;
