@@ -13,6 +13,7 @@ import ResearchTechTeam from './pages/researchTeam';
 import TeamPage from './pages/team';
 import SponsorUsForm from './Components/FormSection/SponsorUs';
 import CollaborateForm from './Components/FormSection/CollaborateUs';
+import ProbStatementPage from './pages/probStatement';
 
 
 //window.$crisp=[];
@@ -34,6 +35,8 @@ function App() {
         <Route exact path="/TeamPage" element={<TeamPage/>}/>
         <Route exact path='/sponsorPage' element={<SponsorUsForm/>}/>
         <Route exact path='/collaboratePage' element={<CollaborateForm/>}/>
+        <Route exact path='/probStatement' element={<ProbStatementPage/>}/>
+        
       </Routes>
     </BrowserRouter>
   );
