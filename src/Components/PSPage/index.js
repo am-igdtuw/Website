@@ -25,7 +25,7 @@ const ProbStatement = () => {
                 <InfoRow>
                   <ServicesH1>Frontend Development</ServicesH1>
                   <ServicesH2>
-                  Unlock the Frontend Frontier: Discover Challenges Awaiting Your Expertise!
+                  Unlock the Frontend Frontier: Discover Challenges Awaiting Your Expertise in Web Development!
                   </ServicesH2>
                 </InfoRow>
               </ServicesCard>
@@ -122,7 +122,7 @@ const ProbStatement = () => {
                 <InfoRow>
                   <ServicesH1>Integrating Backend in Frontend</ServicesH1>
                   <ServicesH2>
-                  Seamless Backend-to-Frontend Fusion: Unleash the Full Potential of Your Web Applications!
+                  Seamless Backend-to-Frontend Fusion: Integrate Backend to Frontend!
                   </ServicesH2>
                 </InfoRow>
               </ServicesCard>
@@ -134,7 +134,7 @@ const ProbStatement = () => {
                 <InfoRow>
                   <ServicesH1>DSA</ServicesH1>
                   <ServicesH2>
-                  DSA Mastery Awaits: Conquer Complex Challenges with the Art of Algorithms!
+                  DSA Mastery Awaits: Conquer Complex Challenges and develop with the Art of Algorithms!
                   </ServicesH2>
                 </InfoRow>
               </ServicesCard>
