@@ -73,7 +73,7 @@ const TeamPage = () => {
       )
     },
   ];
-  const techTeam = [
+  const techTeamLead = [
     {
       name: 'Harshita Deep',
       role: 'Technical Lead',
@@ -85,7 +85,9 @@ const TeamPage = () => {
             <a className='insta' href="https://www.instagram.com/ha_rshita4387/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
         </TechP>
       )
-    },
+    }
+  ]
+  const techTeamCore = [
     {
       name: 'Mansi',
       role: 'Technical Core',
@@ -109,7 +111,8 @@ const TeamPage = () => {
                <a className='insta' href="#" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
        </TechP>
       )
-    },
+    }
+  ]
     // {
     //   name: 'Manjusha Iyer',
     //   role: 'Co-Ordinator',
@@ -122,6 +125,7 @@ const TeamPage = () => {
     //     </TechP>
     //   )
     // },
+    const techTeamCoordinator = [
     {
       name: 'Apoorva ',
       role: 'Co-Ordinator',
@@ -209,7 +213,7 @@ const TeamPage = () => {
         
   ];
 
-  const eventsTeam = [
+  const eventsTeamLead = [
     {
       name: 'Hiteshi Dattatrey',
       role: 'EM Lead',
@@ -233,7 +237,10 @@ const TeamPage = () => {
        <a className='insta' href="https://www.instagram.com/the.flank/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
        </TechP> 
       )
-    },
+    }
+  ]
+  const eventsTeamCore = [
+    
     {
       name: 'Devanshi verma',
       role: 'EM Core',
@@ -281,7 +288,9 @@ const TeamPage = () => {
               <a className='insta' href="https://www.instagram.com/gunjanvjangra/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
             </TechP>
       )
-    },
+    }
+  ]
+  const eventsTeamCoordinater = [
     {
       name: 'Manasi Duggal ',
       role: 'Co-Ordinator',
@@ -524,7 +533,7 @@ const TeamPage = () => {
         
   ];
 
-  const researchTeam = [
+  const researchTeamLead = [
     {
       name: 'Srimayee Satapathy',
       role: 'Research Lead',
@@ -536,7 +545,8 @@ const TeamPage = () => {
               <a className='insta' href="https://www.instagram.com/whoiissrii/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
             </TechP>
       )
-    },
+    }
+  ]
     // {
     //   name: 'Aarna Singhal',
     //   role: 'Research Core',
@@ -548,6 +558,7 @@ const TeamPage = () => {
     //           <a className='insta' href="https://www.instagram.com/aarnasinghal09/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a></TechP>
     //   )
     // },
+    const researchTeamCore = [
     {
       name: 'Shreya gupta ',
       role: 'Research Core',
@@ -571,7 +582,9 @@ const TeamPage = () => {
               <a className='insta' href="https://www.instagram.com/meghaa_931/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
             </TechP>
       )
-    },
+    }
+  ]
+  const researchTeamCoordinator = [
     {
       name: 'Sakshi ',
       role: 'Co-Ordinator',
@@ -683,7 +696,7 @@ const TeamPage = () => {
         
   ];
 
-  const mediaTeam = [
+  const mediaTeamLead = [
     {
       name: 'Sanya Gupta',
       role: 'Media Lead',
@@ -695,7 +708,9 @@ const TeamPage = () => {
               <a className='insta' href="https://www.instagram.com/_.sanya.__19/?next=%2F" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
             </TechP>
       )
-    },
+    }
+  ]
+  const mediaTeamCore = [
     {
       name: 'Deepakshi',
       role: 'Media Core',
@@ -719,7 +734,9 @@ const TeamPage = () => {
               <a className='insta' href="https://www.instagram.com/jiya.malik06/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
             </TechP>
       )
-    },
+    }
+  ]
+  const mediaTeamCoordinator = [
     {
       name: 'Pooja',
       role: 'Co-Ordinator',
@@ -855,7 +872,7 @@ const TeamPage = () => {
         
   ];
 
-  const outreachTeam = [
+  const outreachTeamLead = [
     {
       name: 'Nikhila K S',
       role: 'Outreach Lead',
@@ -867,7 +884,9 @@ const TeamPage = () => {
         <a className='insta' href="https://www.instagram.com/ks_nikhila_/?hl=en" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
       </TechP>
       )
-    },
+    }
+  ]
+  const outreachTeamCore = [
     {
       name: 'Tanisha Bansal ',
       role: 'Outreach Core',
@@ -891,7 +910,9 @@ const TeamPage = () => {
               <a className='insta' href="https://instagram.com/sripriyaagarwal16?igshid=MzNlNGNkZWQ4Mg==" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
             </TechP>
       )
-    },
+    }
+  ]
+  const outreachTeamCoordinator = [
     {
       name: 'Aiman ',
       role: 'Co-Ordinator',
@@ -1090,8 +1111,13 @@ const TeamPage = () => {
       <TeamName>
         Event Management Team
       </TeamName>
+      {/* lead */}
+      <TeamName>
+        <br></br>
+        Leads
+      </TeamName>
       <TeamListWrapper>
-          {eventsTeam.map((member, index) => (
+          {eventsTeamLead.map((member, index) => (
             <TeamMemberCard
               key={index}
               name={member.name}
@@ -1101,14 +1127,49 @@ const TeamPage = () => {
             />
           ))}
         </TeamListWrapper>
-      </TeamWrapper>
 
+        {/* core */}
+        <TeamName>
+        Cores
+      </TeamName>
+      <TeamListWrapper>
+          {eventsTeamCore.map((member, index) => (
+            <TeamMemberCard
+              key={index}
+              name={member.name}
+              role={member.role}
+              imageUrl={member.imageUrl}
+              techProfiles={member.techProfiles}
+            />
+          ))}
+        </TeamListWrapper>
+        {/* Co-ordinator */}
+        <TeamName>
+        Co-ordinators
+        </TeamName>
+        <TeamListWrapper>
+            {eventsTeamCoordinater.map((member, index) => (
+              <TeamMemberCard
+                key={index}
+                name={member.name}
+                role={member.role}
+                imageUrl={member.imageUrl}
+                techProfiles={member.techProfiles}
+              />
+            ))}
+          </TeamListWrapper>
+      </TeamWrapper>
+{/* --------- */}
       <TeamWrapper id="mediaTeamSection">
       <TeamName>
         Graphics and Media Team
       </TeamName>
+      <TeamName>
+        <br></br>
+        Lead
+      </TeamName>
       <TeamListWrapper>
-          {mediaTeam.map((member, index) => (
+          {mediaTeamLead.map((member, index) => (
             <TeamMemberCard
               key={index}
               name={member.name}
@@ -1118,14 +1179,53 @@ const TeamPage = () => {
             />
           ))}
         </TeamListWrapper>
+
+
+        {/* core */}
+        <TeamName>
+        Cores
+      </TeamName>
+      <TeamListWrapper>
+          {mediaTeamCore.map((member, index) => (
+            <TeamMemberCard
+              key={index}
+              name={member.name}
+              role={member.role}
+              imageUrl={member.imageUrl}
+              techProfiles={member.techProfiles}
+            />
+          ))}
+        </TeamListWrapper>
+        {/* Co-ordinator */}
+        <TeamName>
+        Co-ordinators
+        </TeamName>
+        <TeamListWrapper>
+            {mediaTeamCoordinator.map((member, index) => (
+              <TeamMemberCard
+                key={index}
+                name={member.name}
+                role={member.role}
+                imageUrl={member.imageUrl}
+                techProfiles={member.techProfiles}
+              />
+            ))}
+          </TeamListWrapper>
       </TeamWrapper>
+      
+      {/* ---------- */}
 
       <TeamWrapper id="contentTeamSection">
       <TeamName>
         Research and Content Team
       </TeamName>
+      {/* lead */}
+      <TeamName>
+        <br></br>
+        Lead
+      </TeamName>
       <TeamListWrapper>
-          {researchTeam.map((member, index) => (
+          {researchTeamLead.map((member, index) => (
             <TeamMemberCard
               key={index}
               name={member.name}
@@ -1135,14 +1235,51 @@ const TeamPage = () => {
             />
           ))}
         </TeamListWrapper>
+
+
+        {/* core */}
+        <TeamName>
+        Cores
+      </TeamName>
+      <TeamListWrapper>
+          {researchTeamCore.map((member, index) => (
+            <TeamMemberCard
+              key={index}
+              name={member.name}
+              role={member.role}
+              imageUrl={member.imageUrl}
+              techProfiles={member.techProfiles}
+            />
+          ))}
+        </TeamListWrapper>
+        {/* Co-ordinator */}
+        <TeamName>
+        Co-ordinators
+        </TeamName>
+        <TeamListWrapper>
+            {researchTeamCoordinator.map((member, index) => (
+              <TeamMemberCard
+                key={index}
+                name={member.name}
+                role={member.role}
+                imageUrl={member.imageUrl}
+                techProfiles={member.techProfiles}
+              />
+            ))}
+          </TeamListWrapper>
       </TeamWrapper>
 
       <TeamWrapper id="outreachTeamSection">
       <TeamName>
         Outreach Team
       </TeamName>
+      {/* lead */}
+      <TeamName>
+        <br></br>
+        Lead
+      </TeamName>
       <TeamListWrapper>
-          {outreachTeam.map((member, index) => (
+          {outreachTeamLead.map((member, index) => (
             <TeamMemberCard
               key={index}
               name={member.name}
@@ -1152,14 +1289,52 @@ const TeamPage = () => {
             />
           ))}
         </TeamListWrapper>
+
+
+        {/* core */}
+        <TeamName>
+        Cores
+      </TeamName>
+      <TeamListWrapper>
+          {outreachTeamCore.map((member, index) => (
+            <TeamMemberCard
+              key={index}
+              name={member.name}
+              role={member.role}
+              imageUrl={member.imageUrl}
+              techProfiles={member.techProfiles}
+            />
+          ))}
+        </TeamListWrapper>
+        {/* Co-ordinator */}
+        <TeamName>
+        Co-ordinators
+        </TeamName>
+        <TeamListWrapper>
+            {outreachTeamCoordinator.map((member, index) => (
+              <TeamMemberCard
+                key={index}
+                name={member.name}
+                role={member.role}
+                imageUrl={member.imageUrl}
+                techProfiles={member.techProfiles}
+              />
+            ))}
+          </TeamListWrapper>
       </TeamWrapper>
 
       <TeamWrapper id="techTeamSection">
       <TeamName>
         Technical Team
       </TeamName>
+
+      {/* lead */}
+      <TeamName>
+        <br></br>
+        Lead
+      </TeamName>
       <TeamListWrapper>
-          {techTeam.map((member, index) => (
+          {techTeamLead.map((member, index) => (
             <TeamMemberCard
               key={index}
               name={member.name}
@@ -1169,6 +1344,38 @@ const TeamPage = () => {
             />
           ))}
         </TeamListWrapper>
+
+
+        {/* core */}
+        <TeamName>
+        Cores
+      </TeamName>
+      <TeamListWrapper>
+          {techTeamCore.map((member, index) => (
+            <TeamMemberCard
+              key={index}
+              name={member.name}
+              role={member.role}
+              imageUrl={member.imageUrl}
+              techProfiles={member.techProfiles}
+            />
+          ))}
+        </TeamListWrapper>
+        {/* Co-ordinator */}
+        <TeamName>
+        Co-ordinators
+        </TeamName>
+        <TeamListWrapper>
+            {techTeamCoordinator.map((member, index) => (
+              <TeamMemberCard
+                key={index}
+                name={member.name}
+                role={member.role}
+                imageUrl={member.imageUrl}
+                techProfiles={member.techProfiles}
+              />
+            ))}
+          </TeamListWrapper>
       </TeamWrapper>
 
       </TeamContainer>
