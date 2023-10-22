@@ -1,6 +1,6 @@
-import React from 'react';
-import { FaBars, FaTimes } from 'react-icons/fa'; // Import the close icon as well
-import Logo2 from '../../images/Logo3.png';
+import React, { useState, useEffect } from "react";
+import { FaBars, FaTimes } from "react-icons/fa"; // Import the close icon as well
+import Logo2 from "../../images/Logo3.png";
 import {
   Nav,
   NavbarContainer,
@@ -11,12 +11,18 @@ import {
   MobileIcon,
   NavLogo,
   SubLogo,
-} from './NavbarElements';
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
+} from "./NavbarElements";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      setScrollPosition(window.scrollY);
+    });
+  }, []);
 
   const toggle = () => {
     setIsOpen(!isOpen);
@@ -28,10 +34,14 @@ const Navbar = () => {
 
   return (
     <>
-      <Nav>
+      <Nav
+        style={{
+          backgroundColor: scrollPosition > 0 ? "rgba(255,255,255,0.2)" : "transparent",
+        }}
+      >
         <NavbarContainer>
           <NavImg>
-            <Link to="/" onClick={handleLogoClick}> 
+            <Link to="/" onClick={handleLogoClick}>
               <img src={Logo2} height={44} alt="Logo" />
             </Link>
             <NavLogo>
@@ -45,17 +55,25 @@ const Navbar = () => {
           </MobileIcon>
           <NavMenu isOpen={isOpen}>
             <Navitem>
-              <NavLinks to="/" onClick={handleLogoClick}>ABOUT</NavLinks>
+              <NavLinks to="/" onClick={handleLogoClick}>
+                ABOUT
+              </NavLinks>
             </Navitem>
             <Navitem>
-              <NavLinks to="/event" onClick={handleLogoClick}>EVENTS</NavLinks>
+              <NavLinks to="/event" onClick={handleLogoClick}>
+                EVENTS
+              </NavLinks>
             </Navitem>
 
-            <Navitem className='custom'>
-              <NavLinks to="/TeamPage" onClick={handleLogoClick}>TEAM</NavLinks>
+            <Navitem className="custom">
+              <NavLinks to="/TeamPage" onClick={handleLogoClick}>
+                TEAM
+              </NavLinks>
             </Navitem>
-            <Navitem className='custom'>
-              <NavLinks to="/faq" onClick={handleLogoClick}>FAQS</NavLinks>
+            <Navitem className="custom">
+              <NavLinks to="/faq" onClick={handleLogoClick}>
+                FAQS
+              </NavLinks>
             </Navitem>
           </NavMenu>
         </NavbarContainer>
@@ -65,4 +83,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
