@@ -1,4 +1,5 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
+import {Link} from 'react-router-dom'; 
 
 export const AboutContainer = styled.div`
    height:500px;
@@ -180,6 +181,11 @@ color:white;
 }
 
 
+`;
+
+export const Linked = styled(Link)`
+  text-decoration: none; 
+  color: inherit; 
 `;
 
 export const BtnWrap = styled.div`
