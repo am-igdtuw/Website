@@ -1,4 +1,5 @@
 import React from 'react';  
+import toast, { Toaster } from 'react-hot-toast';
 import './App.css';       
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages';
@@ -22,6 +23,7 @@ import ProbStatementPage from './pages/probStatement';
 function App() {
   return (
     <BrowserRouter>
+    <Toaster position="bottom-center" gutter={14} containerStyle={{ fontSize: '14px' }}></Toaster>
       <Routes>
         <Route exact path="/" element={<Home/>} />
         <Route exact path="/event" element={<EventPage/>}/>
