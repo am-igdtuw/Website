@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+
 import TeamMemberCard from './TeamMemberCard';
 import { TeamContainer,TechP, TeamHead, TeamWrapper, TeamListWrapper,TeamListWrapper2,TeamListWrapper3, TeamName} from './TeamElements';
 import { FaLinkedin, FaTwitter, FaInstagram } from 'react-icons/fa';
@@ -21,6 +22,7 @@ const TeamPage = () => {
       )
     },
   ];
+  
   const president = [
     {
       name: 'Geetika Gupta',
@@ -1052,9 +1054,10 @@ const TeamPage = () => {
   }, [teamNameQueryParam]);
 
   return (
+
     <TeamContainer>
     <TeamHead>MEET THE TEAM</TeamHead>
-    <TeamWrapper>
+    <TeamWrapper id="founderSection">
       <TeamName>
         Founding Member
       </TeamName>
@@ -1073,7 +1076,7 @@ const TeamPage = () => {
         </TeamListWrapper3>
       </TeamWrapper>
 
-      <TeamWrapper>
+      <TeamWrapper id="President">
       <TeamName>
         President
       </TeamName>
@@ -1090,7 +1093,7 @@ const TeamPage = () => {
         </TeamListWrapper2>
       </TeamWrapper>
 
-      <TeamWrapper>
+      <TeamWrapper id="Vice President">
       <TeamName>
         Vice President
       </TeamName>
