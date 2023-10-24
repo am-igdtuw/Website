@@ -4,6 +4,7 @@ import { SidebarData } from './SidebarData';
 
 const StyledTeamSidebar = styled.div`
   position: sticky;
+  
   align-items:center;
   top:80px;
   left:0px;
