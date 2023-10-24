@@ -3,10 +3,13 @@ import styled from 'styled-components';
 import { SidebarData } from './SidebarData';
 
 const StyledTeamSidebar = styled.div`
-  position: fixed;
+  position: sticky;
+  
+  align-items:center;
   top:80px;
   left:0px;
-  height: auto;
+  margin-top: 100px;
+  height: 410px;
   width: 220px;
   background-color:rgba(255,255,255,0.2);
   opacity:1;
@@ -46,7 +49,7 @@ const StyledContent = styled.div`
 `;
 const StyledIcon = styled.div`
 img {
-  height: 40px; 
+  height: 50px; 
   
   }
 flex:30%
@@ -79,8 +82,8 @@ const TeamSidebar = () => {
             {" "}
             <StyledContent>
             <StyledIcon>{val.icon}</StyledIcon>{" "}
-            <StyledTitle>{val.title}
-            </StyledTitle>
+            {/* <StyledTitle>{val.title}
+            </StyledTitle> */}
             </StyledContent>
           </StyledRow>
         );

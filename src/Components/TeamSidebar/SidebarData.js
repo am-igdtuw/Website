@@ -9,21 +9,21 @@ import FounderImage from '../../images/Founder.png';
 
 
 export const SidebarData=[
-    {
-        title:"Founder",
-        icon:< img src={FounderImage}/>,
-        link:"#founderSection"
-    },
-    {
-        title:"President",
-        icon:< img src={EventTeam}/>,
-        link:"#President"
-    },
-    {
-        title:"Vice President",
-        icon:< img src={EventTeam}/>,
-        link:"#Vice President"
-    },
+    // {
+    //     title:"Founder",
+    //     icon:< img src={FounderImage}/>,
+    //     link:"#founderSection"
+    // },
+    // {
+    //     title:"President",
+    //     icon:< img src={EventTeam}/>,
+    //     link:"#President"
+    // },
+    // {
+    //     title:"Vice President",
+    //     icon:< img src={EventTeam}/>,
+    //     link:"#Vice President"
+    // },
     {
         title:"EM Team",
         icon:< img src={EventTeam}/>,
