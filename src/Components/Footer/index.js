@@ -1,5 +1,7 @@
 import React from 'react'
-import { FaFacebook, FaLinkedin, FaYoutube, FaInstagram, FaTwitter } from 'react-icons/fa';
+import { FaFacebook, FaLinkedin, FaYoutube, FaInstagram} from 'react-icons/fa';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import { FooterContainer,FooterWrap, FooterLinksContainer,FooterLinksWrapper,FooterLinkItems, FooterLinkTitle, FooterLink, SocialMedia, SocialMediaWrap, SocialLogo, WebsiteRights, SocialIconsLink, SocialIcons, Gap } from './FooterElements';
 import Logo from '../../images/2.png'
 const Footer = () => {
@@ -19,7 +21,7 @@ const Footer = () => {
                 </SocialIconsLink>
                 <SocialIconsLink href="https://twitter.com/AM_igdtuw" target="_blank"
                 area-label="Twitter">
-                  <FaTwitter />
+                 <FontAwesomeIcon icon="fa-brands fa-x-twitter" />
                 </SocialIconsLink>
                 <SocialIconsLink href="https://www.linkedin.com/company/asset-mantle-igdtuw/" target="_blank"
                 area-label="Linkedin">
