@@ -1,84 +1,102 @@
-import React from 'react';
-import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Import the carousel styles
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import {
-  ServicesContainer,
-  ServicesH1,
-  ServicesH2,
-  ServicesWrapper,
-  ServicesCard,
-  ServicesIcon,
-  ServicesLink,
-  ServicesContent,
-} from './PastEventElements';
+import React from 'react'
+import { FaFacebook, FaLinkedin, FaYoutube, FaInstagram, FaTwitter } from 'react-icons/fa';
+import { FooterContainer,FooterWrap, FooterLinksContainer,FooterLinksWrapper,FooterLinkItems, FooterLinkTitle, FooterLink, SocialMedia, SocialMediaWrap, SocialLogo, WebsiteRights, SocialIconsLink, SocialIcons, Gap } from './FooterElements';
+import Logo from '../../images/2.png'
 
-const Services = () => {
-  const events = [
-    {
-      title: 'Orientation and Treasure Hunt',
-      link: 'https://www.instagram.com/reel/Cnrgq8Jha-p/',
-      image:
-        'https://res.cloudinary.com/djv5kc7as/image/upload/v1688802647/Asset%20Mantle%20-%20Team%202023/Events/Screenshot_300_mgqx8x.png',
-    },
-    {
-      title: 'Find Global Career opportunities on Web3 and Metaverse',
-      link: 'https://www.instagram.com/reel/Coy0FTINtEt/',
-      image:
-        'https://res.cloudinary.com/djv5kc7as/image/upload/v1688802648/Asset%20Mantle%20-%20Team%202023/Events/Screenshot_301_oeeode.png',
-    },
-    {
-      title: 'Intro to Web3 and its Career Scope',
-      link: 'https://www.instagram.com/p/CoeHzBkSLWY/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==',
-      image:
-        'https://res.cloudinary.com/djv5kc7as/image/upload/v1688802647/Asset%20Mantle%20-%20Team%202023/Events/Screenshot_302_pgrxxz.png',
-    },
-    {
-      title: 'BFF Hackathon',
-      link: 'https://www.instagram.com/reel/Cs3nO1yN3-6/',
-      image:
-        'https://res.cloudinary.com/djv5kc7as/image/upload/v1688802646/Asset%20Mantle%20-%20Team%202023/Events/Screenshot_303_cpvgip.png',
-    },
-  ];
-
-
-
+const Footer = () => {
+  
   return (
-    <ServicesContainer id="services">
-      <ServicesH1>Past Events</ServicesH1>
-      <ServicesWrapper>
-        <Carousel
-          showArrows={true} // Display arrow buttons for navigation
-          showThumbs={false} // Hide thumbnail images
-          showStatus={false} // Hide status indicators
-          infiniteLoop={true} // Enable infinite loop
-          autoPlay={true} // Enable auto-play
-          interval={5000} // Set auto-play interval in milliseconds (e.g., 5 seconds)
-          centerMode={true} // Enable center mode
-          centerSlidePercentage={33.33} // Set the width of the centered slide as a percentage (33.33% for 3 items)
-        >
-          {events.map((event, index) => (
-            <ServicesCard key={index}>
-              <ServicesIcon src={event.image} />
-              <ServicesContent>
-                <ServicesH2>
-                  <b>{event.title}</b>
-                </ServicesH2>
-                <ServicesLink
-                  href={event.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Go to Instagram<FontAwesomeIcon icon={faArrowRight} /> 
-                </ServicesLink>
-              </ServicesContent>
-            </ServicesCard>
-          ))}
-        </Carousel>
-      </ServicesWrapper>
-    </ServicesContainer>
-  );
-};
+    <FooterContainer>
+       <FooterWrap>
+         <FooterLinksContainer >
+         
+            <FooterLinksWrapper>
+           
+            <FooterLinkItems>
+            <FooterLink to="">Subscribe to Newsletter</FooterLink>
 
-export default Services;
+            <FooterLink to="assetmantleigdtuw@gmail.com">assetmantleigdtuw@gmail.com</FooterLink>
+                <SocialIcons>
+                  
+                <SocialIconsLink href="https://www.instagram.com/assetmantle.igdtuw/" target="_blank"
+                area-label="Instagram">
+                  <FaInstagram />
+                </SocialIconsLink>
+                <SocialIconsLink href="https://twitter.com/AM_igdtuw" target="_blank"
+                area-label="Twitter">
+                  <FaTwitter />
+                </SocialIconsLink>
+                <SocialIconsLink href="https://www.linkedin.com/company/asset-mantle-igdtuw/" target="_blank"
+                area-label="Linkedin">
+                  <FaLinkedin />
+                </SocialIconsLink>
+                </SocialIcons> 
+                </FooterLinkItems>
+                </FooterLinksWrapper>
+                <FooterLinksWrapper>
+                <FooterLinkItems>
+                    <FooterLinkTitle>Useful Links</FooterLinkTitle>
+                       <FooterLink to="/">About</FooterLink>
+                       <FooterLink to="/event">Events</FooterLink>
+                       {/* <FooterLink to="/signin">Careers</FooterLink>
+                       <FooterLink to="/signin">Investors</FooterLink>
+                       <FooterLink to="/signin">Terms of Services</FooterLink> */}
+                </FooterLinkItems>
+                <Gap />
+                <FooterLinkItems>
+                    <FooterLinkTitle>Contact Us</FooterLinkTitle>
+                       <FooterLink to="/">Contact</FooterLink>
+                       {/* <FooterLink to="/">Support</FooterLink>
+                        <FooterLink to="/">Destinations</FooterLink> */}
+                       <FooterLink to="/">Collaborate</FooterLink>
+                       <FooterLink to="/faq">FAQs</FooterLink>
+                </FooterLinkItems>
+                <Gap />
+          
+            
+                {/* <FooterLinkItems>
+                    <FooterLinkTitle>Videos</FooterLinkTitle>
+                       <FooterLink to="/">Submit Video</FooterLink>
+                       <FooterLink to="/">Ambassdors</FooterLink>
+                       <FooterLink to="/">Agency</FooterLink>
+                       <FooterLink to="/">Influencer</FooterLink>
+                </FooterLinkItems> */}
+                <FooterLinkItems>
+                    <FooterLinkTitle>Social Media</FooterLinkTitle>
+                       <FooterLink to="https://www.instagram.com/assetmantle.igdtuw/">Instagram</FooterLink>
+                       {/* <FooterLink to="/">Facebook</FooterLink>
+                       <FooterLink to="/">Youtube</FooterLink> */}
+                       <FooterLink to="https://twitter.com/AM_igdtuw">Twitter</FooterLink>
+                       <FooterLink to="https://www.linkedin.com/company/asset-mantle-igdtuw/">LinkedIn</FooterLink>
+                </FooterLinkItems>
+            </FooterLinksWrapper>
+         </FooterLinksContainer>
+         <SocialMedia>
+            <SocialMediaWrap>
+                <SocialLogo href="/">
+                   <img src={Logo} height={62}/>
+                </SocialLogo>
+                <WebsiteRights>Assetmantle © {new Date().getFullYear()}  . 
+                All rights reserved.</WebsiteRights>
+                {/* <SocialIcons>
+                <SocialIconsLink href="https://www.instagram.com/assetmantle.igdtuw/" target="_blank"
+                area-label="Instagram">
+                  <FaInstagram />
+                </SocialIconsLink>
+                <SocialIconsLink href="https://twitter.com/AM_igdtuw" target="_blank"
+                area-label="Twitter">
+                  <FaTwitter />
+                </SocialIconsLink>
+                <SocialIconsLink href="https://www.linkedin.com/company/asset-mantle-igdtuw/" target="_blank"
+                area-label="Linkedin">
+                  <FaLinkedin />
+                </SocialIconsLink>
+                </SocialIcons>  */}
+            </SocialMediaWrap>
+         </SocialMedia>
+       </FooterWrap>
+    </FooterContainer>
+  )
+}
+
+export default Footer;
