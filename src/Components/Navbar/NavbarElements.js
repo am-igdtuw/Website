@@ -83,7 +83,7 @@ export const MobileIcon = styled.div`
 export const NavMenu = styled.ul`
 display: flex;
 flex-direction: row;
- align-items: center;
+align-items: center;
 padding: 16px 50px 0px 90px;
 gap: 21px;
 width: auto;
@@ -149,7 +149,7 @@ ${'' /* justify-content: center; */}
 padding: 0px 20px;
 gap: 10px;
 border:0.5px solid #FFC640;
-width:110px;
+width:120px;
 height: 34px;
 
 background: linear-gradient(45deg, #000000, #1c1b19);
@@ -167,7 +167,7 @@ flex-grow: 0;
 }
 
 &.custom {
-  padding-left: 22px; 
+  padding-left: 10px; 
   padding-right: 10px; 
 }
 `
@@ -178,7 +178,7 @@ height: 200x;
 display: flex;
 align-items: flex-start;
 flex-direction: row;
-padding-left: 20px;
+padding-left: 50px;
 margin-right: auto; /* Pushes the container to the left */
 ${'' /* margin-bottom: 20px; */}
 flex: none;
@@ -189,7 +189,7 @@ flex-grow: 0;
 
 export const NavLinks = styled(LinkR)`
 
-  width: 74px;
+  width: auto;
   height: 36px;
   padding: 8px;
   padding-left: 10px;

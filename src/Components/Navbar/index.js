@@ -71,6 +71,11 @@ const Navbar = () => {
               </NavLinks>
             </Navitem>
             <Navitem className="custom">
+              <NavLinks to="/collaboratePage" onClick={handleLogoClick}>
+                COLLABORATE
+              </NavLinks>
+            </Navitem>
+            <Navitem className="custom">
               <NavLinks to="/faq" onClick={handleLogoClick}>
                 FAQS
               </NavLinks>
