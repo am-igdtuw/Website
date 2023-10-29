@@ -1,3 +1,18 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import styled from "styled-components";
 
 export const ServicesContainer = styled.div`
@@ -24,13 +39,14 @@ export const ServicesWrapper = styled.div`
 
 export const ServicesCard = styled.div`
   height: 37rem;
+  width: ;
   align-items: center;
-  margin: 10px; /* Add a 10px gap around each card */
+  margin: 10px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   border-radius: 10px;
-  min-width: 20px; /* Adjusted from width to min-width for responsiveness */
+  min-width: 20px; 
   background: #0d0a03;
   border-radius: 24px;
   border: 0.5px solid #ffc640;
@@ -117,3 +133,4 @@ export const ServicesP = styled.p`
   font-size: 1rem;
   text-align: center;
 `;
+

@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Import the carousel styles
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import {
@@ -13,7 +13,6 @@ import {
   ServicesLink,
   ServicesContent,
 } from './PastEventElements';
-
 const Services = () => {
   const events = [
     {
@@ -40,45 +39,88 @@ const Services = () => {
       image:
         'https://res.cloudinary.com/djv5kc7as/image/upload/v1688802646/Asset%20Mantle%20-%20Team%202023/Events/Screenshot_303_cpvgip.png',
     },
+    {
+      title: 'FastN Session',
+      link: 'https://www.instagram.com/p/CvZ9Ps1yCk_/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==',
+      image:
+        'https://res.cloudinary.com/djv5kc7as/image/upload/v1698596897/Asset%20Mantle%20-%20Team%202023/Events/Screenshot_315_hcwl6o.png',
+    },
+    {
+      title: 'Introduction to Crypto V/S Blockchain and Altcoins',
+      link: 'https://www.instagram.com/p/CoeHzBkSLWY/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==https://www.instagram.com/p/Cv7hyhDscUx/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==',
+      image:
+        'https://res.cloudinary.com/djv5kc7as/image/upload/v1698598489/Asset%20Mantle%20-%20Team%202023/Events/Screenshot_317_nle6lt.png',
+    },
+    {
+      title: 'Ideathon',
+      link: 'https://www.instagram.com/p/CoeHzBkSLWY/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==',
+      image:
+        'https://res.cloudinary.com/djv5kc7as/image/upload/v1698597655/Asset%20Mantle%20-%20Team%202023/Events/Screenshot_316_ilf1ht.png',
+    },
   ];
 
+  const itemsToShow = 5;
+  const [currentSlide, setCurrentSlide] = useState(0);
 
+  const renderEvents = () => {
+    const startIndex = currentSlide * itemsToShow;
+    const endIndex = startIndex + itemsToShow;
+    return events.slice(startIndex, endIndex).map((event, index) => (
+      <ServicesCard key={index}>
+        <ServicesIcon src={event.image} />
+        <ServicesContent>
+          <ServicesH2>
+            <b>{event.title}</b>
+          </ServicesH2>
+          <ServicesLink href={event.link} target="_blank" rel="noopener noreferrer">
+            Go to Instagram<FontAwesomeIcon icon={faArrowRight} />
+          </ServicesLink>
+        </ServicesContent>
+      </ServicesCard>
+    ));
+  };
+
+  const handleNext = () => {
+    setCurrentSlide(currentSlide + 1);
+  };
+
+  const handlePrev = () => {
+    setCurrentSlide(currentSlide - 1);
+  };
 
   return (
     <ServicesContainer id="services">
       <ServicesH1>Past Events</ServicesH1>
       <ServicesWrapper>
         <Carousel
-          showArrows={true} // Display arrow buttons for navigation
-          showThumbs={false} // Hide thumbnail images
-          showStatus={false} // Hide status indicators
-          infiniteLoop={true} // Enable infinite loop
-          autoPlay={true} // Enable auto-play
-          interval={5000} // Set auto-play interval in milliseconds (e.g., 5 seconds)
-          centerMode={true} // Enable center mode
-          centerSlidePercentage={33.33} // Set the width of the centered slide as a percentage (33.33% for 3 items)
+          showArrows={true}
+          showThumbs={false}
+          showStatus={false}
+          infiniteLoop={true}
+          autoPlay={false} // Disable auto-play
+          centerMode={true}
+          centerSlidePercentage={33.33}
         >
-          {events.map((event, index) => (
-            <ServicesCard key={index}>
-              <ServicesIcon src={event.image} />
-              <ServicesContent>
-                <ServicesH2>
-                  <b>{event.title}</b>
-                </ServicesH2>
-                <ServicesLink
-                  href={event.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Go to Instagram<FontAwesomeIcon icon={faArrowRight} /> 
-                </ServicesLink>
-              </ServicesContent>
-            </ServicesCard>
-          ))}
+          {renderEvents()}
         </Carousel>
+        <div>
+          {currentSlide > 0 && (
+            <button onClick={handlePrev}>Previous</button>
+          )}
+          {currentSlide < Math.ceil(events.length / itemsToShow) - 1 && (
+            <button onClick={handleNext}>Next</button>
+          )}
+        </div>
       </ServicesWrapper>
     </ServicesContainer>
   );
 };
 
 export default Services;
+
+
+
+
+
+
+
