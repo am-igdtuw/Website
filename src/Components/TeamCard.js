@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { FaLinkedin, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FaLinkedin,  FaInstagram } from 'react-icons/fa';
 import { TeamCardWrapper, CubeWrapper, TechContent, AdditionalInfo, InfoText, TechCard, TechIcon, TechH2, TechP} from './TeamCardElements';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const TeamCard = ({ imageUrl, linkedinUrl, twitterUrl, instagramUrl, name, position, cubetextTitle, cubetextDesc }) => {
   const [showCube, setShowCube] = useState(false);
 
@@ -20,7 +20,7 @@ const TeamCard = ({ imageUrl, linkedinUrl, twitterUrl, instagramUrl, name, posit
             <FaLinkedin />
           </a>
           <a className="twitter" href={twitterUrl} target="_blank" rel="noopener noreferrer">
-            <FaTwitter />
+            <FontAwesomeIcon icon="fa-brands fa-x-twitter" />
           </a>
           <a className="insta" href={instagramUrl} target="_blank" rel="noopener noreferrer">
             <FaInstagram />

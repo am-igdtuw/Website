@@ -88,6 +88,7 @@ const Services = () => {
     setCurrentSlide(currentSlide - 1);
   };
 
+  
   return (
     <ServicesContainer id="services">
       <ServicesH1>Past Events</ServicesH1>
@@ -117,10 +118,5 @@ const Services = () => {
 };
 
 export default Services;
-
-
-
-
-
-
+   
 
