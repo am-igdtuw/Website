@@ -263,4 +263,8 @@ export const SocialIconsLink = styled.a`
  color: #fff;
  z-index: 2;
  font-size: 36px;
+ &:hover{
+  color:#ffc640;
+  transition: 0.3s ease-out;
+}
 `
