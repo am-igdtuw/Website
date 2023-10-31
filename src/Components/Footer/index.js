@@ -12,7 +12,7 @@ const Footer = () => {
             <FooterLinksWrapper>
            
             <FooterLinkItems>
-            <FooterLink to="assetmantleigdtuw@gmail.com">assetmantleigdtuw@gmail.com</FooterLink>
+            <FooterLink style={{marginLeft: "-55px"}} to="assetmantleigdtuw@gmail.com">assetmantleigdtuw@gmail.com</FooterLink>
                 <SocialIcons>
                   
                 <SocialIconsLink href="https://www.instagram.com/assetmantle.igdtuw/" target="_blank"
@@ -30,7 +30,10 @@ const Footer = () => {
                 </SocialIcons> 
                 </FooterLinkItems>
               
-                <FooterLinkItems>
+                
+            </FooterLinksWrapper>
+            <FooterLinksWrapper>
+            <FooterLinkItems>
                     <FooterLinkTitle>Useful Links</FooterLinkTitle>
                        <FooterLink to="/">About</FooterLink>
                        <FooterLink to="/event">Events</FooterLink>
@@ -48,8 +51,6 @@ const Footer = () => {
                        <FooterLink to="/faq">FAQs</FooterLink>
                 </FooterLinkItems>
                 <Gap />
-            </FooterLinksWrapper>
-            <FooterLinksWrapper>
                 {/* <FooterLinkItems>
                     <FooterLinkTitle>Videos</FooterLinkTitle>
                        <FooterLink to="/">Submit Video</FooterLink>
@@ -96,5 +97,3 @@ const Footer = () => {
 }
 
 export default Footer;
-
-
