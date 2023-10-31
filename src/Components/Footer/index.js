@@ -12,7 +12,7 @@ const Footer = () => {
             <FooterLinksWrapper>
            
             <FooterLinkItems>
-            <FooterLink style={{marginLeft: "-55px"}} to="assetmantleigdtuw@gmail.com">assetmantleigdtuw@gmail.com</FooterLink>
+            <FooterLink style={{marginLeft: "-25px"}} to="assetmantleigdtuw@gmail.com">assetmantleigdtuw@gmail.com</FooterLink>
                 <SocialIcons>
                   
                 <SocialIconsLink href="https://www.instagram.com/assetmantle.igdtuw/" target="_blank"
@@ -29,11 +29,7 @@ const Footer = () => {
                 </SocialIconsLink>
                 </SocialIcons> 
                 </FooterLinkItems>
-              
-                
-            </FooterLinksWrapper>
-            <FooterLinksWrapper>
-            <FooterLinkItems>
+                <FooterLinkItems>
                     <FooterLinkTitle>Useful Links</FooterLinkTitle>
                        <FooterLink to="/">About</FooterLink>
                        <FooterLink to="/event">Events</FooterLink>
@@ -66,6 +62,10 @@ const Footer = () => {
                        <FooterLink to="https://twitter.com/AM_igdtuw">Twitter</FooterLink>
                        <FooterLink to="https://www.linkedin.com/company/asset-mantle-igdtuw/">LinkedIn</FooterLink>
                 </FooterLinkItems>
+                
+            </FooterLinksWrapper>
+            <FooterLinksWrapper>
+           
             </FooterLinksWrapper>
          </FooterLinksContainer>
          <SocialMedia>
