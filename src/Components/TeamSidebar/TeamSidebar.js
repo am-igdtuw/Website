@@ -25,7 +25,8 @@ const StyledTeamSidebar = styled.div`
 const StyledSidebarList = styled.ul`
   height: auto;
   padding:0;
-  width:100%;
+  width:80px;
+  
   @media (max-width: 768px) {
     /* Add responsive styles for the list */
   }
@@ -38,6 +39,9 @@ const StyledSidebarList = styled.ul`
 const StyledRow = styled.li`
   height:82px;
   width: 100%;
+  &:hover {
+    width: 200px;
+  }
   margin:0%;
   list-style-type: none;
   display: flex;
@@ -83,7 +87,16 @@ display: grid;
 `;
 const StyledTitle = styled.div` 
 flex: 70%;
-padding: 20px;
+padding:0;
+opacity: 0; /* Title initially hidden */
+  transition: opacity 0.3s;
+  ${StyledRow}:hover & {
+    opacity: 1;
+    color: white;
+    font-weight: bold;
+     /* Show title on hover */
+  }
+  
 @media (max-width: 768px) {
   /* Add responsive styles for the list items */
 }
@@ -110,8 +123,8 @@ const TeamSidebar = () => {
             {" "}
             <StyledContent>
             <StyledIcon>{val.icon}</StyledIcon>{" "}
-            {/* <StyledTitle>{val.title}
-            </StyledTitle> */}
+            <StyledTitle>{val.title}
+            </StyledTitle>
             </StyledContent>
           </StyledRow>
         );
