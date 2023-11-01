@@ -6,7 +6,7 @@ const StyledTeamSidebar = styled.div`
   position: sticky;
   
   align-items:center;
-  top:80px;
+  top:200px;
   left:0px;
   margin-top: 100px;
   height: 410px;
@@ -14,12 +14,24 @@ const StyledTeamSidebar = styled.div`
   background-color:rgba(255,255,255,0.2);
   opacity:1;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  @media (max-width: 768px) {
+    
+  }
+  @media screen and (max-width: 480px) {
+    
+}
 
 `;
 const StyledSidebarList = styled.ul`
   height: auto;
   padding:0;
   width:100%;
+  @media (max-width: 768px) {
+    /* Add responsive styles for the list */
+  }
+  @media screen and (max-width: 480px) {
+    
+}
   
   
 `;
@@ -40,12 +52,19 @@ const StyledRow = styled.li`
     border: 0.5px solid #000000;
     color: #000000;
   }
-  
+  @media (max-width: 768px) {
+    /* Add responsive styles for the list items */
+  }
+  @media screen and (max-width: 480px) {
+    
+}
 `;
 const StyledContent = styled.div`
   display: flex;
   align-items: center;
-  
+  @media (max-width: 768px) {
+    /* Add responsive styles for the list items */
+  }
 `;
 const StyledIcon = styled.div`
 img {
@@ -55,13 +74,22 @@ img {
 flex:30%
 place-items: center;
 display: grid;
-
+@media (max-width: 768px) {
+  /* Add responsive styles for the list items */
+}
+@media screen and (max-width: 480px) {
   
+} 
 `;
 const StyledTitle = styled.div` 
 flex: 70%;
 padding: 20px;
-
+@media (max-width: 768px) {
+  /* Add responsive styles for the list items */
+}
+@media screen and (max-width: 480px) {
+  
+}
 
 `;
 const TeamSidebar = () => {
