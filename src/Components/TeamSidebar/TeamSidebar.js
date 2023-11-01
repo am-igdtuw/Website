@@ -42,6 +42,7 @@ const StyledRow = styled.li`
   &:hover {
     width: 200px;
   }
+  
   margin:0%;
   list-style-type: none;
   display: flex;
@@ -55,6 +56,7 @@ const StyledRow = styled.li`
     background: linear-gradient(45deg, #FFC640, #FFC640);
     border: 0.5px solid #000000;
     color: #000000;
+    border-radius:20px;
   }
   @media (max-width: 768px) {
     /* Add responsive styles for the list items */
