@@ -14,7 +14,7 @@ const outreach = () => {
             <TechH2>Nikhila K S</TechH2>
             <TechP>
               <a className='linkiden' href="https://www.linkedin.com/in/know-nikhila-k-s/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-              <a className='twitter' href="https://twitter.com/Nikhila_KS_" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+              <a className='twitter' href="https://twitter.com/Nikhila_KS_" target="_blank" rel="noopener noreferrer"><FaTwitter icon="fa-brands fa-x-twitter" /></a>
               <a className='insta' href="https://www.instagram.com/ks_nikhila_/?hl=en" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
             </TechP>
           </TechCard>

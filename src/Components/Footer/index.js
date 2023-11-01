@@ -1,5 +1,7 @@
 import React from 'react'
-import { FaFacebook, FaLinkedin, FaYoutube, FaInstagram, FaTwitter } from 'react-icons/fa';
+import { FaFacebook, FaLinkedin, FaYoutube, FaInstagram} from 'react-icons/fa';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import { FooterContainer,FooterWrap, FooterLinksContainer,FooterLinksWrapper,FooterLinkItems, FooterLinkTitle, FooterLink, SocialMedia, SocialMediaWrap, SocialLogo, WebsiteRights, SocialIconsLink, SocialIcons, Gap } from './FooterElements';
 import Logo from '../../images/2.png'
 const Footer = () => {
@@ -10,7 +12,7 @@ const Footer = () => {
             <FooterLinksWrapper>
            
             <FooterLinkItems>
-            <FooterLink to="assetmantleigdtuw@gmail.com">assetmantleigdtuw@gmail.com</FooterLink>
+            <FooterLink style={{marginLeft: "-25px"}} to="assetmantleigdtuw@gmail.com">assetmantleigdtuw@gmail.com</FooterLink>
                 <SocialIcons>
                   
                 <SocialIconsLink href="https://www.instagram.com/assetmantle.igdtuw/" target="_blank"
@@ -19,7 +21,7 @@ const Footer = () => {
                 </SocialIconsLink>
                 <SocialIconsLink href="https://twitter.com/AM_igdtuw" target="_blank"
                 area-label="Twitter">
-                  <FaTwitter />
+                 <FontAwesomeIcon icon="fa-brands fa-x-twitter" />
                 </SocialIconsLink>
                 <SocialIconsLink href="https://www.linkedin.com/company/asset-mantle-igdtuw/" target="_blank"
                 area-label="Linkedin">
@@ -27,7 +29,6 @@ const Footer = () => {
                 </SocialIconsLink>
                 </SocialIcons> 
                 </FooterLinkItems>
-              
                 <FooterLinkItems>
                     <FooterLinkTitle>Useful Links</FooterLinkTitle>
                        <FooterLink to="/">About</FooterLink>
@@ -46,8 +47,6 @@ const Footer = () => {
                        <FooterLink to="/faq">FAQs</FooterLink>
                 </FooterLinkItems>
                 <Gap />
-            </FooterLinksWrapper>
-            <FooterLinksWrapper>
                 {/* <FooterLinkItems>
                     <FooterLinkTitle>Videos</FooterLinkTitle>
                        <FooterLink to="/">Submit Video</FooterLink>
@@ -63,6 +62,10 @@ const Footer = () => {
                        <FooterLink to="https://twitter.com/AM_igdtuw">Twitter</FooterLink>
                        <FooterLink to="https://www.linkedin.com/company/asset-mantle-igdtuw/">LinkedIn</FooterLink>
                 </FooterLinkItems>
+                
+            </FooterLinksWrapper>
+            <FooterLinksWrapper>
+           
             </FooterLinksWrapper>
          </FooterLinksContainer>
          <SocialMedia>
@@ -94,5 +97,3 @@ const Footer = () => {
 }
 
 export default Footer;
-
-

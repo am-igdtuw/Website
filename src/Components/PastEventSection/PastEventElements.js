@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {Link} from 'react-router-dom'
 
 export const ServicesContainer = styled.div`
   height: auto;
@@ -24,13 +25,14 @@ export const ServicesWrapper = styled.div`
 
 export const ServicesCard = styled.div`
   height: 37rem;
+  width: ;
   align-items: center;
-  margin: 10px; /* Add a 10px gap around each card */
+  margin: 10px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   border-radius: 10px;
-  min-width: 20px; /* Adjusted from width to min-width for responsiveness */
+  min-width: 20px; 
   background: #0d0a03;
   border-radius: 24px;
   border: 0.5px solid #ffc640;
@@ -116,4 +118,167 @@ export const ServicesLink = styled.a`
 export const ServicesP = styled.p`
   font-size: 1rem;
   text-align: center;
+`;
+
+
+// import logo from 'src/logo.svg'
+
+export const FooterContainer = styled.footer`
+background: rgba(255, 255, 255, 0.15);
+  z-index: 2;
+
+`
+
+export const FooterWrap = styled.div`
+ padding: 48px 24px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ max-width: 1100px;
+ margin: 0 auto;
+ z-index: 12;
+ 
+ @media screen and (max-width: 768px) {
+    ${'' /* height: auto; */}
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+
+`
+
+export const FooterLinksContainer = styled.div`
+ display: flex;
+ justify-content: center;
+ z-index: 2;
+
+ @media screen and (max-width: 768px) {
+    padding-top: 32px;
+ }
+`
+
+export const FooterLinksWrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 2;
+
+  gap:20px;
+//   @media screen and(max-width: 768px) {
+//    flex-wrap: wrap;
+//   }
+`
+
+export const FooterLinkItems = styled.div`
+ display: flex;
+ flex-direction: column;
+ align-items: centre;
+ margin: 62px;
+ margin-left: 20px;
+ text-align: centre;
+ width: 160px;
+ box-sizing: border-box;
+ color: #ffffff;
+ z-index: 2;
+
+ @media screen and (max-width: 420px) {
+    margin: 10px;
+    padding: 5px;
+    width: 100%;
+ }
+`
+export const div = styled.div`
+width: 200px;
+  height: 100px;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+
+ @media screen and (max-width: 420px) {
+    margin: 10px;
+    padding: 5px;
+    width: 100%;
+ }
+`
+export const FooterLinkTitle = styled.h1`
+ font-size: 18px;
+ margin-bottom: 16px;
+ z-index: 2;
+ font-weight:600;
+ color:#fff;
+`
+export const FooterLink = styled(Link)`
+ color: #FFC640;
+ text-decoration: none;
+ margin-bottom: 0.5rem;
+ font-size: 14px;
+ z-index: 2;
+ font-size: 14px;
+
+ &:hover {
+   color: #FFC640;
+    transition: 0.3s ease-out;
+    text-decoration: underline;
+ }
+`
+export const SocialMedia = styled.section`
+ max-width: 1000px;
+ width: 100%;
+ z-index: 2;
+`
+
+export const SocialMediaWrap = styled.div`
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ max-width: 1100px;
+ margin: 45px 40px 0 auto;
+ z-index: 2;
+
+ @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+ }
+`
+
+ export const SocialLogo = styled.a`
+  color: #fff;
+ justify-self: start;
+  cursor: pointer;
+  text-decoraton: none;
+  font-size: 1.5rem;
+  display: flex;
+ align-items: center;
+  margin-bottom: 16px;
+  font-weight: bold;
+  z-index: 2;
+  
+ `
+export const WebsiteRights = styled.small`
+ color: #fff;
+ margin-bottom: 16px;
+ z-index: 2;
+`
+
+export const SocialIcons = styled.div`
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ width: 100px;
+ z-index: 2;
+`
+
+export const SocialIconsLink = styled.a`
+ color: #fff;
+ z-index: 2;
+ font-size: 24px;
+ &:hover{
+   color:#ffc640;
+   transition: 0.3s ease-out;
+ }
+`
+
+export const Gap = styled.div`
+  margin: 24px 0; 
+  z-index: 2;
 `;
