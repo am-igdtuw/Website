@@ -16,6 +16,7 @@ import bg from '../../images/bg.svg'
 import DynamicBackground from './DynamicBg';
 import { FaFacebook, FaLinkedin, FaYoutube, FaInstagram, FaTwitter } from 'react-icons/fa';
 import{ SocialIconsLink, SocialIcons } from './HeroElements';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const HeroSection = () => {
     const [hover, setHover] = useState(false)
@@ -109,7 +110,7 @@ const HeroSection = () => {
                                     </SocialIconsLink>
                                     <SocialIconsLink href="https://twitter.com/AM_igdtuw" target="_blank"
                                     area-label="Twitter">
-                                        <FaTwitter />
+                                        <FontAwesomeIcon icon="fa-brands fa-x-twitter" />
                                     </SocialIconsLink>
                                     <SocialIconsLink href="https://www.linkedin.com/company/asset-mantle-igdtuw/" target="_blank"
                                     area-label="Linkedin">

@@ -1,5 +1,7 @@
 import React from 'react';
-import { FaLinkedin, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FaLinkedin, FaInstagram } from 'react-icons/fa';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 
 import {
   TeamContainer,
@@ -27,7 +29,7 @@ const Team = () => {
           <TeamP>Advisor</TeamP>
           <IconWrapper className="social-icons">
             <a className='linkiden' href="https://www.linkedin.com/in/unnati-chhabra" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-            <a className='twitter' href="https://twitter.com/Unnati_twts" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+            <a className='twitter' href="https://twitter.com/Unnati_twts" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="fa-brands fa-x-twitter" /></a>
             <a className='insta' href="https://www.instagram.com/unnatiisig/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
           </IconWrapper>
         </TeamCard>
@@ -40,7 +42,7 @@ const Team = () => {
                 <TeamP>President</TeamP>
                 <IconWrapper className="social-icons">
                   <a className='linkiden' href="https://www.linkedin.com/in/geetikaguptagg/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-                  <a className='twitter' href="https://twitter.com/geetikaguptaa" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+                  <a className='twitter' href="https://twitter.com/geetikaguptaa" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="fa-brands fa-x-twitter" /></a>
                   <a className='insta' href="https://www.instagram.com/geetikaagupta/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
                 </IconWrapper>
             </TeamCard>
@@ -50,7 +52,7 @@ const Team = () => {
                 <TeamP>President</TeamP>
                 <IconWrapper className="social-icons">
                   <a className='linkiden' href="https://www.linkedin.com/in/astha-bhaskar-5a049b233/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-                  <a className='twitter' href="https://twitter.com/asthabhaskar19" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+                  <a className='twitter' href="https://twitter.com/asthabhaskar19" target="_blank" rel="noopener noreferrer"> <FontAwesomeIcon icon="fa-brands fa-x-twitter" /></a>
                   <a className='insta' href="https://www.instagram.com/_.astha30/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
                </IconWrapper>
             </TeamCard>
@@ -63,7 +65,7 @@ const Team = () => {
                 <TeamP>Vice-President</TeamP>
                 <IconWrapper className="social-icons">
                   <a className='linkiden' href="https://www.linkedin.com/in/unnati-chhabra-909bb9196/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-                  <a className='twitter' href="https://twitter.com/VarshneyKamya" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+                  <a className='twitter' href="https://twitter.com/VarshneyKamya" target="_blank" rel="noopener noreferrer">  <FontAwesomeIcon icon="fa-brands fa-x-twitter" /></a>
                   <a className='insta' href="https://www.instagram.com/kemyav7/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
                 </IconWrapper>
             </TeamCard>
@@ -73,7 +75,7 @@ const Team = () => {
                 <TeamP>Vice-President</TeamP>
                 <IconWrapper className="social-icons">
                   <a className='linkiden' href="https://www.linkedin.com/in/garima-pahwa-68416a22a/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-                  <a className='twitter' href="https://twitter.com/PahwaGinni" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+                  <a className='twitter' href="https://twitter.com/PahwaGinni" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="fa-brands fa-x-twitter" /></a>
                   <a className='insta' href="https://www.instagram.com/ginniiiipahwa_/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
                 </IconWrapper>
             </TeamCard>

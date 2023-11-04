@@ -38,7 +38,7 @@ const Home = () => {
         <HeroSection  />
         <InfoSection />
         {/* <FollowSection /> */}
-        <Services />
+        {/* <Services /> */}
         <Testimonial/>
         <Footer />
 

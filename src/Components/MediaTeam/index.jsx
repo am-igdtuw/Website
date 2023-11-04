@@ -1,6 +1,7 @@
 import React from 'react'
 import { TechContainer, TechH1, TechWrapper, TechCard, TechIcon, TechH2, TechP } from './Elements';
 import { FaLinkedin, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const media = () => {
   return (
@@ -14,7 +15,7 @@ const media = () => {
             <TechH2>Sanya Gupta </TechH2>
             <TechP>
               <a className='linkiden' href="https://www.linkedin.com/in/sanya-gupta-1a422b24a/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-              <a className='twitter' href="https://twitter.com/sanya_gupta19" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+              <a className='twitter' href="https://twitter.com/sanya_gupta19" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="fa-brands fa-x-twitter" /></a>
               <a className='insta' href="https://www.instagram.com/_.sanya.__19/?next=%2F" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
             </TechP>
           </TechCard>

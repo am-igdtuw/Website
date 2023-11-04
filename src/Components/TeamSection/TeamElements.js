@@ -45,7 +45,7 @@ export const TeamHead = styled.h1`
 `
 
 export const TeamMembersCard = styled.div`
-    height: 22rem;
+    height: auto;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
@@ -53,7 +53,7 @@ export const TeamMembersCard = styled.div`
     margin: 18px;
     color: #F2AF13;
     transition: transform 0.3s ease;
-    width: 17rem;
+    width: 15rem;
     text-align: center;
     font-family: 'Exo 2', sans-serif;
 
@@ -175,9 +175,9 @@ export const TeamListWrapper2 = styled.div`
 export const TeamListWrapper = styled.div`
     display: flex;
     flex-wrap: wrap;
-    grid-template-columns: repeat(3, minmax(320px, 1fr));
+    grid-template-columns: repeat(4, minmax(320px, 1fr));
     gap: 1rem;
-    width: 60rem;
+    width: 80rem;
     justify-content: center;
     align-items: center;
     margin: 0 auto;

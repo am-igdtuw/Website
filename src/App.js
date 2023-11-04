@@ -1,4 +1,5 @@
 import React from 'react';  
+import toast, { Toaster } from 'react-hot-toast';
 import './App.css';       
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages';
@@ -14,6 +15,11 @@ import TeamPage from './pages/team';
 import SponsorUsForm from './Components/FormSection/SponsorUs';
 import CollaborateForm from './Components/FormSection/CollaborateUs';
 import ProbStatementPage from './pages/probStatement';
+import ReactDOM from 'react-dom'
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import { faXTwitter} from '@fortawesome/free-brands-svg-icons';
+library.add(fas, faXTwitter)
 
 
 //window.$crisp=[];
@@ -22,6 +28,7 @@ import ProbStatementPage from './pages/probStatement';
 function App() {
   return (
     <BrowserRouter>
+    <Toaster position="bottom-center" gutter={14} containerStyle={{ fontSize: '14px' }}></Toaster>
       <Routes>
         <Route exact path="/" element={<Home/>} />
         <Route exact path="/event" element={<EventPage/>}/>
