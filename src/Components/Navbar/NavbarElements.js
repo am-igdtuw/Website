@@ -87,7 +87,7 @@ align-items: center;
 padding: 16px 50px 0px 90px;
 gap: 21px;
 width: auto;
-height: 34px;
+height: 45px;
 
 
 /* Inside auto layout */
@@ -103,9 +103,9 @@ flex-grow: 0;
     justify-content: center;
     padding: 0;
     width: 100%;
-    height: 30vh; 
+    height: 41vh; 
     position: absolute;
-    top: ${({ isOpen }) => (isOpen ? '80px' : '-30vh')};
+    top: ${({ isOpen }) => (isOpen ? '80px' : '-41vh')};
     left: 0;
     transition: 0.3s ease-in-out;
     background-color: #0D0A03;
