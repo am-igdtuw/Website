@@ -32,7 +32,6 @@ const Home = () => {
       <PopUp trigger={timedPopup} setTrigger = {setTimedPopup}>
         <h2> <strong> HOLA! UPCOMING EVENT! </strong></h2>
         <h3> MASTER DEV CHEF </h3>
-        <a href="/event"> VIEW HERE!</a>
       </PopUp> 
       <Navbar />
         <HeroSection  />

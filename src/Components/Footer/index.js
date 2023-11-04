@@ -21,7 +21,7 @@ const Footer = () => {
                 </SocialIconsLink>
                 <SocialIconsLink href="https://twitter.com/AM_igdtuw" target="_blank"
                 area-label="Twitter">
-                 <FontAwesomeIcon icon="fa-brands fa-x-twitter" />
+                 <FontAwesomeIcon icon="fa-brands fa-x-twitter" style={{ verticalAlign: 'middle' }} />
                 </SocialIconsLink>
                 <SocialIconsLink href="https://www.linkedin.com/company/asset-mantle-igdtuw/" target="_blank"
                 area-label="Linkedin">
