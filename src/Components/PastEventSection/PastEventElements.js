@@ -25,25 +25,20 @@ export const ServicesWrapper = styled.div`
 
 export const ServicesCard = styled.div`
   height: 37rem;
-  width: ;
   align-items: center;
-  margin: 10px;
+  margin: 10px; /* Add a 10px gap around each card */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   border-radius: 10px;
-  min-width: 20px; 
+  min-width: 20px; /* Adjusted from width to min-width for responsiveness */
   background: #0d0a03;
   border-radius: 24px;
   border: 0.5px solid #ffc640;
   padding: 30px;
   transition: all 0.2s ease-in-out;
-
-  &:hover {
-    transform: scale(1.02);
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
-  }
+  position: relative;
+  overflow: hidden;
 `;
 
 export const ServicesIcon = styled.img`
@@ -281,4 +276,27 @@ export const SocialIconsLink = styled.a`
 export const Gap = styled.div`
   margin: 24px 0; 
   z-index: 2;
+`;
+
+export const Description = styled.div`
+  
+
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  z-index: 1;
+
+  ${ServicesCard}:hover & {
+    display: block;
+    cursor:pointer;
+    font-size: 20px;
+  }
+
 `;
