@@ -13,7 +13,7 @@ import MediaTeamPage from './pages/mediaTeam';
 import ResearchTechTeam from './pages/researchTeam';
 import TeamPage from './pages/team';
 import SponsorUsForm from './Components/FormSection/SponsorUs';
-import CollaborateForm from './Components/FormSection/CollaborateUs';
+import CollaborateUsForm from './Components/FormSection/CollaborateUs';
 import ProbStatementPage from './pages/probStatement';
 import ReactDOM from 'react-dom'
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -41,9 +41,9 @@ function App() {
         <Route exact path="/outreachTeam" element={<OutreachTeamPage/>}/>
         <Route exact path="/TeamPage" element={<TeamPage/>}/>
         <Route exact path='/sponsorPage' element={<SponsorUsForm/>}/>
-        <Route exact path='/collaboratePage' element={<CollaborateForm/>}/>
+        <Route exact path='/collaboratePage' element={<CollaborateUsForm/>}/>
         <Route exact path='/probStatement' element={<ProbStatementPage/>}/>
-        
+           
       </Routes>
     </BrowserRouter>
   );
