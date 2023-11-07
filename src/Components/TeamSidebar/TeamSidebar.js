@@ -60,6 +60,7 @@ const StyledRow = styled.li`
   }
   @media (max-width: 768px) {
     /* Add responsive styles for the list items */
+    
   }
   @media screen and (max-width: 480px) {
     

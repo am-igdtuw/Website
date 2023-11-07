@@ -20,7 +20,7 @@ export default function Modal(props) {
           <button className='close-btn' onClick={() => props.setTrigger(false)}> &times; </button>
           {props.children}
           <img src={t1} />
-          <a href="/event"> VIEW HERE!</a>
+          <a href="/event"> FIND MORE EVENTS! </a>
         </div>
       </div>
     </>

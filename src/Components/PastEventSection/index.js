@@ -26,10 +26,8 @@ const Services = () => {
     {
       title: 'Find Global Career opportunities on Web3 and Metaverse',
       link: 'https://www.instagram.com/reel/Coy0FTINtEt/',
-      discription: 'An expedition into the career scope of Web3 and Metaverse with Vas Modinos, the founder of Blockready, a Dubai based blockchain and web3 education platform
-      With over sixty attendees both from BTech and BBA courses in attendance, Mr. Vas Modinos helmed the students through the world of Web3 - he elucidated on the blockchain technology and how it is being deployed for the development of Web3. He further explained about the virtual world that we have adapted to and how the Metaverse is a crucial part of this virtual world that is about to become our reality.
-      The session was interactive and the students got an opportunity to clear up their doubts regarding the Metaverse and Web3. To stimulate the attendees, Vas asked the students to brainstorm about blockchain and Web3 and how they see it integrating with their field of interest.
-      A short discussion was held once the talk was done - questions were asked: “Explain Web3 in 3 words, how can we implement blockchain in our field - ” and the most interesting answers won a 3 month subscription of Blockready - a blockchain and web3 educating platform.',
+      description: 'An expedition into the career scope of Web3 and Metaverse with Vas Modinos, the founder of Blockready, a Dubai based blockchain and web3 education platform With over sixty attendees both from BTech and BBA courses in attendance, Mr. Vas Modinos helmed the students through the world of Web3 - he elucidated on the blockchain technology and how it is being deployed for the development of Web3. He further explained about the virtual world that we have adapted to and how the Metaverse is a crucial part of this virtual world that is about to become our reality. The session was interactive and the students got an opportunity to clear up their doubts regarding the Metaverse and Web3. To stimulate the attendees, Vas asked the students to brainstorm about blockchain and Web3 and how they see it integrating with their field of interest. A short discussion was held once the talk was done - questions were asked: “Explain Web3 in 3 words, how can we implement blockchain in our field - ” and the most interesting answers won a 3 month subscription of Blockready - a blockchain and web3 educating platform.',
+
       image:
         'https://res.cloudinary.com/djv5kc7as/image/upload/v1688802648/Asset%20Mantle%20-%20Team%202023/Events/Screenshot_301_oeeode.png',
     },
@@ -43,18 +41,14 @@ const Services = () => {
     {
       title: 'BFF Hackathon',
       link: 'https://www.instagram.com/reel/Cs3nO1yN3-6/',
-      discription: 'Our latest collaboration with DTU AUV brings to you a 24 hour offline hackathon in DTU premises! Mark your calendar on 1st and 2 nd April 2023 and join us with your team to build your solution to the problem statements and have it reviewed by seasoned mentors who will provide you with proper guidance.
-      With sessions and workshops with industry experts on 31st March 2023 get a chance to connect with other aspiring developers and clear any query that you may have regarding life as a developer, presenter, or life in general. 
-      ',
+      discription: 'Our latest collaboration with DTU AUV brings to you a 24 hour offline hackathon in DTU premises! Mark your calendar on 1st and 2 nd April 2023 and join us with your team to build your solution to the problem statements and have it reviewed by seasoned mentors who will provide you with proper guidance. With sessions and workshops with industry experts on 31st March 2023 get a chance to connect with other aspiring developers and clear any query that you may have regarding life as a developer, presenter, or life in general. ',
       image:
         'https://res.cloudinary.com/djv5kc7as/image/upload/v1688802646/Asset%20Mantle%20-%20Team%202023/Events/Screenshot_303_cpvgip.png',
     },
     {
       title: 'FastN Session',
       link: 'https://www.instagram.com/p/CvZ9Ps1yCk_/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==',
-      discription: '
-      Assetmantle IGDTUW collaborated with FastN and conducted a Roadshow on 6th August, Sunday from 11:30-6pm The roadshow consisted of enhancing the coding skills using fastN stack to build full - stack web apps. It was a hands-on session and a quiz was conducted in which top 3 winners were awarded with awesome prizes.
-      ',
+      discription: 'Assetmantle IGDTUW collaborated with FastN and conducted a Roadshow on 6th August, Sunday from 11:30-6pm The roadshow consisted of enhancing the coding skills using fastN stack to build full - stack web apps. It was a hands-on session and a quiz was conducted in which top 3 winners were awarded with awesome prizes.',
       image:
         'https://res.cloudinary.com/djv5kc7as/image/upload/v1698596897/Asset%20Mantle%20-%20Team%202023/Events/Screenshot_315_hcwl6o.png',
     },

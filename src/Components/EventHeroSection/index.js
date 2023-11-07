@@ -23,7 +23,7 @@ const EventHeroSection = () => {
                 WE STRIVE TO CREATE A COMMUNITY OF STUDENTS PASSIONATE ABOUT BLOCKCHAIN AND WEB3 TECHNOLOGY
             </HeroP>
             <HeroBtnWrapper>
-                <Button to='signup' onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='true'>
+                <Button to='signup' onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='true' style={{ fontFamily: 'Exo 2, sans-serif', fontWeight: 600 }}>
                   <Heroimg src={CollaborateLogo}/>
                Collaborate with us
                 </Button>

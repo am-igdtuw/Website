@@ -20,7 +20,7 @@ const TeamCard = ({ imageUrl, linkedinUrl, twitterUrl, instagramUrl, name, posit
             <FaLinkedin />
           </a>
           <a className="twitter" href={twitterUrl} target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon="fa-brands fa-x-twitter" />
+            <FontAwesomeIcon icon="fa-brands fa-x-twitter" style={{ verticalAlign: 'middle' }}/>
           </a>
           <a className="insta" href={instagramUrl} target="_blank" rel="noopener noreferrer">
             <FaInstagram />
