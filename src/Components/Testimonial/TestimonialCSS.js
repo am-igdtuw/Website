@@ -3,26 +3,26 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
     width: 100%;
-    height: 800px;
+    height: 110vh;
     ${'' /* display: flex; */}
     flex-direction: column; 
     justify-content: center;
     @media screen and (max-width: 480px) {
-        height: 1150px;
-        }
+        height: 165vh;
+    }
         
     
 `;
 export const HomeContainer = styled.div`
     display: flex;
-    height: 800px;
+    height: 1200px;
     justify-content: center;
     ${'' /* margin-top: 30px; */}
     margin-bottom: 80px;
     padding-bottom: 30px;
     ${''/* background gradient */}
     @media screen and (max-width: 480px) {
-        height: 1200px;
+        height: auto;
         margin-bottom: 0px;
         }
    
