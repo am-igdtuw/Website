@@ -114,8 +114,12 @@ flex-grow: 0;
 
 `
 export const SubLogo = styled.span`
-font-size: 12px; /* Adjust the font size as per your preference */
+font-size: 10px; /* Adjust the font size as per your preference */
 color: #fff;
+@media screen and  (max-width: 468px){
+  font-size: 8px;
+}
+
 // margin-top: 0px;
   // width: auto;
   // height: 14px;
