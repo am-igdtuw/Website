@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import styled from "styled-components";
 
 export const TeamContainer = styled.div`
@@ -104,25 +104,25 @@ export const TeamWrapper = styled.div`
 
 `
 
-export const TeamListWrapper3 = styled.div`
-    display: flex;
-    fex-wrap: wrap;
-    gap: 1rem;
-    width: 60rem;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
+// export const TeamListWrapper3 = styled.div`
+//     display: flex;
+//     fex-wrap: wrap;
+//     gap: 1rem;
+//     width: 60rem;
+//     justify-content: center;
+//     align-items: center;
+//     margin: 0 auto;
 
-    @media screen and (max-width: 1024px) {
-        grid-template-columns: repeat(2, minmax(320px, 1fr));
-        width: 100%;
-    }
+//     @media screen and (max-width: 1024px) {
+//         grid-template-columns: repeat(2, minmax(320px, 1fr));
+//         width: 100%;
+//     }
 
-    @media screen and (max-width: 480px) {
-        grid-template-columns: repeat(1, minmax(320px, 1fr));
-        width: 100%;
-    }
-`
+//     @media screen and (max-width: 480px) {
+//         grid-template-columns: repeat(1, minmax(320px, 1fr));
+//         width: 100%;
+//     }
+// `
 
 export const TechP = styled.p`
     font-size: 20px;
