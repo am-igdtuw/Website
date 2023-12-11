@@ -10,20 +10,20 @@ const About = () => {
       <AboutContainer>
         {/* <AboutH1>What We Do</AboutH1> */}
         <AboutWrapper>
-          <Linked to='/collaboratePage'>
+          {/* <Linked to='/collaboratePage'> */}
          <AboutCard>
           <AboutIcon src={Collaborate}></AboutIcon>
           <AboutH2>COLLABORATE</AboutH2>
           <AboutP>Unlock the power of collaboration and knowledge-sharing in blockchain and web3 technology with our vibrant community.</AboutP>
           </AboutCard> 
-          </Linked>
-          <Linked to='/sponsorPage'>
+          {/* </Linked> */}
+          {/* <Linked to='/sponsorPage'> */}
           <AboutCard>
           <AboutIcon src={Educate}></AboutIcon>
           <AboutH2>SPONSOR</AboutH2>
           <AboutP>Boost your brand and empower innovation in blockchain and web3 technology as a valued community sponsor.</AboutP>
           </AboutCard> 
-          </Linked> 
+          {/* </Linked>  */}
         </AboutWrapper>
 
       </AboutContainer>
