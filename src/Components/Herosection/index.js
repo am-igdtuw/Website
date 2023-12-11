@@ -60,10 +60,10 @@ const HeroSection = () => {
     const RightSubSectionJSX = (
         // Hero Image
         <img
-            src='/image/Background_tile.png'
+            src='/image/bghero.png'
             alt="hero_image"
             style={{
-                width: "80%",
+                width: "95%",
                 height: "auto",
                 paddingleft:"25%" ,
             }}
