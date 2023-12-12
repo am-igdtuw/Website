@@ -55,10 +55,11 @@ export const NavLogo = styled.div`
   width: 150px;
   color: #fff;
   justify-self: flex-start;  
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   display: flex;
   flex-direction:column; 
   margin-left: 6px;
+  margin-top: 5px;
   font-weight: bold;  
   text-decoration: none;  
 `

@@ -93,7 +93,7 @@ const Card2 = ({ img }) => {
       />
 
       <AvatarContent>
-        AssetMantle IGDTUW in collaboration with @ecell_igdtuw 📂bring to you an amazing session on “Intro To Web3 and Career Scope” with Sanket Agarwal.🤩🤩🤩
+        AssetMerkle IGDTUW in collaboration with @ecell_igdtuw 📂bring to you an amazing session on “Intro To Web3 and Career Scope” with Sanket Agarwal.🤩🤩🤩
 
         Currently working as a product manager at Quillaudits, Sanket has been working in the blockchain space for past 2 years. ✨✨
 
@@ -122,7 +122,7 @@ const Card3 = ({ img }) => {
       <AvatarContent>
         Unleashing the digital creativity at the ultimate hackathon showdown💥🚀
 
-        We dived into the world where tech meets enthusiasm: BFF Hackathon organised by Assetmantle IGDTUW and AUV-DTU. 👾
+        We dived into the world where tech meets enthusiasm: BFF Hackathon organised by Assetmerkle IGDTUW and AUV-DTU. 👾
 
         It was a wonderful experience for all the participants as well as the organising committee✨✨
         Eagerly looking forward for more such events🤩
@@ -148,7 +148,7 @@ const Card4 = ({ img }) => {
       />
 
       <AvatarContent>
-        Assetmantle IGDTUW collaborated with FastN and conducted a Roadshow.
+        Assetmerkle IGDTUW collaborated with FastN and conducted a Roadshow.
         The roadshow consisted of enhancing the coding skills using fastN stack to build full - stack web apps.
         It was a hands-on session and a quiz was conducted in which top 3 winners were awarded with awesome prizes.
       </AvatarContent>
@@ -172,7 +172,7 @@ const Card5 = ({ img }) => {
       />
 
       <AvatarContent>
-        AssetMantle IGDTUW has an ongoing mentorship cohort on web3 - we had started from scratch - right
+        AssetMerkle IGDTUW has an ongoing mentorship cohort on web3 - we had started from scratch - right
         from the beginning of with Javascript, frontend development with ReactJs, followed by backend
         development using NodeJs, all with skilled mentors and teachers, joining us from our partner,
         Web3Samaj. We are ready to return after a brief mid-term break and enter the much-awaited Web3
