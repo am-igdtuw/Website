@@ -193,7 +193,7 @@ const TeamPage = () => {
     {
       name: 'Himanshi',
       role: 'Co-Ordinator',
-      imageUrl: 'https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695661632/Asset_Mantle/Screenshot_2023-09-23_160127_gazttb.png', 
+      imageUrl: '', 
       techProfiles : (
         <TechP>
              <a className='linkiden' href="https://www.linkedin.com/in/himanshi-prajapati-070bb6280/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
@@ -218,18 +218,18 @@ const TeamPage = () => {
   ];
 
   const eventsTeamLead = [
-    {
-      name: 'Hiteshi Dattatrey',
-      role: 'EM Lead',
-      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_12px_solid_rgb:F2AF13,b_rgb:262c35/v1688488848/Asset%20Mantle%20-%20Team%202023/Leads/Hiteshi%20Dattatrey.jpg', 
-      techProfiles : (
-        <TechP>
-              <a className='linkiden' href="https://www.linkedin.com/in/hiteshi-dattatrey-48117422a/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-              <a className='twitter' href="https://twitter.com/HiteshiD01" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="fa-brands fa-x-twitter" style={{ verticalAlign: 'middle' }}/></a>
-              <a className='insta' href="https://www.instagram.com/_hiteshii01/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-        </TechP>
-      )
-    },
+    // {
+    //   name: 'Hiteshi Dattatrey',
+    //   role: 'EM Lead',
+    //   imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_12px_solid_rgb:F2AF13,b_rgb:262c35/v1688488848/Asset%20Mantle%20-%20Team%202023/Leads/Hiteshi%20Dattatrey.jpg', 
+    //   techProfiles : (
+    //     <TechP>
+    //           <a className='linkiden' href="https://www.linkedin.com/in/hiteshi-dattatrey-48117422a/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+    //           <a className='twitter' href="https://twitter.com/HiteshiD01" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="fa-brands fa-x-twitter" style={{ verticalAlign: 'middle' }}/></a>
+    //           <a className='insta' href="https://www.instagram.com/_hiteshii01/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+    //     </TechP>
+    //   )
+    // },
     {
       name: 'Disha Verma',
       role: 'EM Lead',
@@ -441,7 +441,7 @@ const TeamPage = () => {
     {
       name: 'Suchika Mishra',
       role: 'Co-Ordinator',
-      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693723636/Asset%20Mantle%20-%20Team%202023/EM/Riya_bouigi.jpg', 
+      imageUrl: '',
       techProfiles : (
         <TechP>
             <a className='linkiden' href="https://www.linkedin.com/in/suchika-mishra-35b22a289" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
@@ -849,18 +849,18 @@ const TeamPage = () => {
         </TechP>
       )
     },
-    {
-      name: 'Shambhavi Sahoo',
-      role: 'Co-Ordinator',
-      imageUrl: 'https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695757540/Shambhaviphoto_qlyh9w.jpg',
-      techProfiles : (
-        <TechP>
-        <a className='linkiden' href="https://www.linkedin.com/in/shambhavi-sahoo-3a4123284" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-          <a className='twitter' href="" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="fa-brands fa-x-twitter" style={{ verticalAlign: 'middle' }} /></a>
-          <a className='insta' href="https://instagram.com/_shambhavii21?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-        </TechP>
-      )
-    },
+    // {
+    //   name: 'Shambhavi Sahoo',
+    //   role: 'Co-Ordinator',
+    //   imageUrl: 'https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695757540/Shambhaviphoto_qlyh9w.jpg',
+    //   techProfiles : (
+    //     <TechP>
+    //     <a className='linkiden' href="https://www.linkedin.com/in/shambhavi-sahoo-3a4123284" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+    //       <a className='twitter' href="" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="fa-brands fa-x-twitter" style={{ verticalAlign: 'middle' }} /></a>
+    //       <a className='insta' href="https://instagram.com/_shambhavii21?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+    //     </TechP>
+    //   )
+    // },
     {
       name: 'Disha Malhotra',
       role: 'Co-Ordinator',

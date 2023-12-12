@@ -9,9 +9,8 @@ export const ServicesContainer = styled.div`
   align-items: center;
   padding: 40px 0;
 
-  @media screen and (max-width: 768px) {
-    height: auto;
-  }
+ 
+ 
 `;
 
 export const ServicesWrapper = styled.div`
@@ -21,6 +20,13 @@ export const ServicesWrapper = styled.div`
   
   margin-top: 20px;
   z-index: 10;
+
+
+
+  @media screen and (max-width: 480px) {
+     width: 73rem;
+     height: auto;
+ }
 `;
 
 export const ServicesCard = styled.div`
@@ -43,6 +49,7 @@ export const ServicesCard = styled.div`
     transform: scale(1.02); /* Increase the size on hover */
     /* Add any additional styles you want on hover */
   }
+  
 `;
 
 export const ServicesIcon = styled.img`
