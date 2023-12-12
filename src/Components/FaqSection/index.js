@@ -5,32 +5,32 @@ import DynamicBackground from '../Herosection/DynamicBg.js';
 
 const data = [
     {
-        question: 'When was AssetMantle IGDTUW established?',
-        answer: 'In January of 2023'
+        question: 'When was AssetMerkle IGDTUW established?',
+        answer: 'AssetMerkle IGDTUW was established in January 2023 at IGDTUW'
     },
     {
-        question: 'What is AssetMantle?',
-        answer: 'AssetMantle is your go-to platform for all things NFT. They empower creators and collectors to build, innovate, and securely transact digital assets on the blockchain.'
+        question: 'What is AssetMerkle?',
+        answer: 'AssetMerkle is your go-to platform for all things NFT. They empower creators and collectors to build, innovate, and securely transact digital assets on the blockchain, providing a comprehensive ecosystem that facilitates the creation, management, and exchange of non-fungible tokens.'
     },
     {
-        question: 'What is the aim of AssetMantle IGDTUW?',
+        question: 'What is the aim of AssetMerkle IGDTUW?',
         answer: 'Our aim is to create a web3 and blockchain-oriented teaching and learning group to answer all your queries related to blockchain technology.'
     },
     {
-        question: 'Can I be a part of AssetMantle IGDTUW?',
-        answer: 'Yes, you can join our WhatsApp community and be a part of AssetMantle IGDTUW.'
+        question: 'Can I be a part of AssetMerkle IGDTUW?',
+        answer: 'Yes, you can join our WhatsApp community and be a part of AssetMerkle IGDTUW.'
     },
     {
         question: 'I am from BBA, can I still be a part of this community?',
-        answer: 'Of course! Some members of our team are from non-tech branches.'
+        answer: 'Absolutely! AssetMerkle encourages participation from individuals of all academic backgrounds, including BBA, and values the diverse skills they bring to the community.'
     },
     {
-        question: 'I know nothing about web3, can I be a part of AssetMantle IGDTUW?',
-        answer: 'Surely! We are here to clear up your doubts with mentor sessions, workshops, etc.'
+        question: 'I know nothing about web3, can I be a part of AssetMerkle IGDTUW?',
+        answer: 'Certainly! AssetMerkle IGDTUW welcomes individuals with varying levels of knowledge, and if you are new to web3, we have got you covered. We offer mentor sessions, workshops, and other resources to help clear up your doubts and ensure that everyone, regardless of their background, can actively participate and learn within our community.'
     },
     {
-        question: 'Is AssetMantle only about web3?',
-        answer: 'No! We aim to educate everyone about web3, but we delve into other technologies too.'
+        question: 'Is AssetMerkle only about web3?',
+        answer: 'No! AssetMerkle is not solely focused on web3; while we aim to educate everyone about web3, we also delve into other cutting-edge technologies, fostering a comprehensive learning environment that extends beyond blockchain.'
     }
 ];
 

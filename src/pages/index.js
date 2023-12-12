@@ -7,7 +7,7 @@ import Navbar from '../Components/Navbar';
 import Services from '../Components/Services';
 import Testimonial from '../Components/Testimonial';
 // import FollowSection from '../Components/FollowSection';
-import PopUp from "../Components/PopUp/Modal";
+// import PopUp from "../Components/PopUp/Modal";
 // import Team from '../Components/Team'
 
 const Home = () => {
@@ -16,23 +16,23 @@ const Home = () => {
   const toggle = () => {
       setIsOpen(!isOpen)
   };
-  const [timedPopup, setTimedPopup] = useState(false);
+  // const [timedPopup, setTimedPopup] = useState(false);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setTimedPopup(true);
-    } , 1000);
-  } , []);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setTimedPopup(true);
+  //   } , 1000);
+  // } , []);
 
 
   return (
     <>
       {/* <Navbar toggle={toggle}/>  */}
 
-      <PopUp trigger={timedPopup} setTrigger = {setTimedPopup}>
+      {/* <PopUp trigger={timedPopup} setTrigger = {setTimedPopup}>
         <h2> <strong> HOLA! UPCOMING EVENT! </strong></h2>
         <h3> MASTER DEV CHEF </h3>
-      </PopUp> 
+      </PopUp>  */}
       <Navbar />
         <HeroSection  />
         <InfoSection />

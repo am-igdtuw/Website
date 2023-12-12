@@ -1,23 +1,28 @@
-import React from "react";
+// import React from "react";
 import styled from "styled-components";
 
 export const TeamContainer = styled.div`
     height: 100%;
-    width: 100%;
+    width: 80%;
+    margin: auto;
     display: flex;
     flex-direction: column;
-    text-align: center
+    text-align: center;
     justify-content: center;
     align-items: center;
     z-index: 3;
 
     @media screen and (max-width: 768px) {
         height: auto;
+        justify-content: center;
+    align-items: left;
     }
 
     @media screen and (max-width: 480px) {
         height: auto;
-    }
+        width: 80%;
+
+        }
 `
 
 export const TeamHead = styled.h1`
@@ -63,6 +68,8 @@ export const TeamMembersCard = styled.div`
 
     @media screen and (max-width: 480px) {
         width: 100%;
+        height: auto;
+        
     }
 `
 
@@ -90,30 +97,32 @@ export const TeamWrapper = styled.div`
     }
 
     @media screen and (max-width: 480px) {
-        width: 100%;
+        align-items: left;
+        margin-left: 60px;
+        width: 90%;
     }
 
 `
 
-export const TeamListWrapper3 = styled.div`
-    display: flex;
-    fex-wrap: wrap;
-    gap: 1rem;
-    width: 60rem;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
+// export const TeamListWrapper3 = styled.div`
+//     display: flex;
+//     fex-wrap: wrap;
+//     gap: 1rem;
+//     width: 60rem;
+//     justify-content: center;
+//     align-items: center;
+//     margin: 0 auto;
 
-    @media screen and (max-width: 1024px) {
-        grid-template-columns: repeat(2, minmax(320px, 1fr));
-        width: 100%;
-    }
+//     @media screen and (max-width: 1024px) {
+//         grid-template-columns: repeat(2, minmax(320px, 1fr));
+//         width: 100%;
+//     }
 
-    @media screen and (max-width: 480px) {
-        grid-template-columns: repeat(1, minmax(320px, 1fr));
-        width: 100%;
-    }
-`
+//     @media screen and (max-width: 480px) {
+//         grid-template-columns: repeat(1, minmax(320px, 1fr));
+//         width: 100%;
+//     }
+// `
 
 export const TechP = styled.p`
     font-size: 20px;
@@ -213,6 +222,11 @@ export const MemberImg = styled.img`
     border: 2px solid transparent;
     margin: 17px auto 0;
     overflow: hidden;
+    @media screen and (max-width: 480px) {
+        align-items: left;
+        width: 100%;
+        height: 100%;
+    }
 `
 
 export const Memberh2 = styled.h2`

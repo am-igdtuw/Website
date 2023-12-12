@@ -4,13 +4,14 @@ import { SidebarData } from './SidebarData';
 
 const StyledTeamSidebar = styled.div`
   position: sticky;
-  
+  z-index: 5;
   align-items:center;
   top:200px;
   left:0px;
   margin-top: 100px;
   height: 410px;
-  width: 220px;
+  margin-right: 5px;
+  border-radius: 0px 30px 30px 0px;; 
   background-color:rgba(255,255,255,0.2);
   opacity:1;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -46,7 +47,7 @@ const StyledRow = styled.li`
   margin:0%;
   list-style-type: none;
   display: flex;
-  border-bottom: 1px solid yellow;
+ border-bottom: 1px solid yellow
   color: yellow;
   justify-content: center;
   align-items: center;

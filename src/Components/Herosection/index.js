@@ -60,11 +60,12 @@ const HeroSection = () => {
     const RightSubSectionJSX = (
         // Hero Image
         <img
-            src='/image/mantler.webp'
+            src='/image/bghero.png'
             alt="hero_image"
             style={{
                 width: "95%",
                 height: "auto",
+                paddingleft:"25%" ,
             }}
         />
     );

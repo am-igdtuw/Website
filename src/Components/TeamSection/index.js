@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 
 import TeamMemberCard from './TeamMemberCard';
-import { TeamContainer,TechP, TeamHead, TeamWrapper, TeamListWrapper,TeamListWrapper2,TeamListWrapper3, TeamName} from './TeamElements';
+import { TeamContainer,TechP, TeamHead, TeamWrapper, TeamListWrapper,TeamListWrapper2, TeamName} from './TeamElements';
 import { FaLinkedin,FaInstagram,FaTwitter } from 'react-icons/fa';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -10,20 +10,20 @@ import { scroller } from 'react-scroll';
 
 const TeamPage = () => {
 
-  const advisor = [
-    {
-      name: 'Unnati Chabra',
-      role: 'Founder',
-      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_12px_solid_rgb:F2AF13,b_rgb:262c35/v1688969490/Asset%20Mantle%20-%20Team%202023/Leads/WhatsApp_Image_2023-07-10_at_11.31.50_pfiaub.jpg', 
-      techProfiles: (
-        <TechP>
-          <a className='linkiden' href="https://www.linkedin.com/in/unnati-chhabra" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-            <a className='twitter' href="https://twitter.com/Unnati_twts" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="fa-brands fa-x-twitter"  style={{ verticalAlign: 'middle' }}/></a>
-            <a className='insta' href="https://www.instagram.com/unnatiisig/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-        </TechP>
-      )
-    },
-  ];
+  // const advisor = [
+  //   {
+  //     name: 'Unnati Chabra',
+  //     role: 'Founder',
+  //     imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_12px_solid_rgb:F2AF13,b_rgb:262c35/v1688969490/Asset%20Mantle%20-%20Team%202023/Leads/WhatsApp_Image_2023-07-10_at_11.31.50_pfiaub.jpg', 
+  //     techProfiles: (
+  //       <TechP>
+  //         <a className='linkiden' href="https://www.linkedin.com/in/unnati-chhabra" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+  //           <a className='twitter' href="https://twitter.com/Unnati_twts" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="fa-brands fa-x-twitter"  style={{ verticalAlign: 'middle' }}/></a>
+  //           <a className='insta' href="https://www.instagram.com/unnatiisig/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+  //       </TechP>
+  //     )
+  //   },
+  // ];
   
   const president = [
     {
@@ -1059,7 +1059,7 @@ const TeamPage = () => {
 
     <TeamContainer>
     <TeamHead>MEET THE TEAM</TeamHead>
-    <TeamWrapper id="founderSection">
+    {/* <TeamWrapper id="founderSection">
       <TeamName>
         Founding Member
       </TeamName>
@@ -1076,7 +1076,7 @@ const TeamPage = () => {
           ))}
           
         </TeamListWrapper3>
-      </TeamWrapper>
+      </TeamWrapper> */}
 
       <TeamWrapper id="President">
       <TeamName>
