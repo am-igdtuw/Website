@@ -39,6 +39,10 @@ export const ServicesCard = styled.div`
   transition: all 0.2s ease-in-out;
   position: relative;
   overflow: hidden;
+  &:hover {
+    transform: scale(1.02); /* Increase the size on hover */
+    /* Add any additional styles you want on hover */
+  }
 `;
 
 export const ServicesIcon = styled.img`
@@ -293,10 +297,12 @@ export const Description = styled.div`
   text-align: center;
   z-index: 1;
 
-  ${ServicesCard}:hover & {
-    display: block;
-    cursor:pointer;
-    font-size: 20px;
-  }
+  // ${ServicesCard}:hover & {
+  //   display: block;
+  //   cursor:pointer;
+  //   font-size: 20px;
+  // }
+
+  
 
 `;
