@@ -30,7 +30,7 @@ const HeroSection = () => {
         window.open(watsGroupLink, '_blank')
     }
     const customH1Styles = {
-        background: "-webkit-linear-gradient(120deg, #0aabad 20%, #FF930F 90%)",
+        background: "-webkit-linear-gradient( 120deg, #D9D9D9 10%, #F8B228 90%)",
         WebkitBackgroundClip: "text",
         backgroundClip: "text",
         backgroundSize: "200%",
