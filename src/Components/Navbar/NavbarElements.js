@@ -103,10 +103,12 @@ flex-grow: 0;
     align-items: center;
     justify-content: center;
     padding: 0;
+    gap: 15px;
+    margin-top: 44px;
     width: 100%;
-    height: 41vh; 
+    height: auto; 
     position: absolute;
-    top: ${({ isOpen }) => (isOpen ? '80px' : '-41vh')};
+    top: ${({ isOpen }) => (isOpen ? 'auto' : '-41vh')};
     left: 0;
     transition: 0.3s ease-in-out;
     background-color: #0D0A03;
@@ -175,6 +177,9 @@ flex-grow: 0;
   padding-left: 10px; 
   padding-right: 10px; 
 }
+@media screen and (max-width: 480px){
+  margin: 5px;
+ }
 `
 
 export const NavImg = styled.div`
@@ -183,12 +188,14 @@ height: 200x;
 display: flex;
 align-items: flex-start;
 flex-direction: row;
-padding-left: 50px;
-margin-right: auto; /* Pushes the container to the left */
+margin: auto; /* Pushes the container to the left */
 ${'' /* margin-bottom: 20px; */}
 flex: none;
 order: 0;
 flex-grow: 0;
+@media screen and (max-width: 480px){
+ padding-left: 20px;
+}
 `;
 
 
