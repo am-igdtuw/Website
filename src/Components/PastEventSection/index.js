@@ -125,7 +125,7 @@ const Services = () => {
           showThumbs={false}
           showStatus={false}
           infiniteLoop={true}
-          autoPlay={false} // Disable auto-play
+          autoPlay={true}
           centerMode={true}
           centerSlidePercentage={33.33}
         >

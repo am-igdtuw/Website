@@ -24,6 +24,8 @@ overflow-y: hidden;
     overflow: visible;
     padding-top: 20px;
     padding-left: 10px;
+    position: relative; // Change to 'relative' for mobile
+    z-index: 100; // Set a higher z-index value
   }
   @media screen and (max-width: 480px){
     // width: auto;
@@ -110,11 +112,11 @@ flex-grow: 0;
     width: 100%;
     height: auto; 
     position: absolute;
-    top: ${({ isOpen }) => (isOpen ? 'auto' : '-41vh')};
+    top: ${({ isOpen }) => (isOpen ? '40px' : '-80vh')};
     left: 0;
     transition: 0.3s ease-in-out;
     background-color: #0D0A03;
-
+    z-index: 99; // Set a lower z-index value
   }
 
 `
