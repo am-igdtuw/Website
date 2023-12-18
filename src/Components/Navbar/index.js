@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa"; // Import the close icon as well
-import Logo2 from "../../images/Logo3.png";
+import Logo2 from "../../images/logo.png";
 import {
   Nav,
   NavbarContainer,
@@ -45,8 +45,8 @@ const Navbar = () => {
               <img src={Logo2} height={44} alt="Logo" />
             </Link>
             <NavLogo>
-              AssetMantle
-              <SubLogo>Student Chapter IGDTUW</SubLogo>
+              AssetMerkle 
+              {/* <SubLogo>Student Chapter IGDTUW</SubLogo> */}
             </NavLogo>
           </NavImg>
 
