@@ -2,9 +2,14 @@ import React from 'react'
 import { FaFacebook, FaLinkedin, FaYoutube, FaInstagram} from 'react-icons/fa';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import { FooterContainer,FooterWrap, FooterLinksContainer,FooterLinksWrapper,FooterLinkItems, FooterLinkTitle, FooterLink, SocialMedia, SocialMediaWrap, SocialLogo, WebsiteRights, SocialIconsLink, SocialIcons, Gap } from './FooterElements';
-import Logo from '../../images/2.png'
+import { FooterContainer,FooterWrap, FooterLinksContainer,FooterLogo, FooterLinksWrapper,FooterLinkItems, FooterLinkTitle, FooterLink, SocialMedia, SocialMediaWrap, SocialLogo, WebsiteRights, SocialIconsLink, SocialIcons, Gap } from './FooterElements';
+import Logo from '../../images/logo.png'
+import { Link } from "react-router-dom";
+
 const Footer = () => {
+  const handleLogoClick = () => {
+    window.scrollTo(0, 0);
+  };
   return (
     <FooterContainer>
        <FooterWrap>
@@ -70,10 +75,17 @@ const Footer = () => {
          </FooterLinksContainer>
          <SocialMedia>
             <SocialMediaWrap>
-                <SocialLogo href="/">
-                   <img src={Logo} height={62}/>
+                <SocialLogo >
+                <Link to="/" onClick={handleLogoClick}>
+                  <img src={Logo} height={44} alt="Logo" />
+                </Link>
+                   <FooterLogo>
+                    AssetMerkle 
+                    {/* <SubLogo>Student Chapter IGDTUW</SubLogo> */}
+                  </FooterLogo>
+
                 </SocialLogo>
-                <WebsiteRights>Assetmantle © {new Date().getFullYear()}  . 
+                <WebsiteRights>Assetmerkle © {new Date().getFullYear()}  . 
                 All rights reserved.</WebsiteRights>
                 {/* <SocialIcons>
                 <SocialIconsLink href="https://www.instagram.com/assetmantle.igdtuw/" target="_blank"

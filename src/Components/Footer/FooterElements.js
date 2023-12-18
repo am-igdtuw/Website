@@ -8,6 +8,8 @@ background: rgba(255, 255, 255, 0.15);
 
 `
 
+
+
 export const FooterWrap = styled.div`
  padding: 48px 24px;
  display: flex;
@@ -84,6 +86,8 @@ export const FooterLink = styled(Link)`
    color: #FFC640;
     transition: 0.3s ease-out;
     text-decoration: underline;
+ 
+    
  }
 `
 export const SocialMedia = styled.section`
@@ -147,3 +151,19 @@ export const Gap = styled.div`
   margin: 24px 0; 
   z-index: 2;
 `;
+
+export const FooterLogo = styled.div`
+  height: auto;
+  width: 150px;
+  color: #fff;
+  justify-self: flex-start;  
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction:column; 
+  margin-left: 6px;
+  margin-top: 5px;
+  // font-weight: bold;  
+  text-decoration: underline;
+  text-decoration-color: white;
+  
+`
