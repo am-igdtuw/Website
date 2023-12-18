@@ -66,7 +66,9 @@ export const NavLogo = styled.div`
 export const MobileIcon = styled.div`
   display: none;
   align-items: center;
-  margin-bottom: 60px;
+  margin-bottom: 65px;
+  
+  
   @media screen and (max-width: 768px){
     display: block;
     position: absolute;
@@ -195,6 +197,7 @@ order: 0;
 flex-grow: 0;
 @media screen and (max-width: 480px){
  padding-left: 20px;
+ padding-bottom: 20px;
 }
 `;
 
