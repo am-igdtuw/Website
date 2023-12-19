@@ -19,7 +19,7 @@ export const ServicesWrapper = styled.div`
   align-items: center; /* Adjusted from flex-start to center for the carousel */
   
   margin-top: 20px;
-  z-index: 10;
+  // z-index: 10;
 
 
 
@@ -71,12 +71,12 @@ export const ServicesH1 = styled.h1`
   z-index: 10;
 
   @media screen and (max-width: 768px) {
-    font-size: 2rem;
+    font-size: 2.3rem;
     height: 1rem;
   }
 
   @media screen and (max-width: 480px) {
-    font-size: 1.8rem;
+    font-size: 2.6rem;
     height: 1rem;
   }
 `;
@@ -119,6 +119,13 @@ export const ServicesLink = styled.a`
   color: #ffc640;
   margin-top: auto;
   align-self: flex-end;
+
+  @media screen and (max-width: 480px){
+    text-decoration: none;
+    margin-top: 60px;
+    align-self: flex-end;
+
+  }
 `;
 
 export const ServicesP = styled.p`

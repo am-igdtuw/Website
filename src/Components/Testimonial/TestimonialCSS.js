@@ -56,9 +56,9 @@ export const ContainerSlider = styled.div`
 `;
 
 export const AvatarHeading = styled.p`
-    font-size: 44px;
+    font-size: 34px;
     color: white;
-    font-weight: 600;
+    font-weight: 500;
     font-family: 'Exo 2', sans-serif;
     font-style: normal;
 `

@@ -62,7 +62,7 @@ export const FooterLinkItems = styled.div`
  z-index: 2;
 
  @media screen and (max-width: 420px) {
-    margin: 10px;
+    margin: 5px;
     padding: 5px;
     width: 100%;
  }
@@ -85,7 +85,7 @@ export const FooterLink = styled(Link)`
  &:hover {
    color: #FFC640;
     transition: 0.3s ease-out;
-    text-decoration: underline;
+    text-decoration: none;
  
     
  }
@@ -94,6 +94,7 @@ export const SocialMedia = styled.section`
  max-width: 1000px;
  width: 100%;
  z-index: 2;
+ text-decoration: none;
 `
 
 export const SocialMediaWrap = styled.div`
@@ -102,6 +103,7 @@ export const SocialMediaWrap = styled.div`
  align-items: center;
  max-width: 1100px;
  margin: 45px 40px 0 auto;
+ text-decoration: none;
  z-index: 2;
 
  @media screen and (max-width: 768px) {
@@ -148,8 +150,15 @@ export const SocialIconsLink = styled.a`
 `
 
 export const Gap = styled.div`
-  margin: 24px 0; 
-  z-index: 2;
+  margin: 14px 0; 
+  height: 4px;
+  z-index: 1;
+
+  @media screen and (max-width: 420px) {
+    margin: 5px;
+    
+ }
+
 `;
 
 export const FooterLogo = styled.div`
@@ -162,8 +171,8 @@ export const FooterLogo = styled.div`
   flex-direction:column; 
   margin-left: 6px;
   margin-top: 5px;
-  // font-weight: bold;  
-  text-decoration: underline;
-  text-decoration-color: white;
+  font-weight: bold;  
+  text-decoration: none !important;
+
   
 `
