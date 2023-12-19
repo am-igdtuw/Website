@@ -21,10 +21,11 @@ overflow-y: hidden;
   }
   @media screen and (max-width: 768px){
     transition: 0.8s all ease;
+   
     overflow: visible;
     padding-top: 20px;
     padding-left: 10px;
-    position: relative; // Change to 'relative' for mobile
+    position: sticky; // Change to 'relative' for mobile
     z-index: 100; // Set a higher z-index value
   }
   @media screen and (max-width: 480px){
@@ -181,6 +182,7 @@ flex-grow: 0;
   padding-left: 10px; 
   padding-right: 10px; 
 }
+
 @media screen and (max-width: 480px){
   margin: 5px;
  }
