@@ -5,6 +5,7 @@ import EventInfoSection from '../Components/EventInfoSection';
 import PastEventSection from '../Components/PastEventSection';
 import FollowSection from '../Components/FollowSection';
 import Footer from '../Components/Footer';
+import ScrollToTopButton from '../Components/Scroller/Scroller'
 
 const EventPage = () => {
   return (
@@ -14,6 +15,7 @@ const EventPage = () => {
         {/* <EventInfoSection/> */}
         <PastEventSection/>
         {/* <FollowSection/> */}
+        <ScrollToTopButton />
         <Footer/>
     </div>
   );

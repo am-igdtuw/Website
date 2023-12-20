@@ -9,6 +9,7 @@ import Testimonial from '../Components/Testimonial';
 // import FollowSection from '../Components/FollowSection';
 // import PopUp from "../Components/PopUp/Modal";
 // import Team from '../Components/Team'
+import ScrollToTopButton from '../Components/Scroller/Scroller'
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -39,6 +40,7 @@ const Home = () => {
         {/* <FollowSection /> */}
         {/* <Services /> */}
         <Testimonial/>
+        <ScrollToTopButton />
         <Footer />
 
 
