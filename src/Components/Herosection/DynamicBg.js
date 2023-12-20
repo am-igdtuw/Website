@@ -27,7 +27,7 @@ const DynamicBackground = () => {
               }
           },
           "color": {
-              "value": "#fff"
+              "value": "#dcdcdc"
           },
           "shape": {
               "type": "polygon",
@@ -126,7 +126,6 @@ const DynamicBackground = () => {
       "retina_detect": true,
       "background": {
         //   "color": "#111",
-          "image": "url('/image/Background_tile.webp')",
           "position": "50% 50%",
           "repeat": "repeat-y",
           "size": "cover"
