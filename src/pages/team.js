@@ -3,6 +3,7 @@ import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
 import TeamSection from '../Components/TeamSection'
 import TeamSidebar from '../Components/TeamSidebar/TeamSidebar'
+import ScrollToTopButton from '../Components/Scroller/Scroller'
 
 
 const TeamPage  = () => {
@@ -15,7 +16,7 @@ const TeamPage  = () => {
         <TeamSidebar />
         <TeamSection />
       </div>
-      
+      <ScrollToTopButton />
         <Footer/>
 
     </div>
