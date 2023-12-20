@@ -2,7 +2,7 @@ import styled from 'styled-components';
 //import {Link} from 'react-router-dom';
 
 export const FollowContainer = styled.div`
-  background: black;
+  //background: black;
   padding: 40px 30px;
   display: flex;
   flex-direction: column;
@@ -32,10 +32,10 @@ export const FollowP = styled.p`
   font-size: 20px;
   line-height: 28px;
   text-align: center;
-  background: linear-gradient(180deg, rgba(255, 198, 64, 0.6) 0%, rgba(242, 175, 19, 0.6) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  // background: linear-gradient(180deg, rgba(255, 198, 64, 0.6) 0%, rgba(242, 175, 19, 0.6) 100%);
+  // -webkit-background-clip: text;
+  // -webkit-text-fill-color: transparent;
+  // background-clip: text;
   text-fill-color: transparent;
 
   @media screen and (max-width: 768px) {

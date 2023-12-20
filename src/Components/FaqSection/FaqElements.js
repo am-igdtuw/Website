@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 
 export const HeroContainer = styled.div`
-  background: black;
+  //background: black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,12 +19,6 @@ export const HeroContainer = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(
-        180deg,
-        rgba(0, 0, 0, 0.2) 0%,
-        rgba(0, 0, 0, 0.2) 100%
-      ),
-      linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
     z-index: 2;
   }
 
@@ -155,7 +149,7 @@ export const Title = styled.div`
 export const Content = styled.div`
   color: white;
   padding: 24px 56px;
-  font-weight: 400;
+  font-weight: 500;
   ${'' /* <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cardo&family=Edu+NSW+ACT+Foundation&display=swap" rel="stylesheet"> */}
@@ -166,5 +160,5 @@ export const Content = styled.div`
   overflow: hidden;
   transition: all 0.5s ease-in-out;
   border-radius: 0px 0px 24px 24px;
-  background: linear-gradient(180deg, rgba(255, 198, 64, 0.16) 0%, rgba(255, 198, 64, 0.1024) 100%);
+  background: linear-gradient(90deg, rgba(255, 198, 64, 0.5) 0%, rgba(169, 169, 169, 0.67) 100%);
 `;
