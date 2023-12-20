@@ -3,6 +3,7 @@ import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import './style.css';
 import {
   ServicesContainer,
   ServicesH1,
@@ -14,7 +15,7 @@ import {
   ServicesContent,
   Description
 } from './PastEventElements';
-const Services = () => {
+function Services() {
   const events = [
     {
       title: 'Orientation and Treasure Hunt',
@@ -67,8 +68,7 @@ const Services = () => {
         'https://res.cloudinary.com/djv5kc7as/image/upload/v1698597655/Asset%20Mantle%20-%20Team%202023/Events/Screenshot_316_ilf1ht.png',
     },
   ];
-
-  const itemsToShow = 5;
+    const itemsToShow = 5;
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const [isHover, setIsHover] = useState(false);
@@ -80,8 +80,7 @@ const Services = () => {
   const handleMouseLeave = () => {
     setIsHover(false);
   };
-
-  const renderEvents = () => {
+    const renderEvents = () => {
     const startIndex = currentSlide * itemsToShow;
     const endIndex = startIndex + itemsToShow;
     return events.slice(startIndex, endIndex).map((event, index) => (
@@ -106,44 +105,85 @@ const Services = () => {
       </ServicesCard>
     ));
   };
-
-  const handleNext = () => {
-    setCurrentSlide(currentSlide + 1);
-  };
-
-  const handlePrev = () => {
-    setCurrentSlide(currentSlide - 1);
-  };
-
-
+  const isMobileView = window.innerWidth <= 400;
   return (
-    <ServicesContainer id="services">
-      <ServicesH1>Past Events</ServicesH1>
-      <ServicesWrapper>
-        <Carousel
-          showArrows={true}
-          showThumbs={false}
-          showStatus={false}
-          infiniteLoop={true}
-          autoPlay={true}
-          centerMode={true}
-          centerSlidePercentage={33.33}
-        >
-          {renderEvents()}
-        </Carousel>
-        <div>
-          {currentSlide > 0 && (
-            <button onClick={handlePrev}>Previous</button>
-          )}
-          {currentSlide < Math.ceil(events.length / itemsToShow) - 1 && (
-            <button onClick={handleNext}>Next</button>
-          )}
-        </div>
-      </ServicesWrapper>
-    </ServicesContainer>
+    <div>
+      <ServicesContainer id="services">
+         <ServicesH1>Past Events</ServicesH1>
+      </ServicesContainer>
+      <Carousel
+        showArrows={true}
+        autoPlay
+        infiniteLoop
+        centerMode
+        interval={3000}
+        centerSlidePercentage={isMobileView ? 100 : 33}
+      >
+        {renderEvents()}
+      </Carousel>
+    </div>
   );
+  // const renderEvents = () => {
+  //   const startIndex = currentSlide * itemsToShow;
+  //   const endIndex = startIndex + itemsToShow;
+  //   return events.slice(startIndex, endIndex).map((event, index) => (
+  //     <ServicesCard key={index}
+  //             onMouseEnter={handleMouseEnter}
+  //             onMouseLeave={handleMouseLeave}
+  //             // className={isHover ? 'hovered' : ''}
+  //             isHover={isHover}
+  //     >
+  //       <ServicesIcon src={event.image} />
+  //       <ServicesContent>
+  //         <Description>
+  //           {event.discription}
+  //         </Description>
+  //         <ServicesH2>
+  //           <b>{event.title}</b>
+  //         </ServicesH2>
+  //         <ServicesLink href={event.link} target="_blank" rel="noopener noreferrer">
+  //           Go to Instagram<FontAwesomeIcon icon={faArrowRight} />
+  //         </ServicesLink>
+  //       </ServicesContent>
+  //     </ServicesCard>
+  //   ));
+  // };
+
+  // const handleNext = () => {
+  //   setCurrentSlide(currentSlide + 1);
+  // };
+
+  // const handlePrev = () => {
+  //   setCurrentSlide(currentSlide - 1);
+  // };
+
+
+  // return (
+  //   <ServicesContainer id="services">
+  //     <ServicesH1>Past Events</ServicesH1>
+  //     <ServicesWrapper>
+  //       <Carousel
+  //         showArrows={true}
+  //         showThumbs={false}
+  //         showStatus={false}
+  //         infiniteLoop={true}
+  //         autoPlay={true}
+  //         centerMode={true}
+  //         centerSlidePercentage={33.33}
+  //       >
+  //         {renderEvents()}
+  //       </Carousel>
+  //       <div>
+  //         {currentSlide > 0 && (
+  //           <button onClick={handlePrev}>Previous</button>
+  //         )}
+  //         {currentSlide < Math.ceil(events.length / itemsToShow) - 1 && (
+  //           <button onClick={handleNext}>Next</button>
+  //         )}
+  //       </div>
+  //     </ServicesWrapper>
+  //   </ServicesContainer>
+  // );
 };
 
 export default Services;
-
-
