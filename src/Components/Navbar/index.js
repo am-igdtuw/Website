@@ -10,7 +10,6 @@ import {
   NavLinks,
   MobileIcon,
   NavLogo,
-  SubLogo,
 } from "./NavbarElements";
 import { Link } from "react-router-dom";
 

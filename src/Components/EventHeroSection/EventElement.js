@@ -93,13 +93,13 @@ line-height: 28px;
 
     @media screen and (max-width: 768px){
         font-size: 1.8rem;
-        width: 30rem;
+        width: 18rem;
         height: 7rem;
     }
 
     @media screen and (max-width: 480px){
         font-size: 1.4rem;
-        width: 24rem;
+        width: 20rem;
         height: 5rem;
     }
 `
@@ -129,8 +129,8 @@ export const HeroBtnWrapper = styled.div`
     align-items: center;
 
     @media screen and (max-width: 768px){
-        width: 30rem;
-        height: 7rem;
+        width: 17rem;
+        height: 5rem;
     }
 
     @media screen and (max-width: 480px){
