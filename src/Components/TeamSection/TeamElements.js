@@ -46,6 +46,7 @@ export const TeamHead = styled.h1`
     @media screen and (max-width: 480px) {
         font-size: 32px;
         padding: 10px 10px;
+        margin-left:-80px;
     }
 `
 
