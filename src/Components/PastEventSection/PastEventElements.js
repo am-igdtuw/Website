@@ -32,7 +32,7 @@ export const ServicesWrapper = styled.div`
 export const ServicesCard = styled.div`
   height: 37rem;
   align-items: center;
-  margin: 10px; /* Add a 10px gap around each card */
+  margin: 20px; /* Add a 10px gap around each card */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -49,6 +49,10 @@ export const ServicesCard = styled.div`
     transform: scale(1.02); /* Increase the size on hover */
     /* Add any additional styles you want on hover */
   }
+  @media screen and (max-width: 480px) {
+    width: auto;
+    height: auto;
+}
   
 `;
 
