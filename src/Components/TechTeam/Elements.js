@@ -1,4 +1,4 @@
-import styled, { css, keyframes } from "styled-components";
+import styled from "styled-components";
 
 export const OuterBorder = styled.div`
   border: 3px solid #ffc640;  

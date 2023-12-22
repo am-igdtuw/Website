@@ -1,7 +1,7 @@
-import React, {useState} from 'react'
-import { HeroContainer,HeroD, HeroContent, HeroBtnWrapper,HeroH1, HeroP, Heroimg } from './BlogElement'
-import {Button} from '../ButtonElements'
-import subscribeLogo from '../../images/subscribeLogo.png'
+import React, { useState } from 'react';
+import { HeroContainer, HeroD, HeroContent, HeroBtnWrapper, HeroH1, HeroP, Heroimg } from './BlogElement';
+import { Button } from '../ButtonElements';
+import subscribeLogo from '../../images/subscribeLogo.png';
 
 
 const BlogHeroSection = () => {

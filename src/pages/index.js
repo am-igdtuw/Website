@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Footer from '../Components/Footer';
 import HeroSection from '../Components/Herosection';
 import InfoSection from '../Components/InfoSection';
- import { homeObjOne } from '../Components/InfoSection/Data';
+//import { homeObjOne } from '../Components/InfoSection/Data';
 import Navbar from '../Components/Navbar';
-import Services from '../Components/Services';
+//import Services from '../Components/Services';
 import Testimonial from '../Components/Testimonial';
 // import FollowSection from '../Components/FollowSection';
 // import PopUp from "../Components/PopUp/Modal";
@@ -12,11 +12,11 @@ import Testimonial from '../Components/Testimonial';
 import ScrollToTopButton from '../Components/Scroller/Scroller'
 
 const Home = () => {
-  const [isOpen, setIsOpen] = useState(false)
+  //const [isOpen, setIsOpen] = useState(false)
 
-  const toggle = () => {
-      setIsOpen(!isOpen)
-  };
+  // const toggle = () => {
+  //     setIsOpen(!isOpen)
+  // };
   // const [timedPopup, setTimedPopup] = useState(false);
 
   // useEffect(() => {

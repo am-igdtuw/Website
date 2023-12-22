@@ -2,7 +2,7 @@ import React from 'react'
 import Icon1 from "../../images/mobileapp.png";
 import Icon2 from "../../images/mobileapp.png";
 import Icon3 from "../../images/mobileapp.png";
-import { InfoContainer, InfoWrapper, InfoRow, Column, TextWrapper, TopLine, Heading, Subtitle,ServicesContainer,
+import { InfoContainer, InfoWrapper, InfoRow, TextWrapper, Heading, Subtitle,ServicesContainer,
   ServicesH1,
   ServicesCard,
   ServicesIcon,

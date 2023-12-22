@@ -20,10 +20,10 @@ const DynamicBackground = () => {
       },
       "particles": {
           "number": {
-              "value": 10,
+              "value": 7,
               "density": {
                   "enable": false,
-                  "value_area": 1000
+                  "value_area": 500
               }
           },
           "color": {
@@ -36,7 +36,7 @@ const DynamicBackground = () => {
               }
           },
           "opacity": {
-              "value": 0.8,
+              "value": 0.7,
               "random": false,
               "anim": {
                   "enable": false,

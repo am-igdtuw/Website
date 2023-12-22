@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import blackWhite from '../../images/BlackWhite.png'
+import blackWhite from '../../images/BlackWhite.png';
 import { AboutContainer, AboutWrapper, AboutCard, AboutH1, AboutIcon, AboutH2, AboutP, HeroBtnWrapper, Heroimg } from './InfoElements'
-import { Button } from '../ButtonElements'
+import { Button } from '../ButtonElements';
 const About = () => {
   const [hover, setHover] = useState(false)
 

@@ -1,6 +1,6 @@
 import React from 'react';
-import { FaLinkedin, FaInstagram, FaTwitter } from 'react-icons/fa';
-import { FollowContainer, FollowContent, FollowP, SocialIcons, SocialIconsLink } from './FollowElements'
+//import { FaLinkedin, FaInstagram, FaTwitter } from 'react-icons/fa';
+import { FollowContainer, FollowContent, FollowP } from './FollowElements'
 
 const FollowSection = () => {
   return (

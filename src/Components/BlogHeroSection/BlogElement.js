@@ -79,26 +79,26 @@ export const HeroH1 = styled.h1`
 export const HeroD = styled.span`
     color: #FFC640;
     font-family: 'Poppins', sans-serif;
-font-style: normal;
+    font-style: normal;
 `
 export const HeroP = styled.p`
-width: 640px;
-height: 56px;
+    width: 640px;
+    height: 56px;
 
-font-family: 'Poppins', sans-serif;
-font-style: normal;
-font-weight: 600;
-font-size: 20px;
-line-height: 28px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
    /* or 140% */
 
-   text-align: center;
+    text-align: center;
 
     background: linear-gradient(180deg, rgba(255, 198, 64, 0.6) 0%, rgba(242, 175, 19, 0.6) 100%);
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
 
     @media screen and (max-width: 768px){
         font-size: 24px;
@@ -109,16 +109,16 @@ line-height: 28px;
     }
 `;
 export const Heroimg = styled.img`
-height:40px;
-widht:40px;
-margin-right: 10px;
-outline: none;
-border: none;
-curson: pointer;
-display: flex;
-justify-content: center;
-align-items: center;
-transition: all 0.2s ease-in-out;
+    height:40px;
+    widht:40px;
+    margin-right: 10px;
+    outline: none;
+    border: none;
+    curson: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
 `;
 
 export const HeroBtnWrapper = styled.div`

@@ -1,20 +1,15 @@
 import React, { useState } from 'react';
-import { HeroContainer, HeroBg, CubeWrapper, Imgbg, HeroD, HeroContent, Heroimg, HeroBtnWrapper, HeroH1, HeroP, ArrowForward, ArrowRight } from './HeroElements'
+import { HeroContainer, HeroContent, Heroimg, HeroBtnWrapper, HeroH1, HeroP} from './HeroElements'
 import { Container } from "@mui/system";
 import {
-    Box,
-    Divider,
     Grid,
-    Icon,
-    Paper,
-    Stack,
     Typography,
 } from "@mui/material"
 import { Button } from '../ButtonElements'
 import { FaWhatsapp } from 'react-icons/fa';
-import bg from '../../images/bg.svg'
-import DynamicBackground from './DynamicBg';
-import { FaFacebook, FaLinkedin, FaYoutube, FaInstagram, FaTwitter } from 'react-icons/fa';
+//import bg from '../../images/bg.svg'
+//import DynamicBackground from './DynamicBg';
+import {  FaLinkedin, FaInstagram } from 'react-icons/fa';
 import { SocialIconsLink, SocialIcons } from './HeroElements';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 

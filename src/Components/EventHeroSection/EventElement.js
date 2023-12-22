@@ -110,16 +110,16 @@ export const HeroD = styled.span`
 font-style: normal;
 `
 export const Heroimg = styled.img`
-height:40px;
-widht:40px;
-margin-right: 10px;
-outline: none;
-border: none;
-curson: pointer;
-display: flex;
-justify-content: center;
-align-items: center;
-transition: all 0.2s ease-in-out;
+    height:40px;
+    widht:40px;
+    margin-right: 10px;
+    outline: none;
+    border: none;
+    curson: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
 `
 
 export const HeroBtnWrapper = styled.div`

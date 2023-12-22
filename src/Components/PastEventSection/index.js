@@ -8,7 +8,6 @@ import {
   ServicesContainer,
   ServicesH1,
   ServicesH2,
-  ServicesWrapper,
   ServicesCard,
   ServicesIcon,
   ServicesLink,

@@ -1,5 +1,5 @@
 import React from 'react';  
-import toast, { Toaster } from 'react-hot-toast';
+import { Toaster } from 'react-hot-toast';
 import './App.css';       
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages';
@@ -15,7 +15,7 @@ import TeamPage from './pages/team';
 import SponsorUsForm from './Components/FormSection/SponsorUs';
 import CollaborateForm from './Components/FormSection/CollaborateUs';
 import ProbStatementPage from './pages/probStatement';
-import ReactDOM from 'react-dom'
+//import ReactDOM from 'react-dom'
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { faXTwitter} from '@fortawesome/free-brands-svg-icons';

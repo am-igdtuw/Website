@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react'
-import { TechContainer, TechH1, CubeWrapper, TechContent, AdditionalInfo, InfoText, OuterBorder, InnerBorder, TechWrapper, TechCard, TechIcon, TechH2, TechP, VerticalText, Section } from './Elements';
-import { FaLinkedin, FaTwitter, FaInstagram } from 'react-icons/fa';
+import React from 'react'
+import { TechContainer, OuterBorder, InnerBorder, VerticalText, Section } from './Elements';
+//import { FaLinkedin, FaTwitter, FaInstagram } from 'react-icons/fa';
 import TeamCard from '../TeamCard';
 
 // const Tech = () => {

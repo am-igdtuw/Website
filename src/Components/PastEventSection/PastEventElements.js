@@ -8,9 +8,7 @@ export const ServicesContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 40px 0;
-
- 
- 
+  z-index: 10;
 `;
 
 export const ServicesWrapper = styled.div`
@@ -19,7 +17,7 @@ export const ServicesWrapper = styled.div`
   align-items: center; /* Adjusted from flex-start to center for the carousel */
   
   margin-top: 20px;
-  // z-index: 10;
+  z-index: 10;
 
 
 
@@ -45,6 +43,7 @@ export const ServicesCard = styled.div`
   transition: all 0.2s ease-in-out;
   position: relative;
   overflow: hidden;
+  z-index:10;
   &:hover {
     transform: scale(1.02); /* Increase the size on hover */
     /* Add any additional styles you want on hover */
@@ -62,6 +61,7 @@ export const ServicesIcon = styled.img`
   margin-bottom: 20px;
   border: 0.5px solid #ffc640;
   box-shadow: 3px 3px 3px #ffc640;
+  z-index:10;
 `;
 
 export const ServicesH1 = styled.h1`
@@ -89,6 +89,7 @@ export const ServicesContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  z-index:10;
 `;
 
 export const ServicesH2 = styled.h2`
@@ -105,6 +106,7 @@ export const ServicesH2 = styled.h2`
   hyphens: auto;
   border-bottom: none;
   text-decoration: none !important;
+  z-index:10;
 
   @media screen and (max-width: 768px) {
     font-size: 1.8rem;
@@ -123,6 +125,7 @@ export const ServicesLink = styled.a`
   color: #ffc640;
   margin-top: auto;
   align-self: flex-end;
+  z-index:10;
 
   @media screen and (max-width: 480px){
     text-decoration: none;
@@ -135,6 +138,7 @@ export const ServicesLink = styled.a`
 export const ServicesP = styled.p`
   font-size: 1rem;
   text-align: center;
+  z-index:10;
 `;
 
 
@@ -142,7 +146,7 @@ export const ServicesP = styled.p`
 
 export const FooterContainer = styled.footer`
 background: rgba(255, 255, 255, 0.15);
-  z-index: 2;
+  z-index: 10;
 
 `
 
@@ -168,7 +172,7 @@ export const FooterWrap = styled.div`
 export const FooterLinksContainer = styled.div`
  display: flex;
  justify-content: center;
- z-index: 2;
+ z-index: 10;
 
  @media screen and (max-width: 768px) {
     padding-top: 32px;
@@ -178,7 +182,7 @@ export const FooterLinksContainer = styled.div`
 export const FooterLinksWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
-  z-index: 2;
+  z-index: 10;
 
   gap:20px;
 //   @media screen and(max-width: 768px) {
@@ -196,7 +200,7 @@ export const FooterLinkItems = styled.div`
  width: 160px;
  box-sizing: border-box;
  color: #ffffff;
- z-index: 2;
+ z-index: 10;
 
  @media screen and (max-width: 420px) {
     margin: 10px;
@@ -220,7 +224,7 @@ width: 200px;
 export const FooterLinkTitle = styled.h1`
  font-size: 18px;
  margin-bottom: 16px;
- z-index: 2;
+ z-index: 10;
  font-weight:600;
  color:#fff;
 `
@@ -229,7 +233,7 @@ export const FooterLink = styled(Link)`
  text-decoration: none;
  margin-bottom: 0.5rem;
  font-size: 14px;
- z-index: 2;
+ z-index: 10;
  font-size: 14px;
 
  &:hover {
@@ -241,7 +245,7 @@ export const FooterLink = styled(Link)`
 export const SocialMedia = styled.section`
  max-width: 1000px;
  width: 100%;
- z-index: 2;
+ z-index: 10;
 `
 
 export const SocialMediaWrap = styled.div`
@@ -250,7 +254,7 @@ export const SocialMediaWrap = styled.div`
  align-items: center;
  max-width: 1100px;
  margin: 45px 40px 0 auto;
- z-index: 2;
+ z-index: 10;
 
  @media screen and (max-width: 768px) {
     flex-direction: column;
@@ -268,13 +272,13 @@ export const SocialMediaWrap = styled.div`
  align-items: center;
   margin-bottom: 16px;
   font-weight: bold;
-  z-index: 2;
+  z-index: 10;
   
  `
 export const WebsiteRights = styled.small`
  color: #fff;
  margin-bottom: 16px;
- z-index: 2;
+ z-index: 10;
 `
 
 export const SocialIcons = styled.div`
@@ -282,12 +286,12 @@ export const SocialIcons = styled.div`
  justify-content: space-between;
  align-items: center;
  width: 100px;
- z-index: 2;
+ z-index: 10;
 `
 
 export const SocialIconsLink = styled.a`
  color: #fff;
- z-index: 2;
+ z-index: 10;
  font-size: 24px;
  &:hover{
    color:#ffc640;
@@ -297,7 +301,7 @@ export const SocialIconsLink = styled.a`
 
 export const Gap = styled.div`
   margin: 24px 0; 
-  z-index: 2;
+  z-index: 10;
 `;
 
 export const Description = styled.div`
@@ -313,7 +317,7 @@ export const Description = styled.div`
   color: #fff;
   padding: 10px;
   text-align: center;
-  z-index: 1;
+  z-index: 10;
 
   // ${ServicesCard}:hover & {
   //   display: block;

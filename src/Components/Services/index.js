@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React from 'react';
 import TechTeam from '../../images/Integrations.png'
 import EventTeam from '../../images/Mantle_Products.png'
 import MediaTeam from '../../images/Mantle_Creatives.png'

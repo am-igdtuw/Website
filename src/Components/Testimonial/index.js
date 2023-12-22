@@ -1,6 +1,3 @@
-
-
-
 import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -13,8 +10,6 @@ import {
   Heading,
   ContainerSlider,
   AvatarComponent,
-  AvatarTitle,
-  AvatarChar,
   AvatarContent,
   AvatarHeading,
 } from "./TestimonialCSS";

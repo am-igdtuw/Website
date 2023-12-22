@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { TechContainer, TechH1, TechWrapper, TechCard, TechIcon, TechH2, TechP } from './Elements';
 import { FaLinkedin,FaInstagram } from 'react-icons/fa';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
