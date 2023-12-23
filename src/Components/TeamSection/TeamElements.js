@@ -20,7 +20,7 @@ export const TeamContainer = styled.div`
 
     @media screen and (max-width: 480px) {
         height: auto;
-        width: 80%;
+        width: 78%;
 
         }
 `
