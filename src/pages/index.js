@@ -31,10 +31,10 @@ const Home = () => {
     <>
       { <Navbar toggle={toggle}/>  }
 
-      { <PopUp trigger={timedPopup} setTrigger = {setTimedPopup}>
+      {/* { <PopUp trigger={timedPopup} setTrigger = {setTimedPopup}>
         <h2> <strong> HOLA! UPCOMING EVENT! </strong></h2>
         <h3> HACK DAY </h3>
-      </PopUp>  }
+      </PopUp>  } */}
       <Navbar />
         <HeroSection  />
         <InfoSection />

@@ -17,7 +17,7 @@ const Footer = () => {
             <FooterLinksWrapper>
            
             <FooterLinkItems>
-            <FooterLink style={{marginLeft: "-25px"}} to="assetmantleigdtuw@gmail.com">assetmantleigdtuw@gmail.com</FooterLink>
+            <FooterLink style={{marginLeft: "-25px"}} to="assetmantleigdtuw@gmail.com">assetmerkle@gmail.com</FooterLink>
                 <SocialIcons>
                   
                 <SocialIconsLink href="https://www.instagram.com/assetmantle.igdtuw/" target="_blank"
