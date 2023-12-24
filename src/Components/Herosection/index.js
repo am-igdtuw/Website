@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { HeroContainer, HeroContent, Heroimg, HeroBtnWrapper, HeroH1, HeroP} from './HeroElements'
+import { HeroContainer, HeroContent, Heroimg, HeroBtnWrapper, HeroH1, HeroP } from './HeroElements'
 import { Container } from "@mui/system";
 import {
     Grid,
@@ -9,7 +9,7 @@ import { Button } from '../ButtonElements'
 import { FaWhatsapp } from 'react-icons/fa';
 //import bg from '../../images/bg.svg'
 //import DynamicBackground from './DynamicBg';
-import {  FaLinkedin, FaInstagram } from 'react-icons/fa';
+import { FaLinkedin, FaInstagram } from 'react-icons/fa';
 import { SocialIconsLink, SocialIcons } from './HeroElements';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -60,7 +60,7 @@ const HeroSection = () => {
             style={{
                 width: "95%",
                 height: "auto",
-                paddingleft:"25%" ,
+                paddingleft: "25%",
             }}
         />
     );
@@ -91,7 +91,7 @@ const HeroSection = () => {
                                     Web3 World
                                 </Typography>
                                 <HeroP>
-                                    WE STRIVE TO CREATE A COMMUNITY OF STUDENTS PASSIONATE ABOUT BLOCKCHAIN AND WEB3 TECHNOLOGY
+                                    {/* WE STRIVE TO CREATE A COMMUNITY OF STUDENTS PASSIONATE ABOUT BLOCKCHAIN AND WEB3 TECHNOLOGY */}
                                 </HeroP>
                                 <HeroBtnWrapper>
                                     <Button
