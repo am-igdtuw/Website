@@ -104,7 +104,7 @@ function Services() {
       </ServicesCard>
     ));
   };
-  const isMobileView = window.innerWidth <= 400;
+  const isMobileView = window.innerWidth <= 480;
   return (
     <div>
       <ServicesContainer id="services">
