@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import {MdArrowForward, MdKeyboardArrowRight} from 'react-icons/md'
+import { MdArrowForward, MdKeyboardArrowRight } from 'react-icons/md'
 import bg from '../../images/bg.svg'
 
 
@@ -67,6 +67,7 @@ export const HeroContent = styled.div`
     display: flex;
     flex-direction: column;
     align-items: left;
+
 `
 
 export const HeroH1 = styled.h1`
@@ -74,13 +75,13 @@ export const HeroH1 = styled.h1`
     font-size: 32rem;
      */
     text-align: left;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     //font-family: 'Poppins', sans-serif;
     font-family: 'Exo 2', sans-serif;
     color: #FFFDFA;
     font-style: normal;
-    font-size: 64px;
-    line-height: 0.7;
+    font-size: 53px;
+    line-height: 1.1;
     font-weight: 600;
     color: white;
     
@@ -141,7 +142,7 @@ export const HeroP = styled.p`
 
 
 export const HeroBtnWrapper = styled.div`
-    margin-top: 32px;
+    margin-top: 0 px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -152,11 +153,11 @@ export const HeroBtnWrapper = styled.div`
 
 export const Heroimg = styled.img`
 height:40px;
-widht:40px;
+width:40px;
 margin-right: 10px;
 outline: none;
 border: none;
-curson: pointer;
+cursor: pointer;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -250,8 +251,9 @@ export const CubeWrapper = styled.div`
 
 // social media links
 export const SocialIcons = styled.div`
- padding: 4rem 0rem;
+ padding: 3rem 0rem;
  margin-left: 10px;
+ margin-bottom:20px;
  display: flex;
  justify-content: space-between;
  align-items: center;
