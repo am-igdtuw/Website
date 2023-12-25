@@ -12,7 +12,7 @@ export const ServicesContainer = styled.div`
 `;
 
 export const ServicesWrapper = styled.div`
-  width auto;
+  width: auto;
   height: 36rem; /* Adjusted from grid to column for the carousel */
   align-items: center; /* Adjusted from flex-start to center for the carousel */
   
@@ -49,8 +49,10 @@ export const ServicesCard = styled.div`
     /* Add any additional styles you want on hover */
   }
   @media screen and (max-width: 480px) {
-    width: auto;
-    height: auto;
+    height:29rem;
+    width: 400px;
+    margin-left:40px;
+    
 }
   
 `;
@@ -62,6 +64,10 @@ export const ServicesIcon = styled.img`
   border: 0.5px solid #ffc640;
   box-shadow: 3px 3px 3px #ffc640;
   z-index:10;
+  @media screen and (max-width: 480px) {
+    width: 200px;
+    height: 300px;
+  }
 `;
 
 export const ServicesH1 = styled.h1`
@@ -129,7 +135,7 @@ export const ServicesLink = styled.a`
 
   @media screen and (max-width: 480px){
     text-decoration: none;
-    margin-top: 60px;
+    margin-top: 30px;
     align-self: flex-end;
 
   }
