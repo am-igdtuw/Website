@@ -30,7 +30,7 @@ const HeroSection = () => {
         backgroundClip: "text",
         backgroundSize: "200%",
         backgroundPosition: "50% 50%",
-        fontSize: '64px',
+        fontSize: '53px',
         fontWeight: '600',
         fontFamily: 'Exo 2, sans-serif',
         color: "transparent",
@@ -48,7 +48,7 @@ const HeroSection = () => {
             },
         },
         '@media screen and (max-width: 480px)': {
-            fontSize: '45px',
+            fontSize: '43px',
         },
     };
 
@@ -79,20 +79,15 @@ const HeroSection = () => {
                     >
                         <HeroContainer >
                             <HeroContent>
-                                <HeroH1>Your Gateway</HeroH1>
-                                <HeroH1>to the Open</HeroH1>
-                                {/* <HeroH1><HeroD>Web3</HeroD> World</HeroH1> */}
+                                <HeroH1>Empowering Students to Shape a Trustworthy </HeroH1>                                {/* <HeroH1><HeroD>Web3</HeroD> World</HeroH1> */}
                                 <Typography
-                                    variant="h1"
+                                    variant="h3"
                                     color='#ffffe6'
                                     // align={}
                                     sx={customH1Styles}
                                 >
-                                    Web3 World
+                                    World with Web3
                                 </Typography>
-                                <HeroP>
-                                    {/* WE STRIVE TO CREATE A COMMUNITY OF STUDENTS PASSIONATE ABOUT BLOCKCHAIN AND WEB3 TECHNOLOGY */}
-                                </HeroP>
                                 <HeroBtnWrapper>
                                     <Button
                                         to='signup'
