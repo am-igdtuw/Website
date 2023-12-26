@@ -37,6 +37,7 @@ export const HeroContainer = styled.div`
     ${'' /* font-size: 32px; */}
     padding: 30px 20px;
     width: 100%;
+    height: 1600px;
   }
 
 `;
@@ -117,7 +118,9 @@ export const Item = styled.div`
     margin-bottom:5px;
     padding: 10px 20px;
     
-    
+    @media screen and (max-width: 480px){
+        padding: 10px 0px;
+  }
     
 `
 export const Title = styled.div`
