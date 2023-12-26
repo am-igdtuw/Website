@@ -26,7 +26,7 @@ const Team = () => {
         <TeamCard>
           <TeamIcon src="https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1688969490/Asset%20Mantle%20-%20Team%202023/Leads/WhatsApp_Image_2023-07-10_at_11.31.50_pfiaub.jpg" />
           <TeamH2><b>Unnati Chhabra</b></TeamH2>
-          <TeamP>Advisor</TeamP>
+          <TeamP>Founder</TeamP>
           <IconWrapper className="social-icons">
             <a className='linkiden' href="https://www.linkedin.com/in/unnati-chhabra" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
             <a className='twitter' href="https://twitter.com/Unnati_twts" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="fa-brands fa-x-twitter" /></a>
