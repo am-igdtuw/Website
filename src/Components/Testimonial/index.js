@@ -62,9 +62,10 @@ const Card = ({ img }) => {
       />
 
       <AvatarContent>
-        we conducted out first fun event ‘Treasure Hunt’, with over fifteen teams participating following the orientation.💰💰
-
-        The zestful participants rushed about looking for clues🗝, and everyone enjoyed - we sure did!
+        we conducted out first fun event ‘Treasure Hunt’, with over fifteen teams participating
+        following the orientation💰💰.
+        {/* The zestful participants rushed about looking for clues🗝,
+        and everyone enjoyed - we sure did! */}
       </AvatarContent>
 
 
@@ -88,9 +89,9 @@ const Card2 = ({ img }) => {
       />
 
       <AvatarContent>
-        AssetMerkle IGDTUW in collaboration with @ecell_igdtuw 📂bring to you an amazing session on “Intro To Web3 and Career Scope” with Sanket Agarwal.🤩🤩🤩
-
-        Currently working as a product manager at Quillaudits, Sanket has been working in the blockchain space for past 2 years. ✨✨
+        AssetMerkle IGDTUW in collaboration with @ecell_igdtuw 📂bring to you an amazing session
+        on “Intro To Web3 and Career Scope” with Sanket Agarwal.🤩🤩
+        {/* Currently working as a product manager at Quillaudits, Sanket has been working in the blockchain space for past 2 years. ✨✨ */}
 
       </AvatarContent>
 
@@ -116,11 +117,10 @@ const Card3 = ({ img }) => {
 
       <AvatarContent>
         Unleashing the digital creativity at the ultimate hackathon showdown💥🚀
-
-        We dived into the world where tech meets enthusiasm: BFF Hackathon organised by Assetmerkle IGDTUW and AUV-DTU. 👾
-
-        It was a wonderful experience for all the participants as well as the organising committee✨✨
-        Eagerly looking forward for more such events🤩
+        We dived into the world where tech meets enthusiasm: BFF Hackathon organised by
+        Assetmerkle IGDTUW and AUV-DTU. 👾
+        {/* It was a wonderful experience for all the participants as well as the organising committee✨✨
+        Eagerly looking forward for more such events🤩 */}
       </AvatarContent>
 
     </AvatarComponent>
@@ -144,8 +144,9 @@ const Card4 = ({ img }) => {
 
       <AvatarContent>
         Assetmerkle IGDTUW collaborated with FastN and conducted a Roadshow.
-        The roadshow consisted of enhancing the coding skills using fastN stack to build full - stack web apps.
-        It was a hands-on session and a quiz was conducted in which top 3 winners were awarded with awesome prizes.
+        The roadshow consisted of enhancing the coding skills using fastN stack to build
+        {/* full - stack web apps.
+        It was a hands-on session and a quiz was conducted in which top 3 winners were awarded with awesome prizes. */}
       </AvatarContent>
     </AvatarComponent>
   );
@@ -167,11 +168,12 @@ const Card5 = ({ img }) => {
       />
 
       <AvatarContent>
-        AssetMerkle IGDTUW has an ongoing mentorship cohort on web3 - we had started from scratch - right
-        from the beginning of with Javascript, frontend development with ReactJs, followed by backend
-        development using NodeJs, all with skilled mentors and teachers, joining us from our partner,
+        AssetMerkle IGDTUW has an ongoing mentorship cohort on web3 - we had started from scratch
+        - right from the beginning of with Javascript, frontend development with ReactJs,
+        {/* followed by backend */}
+        {/* development using NodeJs, all with skilled mentors and teachers, joining us from our partner,
         Web3Samaj. We are ready to return after a brief mid-term break and enter the much-awaited Web3
-        sessions.
+        sessions. */}
       </AvatarContent>
     </AvatarComponent>
   );
@@ -195,9 +197,9 @@ const Card6 = ({ img }) => {
       <AvatarContent>
         As a part of the cohort, the mentees have divided themselves among groups of three-four and have
         worked on the idea of building their own dApp. The ideathon was a mentoring session for them, with
-        esteemed mentors from the Web3 ecosystem joining us to review the projects and give detailed feedback.
+        {/* esteemed mentors from the Web3 ecosystem joining us to review the projects and give detailed feedback.
         The ideathon saw a massive interactive crowd from the cohort mentees and left everyone on a positive
-        note.
+        note. */}
 
       </AvatarContent>
     </AvatarComponent>
@@ -222,7 +224,10 @@ const Card7 = ({ img }) => {
       />
 
       <AvatarContent>
-        The event exploring the intricate relationship between crypto, blockchain technology, and altcoins was a remarkable success, shedding light on the dynamic and evolving landscape of digital finance .Altcoins, a diverse set of digital assets, were also discussed as innovative alternatives, showcasing the thriving creativity within the crypto space.
+        The event exploring the intricate relationship between crypto, blockchain technology,
+        and altcoins was a remarkable success, shedding light on the dynamic and evolving
+        landscape of digital finance.
+        {/* Altcoins, a diverse set of digital assets, were also discussed as innovative alternatives, showcasing the thriving creativity within the crypto space. */}
 
       </AvatarContent>
     </AvatarComponent>
