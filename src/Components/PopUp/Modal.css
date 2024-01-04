@@ -1,76 +1,96 @@
-
-.popup{
+.popup {
     position: fixed;
     z-index: 1000;
     top: 20%;
     left: 50%;
     transform: translate(-50%, 0%);
     width: 480px;
+  
     @media screen and (max-width: 480px) {
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        transform: translate(0%, 10%);
-        
-        }
-}
-.popup-inner{
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      transform: translate(0%, 10%);
+    }
+  }
+  
+  .popup-inner {
     display: flex;
-    display: center;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
     flex-direction: column;
     position: relative;
     padding: 18px;
-   
-    width: 100%; 
-  
-    background-image: linear-gradient(
-        0deg,
-        hsl(39, 64%, 25%) 30%,
-        hsl(39, 85%, 53%) 58%,
-        hsl(37, 62%, 24%) 100%
-      );
-
-    border-radius: 8px; 
-   
-}
-h2{
+    width: 100%;
+    background: radial-gradient(circle at left, #21013b, #855d26, #34176c, #FBB424);
+    border-radius: 8px;
+    transform-origin: top center; /* Set the transform origin to the top right corner */
+  animation: pageTurn 0.5s 1 forwards;
+  }
+  @keyframes pageTurn {
+    0% {
+      transform: perspective(500px) rotateX(-30deg);
+    }
+    100% {
+      transform: perspective(500px) rotateX(-0deg);
+    }
+  }
+  .popup-inner h2 {
     font-family: 'Poppins', sans-serif;
-}
-.popup-inner  .close-btn{
+  }
+  
+  .popup-inner .close-btn {
     position: absolute;
     display: block;
-    
     background-color: transparent;
     font-size: 30px;
     color: #faf7f7;
     border: none;
     outline: none;
     cursor: pointer;
-}
-.popup a{
+  }
+  
+  .popup a {
     display: block;
     margin-top: 12px;
     margin-bottom: 5px;
     width: 180px;
     text-align: center;
-    color: #FFF;
+    color: #fff;
     text-decoration: none;
     border-radius: 20px;
     padding: 5px 5px;
     background-color: rgb(0, 0, 0);
-}
-.popup img{
+  }
+  
+  .popup img {
     width: 50%;
-    
-}
-
-.close-btn{
+    animation: rotateYScale 4s ease-in-out 2 forwards, vibrate 0.3s ease infinite;
+  }
+  
+  @keyframes rotateYScale {
+    0% {
+      transform: rotateY(0deg) scale(1);
+    }
+    25% {
+      transform: rotateY(180deg) scale(1.2);
+    }
+    50% {
+      transform: rotateY(360deg) scale(1);
+    }
+    75% {
+      transform: rotateY(540deg) scale(0.8);
+    }
+    100% {
+      transform: rotateY(720deg) scale(1);
+    }
+  }
+  
+  .close-btn {
     top: -2px;
     right: 0px;
     height: 50px;
     width: 50px;
+  }
   
-}

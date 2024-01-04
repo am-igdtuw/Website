@@ -173,3 +173,28 @@ export const Content = styled.div`
   border-radius: 0px 0px 24px 24px;
   background: linear-gradient(90deg, rgba(255, 198, 64, 0.5) 0%, rgba(169, 169, 169, 0.67) 100%);
 `;
+export const InputBox = styled.input`
+  padding: 10px;
+  margin: 10px 0;
+  width: 760px;
+  height: 70px;
+  border: 1px solid rgba(255, 198, 64, 0.5);
+  border-radius: 20px;
+  font-size: 16px;
+  background-color: rgba(255, 198, 64, 0.5);
+  ::placeholder {
+    color: rgba(255, 198, 64, 0.5);
+  }
+`;
+
+export const SubmitButton = styled.button`
+  padding: 10px;
+  margin-left: 680px;
+  background-color: #f2af13;
+  color: white;
+  border: 2px solid #f2af13;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+
+`;
