@@ -13,6 +13,7 @@ import {
   AvatarContent,
   AvatarHeading,
 } from "./TestimonialCSS";
+import { yellow } from "@mui/material/colors";
 
 const Testimonial = () => {
   return (
@@ -64,7 +65,7 @@ const Card = ({ img }) => {
       <AvatarContent>
         we conducted out first fun event ‘Treasure Hunt’, with over fifteen teams participating
         following the orientation💰💰.
-        <a href="/event" className="text-red">Read More...</a>
+        <a href="/event" style={{ color: yellow[500] }}> Read More...</a>
         {/* The zestful participants rushed about looking for clues🗝,
         and everyone enjoyed - we sure did! */}
       </AvatarContent>
@@ -92,7 +93,7 @@ const Card2 = ({ img }) => {
       <AvatarContent>
         AssetMerkle IGDTUW in collaboration with @ecell_igdtuw 📂bring to you an amazing session
         on “Intro To Web3 and Career Scope” with Sanket Agarwal.🤩🤩
-        <a href="/event" className="text-red">Read More...</a>
+        <a href="/event" style={{ color: yellow[500] }}> Read More...</a>
         {/* Currently working as a product manager at Quillaudits, Sanket has been working in the blockchain space for past 2 years. ✨✨ */}
 
       </AvatarContent>
@@ -121,7 +122,7 @@ const Card3 = ({ img }) => {
         Unleashing the digital creativity at the ultimate hackathon showdown💥🚀
         We dived into the world where tech meets enthusiasm: BFF Hackathon organised by
         Assetmerkle IGDTUW and AUV-DTU👾
-        <a href="/event" className="text-red">Read More</a>
+        <a href="/event" style={{ color: yellow[500] }}> Read More...</a>
         {/* It was a wonderful experience for all the participants as well as the organising committee✨✨
         Eagerly looking forward for more such events🤩 */}
       </AvatarContent>
@@ -148,7 +149,7 @@ const Card4 = ({ img }) => {
       <AvatarContent>
         Assetmerkle IGDTUW collaborated with FastN and conducted a Roadshow.
         The roadshow consisted of enhancing the coding skills using fastN stack to build
-        <a href="/event" className="text-red">Read More</a>
+        <a href="/event" style={{ color: yellow[500] }}> Read More...</a>
         {/* full - stack web apps.
         It was a hands-on session and a quiz was conducted in which top 3 winners were awarded with awesome prizes. */}
       </AvatarContent>
@@ -173,8 +174,8 @@ const Card5 = ({ img }) => {
 
       <AvatarContent>
         AssetMerkle IGDTUW has an ongoing mentorship cohort on web3 - we had started from scratch
-        - right from the beginning of with Javascript, frontend development with ReactJs,
-        <a href="/event" className="text-red">Read More</a>
+        - right from the beginning of with Javascript, frontend development with ReactJs
+        <a href="/event" style={{ color: yellow[500] }}> Read More...</a>
         {/* followed by backend */}
         {/* development using NodeJs, all with skilled mentors and teachers, joining us from our partner,
         Web3Samaj. We are ready to return after a brief mid-term break and enter the much-awaited Web3
@@ -201,14 +202,14 @@ const Card6 = ({ img }) => {
 
       <AvatarContent>
         As a part of the cohort, the mentees have divided themselves among groups of three-four and have
-        worked on the idea of building their own dApp. The ideathon was a mentoring session
-        <a href="/event" className="text-red">Read More</a>
+        worked on the idea of building their own dApp. The ideathon was a
+        <a href="/event" style={{ color: yellow[500] }}> Read More...</a>
         {/* esteemed mentors from the Web3 ecosystem joining us to review the projects and give detailed feedback.
         The ideathon saw a massive interactive crowd from the cohort mentees and left everyone on a positive
         note. */}
 
       </AvatarContent>
-    </AvatarComponent>
+    </AvatarComponent >
   );
 };
 
@@ -232,8 +233,7 @@ const Card7 = ({ img }) => {
       <AvatarContent>
         The event exploring the intricate relationship between crypto, blockchain technology,
         and altcoins was a remarkable success, shedding light on the dynamic and evolving
-        landscape of digital finance.
-        <a href="/event" className="text-red">Read More</a>
+        <a href="/event" style={{ color: yellow[500] }}> Read More...</a>
         {/* Altcoins, a diverse set of digital assets, were also discussed as innovative alternatives, showcasing the thriving creativity within the crypto space. */}
 
       </AvatarContent>

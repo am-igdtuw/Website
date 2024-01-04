@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export const Nav = styled.nav`
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  background-color: ${(props) => (props.scroll > 0 ? "#000000" : "transparent")};
+  background-color: ${(props) => (props.scroll > 0 ? "#FFFFFF40" : "transparent")};
   height: 80px;
   margin-top: -80px;
   display: flex;
