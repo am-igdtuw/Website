@@ -35,7 +35,7 @@ const Navbar = () => {
     <>
       <Nav
         style={{
-          backgroundColor: scrollPosition > 0 ? "#000000" : "transparent",
+          backgroundColor: scrollPosition > 0 ? "#FFFFFF40" : "transparent",
         }}
       >
         <NavbarContainer>
@@ -44,7 +44,7 @@ const Navbar = () => {
               <img src={Logo2} height={44} alt="Logo" />
             </Link>
             <NavLogo>
-              AssetMerkle 
+              AssetMerkle
               {/* <SubLogo>Student Chapter IGDTUW</SubLogo> */}
             </NavLogo>
           </NavImg>
