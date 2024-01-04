@@ -2,11 +2,13 @@ import React, {useState} from 'react';
 import toast from 'react-hot-toast';
 import { FaLinkedin,FaInstagram,FaTwitter, FaUser, FaEnvelope, FaPhone, FaBuilding, FaPager, FaPaperPlane, FaNewspaper } from 'react-icons/fa';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import image from '../../images/sponsorImg.jpg'
+import image from '../../images/sponsorImg.jpg';
+import Loader from '../Loader/loader.js';
 
 
 
 const SponsorUsForm = () => {
+  const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -26,6 +28,7 @@ const SponsorUsForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
 
     try{
       const response = await fetch('https://am-website-w70g.onrender.com/api/sponsor', {
@@ -56,7 +59,7 @@ const SponsorUsForm = () => {
     
           setTimeout(() => {
             window.location.href = '/';
-          }, 3000);
+          }, 6000);
 
         } else {
           console.error('Sponsorship request failed');
@@ -65,6 +68,8 @@ const SponsorUsForm = () => {
       } catch (error){
         console.error('Error:', error);
         toast.error('Request failed, Retry!');
+      } finally {
+        setLoading(false); 
       }
   };
   return (
@@ -218,65 +223,69 @@ const SponsorUsForm = () => {
       <h1 className='heading'>Sponsor Us</h1>
       <div className="form-div">
         <div className="form-container">
-          <form onSubmit={handleSubmit}>
+          {loading ? (
+            "Loading . . ."
+          ) : (
+            <form onSubmit={handleSubmit}>
 
-            <div className="form-element">
-              <FaUser className='FormIcons'/>
-              <label htmlFor="name"><i className="fa-solid fa-user"></i></label>
-              <input type="text" placeholder="Name" id="name" name="name" value={formData.name} onChange={handleInputChange}/><br />
-            </div>
+              <div className="form-element">
+                <FaUser className='FormIcons' />
+                <label htmlFor="name"><i className="fa-solid fa-user"></i></label>
+                <input type="text" placeholder="Name" id="name" name="name" value={formData.name} onChange={handleInputChange} /><br />
+              </div>
 
-            <div className="form-element">
-              <FaEnvelope className='FormIcons'/>
-              <label htmlFor="email"><i className="fa-solid fa-envelope"></i></label>
-              <input type="email" placeholder="Email" id="email" name="email" value={formData.email} onChange={handleInputChange}/><br />
-            </div>
+              <div className="form-element">
+                <FaEnvelope className='FormIcons' />
+                <label htmlFor="email"><i className="fa-solid fa-envelope"></i></label>
+                <input type="email" placeholder="Email" id="email" name="email" value={formData.email} onChange={handleInputChange} /><br />
+              </div>
 
-            <div className="form-element">
-              <FaEnvelope className='FormIcons'/>
-              <label htmlFor="email"><i className="fa-solid fa-envelope"></i></label>
-              <input type="email" placeholder="Alternate Email" id="altEmail" name="altEmail" value={formData.altEmail} onChange={handleInputChange}/><br />
-            </div>
+              <div className="form-element">
+                <FaEnvelope className='FormIcons' />
+                <label htmlFor="email"><i className="fa-solid fa-envelope"></i></label>
+                <input type="email" placeholder="Alternate Email" id="altEmail" name="altEmail" value={formData.altEmail} onChange={handleInputChange} /><br />
+              </div>
 
-            <div className="form-element">
-              <FaPhone className='FormIcons'/>
-              <label htmlFor="phone_no"><i className="fa-solid fa-phone"></i></label>
-              <input type="number" placeholder="Phone No." id="phone_no" name="contactNumber" value={formData.contactNumber} onChange={handleInputChange}/><br />
-            </div>
+              <div className="form-element">
+                <FaPhone className='FormIcons' />
+                <label htmlFor="phone_no"><i className="fa-solid fa-phone"></i></label>
+                <input type="number" placeholder="Phone No." id="phone_no" name="contactNumber" value={formData.contactNumber} onChange={handleInputChange} /><br />
+              </div>
 
-            <div className="form-element">
-              <FaBuilding className='FormIcons'/>
-              <label htmlFor="Company/Organisation"><i className="fa-solid fa-building"></i></label>
-              <input type="text" placeholder="Company/Organisation" id="Company/Organisation" name="company" value={formData.company} onChange={handleInputChange} /><br />
-            </div>
+              <div className="form-element">
+                <FaBuilding className='FormIcons' />
+                <label htmlFor="Company/Organisation"><i className="fa-solid fa-building"></i></label>
+                <input type="text" placeholder="Company/Organisation" id="Company/Organisation" name="company" value={formData.company} onChange={handleInputChange} /><br />
+              </div>
 
-            <div className="form-element">
-            <FaNewspaper className='FormIcons'/>
-              <label htmlFor="textarea"><i className="fa-solid fa-memo"></i></label>
-              <textarea placeholder="Sponsorship related query" id="textarea" name="message" rows="4" cols="50" value={formData.message} onChange={handleInputChange}></textarea><br />
-            </div>
+              <div className="form-element">
+                <FaNewspaper className='FormIcons' />
+                <label htmlFor="textarea"><i className="fa-solid fa-memo"></i></label>
+                <textarea placeholder="Sponsorship related query" id="textarea" name="message" rows="4" cols="50" value={formData.message} onChange={handleInputChange}></textarea><br />
+              </div>
 
-            <div className="form-element">
-            <FontAwesomeIcon icon="fa-brands fa-x-twitter " className='FormIcons' />
-              <label htmlFor="twitter_id"><i className="fa-brands fa-x-twitter"></i></label>
-              <input type="text" placeholder="Twitter" id="twitter_id" name="twitter" value={formData.twitter} onChange={handleInputChange}/><br />
-            </div>
+              <div className="form-element">
+                <FontAwesomeIcon icon="fa-brands fa-x-twitter " className='FormIcons' />
+                <label htmlFor="twitter_id"><i className="fa-brands fa-x-twitter"></i></label>
+                <input type="text" placeholder="Twitter" id="twitter_id" name="twitter" value={formData.twitter} onChange={handleInputChange} /><br />
+              </div>
 
-            <div className="form-element">
-              <FaInstagram className='FormIcons'/>
-              <label htmlFor="instagram_id"><i className="fa-brands fa-instagram"></i></label>
-              <input type="text" placeholder="Instagram" id="instagram_id" name="instagram" value={formData.instagram} onChange={handleInputChange}/><br />
-            </div>
+              <div className="form-element">
+                <FaInstagram className='FormIcons' />
+                <label htmlFor="instagram_id"><i className="fa-brands fa-instagram"></i></label>
+                <input type="text" placeholder="Instagram" id="instagram_id" name="instagram" value={formData.instagram} onChange={handleInputChange} /><br />
+              </div>
 
-            <div className="form-element">
-              <FaLinkedin className='FormIcons'/>
-              <label htmlFor="linkedin_id"><i className="fa-brands fa-linkedin"></i></label>
-              <input type="text" placeholder="LinkedIn" id="linkedin_id" name="linkedin" value={formData.linkedin} onChange={handleInputChange} /><br />
-            </div>
+              <div className="form-element">
+                <FaLinkedin className='FormIcons' />
+                <label htmlFor="linkedin_id"><i className="fa-brands fa-linkedin"></i></label>
+                <input type="text" placeholder="LinkedIn" id="linkedin_id" name="linkedin" value={formData.linkedin} onChange={handleInputChange} /><br />
+              </div>
 
-            <input type="submit" value="Submit" />
+              <input type="submit" value={loading ? 'Submitting...' : 'Submit'} disabled={loading} />
            
-          </form>
+            </form>
+          )}
           </div>  
           <div>
         <img src={image} alt="Description of the image" />

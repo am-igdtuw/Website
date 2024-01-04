@@ -35,7 +35,7 @@ const Navbar = () => {
     <>
       <Nav
         style={{
-          backgroundColor: scrollPosition > 0 ? "#FFFFFF40" : "transparent",
+          backgroundColor: scrollPosition > 0 ? "transparent" : "transparent",
         }}
       >
         <NavbarContainer>
