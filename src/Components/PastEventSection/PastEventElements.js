@@ -36,7 +36,7 @@ export const ServicesCard = styled.div`
   justify-content: flex-start;
   border-radius: 10px;
   min-width: 20px; /* Adjusted from width to min-width for responsiveness */
-  background: #0d0a03;
+  //background: #0d0a03;
   border-radius: 24px;
   border: 0.5px solid #ffc640;
   padding: 30px;

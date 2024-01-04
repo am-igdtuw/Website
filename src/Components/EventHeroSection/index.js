@@ -14,7 +14,7 @@ const EventHeroSection = () => {
 
   return (
     <HeroContainer>
-        <DynamicBackground  />
+        {/* <DynamicBackground  /> */}
         <HeroContent>
             <HeroH1>We host robust <HeroD>events</HeroD></HeroH1>
             <HeroH1>that helps leverage the</HeroH1>

@@ -9,7 +9,7 @@ export const HeroContainer = styled.div`
     height: 600px;
     position: relative;
     z-index: 2;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.6), transparent);
+    // background: linear-gradient(180deg, rgba(0, 0, 0, 0.6), transparent);
 
 `
 
