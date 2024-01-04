@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import { HeroContainer, HeroH1, HeroContent, Accordian, Title, Content, Item } from './FaqElements';
+import { HeroContainer, HeroH1, HeroContent, Accordian, Title, Content, Item, InputBox,SubmitButton  } from './FaqElements';
 import DynamicBackground from '../Herosection/DynamicBg.js';
 
 const data = [
@@ -36,6 +36,18 @@ const data = [
 
 const FaqSection = () => {
     const [selected, setSelected] = useState(null);
+    const [inputValue, setInputValue] = useState('');
+    
+    const handleInputChange = (e) => {
+        setInputValue(e.target.value);
+    };
+
+    const handleDoubtSubmit = () => {
+        // You can handle the submission of the doubt here, for example, by sending it to a server or updating state.
+        console.log('Doubt submitted:', inputValue);
+        // Reset the input value after submission if needed
+        setInputValue('');
+    };
 
     const toggle = (i) => {
         if (selected === i) {
@@ -50,6 +62,7 @@ const FaqSection = () => {
             <DynamicBackground  />
             <HeroContent>
                 <HeroH1>FAQs</HeroH1>
+                
                 <Accordian>
                     {data.map((item, i) => (
                         <Item key={i}>
@@ -63,6 +76,14 @@ const FaqSection = () => {
                         </Item>
                     ))}
                 </Accordian>
+                <InputBox
+                    type="text"
+                    placeholder="Ask your doubt..."
+                    value={inputValue}
+                    onChange={handleInputChange}
+                />
+                <SubmitButton onClick={handleDoubtSubmit}>Submit</SubmitButton>
+                {/* Rest of your existing code */}
             </HeroContent>
         </HeroContainer>
     );
