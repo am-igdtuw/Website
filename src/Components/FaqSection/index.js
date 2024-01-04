@@ -10,11 +10,11 @@ const data = [
     },
     {
         question: 'What is AssetMerkle?',
-        answer: 'AssetMerkle is your go-to platform for all things NFT. They empower creators and collectors to build, innovate, and securely transact digital assets on the blockchain, providing a comprehensive ecosystem that facilitates the creation, management, and exchange of non-fungible tokens.'
+        answer: 'AssetMerkle IGDTUW is the first Web3-based club at IGDTUW. Our society intends to provide a platform for students to familiarize themselves with the professional world and gain practical experience in blockchain and Web3 technology.'
     },
     {
         question: 'What is the aim of AssetMerkle IGDTUW?',
-        answer: 'Our aim is to create a web3 and blockchain-oriented teaching and learning group to answer all your queries related to blockchain technology.'
+        answer: 'Our aim is to bridge the gap between academic learning and real-world challenges in the field of blockchain and Web3 technology. With the growing importance of Web3 technology in the industry, we believe it is crucial for students to gain practical skills in this field.'
     },
     {
         question: 'Can I be a part of AssetMerkle IGDTUW?',
