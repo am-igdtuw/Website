@@ -175,7 +175,7 @@ export const Content = styled.div`
 `;
 export const InputBox = styled.input`
   padding: 10px;
-  margin: 10px 0;
+  margin: 10px 20px;
   width: 760px;
   height: 70px;
   border: 1px solid rgba(255, 198, 64, 0.5);
@@ -193,7 +193,7 @@ export const SubmitButton = styled.button`
   background-color: #f2af13;
   color: white;
   border: 2px solid #f2af13;
-  border-radius: 20px;
+  border-radius: 10px;
   cursor: pointer;
   font-size: 16px;
 

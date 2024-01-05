@@ -20,7 +20,7 @@ linear-gradient(135deg, #8a3ab9, #e959a1)
 */
   .popup-inner {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     flex-direction: column;
     position: relative;
@@ -70,7 +70,7 @@ linear-gradient(135deg, #8a3ab9, #e959a1)
   
   .popup img {
     width: 50%;
-    animation: rotateYScale 4s ease-in-out 2 forwards, vibrate 0.3s ease infinite;
+    animation: rotateYScale 4s ease-in-out 1 forwards, scaleAndShift 0.5s 3s 1 forwards;
   }
   
   @keyframes rotateYScale {
@@ -87,10 +87,27 @@ linear-gradient(135deg, #8a3ab9, #e959a1)
       transform: rotateY(540deg) scale(0.8);
     }
     100% {
-      transform: rotateY(720deg) scale(1);
+      transform: translateX(-60%)  scale(0.7);
     }
+    
   }
   
+  .popup-text {
+    position: relative;
+    opacity: 0;
+    transform: translateY(50%);
+    animation: fadeInUp 0.5s 3s forwards;
+  }
+  @keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
   .snowfall {
     position: absolute;
     top: 0;

@@ -2,6 +2,8 @@ import React from 'react';
 import { useState } from 'react';
 import { HeroContainer, HeroH1, HeroContent, Accordian, Title, Content, Item, InputBox,SubmitButton  } from './FaqElements';
 import DynamicBackground from '../Herosection/DynamicBg.js';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
 const data = [
     {
@@ -76,14 +78,17 @@ const FaqSection = () => {
                         </Item>
                     ))}
                 </Accordian>
+                <div style={{ position: 'relative', width: '100%', zIndex: 2 }}>
                 <InputBox
                     type="text"
                     placeholder="Ask your doubt..."
                     value={inputValue}
                     onChange={handleInputChange}
                 />
-                <SubmitButton onClick={handleDoubtSubmit}>Submit</SubmitButton>
-                {/* Rest of your existing code */}
+                <SubmitButton style={{ position: 'absolute', top: '25%', right: '30px' }} onClick={handleDoubtSubmit}>
+                    <FontAwesomeIcon icon={faPaperPlane}  />
+                </SubmitButton>
+            </div>
             </HeroContent>
         </HeroContainer>
     );
