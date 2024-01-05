@@ -1,0 +1,40 @@
+.slick-slide > div {
+    margin: 0 10px;
+    z-index: 10;
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color:orange !important;
+    z-index: 10;
+  }
+  .crsl {
+    
+    margin: auto;
+    z-index: 10;
+  }
+  .carousel .control-dots .dot {
+    border-radius: 0% !important;
+    width: 20px !important;
+    height: 2px !important;
+    z-index: 10;
+  }
+  
+  .carousel .control-dots .dot:active {
+    border-radius: 0% !important;
+    width: 10px !important;
+    height: 5px !important;
+    z-index: 10;
+  }
+  
+  @media only screen and (max-width: 400px) {
+    .slide {
+      min-width: 100% !important;
+      z-index: 10;
+    }
+  }
+  
+  /* For all other screen sizes, display 3 items */
+  .slide {
+    min-width: 33% ;
+    z-index: 10;
+  }
