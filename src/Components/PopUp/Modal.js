@@ -39,6 +39,7 @@ export default function Modal(props) {
           </button>
           {props.children}
           <img className="popup-img" src={PopUp} alt="Popup" />
+          <div className="popup-text"> Lorem  </div>
           <a href="/event"> FIND MORE EVENTS! </a>
         </div>
       </div>
