@@ -105,6 +105,8 @@ function Services() {
     ));
   };
   const isMobileView = window.innerWidth <= 480;
+
+  
   return (
     <div>
       <ServicesContainer id="services">

@@ -15,6 +15,7 @@ import TeamPage from './pages/team';
 import SponsorUsForm from './Components/FormSection/SponsorUs';
 import CollaborateUsForm from './Components/FormSection/CollaborateUs';
 import ProbStatementPage from './pages/probStatement';
+import EventPagePseudo from './pages/eventpseudo';
 //import ReactDOM from 'react-dom'
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
@@ -31,7 +32,8 @@ function App() {
     <Toaster position="bottom-center" gutter={14} containerStyle={{ fontSize: '14px' }}></Toaster>
       <Routes>
         <Route exact path="/" element={<Home/>} />
-        <Route exact path="/event" element={<EventPage/>}/>
+        <Route exact path="/event" element={<EventPage />} />
+        <Route exact path="/eventpseudo" element={<EventPagePseudo/>}/>
         {/* <Route exact path="/blogs" element={<BlogPage/>}/> */}
         <Route exact path="/faq" element={<FaqPage/>}/>
         <Route exact path="/techTeam" element={<TechTeamPage/>}/>
