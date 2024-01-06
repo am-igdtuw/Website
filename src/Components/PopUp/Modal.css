@@ -1,3 +1,4 @@
+
 .popup {
     position: fixed;
     z-index: 1000;
@@ -20,7 +21,7 @@ linear-gradient(135deg, #8a3ab9, #e959a1)
 */
   .popup-inner {
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     position: relative;
@@ -39,6 +40,12 @@ linear-gradient(135deg, #8a3ab9, #e959a1)
     100% {
       transform: perspective(500px) rotateX(-0deg);
     }
+  }
+  .popup-content {
+    display: flex;
+    align-items: center;
+    justify-content:first baseline; 
+    width: 100%;
   }
   .popup-inner h2 {
     font-family: 'Poppins', sans-serif;
@@ -75,39 +82,77 @@ linear-gradient(135deg, #8a3ab9, #e959a1)
   
   @keyframes rotateYScale {
     0% {
-      transform: rotateY(0deg) scale(1);
+      transform: translateX(45%) rotateY(0deg) scale(1);
     }
     25% {
-      transform: rotateY(180deg) scale(1.2);
+      transform: translateX(45%) rotateY(180deg) scale(1.2);
     }
     50% {
-      transform: rotateY(360deg) scale(1);
+      transform: translateX(45%) rotateY(360deg) scale(1);
     }
     75% {
-      transform: rotateY(540deg) scale(0.8);
+      transform: translateX(45%) rotateY(540deg) scale(0.8);
     }
     100% {
-      transform: translateX(-60%)  scale(0.7);
+      transform: translateX(0%) scale(0.8);
     }
-    
   }
+  
   
   .popup-text {
     position: relative;
     opacity: 0;
     transform: translateY(50%);
     animation: fadeInUp 0.5s 3s forwards;
+    margin-bottom:20px;
+    
   }
+  
   @keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(50%);
+    0% {
+      opacity: 0;
+      transform: translateY(50%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
   }
-  100% {
-    opacity: 1;
-    transform: translateY(0%);
+  .popup-text1 {
+    color: #ffbb00; 
+    font-size: 18px; 
   }
-}
+  
+  .popup-text2 {
+    color: #f98dfd; 
+    font-size: 12px; 
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  .popup-text3 {
+    color: #ffffff; 
+    font-size: 22px; 
+    font-weight: bold;
+  }
+  .popup-button {
+    display: inline-block;
+    padding: 0 3px;
+    margin-top: 0px;
+    background-color: #71a0d3; /* Button background color */
+    color: #fff; /* Button text color */
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .popup-button:hover {
+    background-color: #0056b3; /* Change background color on hover */
+  }
+  
+ 
   .snowfall {
     position: absolute;
     top: 0;
@@ -142,4 +187,3 @@ linear-gradient(135deg, #8a3ab9, #e959a1)
     height: 50px;
     width: 50px;
   }
-  
