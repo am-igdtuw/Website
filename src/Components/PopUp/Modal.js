@@ -38,8 +38,20 @@ export default function Modal(props) {
             &times;
           </button>
           {props.children}
+          <div className="popup-content">
           <img className="popup-img" src={PopUp} alt="Popup" />
-          <div className="popup-text"> Lorem  </div>
+          <div className="popup-text">
+          <div className="popup-text1"> ASSETMERKLE Presents   </div>
+          <div className="popup-text2">Twitter/X Spaces Podcast</div>
+          <div className="popup-text3">CHAIN PE CHARCHA</div>
+          <button
+              className="popup-button"
+              onClick={() => (window.location.href = 'https://x.com/AM_igdtuw/status/1742247033535373781?s=20')}
+            >
+              Find it here!
+            </button>
+          </div>
+          </div>
           <a href="/event"> FIND MORE EVENTS! </a>
         </div>
       </div>
