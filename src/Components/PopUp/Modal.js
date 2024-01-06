@@ -2,6 +2,8 @@ import React from 'react';
 import './Modal.css';
 import PopUp from '../../images/PopUp.png';
 import { useEffect } from 'react';
+import { FaLinkedin, FaInstagram } from 'react-icons/fa';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const OVERLAY = {
   position: 'fixed',
@@ -23,17 +25,28 @@ export default function Modal(props) {
         const snowflake = document.createElement('div');
         snowflake.className = 'snowflake';
         snowflake.style.left = `${Math.random() * 100}%`;
-        snowflake.style.animationDuration = `${Math.random() * 10 + 5}s`; // Vary animation speed
+        snowflake.style.animationDuration = `${Math.random() * 10 + 5}s`;
         snowfallContainer.appendChild(snowflake);
       }
     }
-  }, [props.trigger]); 
+  }, [props.trigger]);
 
   return props.trigger ? (
     <>
       <div style={OVERLAY} />
       <div className="popup">
         <div className="popup-inner">
+        <div className="social-icons">
+          <a href="https://www.instagram.com/assetmerkle.igdtuw/" target="_blank" rel="noopener noreferrer">
+          <FaInstagram />
+          </a>
+          <a href="https://twitter.com/AM_igdtuw" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon="fa-brands fa-x-twitter" style={{ verticalAlign: 'middle' }} />
+          </a>
+          <a href="https://www.linkedin.com/company/asset-merkle/mycompany/" target="_blank" rel="noopener noreferrer">
+          <FaLinkedin />
+            </a>
+            </div>
           <button className="close-btn" onClick={() => props.setTrigger(false)}>
             &times;
           </button>
@@ -52,7 +65,7 @@ export default function Modal(props) {
             </button>
           </div>
           </div>
-          <a href="/event"> FIND MORE EVENTS! </a>
+          <a href="/event" className="find-more-events">FIND MORE EVENTS!</a>
         </div>
       </div>
       <div className="snowfall"></div>

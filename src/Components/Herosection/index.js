@@ -103,7 +103,7 @@ const HeroSection = () => {
                                     </Button>
                                 </HeroBtnWrapper>
                                 <SocialIcons>
-                                    <SocialIconsLink href="https://www.instagram.com/assetmantle.igdtuw/" target="_blank"
+                                    <SocialIconsLink href="https://www.instagram.com/assetmerkle.igdtuw/" target="_blank"
                                         area-label="Instagram">
                                         <FaInstagram />
                                     </SocialIconsLink>
@@ -111,7 +111,7 @@ const HeroSection = () => {
                                         area-label="Twitter">
                                         <FontAwesomeIcon icon="fa-brands fa-x-twitter" style={{ verticalAlign: 'middle' }} />
                                     </SocialIconsLink>
-                                    <SocialIconsLink href="https://www.linkedin.com/company/asset-mantle-igdtuw/" target="_blank"
+                                    <SocialIconsLink href="https://www.linkedin.com/company/asset-merkle/mycompany/" target="_blank"
                                         area-label="Linkedin">
                                         <FaLinkedin />
                                     </SocialIconsLink>
