@@ -7,7 +7,9 @@ import { InfoContainer, InfoWrapper, InfoRow, TextWrapper, Heading, Subtitle,Ser
   ServicesCard,
   ServicesIcon,
   ServicesH2,
-  ServicesP, } from './pspageElements';
+  ServicesP,
+} from './pspageElements';
+  
 const ProbStatement = () => {
   return (
     <>
