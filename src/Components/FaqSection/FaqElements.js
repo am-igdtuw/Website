@@ -173,28 +173,75 @@ export const Content = styled.div`
   border-radius: 0px 0px 24px 24px;
   background: linear-gradient(90deg, rgba(255, 198, 64, 0.5) 0%, rgba(169, 169, 169, 0.67) 100%);
 `;
-export const InputBox = styled.input`
+export const InputBox1 = styled.input`
+  padding: 10px;
+  margin: 0px 20px;
+  width: 761px;
+  height: 40px;
+  border: 3px solid #f2af13;
+  border-radius: 12px;
+  font-size: 16px;
+  margin-left:350px;
+  background-color: #FFFFFF;
+  ::placeholder {
+    color: #000000;
+  }
+  @media screen and (max-width: 768px){
+    width:auto;
+    margin-left: 0;
+  }
+
+  @media screen and (max-width: 480px){
+    width:auto;
+    margin-left: 0;
+  }
+`;
+export const InputBox2 = styled.input`
   padding: 10px;
   margin: 10px 20px;
   width: 760px;
   height: 70px;
-  border: 1px solid rgba(255, 198, 64, 0.5);
+  border: 3px solid #f2af13;
   border-radius: 20px;
   font-size: 16px;
-  background-color: rgba(255, 198, 64, 0.5);
+  margin-left:350px;
+  background-color: #FFFFFF;
   ::placeholder {
-    color: rgba(255, 198, 64, 0.5);
+    color: #000000;
+  }
+  @media screen and (max-width: 768px){
+    width:auto;
+    margin-left: 0;
+  }
+
+  @media screen and (max-width: 480px){
+    width:auto;
+    margin-left: 0;
   }
 `;
 
 export const SubmitButton = styled.button`
   padding: 10px;
-  margin-left: 680px;
+  margin-right:335px;
+  margin-top: 30px;
   background-color: #f2af13;
   color: white;
   border: 2px solid #f2af13;
   border-radius: 10px;
   cursor: pointer;
   font-size: 16px;
+  @media screen and (max-width: 768px){
+    margin-right:0;
+  }
+
+  @media screen and (max-width: 480px){
+    margin-right:30px;
+  }
+
+`;
+export const FaqBox = styled.div`
+position: relative;
+width:100% ;
+zIndex: 2;
 
 `;
