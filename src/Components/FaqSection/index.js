@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import { HeroContainer, HeroH1, HeroContent, Accordian, Title, Content, Item, InputBox,SubmitButton  } from './FaqElements';
+import { HeroContainer, HeroH1, HeroContent, Accordian, Title, Content, Item, InputBox1,InputBox2,SubmitButton,FaqBox  } from './FaqElements';
 import DynamicBackground from '../Herosection/DynamicBg.js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
@@ -38,26 +38,34 @@ const data = [
 
 const FaqSection = () => {
     const [selected, setSelected] = useState(null);
-    const [inputValue, setInputValue] = useState('');
+    const [email, setEmail ] = useState('');
+    const [doubt,setDoubt] = useState('');
     
-    const handleInputChange = (e) => {
-        setInputValue(e.target.value);
-    };
-
-    const handleDoubtSubmit = () => {
-        // You can handle the submission of the doubt here, for example, by sending it to a server or updating state.
-        console.log('Doubt submitted:', inputValue);
-        // Reset the input value after submission if needed
-        setInputValue('');
-    };
-
-    const toggle = (i) => {
+    const handleEmailChange = (e) => {
+        setEmail(e.target.value);
+      };
+    
+      const handleDoubtChange = (e) => {
+        setDoubt(e.target.value);
+      };
+    
+      const handleSubmission = () => {
+        // You can handle the submission of email and doubt here
+        console.log('Email:', email);
+        console.log('Doubt:', doubt);
+    
+        // Reset the input values after submission if needed
+        setEmail('');
+        setDoubt('');
+      };
+    
+      const toggle = (i) => {
         if (selected === i) {
-            setSelected(null);
+          setSelected(null);
         } else {
-            setSelected(i);
+          setSelected(i);
         }
-    };
+      };
 
     return (
         <HeroContainer>
@@ -78,17 +86,27 @@ const FaqSection = () => {
                         </Item>
                     ))}
                 </Accordian>
-                <div style={{ position: 'relative', width: '100%', zIndex: 2 }}>
-                <InputBox
-                    type="text"
-                    placeholder="Ask your doubt..."
-                    value={inputValue}
-                    onChange={handleInputChange}
-                />
-                <SubmitButton style={{ position: 'absolute', top: '25%', right: '30px' }} onClick={handleDoubtSubmit}>
+                <FaqBox>
+                
+                <InputBox1
+            type="email"
+            placeholder="Your Email..."
+            value={email}
+            onChange={handleEmailChange}
+          />
+
+          {/* Doubt Input */}
+          <InputBox2
+            type="text"
+            placeholder="Ask your doubt..."
+            value={doubt}
+            onChange={handleDoubtChange}
+          />
+                <SubmitButton style={{ position: 'absolute', top: '25%', right: '30px' }} onClick={handleSubmission}>
                     <FontAwesomeIcon icon={faPaperPlane}  />
                 </SubmitButton>
-            </div>
+        
+            </FaqBox>
             </HeroContent>
         </HeroContainer>
     );
