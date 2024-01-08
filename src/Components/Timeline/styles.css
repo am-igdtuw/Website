@@ -16,7 +16,12 @@ body {
   color: var(--color);
   background: var(--bgColor);
 }
-
+div.container {
+  margin: 20px 0;
+  padding: 80px 0 50px;
+  min-width: 100%;
+  background-color: #f7bd00;
+}
 ul {
   --col-gap: 2rem;
   --row-gap: 2rem;

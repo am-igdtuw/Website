@@ -12,14 +12,14 @@ export const TextWrapper= styled.div`
 export const InfoContainer = styled.div`
     position: relative;
     padding: 80px 0 50px;
-    z-index: 999;
+    z-index: 0;
     ::before{
     position: absolute;
     content: '';
     left: 0;
     top: 0;
     right: 0;
-    bottom: 230px;
+    bottom: 20px;
     background-color: #f7bd00;
     }
 `;
