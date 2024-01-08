@@ -70,7 +70,7 @@ export const NavMenu = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0;
+    padding: 10px;
     gap: 15px;
     margin-top: 44px;
     width: 100%;
