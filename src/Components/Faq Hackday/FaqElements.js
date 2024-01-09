@@ -104,6 +104,7 @@ export const HeroH1 = styled.h1`
 export const Accordian = styled.div`
 display: grid;
   grid-template-columns: repeat(2, 1fr);
+<<<<<<< HEAD
   gap: 20px;  
   width: 100%; 
 
@@ -113,6 +114,17 @@ display: grid;
 
   @media screen and (max-width: 480px){
     grid-template-columns: 1fr;  
+=======
+  gap: 20px;  // Adjust the gap between columns if needed
+  width: 100%;  // Adjust for responsiveness
+
+  @media screen and (max-width: 768px){
+    grid-template-columns: 1fr;  // On smaller screens, switch to a single column
+  }
+
+  @media screen and (max-width: 480px){
+    grid-template-columns: 1fr;  // Adjust for even smaller screens
+>>>>>>> 7ee5f7165e023099c4c40f54c5202407cff0a09f
   }
 
 `

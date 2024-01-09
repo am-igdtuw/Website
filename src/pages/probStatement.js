@@ -16,6 +16,7 @@ const ProbStatementPage = () => {
         <Prize/>
         <FAQH/>
         <Footer/>
+
     </div>
   )
 }
