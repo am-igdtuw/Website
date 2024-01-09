@@ -1,8 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import { HeroContainer, HeroH1, HeroContent, Accordian, Title, Content, Item, InputBox1,InputBox2,SubmitButton,FaqBox  } from './FaqElements.js';
-import DynamicBackground from '../Herosection/DynamicBg.js';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import DynamicBackground from '../Herosection/DynamicBg.js';import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
 const data = [
@@ -65,6 +64,7 @@ const FAQHackday = () => {
       };
 
     return (
+        <>
         <HeroContainer>
             <DynamicBackground  />
             <HeroContent>
@@ -85,6 +85,7 @@ const FAQHackday = () => {
                 </Accordian>
             </HeroContent>
         </HeroContainer>
+        </>
     );
 };
 
