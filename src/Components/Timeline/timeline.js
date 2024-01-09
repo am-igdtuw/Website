@@ -3,6 +3,7 @@ import './styles.css';
 
 const Timeline = () => {
   return (
+    <div className='container'>
     <ul>
       <li style={{ '--accent-color': '#41516C' }}>
         <div className="date">2002</div>
@@ -40,6 +41,7 @@ const Timeline = () => {
         </div>
       </li>
     </ul>
+    </div>
   );
 };
 
