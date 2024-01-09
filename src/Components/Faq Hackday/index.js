@@ -1,12 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import { HeroContainer, HeroH1, HeroContent, Accordian, Title, Content, Item, InputBox1,InputBox2,SubmitButton,FaqBox  } from './FaqElements.js';
-<<<<<<< HEAD
 import DynamicBackground from '../Herosection/DynamicBg.js';import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-=======
-import DynamicBackground from '../Herosection/DynamicBg.js';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
->>>>>>> 7ee5f7165e023099c4c40f54c5202407cff0a09f
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
 const data = [
@@ -69,10 +64,7 @@ const FAQHackday = () => {
       };
 
     return (
-<<<<<<< HEAD
         <>
-=======
->>>>>>> 7ee5f7165e023099c4c40f54c5202407cff0a09f
         <HeroContainer>
             <DynamicBackground  />
             <HeroContent>
@@ -93,10 +85,7 @@ const FAQHackday = () => {
                 </Accordian>
             </HeroContent>
         </HeroContainer>
-<<<<<<< HEAD
         </>
-=======
->>>>>>> 7ee5f7165e023099c4c40f54c5202407cff0a09f
     );
 };
 

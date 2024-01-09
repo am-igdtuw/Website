@@ -10,7 +10,6 @@ function about() {
       <AboutContent>
         <AboutH1>ABOUT US</AboutH1>
         <AboutP>
-<<<<<<< HEAD
             Lorem ips amum dolor sit amet, consectetur adipiscing elit. 
             Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum itaque, quas nihil animi alias maxime blanditiis quam repellendus minima! Perspiciatis harum qui nesciunt, molestias sit accusantium repellat autem earum nihil.
@@ -18,15 +17,6 @@ function about() {
           </AboutP>
       </AboutContent>
           <AboutImg src={Img} alt="about"/>
-=======
-          Lorem ips amum dolor sit amet, consectetur adipiscing elit. 
-          Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum itaque, quas nihil animi alias maxime blanditiis quam repellendus minima! Perspiciatis harum qui nesciunt, molestias sit accusantium repellat autem earum nihil.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates neque alias ducimus quidem officia optio itaque mollitia voluptatem vel perspiciatis praesentium eius molestiae, quisquam ipsum modi adipisci laudantium iure doloremque!
-          </AboutP>
-          </AboutContent>
-            <AboutImg src={Img} alt="about"/>
->>>>>>> 7ee5f7165e023099c4c40f54c5202407cff0a09f
       </Wrapper>      
       </AboutContainer>
       </>
