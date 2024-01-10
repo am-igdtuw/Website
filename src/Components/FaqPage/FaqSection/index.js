@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import { HeroContainer, HeroH1, HeroContent, Accordian, Title, Content, Item, InputBox1,InputBox2,SubmitButton,FaqBox  } from './FaqElements';
-import DynamicBackground from '../../Herosection/DynamicBg.js';
+import DynamicBackground from '../../HomePage/Herosection/DynamicBg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
