@@ -55,12 +55,14 @@ const HeroSection = () => {
     const RightSubSectionJSX = (
         // Hero Image
         <img
-            src='/image/bghero.png'
+            src='/image/logo/1bg.png'
             alt="hero_image"
             style={{
                 width: "95%",
                 height: "auto",
                 paddingleft: "25%",
+                marginTop: "-100px",
+                alignItems: "center",
             }}
         />
     );
