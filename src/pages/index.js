@@ -13,24 +13,18 @@ import PopUp from "../Components/PopUp/Modal";
 import ScrollToTopButton from '../Components/Scroller/Scroller'
 
 const Home = () => {
-  const [isOpen, setIsOpen] = useState(false)
-
-  const toggle = () => {
-      setIsOpen(!isOpen)
-  };
   const [timedPopup, setTimedPopup] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
       setTimedPopup(true);
     } , 1000);
-  } , []);
+  }, []);
+  
 
 
   return (
     <>
-      { <Navbar toggle={toggle}/>  }
-
       { <PopUp trigger={timedPopup} setTrigger = {setTimedPopup}>
         {/* <h2> <strong> HOLA! UPCOMING EVENT! </strong></h2>
         <h3> HACK DAY </h3> */}
