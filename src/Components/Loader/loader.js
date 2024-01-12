@@ -1,6 +1,6 @@
 import React from 'react';
 import './loader.css'; 
-import logo from './AM logo rm removebg-preview.png';
+import logo from './AMlogo.png';
 
 const Loader = () => {
   return (

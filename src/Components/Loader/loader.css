@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400&display=swap");
-* {
+/* * {
   box-sizing: border-box;
 }
 *::before, *::after {
   box-sizing: border-box;
-}
+} */
 
-body {
+/* body {
  background-image: url("./backgroundtitle.png");
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
@@ -18,7 +18,7 @@ body {
   min-height: 100vh;
   background: #fff;
   overflow: hidden;
-}
+} */
 
 #container {
   position: relative;
@@ -210,8 +210,8 @@ body {
   }
 }
 
-img{
+/* img{
     margin-top: 40px;
     height:70px;
     width:70px;
-}
+} */
