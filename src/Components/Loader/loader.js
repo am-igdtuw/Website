@@ -1,5 +1,6 @@
 import React from 'react';
 import './loader.css'; 
+import logo from './AM logo rm removebg-preview.png';
 
 const Loader = () => {
   return (
@@ -15,7 +16,7 @@ const Loader = () => {
           <div className="divider" aria-hidden="true"></div>
           <p className="loading-text" aria-label="Loading">
             <span className="letter" aria-hidden="true">
-              <img src="logo.png" alt="Logo" />
+              <img src={logo} alt="Logo" className='logolo' />
             </span>
             <span className="letter" aria-hidden="true">s</span>
             <span className="letter" aria-hidden="true">s</span>
