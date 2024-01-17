@@ -99,6 +99,7 @@ linear-gradient(135deg, #8a3ab9, #e959a1)
   
   .popup img {
     width: 50%;
+    height: 95%;
     animation: rotateYScale 4s ease-in-out 1 forwards, scaleAndShift 0.5s 3s 1 forwards;
   }
   

@@ -5,16 +5,16 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages';
 import EventPage from './pages/event'
 // import BlogPage from './pages/blogs'
-import TechTeamPage from './pages/techTeam';
+//import TechTeamPage from './pages/techTeam';
 import FaqPage from './pages/faq'
-import OutreachTeamPage from './pages/outreachTeam';
-import EventTeamPage from './pages/eventTeam';
-import MediaTeamPage from './pages/mediaTeam';
-import ResearchTechTeam from './pages/researchTeam';
+//import OutreachTeamPage from './pages/outreachTeam';
+//import EventTeamPage from './pages/eventTeam';
+//import MediaTeamPage from './pages/mediaTeam';
+//import ResearchTechTeam from './pages/researchTeam';
 import TeamPage from './pages/team';
-import SponsorUsForm from './Components/FormSection/SponsorUs';
-import CollaborateUsForm from './Components/FormSection/CollaborateUs';
-import ProbStatementPage from './pages/probStatement';
+import SponsorUsForm from './pages/sponsorForm';
+import CollaborateUsForm from './pages/collaborateForm';
+import HackDay from './pages/hackDay';
 import EventPagePseudo from './pages/eventpseudo';
 //import ReactDOM from 'react-dom'
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -36,15 +36,15 @@ function App() {
         <Route exact path="/eventpseudo" element={<EventPagePseudo/>}/>
         {/* <Route exact path="/blogs" element={<BlogPage/>}/> */}
         <Route exact path="/faq" element={<FaqPage/>}/>
-        <Route exact path="/techTeam" element={<TechTeamPage/>}/>
-        <Route exact path="/eventTeam" element={<EventTeamPage/>}/>
-        <Route exact path="/mediaTeam" element={<MediaTeamPage/>}/>
-        <Route exact path="/researchTeam" element={<ResearchTechTeam/>}/>
-        <Route exact path="/outreachTeam" element={<OutreachTeamPage/>}/>
+        {/* <Route exact path="/techTeam" element={<TechTeamPage/>}/> */}
+        {/* <Route exact path="/eventTeam" element={<EventTeamPage/>}/> */}
+        {/* <Route exact path="/mediaTeam" element={<MediaTeamPage/>}/> */}
+        {/* <Route exact path="/researchTeam" element={<ResearchTechTeam/>}/>
+        <Route exact path="/outreachTeam" element={<OutreachTeamPage/>}/> */}
         <Route exact path="/TeamPage" element={<TeamPage/>}/>
         <Route exact path='/sponsorPage' element={<SponsorUsForm/>}/>
         <Route exact path='/collaboratePage' element={<CollaborateUsForm/>}/>
-        <Route exact path='/probStatement' element={<ProbStatementPage/>}/>
+        <Route exact path='/hackday' element={<HackDay/>}/>
            
       </Routes>
     </BrowserRouter>

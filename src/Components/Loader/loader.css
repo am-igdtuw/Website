@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400&display=swap");
-* {
+/* * {
   box-sizing: border-box;
 }
 *::before, *::after {
   box-sizing: border-box;
-}
+} */
 
-body {
- background-image: url("backgroundtitle.png");
+/* body {
+ background-image: url("./backgroundtitle.png");
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   line-height: 1.5;
@@ -18,7 +18,7 @@ body {
   min-height: 100vh;
   background: #fff;
   overflow: hidden;
-}
+} */
 
 #container {
   position: relative;
@@ -33,6 +33,12 @@ body {
   width: 50px;
   height: 15px;
   background: #fff;
+}
+
+.logolo {
+  height: 70px;
+  width: 70px;
+  margin-top: 0px; 
 }
 
 .loading-text {
@@ -204,8 +210,8 @@ body {
   }
 }
 
-img{
+/* img{
     margin-top: 40px;
     height:70px;
     width:70px;
-}
+} */

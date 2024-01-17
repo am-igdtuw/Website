@@ -50,7 +50,7 @@ const Navbar = () => {
           </NavImg>
 
           <MobileIcon onClick={toggle}>
-            {isOpen ? <FaTimes /> : <FaBars />} {/* Close icon when open */}
+            {isOpen ? <FaTimes /> : <FaBars />} 
           </MobileIcon>
           <NavMenu isOpen={isOpen}>
             <Navitem>
