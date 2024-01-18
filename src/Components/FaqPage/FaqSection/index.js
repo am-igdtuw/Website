@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import { HeroContainer, HeroH1, HeroContent, Accordian, Title, Content, Item, InputBox1,InputBox2,SubmitButton,FaqBox  } from './FaqElements';
+import { HeroContainer, HeroH1, HeroContent, Accordian, Title, Content, Item, InputBox1,InputBox2,SubmitButton,FaqBox, FaqInsidBox  } from './FaqElements';
 import DynamicBackground from '../../HomePage/Herosection/DynamicBg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
@@ -87,14 +87,15 @@ const FaqSection = () => {
                     ))}
                 </Accordian>
                 <FaqBox>
-                
+               
+                <FaqInsidBox>
                 <InputBox1
             type="email"
             placeholder="Your Email..."
             value={email}
             onChange={handleEmailChange}
           />
-
+        <FaqInsidBox>
           {/* Doubt Input */}
           <InputBox2
             type="text"
@@ -102,10 +103,11 @@ const FaqSection = () => {
             value={doubt}
             onChange={handleDoubtChange}
           />
-                <SubmitButton style={{ position: 'absolute', top: '25%', right: '30px' }} onClick={handleSubmission}>
+                <SubmitButton  onClick={handleSubmission}>
                     <FontAwesomeIcon icon={faPaperPlane}  />
                 </SubmitButton>
-        
+            </FaqInsidBox>
+            </FaqInsidBox> 
             </FaqBox>
             </HeroContent>
         </HeroContainer>
