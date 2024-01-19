@@ -31,6 +31,7 @@
     "react-scripts": "^5.0.1",
     "react-scroll": "^1.8.9",
     "react-slick": "^0.29.0",
+    "react-toastify": "^10.0.3",
     "react-tsparticles": "^2.11.0",
     "react-ui-cards": "^3.1.0",
     "react-vertical-timeline-component": "^3.6.0",

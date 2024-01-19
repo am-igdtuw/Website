@@ -4,6 +4,8 @@ import { HeroContainer, HeroH1, HeroContent, Accordian, Title, Content, Item, In
 import DynamicBackground from '../../HomePage/Herosection/DynamicBg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const data = [
     {
@@ -39,24 +41,77 @@ const data = [
 const FaqSection = () => {
     const [selected, setSelected] = useState(null);
     const [email, setEmail ] = useState('');
-    const [doubt,setDoubt] = useState('');
+    const [message, setMessage] = useState('');
     
     const handleEmailChange = (e) => {
         setEmail(e.target.value);
       };
     
       const handleDoubtChange = (e) => {
-        setDoubt(e.target.value);
+        setMessage(e.target.value);
       };
     
-      const handleSubmission = () => {
-        // You can handle the submission of email and doubt here
-        console.log('Email:', email);
-        console.log('Doubt:', doubt);
-    
-        // Reset the input values after submission if needed
-        setEmail('');
-        setDoubt('');
+      const handleSubmission = async(e) => {
+          e.preventDefault();
+          //   console.log(email, message);
+          
+          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          if (!emailRegex.test(email)) {
+            toast.error('Please enter a valid email address.', {
+                position: 'bottom-center',
+                style: {
+                    width: "400px", 
+                    background: "black",
+                    color: "white", 
+                },
+            });
+            return; 
+          }
+          
+          try {
+              const response = await fetch('https://am-website-w70g.onrender.com/api/faq', {
+                  method: 'POST',
+                  headers: {
+                      'Content-Type': 'application/json'
+                  },
+                  body: JSON.stringify({ email, message }),
+              });
+
+              if (response.ok) {
+                  const data = await response.json();
+                  //   console.log(data);
+                  toast.success("Thank you for connecting with us! We will get back to you soon.  🚀", {
+                      position: "bottom-center",
+                      style: {
+                          width: "400px", 
+                          background: "black",
+                          color: "white", 
+                      },
+                  });
+                  setEmail('');
+                  setMessage('');
+              } else {
+                  console.error('Submission failed');
+                  toast.error('Oops! Something went wrong. Please try again.', {
+                    position: "bottom-center",
+                    style: {
+                        width: "400px", 
+                        background: "black",
+                        color: "white", 
+                    },
+                  });
+            }
+          } catch (error) {
+              console.error('Error:', error);
+              toast.error('Oops! Something went wrong. Please try again.', {
+                position: "bottom-center",
+                style: {
+                    width: "400px", 
+                    background: "black",
+                    color: "white", 
+                },
+              });
+          }
       };
     
       const toggle = (i) => {
@@ -68,6 +123,7 @@ const FaqSection = () => {
       };
 
     return (
+        <>
         <HeroContainer>
             <DynamicBackground  />
             <HeroContent>
@@ -87,30 +143,31 @@ const FaqSection = () => {
                     ))}
                 </Accordian>
                 <FaqBox>
-               
-                <FaqInsidBox>
-                <InputBox1
-            type="email"
-            placeholder="Your Email..."
-            value={email}
-            onChange={handleEmailChange}
-          />
-        <FaqInsidBox>
-          {/* Doubt Input */}
-          <InputBox2
-            type="text"
-            placeholder="Ask your doubt..."
-            value={doubt}
-            onChange={handleDoubtChange}
-          />
-                <SubmitButton  onClick={handleSubmission}>
-                    <FontAwesomeIcon icon={faPaperPlane}  />
-                </SubmitButton>
-            </FaqInsidBox>
-            </FaqInsidBox> 
-            </FaqBox>
+                    <FaqInsidBox>
+                        <InputBox1
+                            type="email"
+                            placeholder="Your Email..."
+                            value={email}
+                            onChange={handleEmailChange}
+                        />
+                        <FaqInsidBox>
+                        {/* Doubt Input */}
+                            <InputBox2
+                                type="text"
+                                placeholder="Ask your doubt..."
+                                value={message}
+                                onChange={handleDoubtChange}
+                            />
+                            <SubmitButton  onClick={handleSubmission}>
+                                <FontAwesomeIcon icon={faPaperPlane}  />
+                            </SubmitButton>
+                        </FaqInsidBox>
+                    </FaqInsidBox> 
+                </FaqBox>
             </HeroContent>
         </HeroContainer>
+        <ToastContainer />
+        </>
     );
 };
 
