@@ -8,11 +8,13 @@ export const HeroContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: left;
-    text-align: left; /* Adjusted to align text to the left */
+    text-align: left;
     padding: 0 30px;
     height: 100vh;
     position: relative;
     overflow: hidden;
+    margin-left: 10px;
+    top: 50px;
 
     @media screen and (max-width: 480px) {
         height: 90vh;

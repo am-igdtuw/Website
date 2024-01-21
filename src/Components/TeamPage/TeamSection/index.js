@@ -143,18 +143,18 @@ const TeamPage = () => {
     //   )
     // },
     const techTeamCoordinator = [
-    {
-      name: 'Apoorva ',
-      role: 'Co-Ordinator',
-      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693146223/Asset%20Mantle%20-%20Team%202023/Technical/apoorva_u2qoq3.png', 
-      techProfiles : (
-        <TechP>
-             <a className='linkiden' href="https://www.linkedin.com/in/apoorva-a65a18256/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-               <a className='twitter' href="https://twitter.com/GilhotraApoorva" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="fa-brands fa-x-twitter" style={{ verticalAlign: 'middle' }}/></a>
-               <a className='insta' href="https://www.instagram.com/verve_infinite/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-         </TechP>
-      )
-    },
+    // {
+    //   name: 'Apoorva ',
+    //   role: 'Co-Ordinator',
+    //   imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693146223/Asset%20Mantle%20-%20Team%202023/Technical/apoorva_u2qoq3.png', 
+    //   techProfiles : (
+    //     <TechP>
+    //          <a className='linkiden' href="https://www.linkedin.com/in/apoorva-a65a18256/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+    //            <a className='twitter' href="https://twitter.com/GilhotraApoorva" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="fa-brands fa-x-twitter" style={{ verticalAlign: 'middle' }}/></a>
+    //            <a className='insta' href="https://www.instagram.com/verve_infinite/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+    //      </TechP>
+    //   )
+    // },
     {
       name: 'Vidushi Agarwal',
       role: 'Co-Ordinator',

@@ -55,10 +55,10 @@ const HeroSection = () => {
     const RightSubSectionJSX = (
         // Hero Image
         <img
-            src='/image/logo/1bg.png'
+            src='/image/logo/5bg.png'
             alt="hero_image"
             style={{
-                width: "95%",
+                width: "100%",
                 height: "auto",
                 paddingleft: "25%",
                 marginTop: "-100px",
@@ -70,12 +70,12 @@ const HeroSection = () => {
     return (
         <>
             <Container maxWidth="lg" sx={{ position: "relative" }}>
-                <Grid container alignItems="center">
+                <Grid container alignItems="center" justifyContent="space-around">
                     <Grid
                         item
-                        xs={12}
-                        md={5}
-                        py={5}
+                        xs={10}
+                        md={6}
+                        py={6}
                         sx={{ backgroundColor: "transparent" }}
 
                     >
@@ -121,18 +121,8 @@ const HeroSection = () => {
                             </HeroContent>
                         </HeroContainer>
                     </Grid>
-                    <Grid item xs={12} md={7} sx={{ backgroundColor: "transparent" }}>
+                    <Grid item xs={10} md={5}>
                         {RightSubSectionJSX}
-                        {/* <CubeWrapper >
-                <div className="cube">
-                  <div className="cube-side front"></div>
-                  <div className="cube-side back"></div>
-                  <div className="cube-side right"></div>
-                  <div className="cube-side left"></div>
-                  <div className="cube-side top"></div>
-                  <div className="cube-side bottom"></div>
-                </div>
-      </CubeWrapper> */}
                     </Grid>
                 </Grid>
             </Container>
