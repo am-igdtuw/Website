@@ -61,6 +61,8 @@ const HeroSection = () => {
                 width: "100%",
                 height: "auto",
                 paddingleft: "25%",
+                marginTop: "-100px",
+                alignItems: "center",
             }}
         />
     );
