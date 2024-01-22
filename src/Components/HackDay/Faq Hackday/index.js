@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import { HeroContainer, HeroH1, HeroContent, Accordian, Title, Content, Item, InputBox1,InputBox2,SubmitButton,FaqBox  } from './FaqElements.js';
+import { HeroContainer, HeroH1, HeroContent, Accordian, Title, Content, Item, InputBox1, InputBox2, SubmitButton, FaqBox } from './FaqElements.js';
 //import DynamicBackground from '../Herosection/DynamicBg.js';import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
@@ -34,57 +34,57 @@ const data = [
 
 const FAQHackday = () => {
     const [selected, setSelected] = useState(null);
-    const [email, setEmail ] = useState('');
-    const [doubt,setDoubt] = useState('');
-    
+    const [email, setEmail] = useState('');
+    const [doubt, setDoubt] = useState('');
+
     const handleEmailChange = (e) => {
         setEmail(e.target.value);
-      };
-    
-      const handleDoubtChange = (e) => {
+    };
+
+    const handleDoubtChange = (e) => {
         setDoubt(e.target.value);
-      };
-    
-      const handleSubmission = () => {
+    };
+
+    const handleSubmission = () => {
         // You can handle the submission of email and doubt here
         console.log('Email:', email);
         console.log('Doubt:', doubt);
-    
+
         // Reset the input values after submission if needed
         setEmail('');
         setDoubt('');
-      };
-    
-      const toggle = (i) => {
+    };
+
+    const toggle = (i) => {
         if (selected === i) {
-          setSelected(null);
+            setSelected(null);
         } else {
-          setSelected(i);
+            setSelected(i);
         }
-      };
+    };
 
     return (
         <>
-        <HeroContainer>
-            {/* <DynamicBackground  /> */}
-            <HeroContent>
-                <HeroH1>FAQs</HeroH1>
-                
-                <Accordian>
-                    {data.map((item, i) => (
-                        <Item key={i}>
-                            <Title onClick={() => toggle(i)}>
-                                <h2>{item.question}</h2>
-                                <span>{selected === i ? '-' : '+'}</span>
-                            </Title>
-                            <Content selected={selected === i}>
-                                {item.answer}
-                            </Content>
-                        </Item>
-                    ))}
-                </Accordian>
-            </HeroContent>
-        </HeroContainer>
+            <HeroContainer>
+                {/* <DynamicBackground  /> */}
+                <HeroContent>
+                    <HeroH1>FAQs</HeroH1>
+
+                    <Accordian>
+                        {data.map((item, i) => (
+                            <Item key={i}>
+                                <Title onClick={() => toggle(i)}>
+                                    <h2>{item.question}</h2>
+                                    <span>{selected === i ? '-' : '+'}</span>
+                                </Title>
+                                <Content selected={selected === i}>
+                                    {item.answer}
+                                </Content>
+                            </Item>
+                        ))}
+                    </Accordian>
+                </HeroContent>
+            </HeroContainer>
         </>
     );
 };

@@ -1,11 +1,15 @@
 import React from 'react'
 import Form from '../Components/FormSection/CollaborateUs';
+import Navbar from '../Components/Navbar';
+import Footer from '../Components/Footer';
 
 
 const CollaboratePage = () => {
   return (
     <div>
-        <Form /> 
+      <Navbar />
+      <Form />
+      <Footer />
     </div>
   );
 };
