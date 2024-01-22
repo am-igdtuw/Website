@@ -35,9 +35,11 @@ export const HeroContainer = styled.div`
 
   @media screen and (max-width: 480px) {
     ${'' /* font-size: 32px; */}
-    padding: 30px 20px;
-    width: 100%;
-    height: 1600px;
+    // padding: 30px 20px;
+    // width: 100%;
+    // height: 1600px;
+    margin-right:5px;
+    margin-bottom:5px;
   }
 
 `;
