@@ -109,10 +109,10 @@
 
 @keyframes dotMove {
   0%, 100% {
-    transform: rotate(180deg) translate(-110px, -10px) rotate(-180deg);
+    transform: rotate(180deg) translate(-85px, -10px) rotate(-180deg);
   }
   50% {
-    transform: rotate(0deg) translate(-111px, 10px) rotate(0deg);
+    transform: rotate(0deg) translate(-85px, 10px) rotate(0deg);
   }
 }
 @-webkit-keyframes letterStretch {

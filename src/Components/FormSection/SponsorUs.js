@@ -3,7 +3,7 @@ import toast from 'react-hot-toast';
 import { FaLinkedin,FaInstagram,FaTwitter, FaUser, FaEnvelope, FaPhone, FaBuilding, FaPager, FaPaperPlane, FaNewspaper } from 'react-icons/fa';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import image from '../../images/sponsorImg.jpg';
-//import Loader from '../Loader/loader.js';
+import Loader from '../Loader/loader.js';
 
 
 
@@ -224,7 +224,8 @@ const SponsorUsForm = () => {
       <div className="form-div">
         <div className="form-container">
           {loading ? (
-            "Loading . . ."
+            // "Loading . . ."
+            <Loader />
           ) : (
             <form onSubmit={handleSubmit}>
 
