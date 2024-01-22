@@ -13,8 +13,10 @@ export const Prizes = styled.div`
 export const PrizesCard = styled.div`
   padding: 50px;
   display: grid;
+  justify-content: center;
+  justify-items: center; /* Center-align items within the grid */
   grid-template-columns: repeat(3, 1fr);
-  align-items: center; /* Add this line to center-align items within the grid */
+  align-items: center;
 `;
 
 export const PrizesH1 = styled.h1`

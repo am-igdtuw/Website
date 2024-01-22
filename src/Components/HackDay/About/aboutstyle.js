@@ -69,7 +69,8 @@ border-radius: 25px;
 
 
 &:hover {
-  background: linear-gradient(45deg, #FFC640, #FFC640);
+//   background: linear-gradient(45deg, #FFC640, #FFC640);
+background:#696969;
   border: 0.5px solid #000000;
   color: #000000;
 }
