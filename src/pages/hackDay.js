@@ -10,7 +10,7 @@ const ProbStatementPage = () => {
   return (
     <div>
       <Navbar />
-      <ProbStatement />
+      {/* <ProbStatement /> */}
       <About />
       <Banner />
       <Prize />

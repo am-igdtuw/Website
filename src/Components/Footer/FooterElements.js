@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 // import logo from 'src/logo.svg'
 
 export const FooterContainer = styled.footer`
@@ -70,6 +70,7 @@ export const FooterLinkItems = styled.div`
 export const FooterLinkTitle = styled.h1`
  font-size: 18px;
  margin-bottom: 16px;
+ margin-right:12px;
  z-index: 2;
  font-weight:600;
  color:#fff;
@@ -78,6 +79,7 @@ export const FooterLink = styled(Link)`
  color: #FFC640;
  text-decoration: none;
  margin-bottom: 0.5rem;
+ margin-left:24px;
  font-size: 14px;
  z-index: 2;
  font-size: 16px;
@@ -112,7 +114,7 @@ export const SocialMediaWrap = styled.div`
  }
 `
 
- export const SocialLogo = styled.a`
+export const SocialLogo = styled.a`
   color: #fff;
  justify-self: start;
   cursor: pointer;

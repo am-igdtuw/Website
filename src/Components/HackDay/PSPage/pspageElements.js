@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const TextWrapper= styled.div`
+export const TextWrapper = styled.div`
      margin-top: 20px;
     margin-bottom: 0px;
     font-size: 18px;
@@ -170,12 +170,12 @@ export const ServicesP = styled.p`
     margin-left: -15px;
     box-sizing:border-box;
 `;
-export const InfoRow=styled.p`
+export const InfoRow = styled.p`
     position: relative;
     text-align: center;
     padding: 27px 27px 27px
 `;
-export const TopLine=styled.p`
+export const TopLine = styled.p`
  margin-bottom: 15px;
  color:black;
  font-size: 26px;

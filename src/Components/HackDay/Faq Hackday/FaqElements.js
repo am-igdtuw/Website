@@ -71,8 +71,8 @@ export const HeroH1 = styled.h1`
   ${'' /* font-family: 'Inter'; */}
   ${'' /* color: #fffdfa; */}
   font-style: normal;
-  font-size: 54px;
-  font-weight: 600;
+  font-size: 52px;
+  font-weight: 500;
   color: white;
 
   @media screen and (max-width: 1024px) {
@@ -102,7 +102,7 @@ export const HeroH1 = styled.h1`
 `;
 
 export const Accordian = styled.div`
-display: grid;
+ display: grid;
   grid-template-columns: repeat(2, 1fr);
 <<<<<<< HEAD
   gap: 20px;  
@@ -141,14 +141,14 @@ width: 100%;  // Adjust the width as needed
 `
 export const Title = styled.div`
   border-radius: 24px 24px 0px 0px;
-  padding: 20px;
+  padding: 16px;
   ${'' /* <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cardo&family=Edu+NSW+ACT+Foundation&display=swap" rel="stylesheet"> */}
   font-family: 'Poppins', sans-serif;
   ${'' /* font-family: 'Edu NSW ACT Foundation', cursive;   */}
   font-weight: 500;
-  font-size: 4 rem;
+  font-size: 1.5 rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
