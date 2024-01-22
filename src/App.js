@@ -12,7 +12,7 @@ import FaqPage from './pages/faq'
 //import MediaTeamPage from './pages/mediaTeam';
 //import ResearchTechTeam from './pages/researchTeam';
 import TeamPage from './pages/team';
-import SponsorUsForm from './pages/sponsorForm';
+import SponsorUsForm from './pages/sponsorPage';
 import CollaborateUsForm from './pages/collaborateForm';
 import HackDay from './pages/hackDay';
 import EventPagePseudo from './pages/eventpseudo';

@@ -80,7 +80,7 @@ const FaqSection = () => {
               if (response.ok) {
                   const data = await response.json();
                   //   console.log(data);
-                  toast.success("Thank you for connecting with us! We will get back to you soon.  🚀", {
+                  toast.success("Message received! Decryption in progress, expect a reply shortly!  🚀", {
                       position: "bottom-center",
                       style: {
                           width: "400px", 
@@ -92,7 +92,7 @@ const FaqSection = () => {
                   setMessage('');
               } else {
                   console.error('Submission failed');
-                  toast.error('Oops! Something went wrong. Please try again.', {
+                  toast.error('Uh-oh! Hit a blockchain snag. Refresh and try again! 🌐', {
                     position: "bottom-center",
                     style: {
                         width: "400px", 
@@ -103,7 +103,7 @@ const FaqSection = () => {
             }
           } catch (error) {
               console.error('Error:', error);
-              toast.error('Oops! Something went wrong. Please try again.', {
+              toast.error('Uh-oh! Hit a blockchain snag. Refresh and try again! 🌐', {
                 position: "bottom-center",
                 style: {
                     width: "400px", 
