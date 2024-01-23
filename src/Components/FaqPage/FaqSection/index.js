@@ -54,7 +54,21 @@ const FaqSection = () => {
       const handleSubmission = async(e) => {
           e.preventDefault();
           //   console.log(email, message);
+
+          // Validate if the message is not empty
+          if (!message.trim()) {
+            toast.error('Oops! It seems you forgot to ask your doubt.', {
+            position: 'bottom-center',
+            style: {
+                width: "400px",
+                background: "black",
+                color: "white",
+            },
+            });
+            return;
+          }
           
+          // email validation
           const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
           if (!emailRegex.test(email)) {
             toast.error('Please enter a valid email address.', {
