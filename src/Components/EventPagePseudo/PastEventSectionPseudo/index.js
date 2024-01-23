@@ -4,7 +4,7 @@ import Icon1 from "../../../images/mobileapp.png";
 import { InforContainer, InforWrapper, ServicesP } from './PastEventElement.js';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import './event.css';
+//import './event.css';
 
 const events = [
     {
