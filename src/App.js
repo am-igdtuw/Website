@@ -4,6 +4,7 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages';
 import EventPage from './pages/event'
+import Loader from './Components/Loader/loader'
 // import BlogPage from './pages/blogs'
 //import TechTeamPage from './pages/techTeam';
 import FaqPage from './pages/faq'
@@ -45,6 +46,8 @@ function App() {
         <Route exact path='/sponsorPage' element={<SponsorUsForm/>}/>
         <Route exact path='/collaboratePage' element={<CollaborateUsForm/>}/>
         <Route exact path='/hackday' element={<HackDay/>}/>
+        <Route exact path='/loader' element={<Loader/>}/>
+
            
       </Routes>
     </BrowserRouter>
