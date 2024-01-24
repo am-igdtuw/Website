@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-import { HomeSidebarData } from './HomesidebarData';
+import { HomeSidebarData } from './HomesidebarData.js';
 
 const StyledTeamSidebar = styled.div`
   position: sticky;
@@ -109,13 +109,13 @@ opacity: 0; /* Title initially hidden */
 }
 
 `;
-const TeamSidebar = () => {
+const HomeSidebar = () => {
   return (
     <StyledTeamSidebar>
     <div className='TeamSidebar'>
     <StyledSidebarList>
       
-      {SidebarData.map((val, key) => {
+      {HomeSidebarData.map((val, key) => {
         return (
           <StyledRow 
           key={key} 
@@ -140,4 +140,4 @@ const TeamSidebar = () => {
   )
 }
 
-export default HomeSidebar
+export default HomeSidebar;
