@@ -30,7 +30,7 @@ const HeroSection = () => {
         backgroundClip: "text",
         backgroundSize: "200%",
         backgroundPosition: "50% 50%",
-        fontSize: '53px',
+        fontSize: '3.7rem',
         fontWeight: '600',
         fontFamily: 'Exo 2, sans-serif',
         color: "transparent",
@@ -48,7 +48,8 @@ const HeroSection = () => {
             },
         },
         '@media screen and (max-width: 480px)': {
-            fontSize: '43px',
+            fontSize: '2.1rem',
+            fontWeight: '800',
         },
     };
 

@@ -72,7 +72,7 @@ const PastEventSectionPseudo = () => {
     // icon={<WorkIcon />}
   >
     <h3 className="vertical-timeline-element-title">Orientation and Treasure Hunt</h3>
-    <h4 className="vertical-timeline-element-subtitle">"Unlock the Frontend Frontier"</h4>
+    {/* <h4 className="vertical-timeline-element-subtitle">"Unlock the Frontend Frontier"</h4> */}
     <p>
     <img className="timeline-img" src='https://res.cloudinary.com/djv5kc7as/image/upload/v1688802647/Asset%20Mantle%20-%20Team%202023/Events/Screenshot_300_mgqx8x.png'></img>
       {/* Creative Direction, User Experience, Visual Design, Project Management, Team Leading */}
@@ -85,7 +85,7 @@ const PastEventSectionPseudo = () => {
     // icon={<WorkIcon />}
   >
     <h3 className="vertical-timeline-element-title">Find Global Career opp ortunities on Web3 and Metaverse</h3>
-    <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
+    {/* <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4> */}
     <p>
       <img className="timeline-img" src ="https://res.cloudinary.com/djv5kc7as/image/upload/v1688802648/Asset%20Mantle%20-%20Team%202023/Events/Screenshot_301_oeeode.png"></img>
       {/* Creative Direction, User Experience, Visual Design, SEO, Online Marketing */}
@@ -98,7 +98,7 @@ const PastEventSectionPseudo = () => {
     // icon={<WorkIcon />}
   >
     <h3 className="vertical-timeline-element-title">Intro to Web3 and its Career Scope</h3>
-    <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4>
+    {/* <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4> */}
     <p>
       <img className="timeline-img" src ="https://res.cloudinary.com/djv5kc7as/image/upload/v1688802647/Asset%20Mantle%20-%20Team%202023/Events/Screenshot_302_pgrxxz.png"></img>
       {/* User Experience, Visual Design */}
@@ -111,7 +111,7 @@ const PastEventSectionPseudo = () => {
     // icon={<WorkIcon />}
   >
     <h3 className="vertical-timeline-element-title">BFF Hackathon</h3>
-    <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
+    {/* <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4> */}
     <p>
       <img className="timeline-img" src ="https://res.cloudinary.com/djv5kc7as/image/upload/v1688802646/Asset%20Mantle%20-%20Team%202023/Events/Screenshot_303_cpvgip.png"></img>
       {/* User Experience, Visual Design */}
@@ -124,7 +124,7 @@ const PastEventSectionPseudo = () => {
     // icon={<SchoolIcon />}
   >
     <h3 className="vertical-timeline-element-title">FastN Session</h3>
-    <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
+    {/* <h4 className="vertical-timeline-element-subtitle">Online Course</h4> */}
     <p>
       <img className="timeline-img" src="https://res.cloudinary.com/djv5kc7as/image/upload/v1698596897/Asset%20Mantle%20-%20Team%202023/Events/Screenshot_315_hcwl6o.png"></img>
       {/* Strategy, Social Media */}
@@ -137,7 +137,7 @@ const PastEventSectionPseudo = () => {
     // icon={<SchoolIcon />}
   >
     <h3 className="vertical-timeline-element-title">Ideathon</h3>
-    <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4>
+    {/* <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4> */}
     <p>
       <img className="timeline-img" src="https://res.cloudinary.com/djv5kc7as/image/upload/v1698597655/Asset%20Mantle%20-%20Team%202023/Events/Screenshot_316_ilf1ht.png"></img>
       {/* Creative Direction, Visual Design */}
@@ -150,17 +150,17 @@ const PastEventSectionPseudo = () => {
     // icon={<SchoolIcon />}
   >
     <h3 className="vertical-timeline-element-title">Introduction to Crypto V/S Blockchain and Altcoins</h3>
-    <h4 className="vertical-timeline-element-subtitle">Certification</h4>
+    {/* <h4 className="vertical-timeline-element-subtitle">Certification</h4> */}
     <p>
       <img className="timeline-img" src="https://res.cloudinary.com/djv5kc7as/image/upload/v1698598489/Asset%20Mantle%20-%20Team%202023/Events/Screenshot_317_nle6lt.png"></img>
       {/* Creative Direction, User Experience, Visual Design */}
     </p>
   </VerticalTimelineElement>
  
-  <VerticalTimelineElement
+  {/* <VerticalTimelineElement
     iconStyle={{ background: '#ffc107', color: '#fff' }}
     // icon={<StarIcon />}
-  />
+  /> */}
 </VerticalTimeline>
           
           
@@ -171,7 +171,7 @@ const PastEventSectionPseudo = () => {
           
           
           
-          <InforContainer id="aboutSection">
+          {/* <InforContainer id="aboutSection">
               <InforWrapper>
                   <ServicesP>
                   {events.map((event) => (
@@ -185,7 +185,7 @@ const PastEventSectionPseudo = () => {
                       
                   </ServicesP>
               </InforWrapper>
-            </InforContainer>       
+            </InforContainer>        */}
       </>
   );
 }

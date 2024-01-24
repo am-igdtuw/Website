@@ -65,10 +65,11 @@ export const Imgbg = styled.div`
 export const HeroContent = styled.div`
     z-index: 3;
     position: absolute;
-    padding: 8px 24px;
+    padding: 8px 10px;
     display: flex;
     flex-direction: column;
     align-items: left;
+    width: 100%;
 
 `
 
@@ -82,20 +83,20 @@ export const HeroH1 = styled.h1`
     font-family: 'Exo 2', sans-serif;
     color: #FFFDFA;
     font-style: normal;
-    font-size: 53px;
+    font-size: 2.5rem;
     line-height: 1.1;
     font-weight: 600;
     color: white;
+    word-wrap: break-word;
     
 
     @media screen and (max-width: 768px){
-        font-size: 50px;
+        font-size: 2rem;
         font-weight:600;
     }
 
     @media screen and (max-width: 480px){
-        font-size: 43px;
-        font-weight:600;
+        font-size: 1.5rem;
     }
 `
 export const HeroD = styled.span`
@@ -144,7 +145,7 @@ export const HeroP = styled.p`
 
 
 export const HeroBtnWrapper = styled.div`
-    margin-top: 0 px;
+    margin-top: 0px;
     display: flex;
     flex-direction: row;
     align-items: center;
