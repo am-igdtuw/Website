@@ -131,7 +131,7 @@ const CollaborateUsForm = () => {
             <div className="form-element">
               <FaNewspaper className='FormIcons' />
               <label htmlFor="textarea"><i className="fa-solid fa-memo"></i></label>
-              <textarea placeholder="Sponsorship related query" id="textarea" name="message" rows="4" cols="50" value={formData.message} onChange={handleInputChange}></textarea><br />
+              <textarea placeholder="Collaboration related query" id="textarea" name="message" rows="4" cols="50" value={formData.message} onChange={handleInputChange}></textarea><br />
             </div>
 
             <div className="form-element">
