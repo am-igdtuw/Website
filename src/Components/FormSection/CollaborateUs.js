@@ -20,6 +20,8 @@ const CollaborateUsForm = () => {
     instagram: '',
   });
 
+
+
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -101,31 +103,32 @@ const CollaborateUsForm = () => {
             <div className="form-element">
               <FaUser className='FormIcons' />
               <label htmlFor="name"><i className="fa-solid fa-user"></i></label>
-              <input type="text" placeholder="Name" id="name" name="name" value={formData.name} onChange={handleInputChange} /><br />
+              <input type="text" placeholder="Name" id="name" name="name" value={formData.name} onChange={handleInputChange} required /><br />
             </div>
 
             <div className="form-element">
               <FaEnvelope className='FormIcons' />
               <label htmlFor="email"><i className="fa-solid fa-envelope"></i></label>
-              <input type="email" placeholder="Email" id="email" name="email" value={formData.email} onChange={handleInputChange} /><br />
+              <input type="email" placeholder="Email" id="email" name="email" value={formData.email} onChange={handleInputChange} required /><br />
             </div>
 
-            <div className="form-element">
+            {/* <div className="form-element">
               <FaEnvelope className='FormIcons' />
               <label htmlFor="email"><i className="fa-solid fa-envelope"></i></label>
-              <input type="email" placeholder="Alternate Email" id="altEmail" name="altEmail" value={formData.altEmail} onChange={handleInputChange} /><br />
-            </div>
+              <input type="email" placeholder="Alternate Email" id="altEmail" name="altEmail" value={formData.altEmail} onChange={handleInputChange} /><br /> */}
+            {/* </div> */}
 
             <div className="form-element">
               <FaPhone className='FormIcons' />
               <label htmlFor="phone_no"><i className="fa-solid fa-phone"></i></label>
-              <input type="number" placeholder="Phone No." id="phone_no" name="contactNumber" value={formData.contactNumber} onChange={handleInputChange} /><br />
+              <input type="number" placeholder="Phone No." id="phone_no" name="contactNumber" value={formData.contactNumber} onChange={handleInputChange} min="1"
+                max="9999999999" required /><br />
             </div>
 
             <div className="form-element">
               <FaBuilding className='FormIcons' />
               <label htmlFor="Company/Organisation"><i className="fa-solid fa-building"></i></label>
-              <input type="text" placeholder="Company/Organisation" id="Company/Organisation" name="company" value={formData.company} onChange={handleInputChange} /><br />
+              <input type="text" placeholder="Company/Organisation" id="Company/Organisation" name="company" value={formData.company} onChange={handleInputChange} required /><br />
             </div>
 
             <div className="form-element">
