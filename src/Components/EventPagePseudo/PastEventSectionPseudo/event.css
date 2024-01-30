@@ -1,7 +1,10 @@
-.timeline-img{
+/* .timeline-img{
     height:400px;
     width:400px;
-};
+}; */
+
+.timeline-img { height: auto; max-width: 100%; width: 400px; }
+
 
 .white-date {
     color: white;

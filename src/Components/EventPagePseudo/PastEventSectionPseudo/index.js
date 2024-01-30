@@ -66,7 +66,7 @@ const PastEventSectionPseudo = () => {
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
     contentStyle={{ background: '#ffc107', color: '#fff' }}
-    contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+    contentArrowStyle={{ borderRight: '7px solid  #ffc107' }}
     date="JANUARY"
     iconStyle={{ background:"#ffc107", color: '#fff' }}
     // icon={<WorkIcon />}
@@ -80,6 +80,7 @@ const PastEventSectionPseudo = () => {
   </VerticalTimelineElement>
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
+    contentStyle={{ background: '#ffc107', color: '#fff' }}    
     date="FEBRUARY"
     iconStyle={{ background: '#ffc107', color: '#fff' }}
     // icon={<WorkIcon />}
@@ -93,6 +94,8 @@ const PastEventSectionPseudo = () => {
   </VerticalTimelineElement>
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
+    contentStyle={{ background: '#ffc107', color: '#fff' }}
+    contentArrowStyle={{ borderRight: '7px solid   #ffc107' }}
     date="FEBRAURY"
     iconStyle={{ background: '#ffc107', color: '#fff' }}
     // icon={<WorkIcon />}
@@ -106,6 +109,7 @@ const PastEventSectionPseudo = () => {
   </VerticalTimelineElement>
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
+    contentStyle={{ background: '#ffc107', color: '#fff' }}
     date="APRIL"
     iconStyle={{ background: '#ffc107', color: '#fff' }}
     // icon={<WorkIcon />}
@@ -119,6 +123,8 @@ const PastEventSectionPseudo = () => {
   </VerticalTimelineElement>
   <VerticalTimelineElement
     className="vertical-timeline-element--education"
+    contentStyle={{ background: '#ffc107', color: '#fff' }}
+    contentArrowStyle={{ borderRight: '7px solid   #ffc107' }}
     date="AUGUST"
     iconStyle={{ background: '#ffc107', color: '#fff' }}
     // icon={<SchoolIcon />}
@@ -132,6 +138,7 @@ const PastEventSectionPseudo = () => {
   </VerticalTimelineElement>
   <VerticalTimelineElement
     className="vertical-timeline-element--education"
+    contentStyle={{ background: '#ffc107', color: '#fff' }}
     date="AUGUST"
     iconStyle={{ background: '#ffc107', color: '#fff' }}
     // icon={<SchoolIcon />}
@@ -145,6 +152,8 @@ const PastEventSectionPseudo = () => {
   </VerticalTimelineElement>
   <VerticalTimelineElement
     className="vertical-timeline-element--education"
+    contentStyle={{ background: '#ffc107', color: '#fff' }}
+    contentArrowStyle={{ borderRight: '7px solid   #ffc107' }}
     date="OCTOBER"
     iconStyle={{ background: '#ffc107', color: '#fff' }}
     // icon={<SchoolIcon />}
