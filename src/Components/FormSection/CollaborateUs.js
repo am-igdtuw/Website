@@ -121,8 +121,7 @@ const CollaborateUsForm = () => {
             <div className="form-element">
               <FaPhone className='FormIcons' />
               <label htmlFor="phone_no"><i className="fa-solid fa-phone"></i></label>
-              <input type="number" placeholder="Phone No." id="phone_no" name="contactNumber" value={formData.contactNumber} onChange={handleInputChange} min="1"
-                max="9999999999" required /><br />
+              <input type="number" placeholder="Phone No." id="phone_no" name="contactNumber" value={formData.contactNumber} onChange={handleInputChange} min="1000000000" required /><br />
             </div>
 
             <div className="form-element">

@@ -36,7 +36,7 @@ body {
     opacity: 1;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 11px;
 }
 
 h1 {
@@ -60,7 +60,7 @@ form input[type="number"],
 form textarea {
     width: 100%;
     padding: 10px;
-    margin-bottom: 15px;
+    margin: 8px 0;
     border: 1px solid #ccc;
     border-radius: 3px;
     font-size: 16px;
@@ -91,7 +91,6 @@ form label i {
 
 form textarea {
     resize: vertical;
-    /* */
 }
 
 /* Style the social media input fields */
@@ -105,7 +104,7 @@ form input[type="text"][placeholder="LinkedIn"] {
     border-radius: 3px;
     padding: 10px;
     width: 100%;
-    margin-bottom: 15px;
+    margin: 8px 0;
     font-size: 16px;
 }
 
@@ -124,9 +123,20 @@ form input[type="submit"] {
 }
 
 .form-container {
-    /* background-color: rgba(255, 140, 0); */
-    background: linear-gradient(90deg, #1a2dae, #55e7fc);
+    background: linear-gradient(90deg, #66037c 1%, #FF8C00 41%);
+    /* background: linear-gradient(90deg, #f1c40f, #420253); */
+    /* background: linear-gradient(90deg, hwb(328 5% 18%), #420253); */
+    /* background: linear-gradient(90deg, hwb(328 5% 18%), #420253); */
+    /* background: #FF8C00; */
+    /* background: #FFA500; */
     color: white;
+    /* opacity: 0.5; */
+
+}
+
+.form-container:hover {
+    box-shadow: 4px 4px #fff, 4px 4px 0 0 #fff;
+    transform: translate(-1px, -1px);
 }
 
 h1,
@@ -146,8 +156,9 @@ input[type="submit"] {
     margin: 0 auto;
     padding: 20px;
     border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px solid #fff;
+    box-shadow: 2px 2px 0 0 #fff, 2px 2px 0 0 #fff;
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
 }
 
 .heading {
@@ -185,7 +196,7 @@ form textarea {
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
-    border-radius: 3px;
+    border-radius: 7px;
     font-size: 16px;
     color: #333;
     /* Change input text color to dark gray */
@@ -214,7 +225,7 @@ form input[type="submit"] {
 
 
 form input[type="submit"]:hover {
-    background-color: #1a2dae;
+    background-color: #030004;
     box-shadow: 3px 3px #fff, 6px 6px 0 0 #fff;
     transform: translate(-1px, -1px);
 
@@ -238,7 +249,7 @@ form input[type="text"][placeholder="LinkedIn"] {
     /* background-color: #000000; */
     color: #333;
     border: 1px solid #ccc;
-    border-radius: 3px;
+    border-radius: 7px;
     padding: 10px;
     width: 100%;
     margin-bottom: 15px;
@@ -260,4 +271,11 @@ form input[type="submit"] {
 
 .form-element {
     display: flex;
+    /* align-content: center; */
+}
+
+.FormIcons {
+    margin: auto;
+    height: 7%;
+    width: 6.5%;
 }

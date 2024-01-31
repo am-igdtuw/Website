@@ -163,8 +163,8 @@ const SponsorUsForm = () => {
                 name="contactNumber"
                 value={formData.contactNumber}
                 onChange={handleInputChange}
-                min="1"
-                max="9999999999"
+                min="1000000000"
+                // max="9999999999"
                 required
               />
 
