@@ -1,0 +1,16 @@
+.sidebar-container {
+    background: linear-gradient(45deg, black, #f39c12); /* Gradient background */
+    border-radius: 10px; /* Curved corners */
+    padding: 10px; /* Add padding for better visibility */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  }
+
+  .social-icon {
+    font-size: 2rem;
+    margin: 10px;
+    color: #fff;
+  }
+
+  .social-icon:hover {
+    color: #0d6efd; /* Change color on hover */
+  }
