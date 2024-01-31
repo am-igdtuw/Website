@@ -24,7 +24,7 @@
   left: 200px;
   width: 50px;
   height: 15px;
-  background: #fff;
+  /* background:red; */
 }
 
 .logolo {
@@ -49,7 +49,7 @@
   left: 115px;
   width: 6px;
   height: 6px;
-  background: #ffffff;
+  background:white;
   border-radius: 50%;
   -webkit-animation: dotMove 1800ms cubic-bezier(0.25, 0.25, 0.75, 0.75) infinite;
           animation: dotMove 1800ms cubic-bezier(0.25, 0.25, 0.75, 0.75) infinite;
@@ -88,21 +88,21 @@
   left: 2px;
   width: 9px;
   height: 15px;
-  background: #fff;
+  /* background: #fff; */
 }
 
 @-webkit-keyframes dotMove {
   0%, 100% {
-    transform: rotate(180deg) translate(-110px, -10px) rotate(-180deg);
+    transform: rotate(180deg) translate(110px, 300px) rotate(-180deg);
   }
   50% {
-    transform: rotate(0deg) translate(-111px, 10px) rotate(0deg);
+    transform: rotate(0deg) translate(110px, 300px) rotate(0deg);
   }
 }
 
 @keyframes dotMove {
   0%, 100% {
-    transform: rotate(180deg) translate(-85px, -10px) rotate(-180deg);
+    transform: rotate(180deg) translate(-85px, 10px) rotate(-180deg);
   }
   50% {
     transform: rotate(0deg) translate(-85px, 10px) rotate(0deg);

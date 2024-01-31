@@ -1,8 +1,38 @@
-.timeline-img{
+/* .timeline-img{
     height:400px;
     width:400px;
-};
+}; */
 
-.white-date {
-    color: white;
+.timeline-img {
+    margin-left: 30px; 
+    height: auto; 
+    max-width: 100%; 
+    width: 400px; 
+    border: 9px solid white;
+    border-radius: 20px;
+    }
+
+
+/* [date='JANUARY'] {
+    color: red;
+  } */
+
+  .month-date{
+    font-weight: bolder;
+    color:white;
+    font-size: larger;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .vertical-timeline-element-title{
+    margin-left: 30px;
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+
+    
+  }
+  .vertical-timeline-hr{
+    color: black;
+    border-width: 30px;
   }

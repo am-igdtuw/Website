@@ -5,12 +5,12 @@ import logo from './AMlogo.png';
 const Loader = () => {
   return (
       <div className='loader-container'>
-        <div className="container">
-          <div className="divider" aria-hidden="true"></div>
+        {/* <div className="container"> */}
+          {/* <div className="divider" aria-hidden="true"></div> */}
           <p className="loading-text" aria-label="Loading">
-            <span className="letter" aria-hidden="true">
+            {/* <span className="letter" aria-hidden="true"> */}
               <img src={logo} alt="Logo" className='logolo' />
-            </span>
+            {/* </span> */}
             <span className="letter" aria-hidden="true">s</span>
             <span className="letter" aria-hidden="true">s</span>
             <span className="letter" aria-hidden="true">e</span>
@@ -23,7 +23,7 @@ const Loader = () => {
             <span className="letter" aria-hidden="true">e</span>
           </p>
       </div>
-    </div>
+    // </div>
   );
 };
 
