@@ -150,14 +150,15 @@ linear-gradient(135deg, #8a3ab9, #e959a1)
   
   .popup-text2 {
     color: #f98dfd; 
-    font-size: 15px; 
-    margin-top: 20px;
+    font-size: 13px; 
+    
     font-weight: bold;
   }
   
   .popup-text3 {
     color: #ffffff; 
     font-size: 22px; 
+    margin-top: 20px;
     font-weight: bold;
   }
 

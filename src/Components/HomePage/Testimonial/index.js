@@ -63,7 +63,7 @@ const Card = ({ img }) => {
       />
 
       <AvatarContent>
-        we conducted out first fun event ‘Treasure Hunt’, with over fifteen teams participating
+        We conducted out first fun event ‘Treasure Hunt’, with over fifteen teams participating
         following the orientation💰💰.
         <a href="/event" style={{ color: yellow[500] }}> Read More...</a>
         {/* The zestful participants rushed about looking for clues🗝,

@@ -55,11 +55,11 @@ export default function Modal(props) {
           <img className="popup-img" src={PopUp} alt="Popup" />
           <div className="popup-text">
           <div className="popup-text1"> ASSETMERKLE Presents   </div>
-          <div className="popup-text2">Twitter/X Spaces Podcast</div>
-          <div className="popup-text3">CHAIN PE CHARCHA</div>
+          <div className="popup-text3">FLEEK DEPLOY</div>
+          <div className="popup-text2">Explore the decentralized edge.</div>
           <button
               className="popup-button"
-              onClick={() => (window.location.href = 'https://x.com/AM_igdtuw/status/1742247033535373781?s=20')}
+              onClick={() => (window.location.href = 'https://www.instagram.com/p/C2yxgUDS8_t/?utm_source=ig_web_button_share_sheet&igsh=MzRlODBiNWFlZA==')}
             >
               Find it here!
             </button>

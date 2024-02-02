@@ -24,7 +24,8 @@ body {
 }
 
 .form-div {
-    margin-bottom: 100px;
+    margin-top: 100px;
+    margin-bottom: 250px;
 
 }
 
@@ -74,7 +75,7 @@ form input[type="submit"] {
     color: #fff;
     padding: 10px 20px;
     border: none;
-    border-radius: 3px;
+    border-radius: 4px;
     font-size: 18px;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -99,7 +100,7 @@ form input[type="text"][placeholder="Instagram"],
 form input[type="text"][placeholder="LinkedIn"] {
     background-color: #f5f5f5;
     /* Background color for social media input fields */
-    color: #333;
+    color: #333333;
     border: 1px solid #ccc;
     border-radius: 3px;
     padding: 10px;
@@ -123,7 +124,7 @@ form input[type="submit"] {
 }
 
 .form-container {
-    background: linear-gradient(90deg, #66037c 1%, #FF8C00 41%);
+    background: linear-gradient(90deg, #360242 7%, #b56400 41%);
     /* background: linear-gradient(90deg, #f1c40f, #420253); */
     /* background: linear-gradient(90deg, hwb(328 5% 18%), #420253); */
     /* background: linear-gradient(90deg, hwb(328 5% 18%), #420253); */
@@ -162,7 +163,7 @@ input[type="submit"] {
 }
 
 .heading {
-    margin-top: 29px;
+    margin-top: 80px;
 }
 
 h1 {
@@ -207,7 +208,7 @@ form textarea {
 
 /* Style the submit button */
 form input[type="submit"] {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     /* Change to your desired button background color */
     color: #fff;
     padding: 10px 20px;

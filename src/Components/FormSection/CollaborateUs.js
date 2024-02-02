@@ -126,8 +126,8 @@ const CollaborateUsForm = () => {
 
             <div className="form-element">
               <FaBuilding className='FormIcons' />
-              <label htmlFor="Company/Organisation"><i className="fa-solid fa-building"></i></label>
-              <input type="text" placeholder="Company/Organisation" id="Company/Organisation" name="company" value={formData.company} onChange={handleInputChange} required /><br />
+              <label htmlFor="Organisation/Company"><i className="fa-solid fa-building"></i></label>
+              <input type="text" placeholder="Organisation/Company" id="Organisation/Company" name="organization" value={formData.company} onChange={handleInputChange} required /><br />
             </div>
 
             <div className="form-element">
