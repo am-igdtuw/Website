@@ -32,3 +32,6 @@ export const ServicesP = styled.div`
     margin-left: -15px;
     box-sizing:border-box;
 `;
+
+export const Date=styled.div`
+` ;

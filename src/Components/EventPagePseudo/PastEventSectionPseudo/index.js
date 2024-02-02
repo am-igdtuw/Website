@@ -1,7 +1,7 @@
 import React from 'react';
 import EventCards from '../EventCards/EventCards.js';
 import Icon1 from "../../../images/mobileapp.png";
-import { InforContainer, InforWrapper, ServicesP } from './PastEventElement.js';
+import { InforContainer, InforWrapper, ServicesP,Date } from './PastEventElement.js';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import './event.css';
@@ -61,79 +61,30 @@ const events = [
 const PastEventSectionPseudo = () => {
   return (
       <>
-      
+<Date></Date>   
 <VerticalTimeline>
-  <VerticalTimelineElement
-    className="vertical-timeline-element--work"
-    contentStyle={{ background: '#ffc107', color: '#fff' }}
-    contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-    date="JANUARY"
-    iconStyle={{ background:"#ffc107", color: '#fff' }}
-    // icon={<WorkIcon />}
-  >
-    <h3 className="vertical-timeline-element-title">Orientation and Treasure Hunt</h3>
-    {/* <h4 className="vertical-timeline-element-subtitle">"Unlock the Frontend Frontier"</h4> */}
-    <p>
-    <img className="timeline-img" src='https://res.cloudinary.com/djv5kc7as/image/upload/v1688802647/Asset%20Mantle%20-%20Team%202023/Events/Screenshot_300_mgqx8x.png'></img>
-      {/* Creative Direction, User Experience, Visual Design, Project Management, Team Leading */}
-    </p>
-  </VerticalTimelineElement>
-  <VerticalTimelineElement
-    className="vertical-timeline-element--work"
-    date="FEBRUARY"
-    iconStyle={{ background: '#ffc107', color: '#fff' }}
-    // icon={<WorkIcon />}
-  >
-    <h3 className="vertical-timeline-element-title">Find Global Career opp ortunities on Web3 and Metaverse</h3>
-    {/* <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4> */}
-    <p>
-      <img className="timeline-img" src ="https://res.cloudinary.com/djv5kc7as/image/upload/v1688802648/Asset%20Mantle%20-%20Team%202023/Events/Screenshot_301_oeeode.png"></img>
-      {/* Creative Direction, User Experience, Visual Design, SEO, Online Marketing */}
-    </p>
-  </VerticalTimelineElement>
-  <VerticalTimelineElement
-    className="vertical-timeline-element--work"
-    date="FEBRAURY"
-    iconStyle={{ background: '#ffc107', color: '#fff' }}
-    // icon={<WorkIcon />}
-  >
-    <h3 className="vertical-timeline-element-title">Intro to Web3 and its Career Scope</h3>
-    {/* <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4> */}
-    <p>
-      <img className="timeline-img" src ="https://res.cloudinary.com/djv5kc7as/image/upload/v1688802647/Asset%20Mantle%20-%20Team%202023/Events/Screenshot_302_pgrxxz.png"></img>
-      {/* User Experience, Visual Design */}
-    </p>
-  </VerticalTimelineElement>
-  <VerticalTimelineElement
-    className="vertical-timeline-element--work"
-    date="APRIL"
-    iconStyle={{ background: '#ffc107', color: '#fff' }}
-    // icon={<WorkIcon />}
-  >
-    <h3 className="vertical-timeline-element-title">BFF Hackathon</h3>
-    {/* <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4> */}
-    <p>
-      <img className="timeline-img" src ="https://res.cloudinary.com/djv5kc7as/image/upload/v1688802646/Asset%20Mantle%20-%20Team%202023/Events/Screenshot_303_cpvgip.png"></img>
-      {/* User Experience, Visual Design */}
-    </p>
-  </VerticalTimelineElement>
-  <VerticalTimelineElement
+<VerticalTimelineElement
     className="vertical-timeline-element--education"
-    date="AUGUST"
-    iconStyle={{ background: '#ffc107', color: '#fff' }}
+    contentStyle={{ background: '#e09f3e', color: '#fff' }}
+    contentArrowStyle={{ borderRight: '7px solid   #e09f3e' }}
+    date="OCTOBER"
+    dateClassName='month-date'
+    iconStyle={{ background: '#e09f3e', color: '#fff' }}
     // icon={<SchoolIcon />}
   >
-    <h3 className="vertical-timeline-element-title">FastN Session</h3>
-    {/* <h4 className="vertical-timeline-element-subtitle">Online Course</h4> */}
+    <h3 className="vertical-timeline-element-title">Introduction to Crypto V/S Blockchain and Altcoins</h3>
+    {/* <h4 className="vertical-timeline-element-subtitle">Certification</h4> */}
     <p>
-      <img className="timeline-img" src="https://res.cloudinary.com/djv5kc7as/image/upload/v1698596897/Asset%20Mantle%20-%20Team%202023/Events/Screenshot_315_hcwl6o.png"></img>
-      {/* Strategy, Social Media */}
+      <img className="timeline-img" src="https://res.cloudinary.com/djv5kc7as/image/upload/v1698598489/Asset%20Mantle%20-%20Team%202023/Events/Screenshot_317_nle6lt.png"></img>
+      {/* Creative Direction, User Experience, Visual Design */}
     </p>
   </VerticalTimelineElement>
   <VerticalTimelineElement
     className="vertical-timeline-element--education"
+    contentStyle={{ background: '#e09f3e', color: '#fff' }}
     date="AUGUST"
-    iconStyle={{ background: '#ffc107', color: '#fff' }}
+    dateClassName='month-date'
+    iconStyle={{ background: '#e09f3e', color: '#fff' }}
     // icon={<SchoolIcon />}
   >
     <h3 className="vertical-timeline-element-title">Ideathon</h3>
@@ -145,17 +96,92 @@ const PastEventSectionPseudo = () => {
   </VerticalTimelineElement>
   <VerticalTimelineElement
     className="vertical-timeline-element--education"
-    date="OCTOBER"
-    iconStyle={{ background: '#ffc107', color: '#fff' }}
+    contentStyle={{ background: '#e09f3e', color: '#fff' }}
+    contentArrowStyle={{ borderRight: '7px solid   #e09f3e' }}
+    date="AUGUST"
+    dateClassName='month-date'
+    iconStyle={{ background: '#e09f3e', color: '#fff' }}
     // icon={<SchoolIcon />}
   >
-    <h3 className="vertical-timeline-element-title">Introduction to Crypto V/S Blockchain and Altcoins</h3>
-    {/* <h4 className="vertical-timeline-element-subtitle">Certification</h4> */}
+    <h3 className="vertical-timeline-element-title">FastN Session</h3>
+    {/* <h4 className="vertical-timeline-element-subtitle">Online Course</h4> */}
     <p>
-      <img className="timeline-img" src="https://res.cloudinary.com/djv5kc7as/image/upload/v1698598489/Asset%20Mantle%20-%20Team%202023/Events/Screenshot_317_nle6lt.png"></img>
-      {/* Creative Direction, User Experience, Visual Design */}
+      <img className="timeline-img" src="https://res.cloudinary.com/djv5kc7as/image/upload/v1698596897/Asset%20Mantle%20-%20Team%202023/Events/Screenshot_315_hcwl6o.png"></img>
+      {/* Strategy, Social Media */}
     </p>
   </VerticalTimelineElement>
+  <VerticalTimelineElement
+    className="vertical-timeline-element--work"
+    contentStyle={{ background: '#e09f3e', color: '#fff' }}
+    date="APRIL"
+    dateClassName='month-date'
+    iconStyle={{ background: '#e09f3e', color: '#fff' }}
+    // icon={<WorkIcon />}
+  >
+    <h3 className="vertical-timeline-element-title">BFF Hackathon</h3>
+    {/* <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4> */}
+    <p>
+      <img className="timeline-img" src ="https://res.cloudinary.com/djv5kc7as/image/upload/v1688802646/Asset%20Mantle%20-%20Team%202023/Events/Screenshot_303_cpvgip.png"></img>
+      {/* User Experience, Visual Design */}
+    </p>
+  </VerticalTimelineElement>
+  <VerticalTimelineElement
+    className="vertical-timeline-element--work"
+    contentStyle={{ background: '#e09f3e', color: '#fff' }}
+    contentArrowStyle={{ borderRight: '7px solid   #e09f3e' }}
+    date="FEBRUARY"
+    dateClassName='month-date'
+    iconStyle={{ background: '#e09f3e', color: '#fff' }}
+    // icon={<WorkIcon />}
+  >
+    <h3 className="vertical-timeline-element-title">Intro to Web3 and its Career Scope</h3>
+    {/* <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4> */}
+    <p>
+      <img className="timeline-img" src ="https://res.cloudinary.com/djv5kc7as/image/upload/v1688802647/Asset%20Mantle%20-%20Team%202023/Events/Screenshot_302_pgrxxz.png"></img>
+      {/* User Experience, Visual Design */}
+    </p>
+  </VerticalTimelineElement>
+  <VerticalTimelineElement
+    className="vertical-timeline-element--work"
+    contentStyle={{ background: '#e09f3e', color: '#fff' }}    
+    date="FEBRUARY"
+    dateClassName='month-date'
+    iconStyle={{ background: '#e09f3e', color: '#fff' }}
+    // icon={<WorkIcon />}
+  >
+    <h3 className="vertical-timeline-element-title">Find Global Career opp ortunities on Web3 and Metaverse</h3>
+    {/* <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4> */}
+    <p>
+      <img className="timeline-img" src ="https://res.cloudinary.com/djv5kc7as/image/upload/v1688802648/Asset%20Mantle%20-%20Team%202023/Events/Screenshot_301_oeeode.png"></img>
+      {/* Creative Direction, User Experience, Visual Design, SEO, Online Marketing */}
+    </p>
+  </VerticalTimelineElement>
+  <VerticalTimelineElement
+    className="vertical-timeline-element--work"
+    contentStyle={{ background: '#e09f3e', color: '#fff' }}
+    contentArrowStyle={{ borderRight: '7px solid  #e09f3e' }}
+    // <Date>
+    date="JANUARY"
+    dateClassName='month-date'
+    // </Date>
+
+    iconStyle={{ background:"#e09f3e", color: '#fff' }}
+    // icon={<WorkIcon />}
+  >
+    <h3 className="vertical-timeline-element-title">Orientation and Treasure Hunt</h3>
+    {/* <h4 className="vertical-timeline-element-subtitle">"Unlock the Frontend Frontier"</h4> */}
+    <p>
+    <img className="timeline-img" src='https://res.cloudinary.com/djv5kc7as/image/upload/v1688802647/Asset%20Mantle%20-%20Team%202023/Events/Screenshot_300_mgqx8x.png'></img>
+      {/* Creative Direction, User Experience, Visual Design, Project Management, Team Leading */}
+    </p>
+  </VerticalTimelineElement>
+  
+  
+  
+  
+ 
+ 
+  
  
   {/* <VerticalTimelineElement
     iconStyle={{ background: '#ffc107', color: '#fff' }}
