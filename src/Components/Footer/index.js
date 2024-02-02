@@ -48,7 +48,8 @@ const Footer = () => {
               <FooterLink to="/">Contact</FooterLink>
               {/* <FooterLink to="/">Support</FooterLink>
                         <FooterLink to="/">Destinations</FooterLink> */}
-              <FooterLink to="/">Collaborate</FooterLink>
+              <FooterLink to="/sponsorPage">Sponsor</FooterLink>
+              <FooterLink to="/collaboratePage">Collaborate</FooterLink>
               <FooterLink to="/faq">FAQs</FooterLink>
             </FooterLinkItems>
             {/* <Gap /> */}
