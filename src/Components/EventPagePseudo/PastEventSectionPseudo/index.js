@@ -67,7 +67,7 @@ const PastEventSectionPseudo = () => {
     className="vertical-timeline-element--education"
     contentStyle={{ background: '#e09f3e', color: '#fff' }}
     contentArrowStyle={{ borderRight: '7px solid   #e09f3e' }}
-    date="OCTOBER"
+    date="06 OCTOBER 2023"
     dateClassName='month-date'
     iconStyle={{ background: '#e09f3e', color: '#fff' }}
     // icon={<SchoolIcon />}
@@ -82,7 +82,7 @@ const PastEventSectionPseudo = () => {
   <VerticalTimelineElement
     className="vertical-timeline-element--education"
     contentStyle={{ background: '#e09f3e', color: '#fff' }}
-    date="AUGUST"
+    date="19 AUGUST 2023"
     dateClassName='month-date'
     iconStyle={{ background: '#e09f3e', color: '#fff' }}
     // icon={<SchoolIcon />}
@@ -98,7 +98,7 @@ const PastEventSectionPseudo = () => {
     className="vertical-timeline-element--education"
     contentStyle={{ background: '#e09f3e', color: '#fff' }}
     contentArrowStyle={{ borderRight: '7px solid   #e09f3e' }}
-    date="AUGUST"
+    date="06 AUGUST 2023"
     dateClassName='month-date'
     iconStyle={{ background: '#e09f3e', color: '#fff' }}
     // icon={<SchoolIcon />}
@@ -113,7 +113,7 @@ const PastEventSectionPseudo = () => {
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
     contentStyle={{ background: '#e09f3e', color: '#fff' }}
-    date="APRIL"
+    date="01-02 APRIL 2023"
     dateClassName='month-date'
     iconStyle={{ background: '#e09f3e', color: '#fff' }}
     // icon={<WorkIcon />}
@@ -129,7 +129,7 @@ const PastEventSectionPseudo = () => {
     className="vertical-timeline-element--work"
     contentStyle={{ background: '#e09f3e', color: '#fff' }}
     contentArrowStyle={{ borderRight: '7px solid   #e09f3e' }}
-    date="FEBRUARY"
+    date="13 FEBRUARY 2023"
     dateClassName='month-date'
     iconStyle={{ background: '#e09f3e', color: '#fff' }}
     // icon={<WorkIcon />}
@@ -144,7 +144,7 @@ const PastEventSectionPseudo = () => {
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
     contentStyle={{ background: '#e09f3e', color: '#fff' }}    
-    date="FEBRUARY"
+    date="01 FEBRUARY 2023"
     dateClassName='month-date'
     iconStyle={{ background: '#e09f3e', color: '#fff' }}
     // icon={<WorkIcon />}
@@ -161,7 +161,7 @@ const PastEventSectionPseudo = () => {
     contentStyle={{ background: '#e09f3e', color: '#fff' }}
     contentArrowStyle={{ borderRight: '7px solid  #e09f3e' }}
     // <Date>
-    date="JANUARY"
+    date="19 JANUARY 2023"
     dateClassName='month-date'
     // </Date>
 
