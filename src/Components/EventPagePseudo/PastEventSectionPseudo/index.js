@@ -6,57 +6,57 @@ import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timel
 import 'react-vertical-timeline-component/style.min.css';
 import './event.css';
 
-const events = [
-    {
-        index:1,
-        heading: 'Orientation and Treasure Hunt',
-        subheading: "Unlock the Frontend Frontier",
-        icon:        'https://res.cloudinary.com/djv5kc7as/image/upload/v1688802647/Asset%20Mantle%20-%20Team%202023/Events/Screenshot_300_mgqx8x.png',
+// const events = [
+//     {
+//         index:1,
+//         heading: 'Orientation and Treasure Hunt',
+//         subheading: "Unlock the Frontend Frontier",
+//         icon:        'https://res.cloudinary.com/djv5kc7as/image/upload/v1688802647/Asset%20Mantle%20-%20Team%202023/Events/Screenshot_300_mgqx8x.png',
 
-      },
-    {
-        index:2,
-        heading: 'Find Global Career opp ortunities on Web3 and Metaverse',
-        subheading: "Description for another event goes here.",
-        icon:        'https://res.cloudinary.com/djv5kc7as/image/upload/v1688802648/Asset%20Mantle%20-%20Team%202023/Events/Screenshot_301_oeeode.png',
+//       },
+//     {
+//         index:2,
+//         heading: 'Find Global Career opp ortunities on Web3 and Metaverse',
+//         subheading: "Description for another event goes here.",
+//         icon:        'https://res.cloudinary.com/djv5kc7as/image/upload/v1688802648/Asset%20Mantle%20-%20Team%202023/Events/Screenshot_301_oeeode.png',
 
-      },
-    {
-        index:3,
-        heading: 'Intro to Web3 and its Career Scope',
-        subheading: "Description for yet another event.",
-        icon:        'https://res.cloudinary.com/djv5kc7as/image/upload/v1688802647/Asset%20Mantle%20-%20Team%202023/Events/Screenshot_302_pgrxxz.png',
+//       },
+//     {
+//         index:3,
+//         heading: 'Intro to Web3 and its Career Scope',
+//         subheading: "Description for yet another event.",
+//         icon:        'https://res.cloudinary.com/djv5kc7as/image/upload/v1688802647/Asset%20Mantle%20-%20Team%202023/Events/Screenshot_302_pgrxxz.png',
 
-      },
-      {
-        index:4,
-        heading: 'BFF Hackathon',
-        subheading: "Description for another event goes here.",
-        icon:         'https://res.cloudinary.com/djv5kc7as/image/upload/v1688802646/Asset%20Mantle%20-%20Team%202023/Events/Screenshot_303_cpvgip.png',
+//       },
+//       {
+//         index:4,
+//         heading: 'BFF Hackathon',
+//         subheading: "Description for another event goes here.",
+//         icon:         'https://res.cloudinary.com/djv5kc7as/image/upload/v1688802646/Asset%20Mantle%20-%20Team%202023/Events/Screenshot_303_cpvgip.png',
 
-      },
-    {
-        index:5,
-        heading: 'FastN Session',
-        subheading: "Description for yet another event.",
-        icon:        'https://res.cloudinary.com/djv5kc7as/image/upload/v1698596897/Asset%20Mantle%20-%20Team%202023/Events/Screenshot_315_hcwl6o.png',
+//       },
+//     {
+//         index:5,
+//         heading: 'FastN Session',
+//         subheading: "Description for yet another event.",
+//         icon:        'https://res.cloudinary.com/djv5kc7as/image/upload/v1698596897/Asset%20Mantle%20-%20Team%202023/Events/Screenshot_315_hcwl6o.png',
 
-      },
-      {
-        index:6,
-        heading: 'Introduction to Crypto V/S Blockchain and Altcoins',
-        subheading: "Description for another event goes here.",
-        icon:         'https://res.cloudinary.com/djv5kc7as/image/upload/v1698598489/Asset%20Mantle%20-%20Team%202023/Events/Screenshot_317_nle6lt.png',
+//       },
+//       {
+//         index:6,
+//         heading: 'Introduction to Crypto V/S Blockchain and Altcoins',
+//         subheading: "Description for another event goes here.",
+//         icon:         'https://res.cloudinary.com/djv5kc7as/image/upload/v1698598489/Asset%20Mantle%20-%20Team%202023/Events/Screenshot_317_nle6lt.png',
 
-      },
-    {
-        index:7,
-        heading: 'Ideathon',
-        subheading: "Description for yet another event.",
-        icon:         'https://res.cloudinary.com/djv5kc7as/image/upload/v1698597655/Asset%20Mantle%20-%20Team%202023/Events/Screenshot_316_ilf1ht.png',
+//       },
+//     {
+//         index:7,
+//         heading: 'Ideathon',
+//         subheading: "Description for yet another event.",
+//         icon:         'https://res.cloudinary.com/djv5kc7as/image/upload/v1698597655/Asset%20Mantle%20-%20Team%202023/Events/Screenshot_316_ilf1ht.png',
 
-      }
-  ];
+//       }
+//   ];
 
 const PastEventSectionPseudo = () => {
   return (
@@ -72,28 +72,41 @@ const PastEventSectionPseudo = () => {
     iconStyle={{ background: '#e09f3e', color: '#fff' }}
     // icon={<SchoolIcon />}
   >
+    <a href="https://www.instagram.com/p/Cx0QMPrS13G/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer"  className="card-link">
+
     <h3 className="vertical-timeline-element-title">Introduction to Crypto V/S Blockchain and Altcoins</h3>
     {/* <h4 className="vertical-timeline-element-subtitle">Certification</h4> */}
-    <p>
-      <img className="timeline-img" src="https://res.cloudinary.com/djv5kc7as/image/upload/v1698598489/Asset%20Mantle%20-%20Team%202023/Events/Screenshot_317_nle6lt.png"></img>
-      {/* Creative Direction, User Experience, Visual Design */}
-    </p>
+    <div style={{ display: 'flex', alignItems: 'center' }}>
+    <img className="timeline-img" src="https://res.cloudinary.com/djv5kc7as/image/upload/v1698598489/Asset%20Mantle%20-%20Team%202023/Events/Screenshot_317_nle6lt.png" alt="Event Image" />
+    <div className="event-description-box">
+    AssetMerkle IGDTUW hosted a lively orientation with team intros and a fun treasure hunt on January 19, 2023. Focused on Blockchain, the chapter aims to support and engage students in unique events, like this thrilling treasure hunt.
+    </div>
+  </div>
+  </a>
+
   </VerticalTimelineElement>
+
+
   <VerticalTimelineElement
+
     className="vertical-timeline-element--education"
     contentStyle={{ background: '#e09f3e', color: '#fff' }}
     date="19 AUGUST 2023"
     dateClassName='month-date'
     iconStyle={{ background: '#e09f3e', color: '#fff' }}
     // icon={<SchoolIcon />}
-  >
-    <h3 className="vertical-timeline-element-title">Ideathon</h3>
+  >  <a href="https://www.instagram.com/p/CwGGYVuyqHk/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer"  className="card-link">
+
+    <h3 className="vertical-timeline-element-title">Web3 Cohort & Ideathon</h3>
     {/* <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4> */}
-    <p>
+    <div style={{ display: 'flex', alignItems: 'center' }}>
       <img className="timeline-img" src="https://res.cloudinary.com/djv5kc7as/image/upload/v1698597655/Asset%20Mantle%20-%20Team%202023/Events/Screenshot_316_ilf1ht.png"></img>
-      {/* Creative Direction, Visual Design */}
-    </p>
+      <div className="event-description-box">
+      AssetMerkle IGDTUW's Web3 mentorship cohort, in collaboration with Web3Samaj, spans Javascript, ReactJs, and NodeJs. Post a brief break, we're set for Web3 sessions. Concurrently, mentees formed groups for an Ideathon, developing dApps with Web3 mentorship passionately.    </div>
+   </div>
+    </a>
   </VerticalTimelineElement>
+
   <VerticalTimelineElement
     className="vertical-timeline-element--education"
     contentStyle={{ background: '#e09f3e', color: '#fff' }}
