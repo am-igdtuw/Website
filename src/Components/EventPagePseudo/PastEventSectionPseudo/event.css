@@ -4,12 +4,12 @@
 }; */
 
 .timeline-img {
-    margin-left: 30px; 
     height: auto; 
     max-width: 100%; 
-    width: 400px; 
-    border: 9px solid white;
+    width: 250px; 
+    border: 3px solid white;
     border-radius: 20px;
+    margin-top: 10px;
     }
 
 
@@ -24,15 +24,31 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
   .vertical-timeline-element-title{
-    margin-left: 30px;
-    color: black;
-    font-size: 40px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
-
-    
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
   }
   .vertical-timeline-hr{
     color: black;
     border-width: 30px;
+  }
+  .event-description-box {
+    padding: 10px;
+    margin-top: 10px;
+    max-width: 300px; /* Adjust the width as needed */
+    overflow: hidden;
+    white-space: normal;
+    font-size: 14px;
+  }
+  .card-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .card-link:hover {
+    text-decoration: none;
+    color: inherit;
   }
