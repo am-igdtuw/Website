@@ -76,7 +76,7 @@ const PastEventSectionPseudo = () => {
 
     <h3 className="vertical-timeline-element-title">Introduction to Crypto V/S Blockchain and Altcoins</h3>
     {/* <h4 className="vertical-timeline-element-subtitle">Certification</h4> */}
-    <div style={{ display: 'flex', alignItems: 'center' }}>
+    <div style={{ display: 'flex', alignItems: 'center' }} className='innerDiv'>
     <img className="timeline-img" src="https://res.cloudinary.com/djv5kc7as/image/upload/v1698598489/Asset%20Mantle%20-%20Team%202023/Events/Screenshot_317_nle6lt.png" alt="Event Image" />
     <div className="event-description-box">
     AssetMerkle IGDTUW hosted a lively orientation with team intros and a fun treasure hunt on January 19, 2023. Focused on Blockchain, the chapter aims to support and engage students in unique events, like this thrilling treasure hunt.
@@ -99,7 +99,7 @@ const PastEventSectionPseudo = () => {
 
     <h3 className="vertical-timeline-element-title">Web3 Cohort & Ideathon</h3>
     {/* <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4> */}
-    <div style={{ display: 'flex', alignItems: 'center' }}>
+    <div style={{ display: 'flex', alignItems: 'center' }} className='innerDiv'>
       <img className="timeline-img" src="https://res.cloudinary.com/djv5kc7as/image/upload/v1698597655/Asset%20Mantle%20-%20Team%202023/Events/Screenshot_316_ilf1ht.png"></img>
       <div className="event-description-box">
       AssetMerkle IGDTUW's Web3 mentorship cohort, in collaboration with Web3Samaj, spans Javascript, ReactJs, and NodeJs. Post a brief break, we're set for Web3 sessions. Concurrently, mentees formed groups for an Ideathon, developing dApps with Web3 mentorship passionately.    </div>
