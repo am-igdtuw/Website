@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import { HeroContainer, HeroContent,HeroD, HeroBtnWrapper,HeroH1, HeroP, Heroimg } from './EventElement'
 import {Button} from '../../ButtonElements'
 import CollaborateLogo from '../../../images/CollaborateLogo.png';
+import { useNavigate } from 'react-router-dom';
 //import DynamicBackground from '../Herosection/DynamicBg.js';
 
 
@@ -11,6 +12,11 @@ const EventHeroSection = () => {
     const onHover = () => {
         setHover(!hover)
     }
+    const navigate = useNavigate();
+    const handleCollaborateClick = () => {
+        // Redirect to the SponsorUsForm page
+        navigate('/collaboratePage'); 
+      };
 
   return (
     <HeroContainer>
@@ -23,7 +29,7 @@ const EventHeroSection = () => {
                 WE STRIVE TO CREATE A COMMUNITY OF STUDENTS PASSIONATE ABOUT BLOCKCHAIN AND WEB3 TECHNOLOGY
             </HeroP>
             <HeroBtnWrapper>
-                <Button to='signup' onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='true' style={{ fontFamily: 'Exo 2, sans-serif', fontWeight: 600 }}>
+                <Button onClick={handleCollaborateClick} to='signup' onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='true' style={{ fontFamily: 'Exo 2, sans-serif', fontWeight: 600 }}>
                   <Heroimg src={CollaborateLogo}/>
                Collaborate with us
                 </Button>

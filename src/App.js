@@ -33,8 +33,8 @@ function App() {
     <Toaster position="bottom-center" gutter={14} containerStyle={{ fontSize: '14px' }}></Toaster>
       <Routes>
         <Route exact path="/" element={<Home/>} />
-        <Route exact path="/event" element={<EventPage />} />
-        <Route exact path="/eventpseudo" element={<EventPagePseudo/>}/>
+        <Route exact path="/event" element={<EventPagePseudo />} />
+        {/* <Route exact path="/eventpseudo" element={<EventPagePseudo/>}/> */}
         {/* <Route exact path="/blogs" element={<BlogPage/>}/> */}
         <Route exact path="/faq" element={<FaqPage/>}/>
         {/* <Route exact path="/techTeam" element={<TechTeamPage/>}/> */}
