@@ -63,6 +63,122 @@ const PastEventSectionPseudo = () => {
       <>
 <Date></Date>   
 <VerticalTimeline>
+
+<VerticalTimelineElement
+className="vertical-timeline-element--education"
+contentStyle={{ background: '#e09f3e', color: '#fff' }}
+date="29 JANUARY 2024"
+dateClassName='month-date'
+iconStyle={{ background: '#e09f3e', color: '#fff' }}
+// icon={<SchoolIcon />}
+>  <a href="https://www.instagram.com/p/C2p11F5Sxye/" target="_blank" rel="noopener noreferrer"  className="card-link">
+
+<h3 className="vertical-timeline-element-title">Careers in Web3</h3>
+{/* <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4> */}
+<div style={{ display: 'flex', alignItems: 'center' }} className='innerDiv'>
+  <img className="timeline-img" src="https://res.cloudinary.com/duptmanu9/image/upload/v1707140357/geetika-di_ktiuzk.png"></img>
+  <div className="event-description-box">
+  Dived into "Careers in Web3" with Geetika Gupta, President of Assetmerkle IGDTUW, for insights into opportunities in the tech world. Participants learned to create their first crypto wallet.      </div>
+</div>
+</a>
+</VerticalTimelineElement>
+
+<VerticalTimelineElement
+className="vertical-timeline-element--education"
+contentStyle={{ background: '#e09f3e', color: '#fff' }}
+date="25 JANUARY 2024"
+dateClassName='month-date'
+iconStyle={{ background: '#e09f3e', color: '#fff' }}
+// icon={<SchoolIcon />}
+>  <a href="https://www.instagram.com/p/C2aDhlkyXuh/" target="_blank" rel="noopener noreferrer"  className="card-link">
+
+<h3 className="vertical-timeline-element-title">Build with Tezos</h3>
+{/* <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4> */}
+<div style={{ display: 'flex', alignItems: 'center' }} className='innerDiv'>
+  <img className="timeline-img" src="https://res.cloudinary.com/duptmanu9/image/upload/v1707140357/build-with-teszo_fj66i0.png"></img>
+  <div className="event-description-box">
+  AssetMerkle and The Product House hosted 'Build with Tezos,' a hands-on workshop on Tezos Blockchain at IGDTUW.      </div>
+</div>
+</a>
+</VerticalTimelineElement>
+
+<VerticalTimelineElement
+className="vertical-timeline-element--education"
+contentStyle={{ background: '#e09f3e', color: '#fff' }}
+date="08 JANUARY 2024"
+dateClassName='month-date'
+iconStyle={{ background: '#e09f3e', color: '#fff' }}
+// icon={<SchoolIcon />}
+>  <a href="https://www.instagram.com/p/C1zYCVlyoLM/" target="_blank" rel="noopener noreferrer"  className="card-link">
+
+<h3 className="vertical-timeline-element-title">Deepdive into Blockchain & Crypto</h3>
+{/* <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4> */}
+<div style={{ display: 'flex', alignItems: 'center' }} className='innerDiv'>
+  <img className="timeline-img" src="https://res.cloudinary.com/duptmanu9/image/upload/v1707140357/blockchain_o4u0ok.png"></img>
+  <div className="event-description-box">
+  AssetMerkle's insightful session, "Deepdive into Blockchain & Crypto," with Grahil Khandelwal, Community Lead at Deepverse DAO, explored Blockchain intricacies, Crypto insights, and decentralized ecosystem futures.     </div>
+</div>
+</a>
+</VerticalTimelineElement>
+
+<VerticalTimelineElement
+className="vertical-timeline-element--education"
+contentStyle={{ background: '#e09f3e', color: '#fff' }}
+date="06 JANUARY 2024 ONWARDS"
+dateClassName='month-date'
+iconStyle={{ background: '#e09f3e', color: '#fff' }}
+// icon={<SchoolIcon />}
+>  <a href="https://www.instagram.com/p/C1mzhijSS22/" target="_blank" rel="noopener noreferrer"  className="card-link">
+
+<h3 className="vertical-timeline-element-title">Chain Pe Charcha</h3>
+{/* <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4> */}
+<div style={{ display: 'flex', alignItems: 'center' }} className='innerDiv'>
+  <img className="timeline-img" src="https://res.cloudinary.com/duptmanu9/image/upload/v1707140357/chainpecharcha_gm0ysz.png"></img>
+  <div className="event-description-box">
+  AssetMerkle took a dive into the world of Web3 technologies with an exciting Twitter Spaces podcast. We unraveled the secrets of the decentralized web, featuring insights and discussions about the future of technology and cyberspace. If you were passionate about sharing your insights, we hope you joined us as a speaker.     </div>
+</div>
+</a>
+</VerticalTimelineElement>
+
+<VerticalTimelineElement
+className="vertical-timeline-element--education"
+contentStyle={{ background: '#e09f3e', color: '#fff' }}
+date="26-27 OCTOBER 2023"
+dateClassName='month-date'
+iconStyle={{ background: '#e09f3e', color: '#fff' }}
+// icon={<SchoolIcon />}
+>  <a href="https://www.instagram.com/p/Cy0XPIESUBA/" target="_blank" rel="noopener noreferrer"  className="card-link">
+
+<h3 className="vertical-timeline-element-title">Emerging Technologies Workshop</h3>
+{/* <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4> */}
+<div style={{ display: 'flex', alignItems: 'center' }} className='innerDiv'>
+  <img className="timeline-img" src="https://res.cloudinary.com/duptmanu9/image/upload/v1707140357/AM-GDSC_o0c14y.png"></img>
+  <div className="event-description-box">
+  'Emerging Technologies: Pioneering the Digital Frontier' was a two-day tech extravaganza on October 26 & 27, 2023. Participants delved into the latest in web3, cloud-native architectures, blockchain, AI, and more, engaging with experts and witnessing live demos.     </div>
+</div>
+</a>
+</VerticalTimelineElement>
+
+<VerticalTimelineElement
+
+className="vertical-timeline-element--education"
+contentStyle={{ background: '#e09f3e', color: '#fff' }}
+date="27-29 OCTOBER 2023"
+dateClassName='month-date'
+iconStyle={{ background: '#e09f3e', color: '#fff' }}
+// icon={<SchoolIcon />}
+>  <a href="https://www.instagram.com/p/CyWG4_eSLHg/" target="_blank" rel="noopener noreferrer"  className="card-link">
+
+<h3 className="vertical-timeline-element-title">HackHive, a 36-hour hackathon adventure</h3>
+{/* <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4> */}
+<div style={{ display: 'flex', alignItems: 'center' }} className='innerDiv'>
+  <img className="timeline-img" src="https://res.cloudinary.com/duptmanu9/image/upload/v1707140357/hack-hive_b3tszn.png"></img>
+  <div className="event-description-box">
+  HackHive, a 36-hour in-person hackathon in Indore by Techhunterssss, supported by MLH, was a tech extravaganza from October 27th to 29th. Tech enthusiasts made their bytes count in this inclusive event.    </div>
+</div>
+</a>
+</VerticalTimelineElement>
+
 <VerticalTimelineElement
     className="vertical-timeline-element--work"
     // contentStyle={{ background: '#e09f3e', color: '#fff' }}
