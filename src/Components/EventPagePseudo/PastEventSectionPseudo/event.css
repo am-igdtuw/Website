@@ -61,4 +61,8 @@
       flex-direction: column;
     }
   }
+  .vertical-timeline-element-content {
+    background:  rgba(226, 149, 6,0.5);
+    color: #fff;
+  }
   
