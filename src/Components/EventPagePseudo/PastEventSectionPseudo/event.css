@@ -35,6 +35,9 @@
     border-bottom: 2px solid #fff;
     padding-bottom: 5px;
   }
+  .vertical-timeline-element-title:hover{
+    font-size: 23px;
+  }
   .vertical-timeline-hr{
     color: black;
     border-width: 30px;
@@ -60,6 +63,7 @@
     .innerDiv{
       flex-direction: column;
     }
+    
   }
   .vertical-timeline-element-content {
     background:  rgba(226, 149, 6,0.5);

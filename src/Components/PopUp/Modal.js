@@ -59,7 +59,7 @@ export default function Modal(props) {
           <div className="popup-text2">Explore the decentralized edge.</div>
           <button
               className="popup-button"
-              onClick={() => (window.location.href = 'https://www.instagram.com/p/C2yxgUDS8_t/?utm_source=ig_web_button_share_sheet&igsh=MzRlODBiNWFlZA==')}
+              onClick={() => (window.location.href = 'https://twitter.com/AM_igdtuw/status/1750863066177433964')}
             >
               Find it here!
             </button>
