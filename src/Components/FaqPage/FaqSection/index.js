@@ -1,6 +1,6 @@
 import React from 'react';
-import { useState } from 'react';
-import { HeroContainer, HeroH1, HeroContent, Accordian, Title, Content, Item, InputBox1,InputBox2,SubmitButton,FaqBox, FaqInsidBox  } from './FaqElements';
+import { useState, useEffect } from 'react';
+import { HeroContainer, HeroH1, HeroContent, Accordian, Title, Content, Item, InputBox1, InputBox2, SubmitButton, FaqBox, FaqInsidBox } from './FaqElements';
 import DynamicBackground from '../../HomePage/Herosection/DynamicBg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
@@ -40,147 +40,154 @@ const data = [
 
 const FaqSection = () => {
     const [selected, setSelected] = useState(null);
-    const [email, setEmail ] = useState('');
-    const [message, setMessage] = useState('');
-    
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
+
     const handleEmailChange = (e) => {
         setEmail(e.target.value);
-      };
-    
-      const handleDoubtChange = (e) => {
-        setMessage(e.target.value);
-      };
-    
-      const handleSubmission = async(e) => {
-          e.preventDefault();
-          //   console.log(email, message);
+    };
 
-          // Validate if the message is not empty
-          if (!message.trim()) {
+    const handleDoubtChange = (e) => {
+        setMessage(e.target.value);
+    };
+
+    const handleSubmission = async (e) => {
+        e.preventDefault();
+        //   console.log(email, message);
+
+        // Validate if the message is not empty
+        if (!message.trim()) {
             toast.error('Oops! It seems you forgot to ask your doubt.', {
-            position: 'bottom-center',
-            style: {
-                width: "400px",
-                background: "black",
-                color: "white",
-            },
+                position: 'bottom-center',
+                style: {
+                    width: "400px",
+                    background: "black",
+                    color: "white",
+                },
             });
             return;
-          }
-          
-          // email validation
-          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-          if (!emailRegex.test(email)) {
+        }
+
+        // email validation
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
             toast.error('Please enter a valid email address.', {
                 position: 'bottom-center',
                 style: {
-                    width: "400px", 
+                    width: "400px",
                     background: "black",
-                    color: "white", 
+                    color: "white",
                 },
             });
-            return; 
-          }
-          
-          try {
-              const response = await fetch('https://am-website-w70g.onrender.com/api/faq', {
-                  method: 'POST',
-                  headers: {
-                      'Content-Type': 'application/json'
-                  },
-                  body: JSON.stringify({ email, message }),
-              });
+            return;
+        }
 
-              if (response.ok) {
-                  const data = await response.json();
-                  //   console.log(data);
-                  toast.success("Message received! Decryption in progress, expect a reply shortly!  🚀", {
-                      position: "bottom-center",
-                      style: {
-                          width: "400px", 
-                          background: "black",
-                          color: "white", 
-                      },
-                  });
-                  setEmail('');
-                  setMessage('');
-              } else {
-                  console.error('Submission failed');
-                  toast.error('Uh-oh! Hit a blockchain snag. Refresh and try again! 🌐', {
+        try {
+            const response = await fetch('https://am-website-w70g.onrender.com/api/faq', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ email, message }),
+            });
+
+            if (response.ok) {
+                const data = await response.json();
+                //   console.log(data);
+                toast.success("Message received! Decryption in progress, expect a reply shortly!  🚀", {
                     position: "bottom-center",
                     style: {
-                        width: "400px", 
+                        width: "400px",
                         background: "black",
-                        color: "white", 
+                        color: "white",
                     },
-                  });
+                });
+                setEmail('');
+                setMessage('');
+            } else {
+                console.error('Submission failed');
+                toast.error('Uh-oh! Hit a blockchain snag. Refresh and try again! 🌐', {
+                    position: "bottom-center",
+                    style: {
+                        width: "400px",
+                        background: "black",
+                        color: "white",
+                    },
+                });
             }
-          } catch (error) {
-              console.error('Error:', error);
-              toast.error('Uh-oh! Hit a blockchain snag. Refresh and try again! 🌐', {
+        } catch (error) {
+            console.error('Error:', error);
+            toast.error('Uh-oh! Hit a blockchain snag. Refresh and try again! 🌐', {
                 position: "bottom-center",
                 style: {
-                    width: "400px", 
+                    width: "400px",
                     background: "black",
-                    color: "white", 
+                    color: "white",
                 },
-              });
-          }
-      };
-    
-      const toggle = (i) => {
-        if (selected === i) {
-          setSelected(null);
-        } else {
-          setSelected(i);
+            });
         }
-      };
+    };
+
+    const toggle = (i) => {
+        if (selected === i) {
+            setSelected(null);
+        } else {
+            setSelected(i);
+        }
+    };
+    useEffect(() => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const queryParamsEmail = urlParams.get("email");
+
+        if (queryParamsEmail) {
+            setEmail(queryParamsEmail);
+        }
+    }, []);
 
     return (
         <>
-        <HeroContainer>
-            <DynamicBackground  />
-            <HeroContent>
-                <HeroH1>FAQs</HeroH1>
-                
-                <Accordian>
-                    {data.map((item, i) => (
-                        <Item key={i}>
-                            <Title onClick={() => toggle(i)}>
-                                <h2>{item.question}</h2>
-                                <span>{selected === i ? '-' : '+'}</span>
-                            </Title>
-                            <Content selected={selected === i}>
-                                {item.answer}
-                            </Content>
-                        </Item>
-                    ))}
-                </Accordian>
-                <FaqBox>
-                    <FaqInsidBox>
-                        <InputBox1
-                            type="email"
-                            placeholder="Your Email..."
-                            value={email}
-                            onChange={handleEmailChange}
-                        />
+            <HeroContainer>
+                <DynamicBackground />
+                <HeroContent>
+                    <HeroH1>FAQs</HeroH1>
+
+                    <Accordian>
+                        {data.map((item, i) => (
+                            <Item key={i}>
+                                <Title onClick={() => toggle(i)}>
+                                    <h2>{item.question}</h2>
+                                    <span>{selected === i ? "-" : "+"}</span>
+                                </Title>
+                                <Content selected={selected === i}>{item.answer}</Content>
+                            </Item>
+                        ))}
+                    </Accordian>
+                    <FaqBox>
                         <FaqInsidBox>
-                        {/* Doubt Input */}
-                            <InputBox2
-                                type="text"
-                                placeholder="Ask your doubt..."
-                                value={message}
-                                onChange={handleDoubtChange}
+                            <InputBox1
+                                type="email"
+                                placeholder="Your Email..."
+                                value={email}
+                                onChange={handleEmailChange}
+                                id='emailSection'
                             />
-                            <SubmitButton  onClick={handleSubmission}>
-                                <FontAwesomeIcon icon={faPaperPlane}  />
-                            </SubmitButton>
+                            <FaqInsidBox>
+                                {/* Doubt Input */}
+                                <InputBox2
+                                    type="text"
+                                    placeholder="Ask your doubt..."
+                                    value={message}
+                                    onChange={handleDoubtChange}
+                                />
+                                <SubmitButton onClick={handleSubmission}>
+                                    <FontAwesomeIcon icon={faPaperPlane} />
+                                </SubmitButton>
+                            </FaqInsidBox>
                         </FaqInsidBox>
-                    </FaqInsidBox> 
-                </FaqBox>
-            </HeroContent>
-        </HeroContainer>
-        <ToastContainer />
+                    </FaqBox>
+                </HeroContent>
+            </HeroContainer>
+            <ToastContainer />
         </>
     );
 };
