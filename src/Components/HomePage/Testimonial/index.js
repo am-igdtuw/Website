@@ -38,6 +38,13 @@ const Testimonial = () => {
             <Card5 img="https://res.cloudinary.com/djv5kc7as/image/upload/v1698598435/Asset%20Mantle%20-%20Team%202023/Events/Screenshot_318_sjecxi.png" />
             <Card6 img="https://res.cloudinary.com/djv5kc7as/image/upload/v1698597655/Asset%20Mantle%20-%20Team%202023/Events/Screenshot_316_ilf1ht.png" />
             <Card7 img="https://res.cloudinary.com/djv5kc7as/image/upload/v1698598489/Asset%20Mantle%20-%20Team%202023/Events/Screenshot_317_nle6lt.png" />
+            <Card8 img="https://res.cloudinary.com/duptmanu9/image/upload/v1707140357/hack-hive_b3tszn.png"/>
+            <Card9 img="https://res.cloudinary.com/duptmanu9/image/upload/v1707140357/AM-GDSC_o0c14y.png"/>
+            <Card10 img="https://res.cloudinary.com/duptmanu9/image/upload/v1707140357/chainpecharcha_gm0ysz.png"/>
+            <Card11 img="https://res.cloudinary.com/duptmanu9/image/upload/v1707140357/blockchain_o4u0ok.png"/>
+            <Card12 img="https://res.cloudinary.com/duptmanu9/image/upload/v1707140357/build-with-teszo_fj66i0.png"/>
+            <Card13 img="https://res.cloudinary.com/duptmanu9/image/upload/v1707140357/geetika-di_ktiuzk.png"/>
+      
           </Slider>
         </ContainerSlider>
       </HomeContainer>
@@ -237,6 +244,174 @@ const Card7 = ({ img }) => {
         {/* Altcoins, a diverse set of digital assets, were also discussed as innovative alternatives, showcasing the thriving creativity within the crypto space. */}
 
       </AvatarContent>
+    </AvatarComponent>
+  );
+};
+const Card8 = ({ img }) => {
+  return (
+    <AvatarComponent>
+      <AvatarHeading>HackHive, a 36-hour hackathon adventure</AvatarHeading>
+
+      <Avatar
+        imgProps={{ style: { borderRadius: "50%" } }}
+        src={img}
+        style={{
+          width: 240,
+          height: 240,
+          border: "1px solid lightgray",
+          padding: 7,
+        }}
+      />
+
+      <AvatarContent>
+      HackHive, a 36-hour in-person hackathon in Indore by Techhunterssss, supported by MLH, was a tech extravaganza from October 27th to 29th. Tech enthusiasts made their bytes count in this inclusive event. 
+       
+        <a href="/event" style={{ color: yellow[500] }}> Read More...</a>
+        {/* Currently working as a product manager at Quillaudits, Sanket has been working in the blockchain space for past 2 years. ✨✨ */}
+
+      </AvatarContent>
+
+
+    </AvatarComponent>
+  );
+};
+const Card9 = ({ img }) => {
+  return (
+    <AvatarComponent>
+      <AvatarHeading>Emerging Technologies Workshop</AvatarHeading>
+
+      <Avatar
+        imgProps={{ style: { borderRadius: "50%" } }}
+        src={img}
+        style={{
+          width: 240,
+          height: 240,
+          border: "1px solid lightgray",
+          padding: 7,
+        }}
+      />
+
+      <AvatarContent>
+  'Emerging Technologies: Pioneering the Digital Frontier' was a two-day tech extravaganza on October 26 & 27, 2023. Participants delved into the latest in web3, cloud-native architectures, blockchain, AI, and more, engaging with experts and witnessing live demos.   
+        
+        <a href="/event" style={{ color: yellow[500] }}> Read More...</a>
+        {/* Currently working as a product manager at Quillaudits, Sanket has been working in the blockchain space for past 2 years. ✨✨ */}
+
+      </AvatarContent>
+
+
+    </AvatarComponent>
+  );
+};
+const Card10 = ({ img }) => {
+  return (
+    <AvatarComponent>
+      <AvatarHeading>Chain Pe Charcha</AvatarHeading>
+
+      <Avatar
+        imgProps={{ style: { borderRadius: "50%" } }}
+        src={img}
+        style={{
+          width: 240,
+          height: 240,
+          border: "1px solid lightgray",
+          padding: 7,
+        }}
+      />
+
+      <AvatarContent>
+  AssetMerkle took a dive into the world of Web3 technologies with an exciting Twitter Spaces podcast. We unraveled the secrets of the decentralized web, featuring insights and discussions about the future of technology and cyberspace. If you were passionate about sharing your insights, we hope you joined us as a speaker.    
+        
+        <a href="/event" style={{ color: yellow[500] }}> Read More...</a>
+        {/* Currently working as a product manager at Quillaudits, Sanket has been working in the blockchain space for past 2 years. ✨✨ */}
+
+      </AvatarContent>
+
+
+    </AvatarComponent>
+  );
+};
+const Card11 = ({ img }) => {
+  return (
+    <AvatarComponent>
+      <AvatarHeading>Deepdive into Blockchain & Crypto</AvatarHeading>
+
+      <Avatar
+        imgProps={{ style: { borderRadius: "50%" } }}
+        src={img}
+        style={{
+          width: 240,
+          height: 240,
+          border: "1px solid lightgray",
+          padding: 7,
+        }}
+      />
+
+      <AvatarContent>
+  AssetMerkle's insightful session, "Deepdive into Blockchain & Crypto," with Grahil Khandelwal, Community Lead at Deepverse DAO, explored Blockchain intricacies, Crypto insights, and decentralized ecosystem futures.     
+        
+        <a href="/event" style={{ color: yellow[500] }}> Read More...</a>
+        {/* Currently working as a product manager at Quillaudits, Sanket has been working in the blockchain space for past 2 years. ✨✨ */}
+
+      </AvatarContent>
+
+
+    </AvatarComponent>
+  );
+};
+const Card12 = ({ img }) => {
+  return (
+    <AvatarComponent>
+      <AvatarHeading>Build with Tezos</AvatarHeading>
+
+      <Avatar
+        imgProps={{ style: { borderRadius: "50%" } }}
+        src={img}
+        style={{
+          width: 240,
+          height: 240,
+          border: "1px solid lightgray",
+          padding: 7,
+        }}
+      />
+
+      <AvatarContent>
+  AssetMerkle and The Product House hosted 'Build with Tezos,' a hands-on workshop on Tezos Blockchain at IGDTUW.      
+        
+        <a href="/event" style={{ color: yellow[500] }}> Read More...</a>
+        {/* Currently working as a product manager at Quillaudits, Sanket has been working in the blockchain space for past 2 years. ✨✨ */}
+
+      </AvatarContent>
+
+
+    </AvatarComponent>
+  );
+};
+const Card13 = ({ img }) => {
+  return (
+    <AvatarComponent>
+      <AvatarHeading>Careers in Web3</AvatarHeading>
+
+      <Avatar
+        imgProps={{ style: { borderRadius: "50%" } }}
+        src={img}
+        style={{
+          width: 240,
+          height: 240,
+          border: "1px solid lightgray",
+          padding: 7,
+        }}
+      />
+
+      <AvatarContent>
+  Dived into "Careers in Web3" with Geetika Gupta, President of Assetmerkle IGDTUW, for insights into opportunities in the tech world. Participants learned to create their first crypto wallet.    
+        
+        <a href="/event" style={{ color: yellow[500] }}> Read More...</a>
+        {/* Currently working as a product manager at Quillaudits, Sanket has been working in the blockchain space for past 2 years. ✨✨ */}
+
+      </AvatarContent>
+
+
     </AvatarComponent>
   );
 };

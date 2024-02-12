@@ -60,9 +60,9 @@ const HeroSection = () => {
             alt="hero_image"
             style={{
                 width: "100%",
-                height: "auto",
+                height: "70vh",
                 paddingleft: "25%",
-                marginTop: "-100px",
+                marginTop: "-250px",
                 alignItems: "center",
             }}
         />
