@@ -4,7 +4,9 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages';
 import EventPage from './pages/event'
-import Loader from './Components/Loader/loader'
+import Loader from './Components/Loader/loader';
+import MobileLoader from './Components/Loader/mobileLoader';
+
 // import BlogPage from './pages/blogs'
 //import TechTeamPage from './pages/techTeam';
 import FaqPage from './pages/faq'
@@ -21,6 +23,7 @@ import EventPagePseudo from './pages/eventpseudo';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { faXTwitter} from '@fortawesome/free-brands-svg-icons';
+
 library.add(fas, faXTwitter)
 
 
@@ -47,6 +50,7 @@ function App() {
         <Route exact path='/collaboratePage' element={<CollaborateUsForm/>}/>
         <Route exact path='/hackday' element={<HackDay/>}/>
         <Route exact path='/loader' element={<Loader/>}/>
+        <Route exact path='/mobileLoader' element={<MobileLoader/>}/>
 
            
       </Routes>
