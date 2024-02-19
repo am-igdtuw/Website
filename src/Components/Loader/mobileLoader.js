@@ -4,12 +4,12 @@ import logo from './AMlogo.png';
 
 function MobileLoader() {
   return (
-    <>
+    <div className="mobile-loader-container">
       <img src={logo} alt="Logo" className="AmLogo"/>
       
-      <input type="checkbox" id="checkbox" />
+      <input type="checkbox" id="checkbox" className="input-checkbox" />
       {/* <div className="bg"></div> */}
-      <div className="dots">
+      <div className="dots-container">
       
         {[...Array(12)].map((_, index) => (
           <div className="dot" key={index}></div>
@@ -18,8 +18,7 @@ function MobileLoader() {
         <div className="ring"></div>
 
       </div>
-
-    </>
+    </div>
   );
 }
 
