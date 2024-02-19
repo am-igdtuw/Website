@@ -70,6 +70,10 @@ export const FooterLinkTitle = styled.h1`
   z-index: 2;
   font-weight: 600;
   color: #fff;
+
+  @media screen and (max-width: 420px) {
+    margin-right: 16px;
+  }
 `;
 export const FooterLink = styled(Link)`
   color: #ffc640;
@@ -85,6 +89,7 @@ export const FooterLink = styled(Link)`
     transition: 0.3s ease-out;
     text-decoration: none;
   }
+  
 `;
 export const SocialMedia = styled.section`
   max-width: 1000px;
@@ -191,7 +196,7 @@ export const FaqInsidBox = styled.div`
   display: flex;
   items-align: center;
   @media screen and (max-width: 480px) {
-    width: 95% !important;
+    width: 159% !important;
   }
 `;
 
@@ -206,12 +211,12 @@ export const SubmitButton = styled.button`
   font-size: 12px;
   margin-top: 0px;
   margin-bottom: 5px;
-  margin-left: 5px;
+  margin-left: 4px;
   @media screen and (max-width: 768px) {
     margin-left: 10px;
   }
 
   @media screen and (max-width: 480px) {
-    margin-right: 0;
+    margin-left: 4px;
   }
 `;
