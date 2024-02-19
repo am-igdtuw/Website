@@ -196,7 +196,7 @@ export const FaqInsidBox = styled.div`
   display: flex;
   items-align: center;
   @media screen and (max-width: 480px) {
-    width: 159% !important;
+    width: 100% !important;
   }
 `;
 
