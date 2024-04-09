@@ -48,7 +48,9 @@ const Footer = () => {
       email
     )}#emailSection`;
   };
-
+  const handleTopToPage = () => {
+    window.scrollTo(0, 0);
+  };
   return (
     <FooterContainer>
       <FooterWrap>
@@ -105,8 +107,8 @@ const Footer = () => {
             </FooterLinkItems>
             <FooterLinkItems>
               <FooterLinkTitle>Useful Links</FooterLinkTitle>
-              <FooterLink to="/">About</FooterLink>
-              <FooterLink to="/event">Events</FooterLink>
+              <FooterLink to="/" onClick={handleTopToPage}>About</FooterLink>
+              <FooterLink to="/event" onClick={handleTopToPage}>Events</FooterLink>
               {/* <FooterLink to="/signin">Careers</FooterLink>
                        <FooterLink to="/signin">Investors</FooterLink>
                        <FooterLink to="/signin">Terms of Services</FooterLink> */}
@@ -114,12 +116,12 @@ const Footer = () => {
             {/* <Gap /> */}
             <FooterLinkItems>
               <FooterLinkTitle>Contact Us</FooterLinkTitle>
-              <FooterLink to="/">Contact</FooterLink>
+              {/* <FooterLink to="/">Contact</FooterLink> */}
               {/* <FooterLink to="/">Support</FooterLink>
                         <FooterLink to="/">Destinations</FooterLink> */}
-              <FooterLink to="/sponsorPage">Sponsor</FooterLink>
-              <FooterLink to="/collaboratePage">Collaborate</FooterLink>
-              <FooterLink to="/faq">FAQs</FooterLink>
+              <FooterLink to="/sponsorPage" onClick={handleTopToPage}>Sponsor</FooterLink>
+              <FooterLink to="/collaboratePage" onClick={handleTopToPage}>Collaborate</FooterLink>
+              <FooterLink to="/faq" onClick={handleTopToPage}>FAQs</FooterLink>
             </FooterLinkItems>
             {/* <Gap /> */}
             {/* <FooterLinkItems>
@@ -131,15 +133,15 @@ const Footer = () => {
                 </FooterLinkItems> */}
             <FooterLinkItems>
               <FooterLinkTitle>Social Media</FooterLinkTitle>
-              <FooterLink to="https://www.instagram.com/assetmerkle.igdtuw/">
+              <FooterLink to="https://www.instagram.com/assetmerkle.igdtuw/" target="_blank">
                 Instagram
               </FooterLink>
               {/* <FooterLink to="/">Facebook</FooterLink>
                        <FooterLink to="/">Youtube</FooterLink> */}
-              <FooterLink to="https://twitter.com/AM_igdtuw">
+              <FooterLink to="https://twitter.com/AM_igdtuw" target="_blank">
                 Twitter
               </FooterLink>
-              <FooterLink to="https://www.linkedin.com/company/asset-merkle/mycompany/">
+              <FooterLink to="https://www.linkedin.com/company/asset-merkle/mycompany/" target="_blank">
                 LinkedIn
               </FooterLink>
             </FooterLinkItems>
