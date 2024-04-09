@@ -66,7 +66,7 @@ export const HeroH1 = styled.h1`
   text-align: center;
   display: flex;
   padding: 50px 50px;
-  padding-top: 1px;
+  padding-top: 120px;
   width: 200px;
   //font-family: 'Poppins', sans-serif;
   font-family: 'Exo 2', sans-serif;
@@ -94,7 +94,7 @@ export const HeroH1 = styled.h1`
   }
 
   @media screen and (max-width: 480px) {
-    margin-top: 200px;
+    margin-top: -150px;
     font-size: 32px;
     padding: 10px 10px;
     text-align: center;
@@ -235,7 +235,7 @@ export const SubmitButton = styled.button`
   }
 
 `;
-export const FaqInsidBox =styled.div`
+export const FaqInsidBox = styled.div`
 @media screen and (max-width: 480px){
   width: 95% !important;
 
