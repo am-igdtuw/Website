@@ -71,6 +71,9 @@ form textarea {
 }
 
 form input[type="submit"] {
+    align-self:  flex-end;
+    margin-top: 20px;
+    width : 40%;
     background-color: #f0c14b;
     color: #fff;
     padding: 10px 20px;
@@ -142,6 +145,8 @@ h1 {
 /* Form element styling */
 .form-element {
     display: flex;
+    margin-top: 40 px;
+    justify-content: center;
 }
 
 .FormIcons {
@@ -151,12 +156,12 @@ h1 {
 }
 
 /* Double slider page styling */
-.double-slider-page {
+/* .double-slider-page {
     display: flex;
     align-items: flex-start;
-}
+} */
 
-.left-slider,
+/* .left-slider, */
 .right-slider {
     width: 50%;
     flex: 1;
@@ -164,7 +169,7 @@ h1 {
     padding: 0;
 }
 
-.left-slider {
+/* .left-slider {
     padding: 50px 50px 50px 0;
     color: white;
     display: flex;
@@ -175,14 +180,14 @@ h1 {
 .left-slider h1 {
     font-size: 40px;
     margin-bottom: 20px;
-}
+} */
 
-.left-slider p {
+/* .left-slider p {
     font-size: 18px;
     max-width: 80%;
     text-align: center;
     margin-bottom: 20px;
-}
+} */
 
 /* .instagram-icon {
     font-size: 50px;
