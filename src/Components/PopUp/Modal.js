@@ -60,7 +60,9 @@ const Modal = (props) => {
       };
     }
   }, []);
-
+  const handleTopToPage = () => {
+    window.scrollTo(0, 0);
+  };
   return showPopup && props.trigger ? (
     <>
       <div style={OVERLAY} />
@@ -85,17 +87,18 @@ const Modal = (props) => {
             <img className="popup-img" src={PopUp} alt="Popup" />
             <div className="popup-text">
               <div className="popup-text1"> ASSETMERKLE Presents   </div>
-              <div className="popup-text3 typed-text">FLEEK DEPLOY</div>
+              <div className="popup-text3 typed-text">TWITTER SPACES</div>
               <div className="popup-text2 "> Explore the decentralized edge.</div> 
               <button
                 className="popup-button"
                 onClick={() => (window.location.href = 'https://twitter.com/AM_igdtuw/status/1750863066177433964')}
+                target="_blank"
               >
                 Find it here!
               </button>
             </div>
           </div>
-          <a href="/event" className="find-more-events">FIND MORE EVENTS!</a>
+          <a href="/event" className="find-more-events" onClick={handleTopToPage}>FIND MORE EVENTS!</a>
         </div>
       </div>
       <div className="snowfall"></div>

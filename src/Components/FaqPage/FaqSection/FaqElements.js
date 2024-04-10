@@ -146,12 +146,12 @@ export const Title = styled.div`
 
   h2 {
     margin: 0;
-    font-size: 20px;
+    font-size: 18px;
 
   }
 
   span {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   &:hover {

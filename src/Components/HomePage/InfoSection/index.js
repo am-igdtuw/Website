@@ -10,11 +10,13 @@ const About = () => {
 
   const handleSponsorClick = () => {
     // Redirect to the SponsorUsForm page
-    navigate('/sponsorPage'); 
+    navigate('/sponsorPage');
+    window.scrollTo(0, 0);
   };
   const handleCollaborateClick = () => {
     // Redirect to the SponsorUsForm page
     navigate('/collaboratePage'); 
+    window.scrollTo(0, 0);
   };
 
   return (
