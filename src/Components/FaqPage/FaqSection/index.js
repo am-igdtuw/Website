@@ -170,6 +170,7 @@ const FaqSection = () => {
                                 value={email}
                                 onChange={handleEmailChange}
                                 id='emailSection'
+                                style={{ color: 'lightgray', fontStyle: 'italic', fontSize:'0.7rem' ,font:'Poppins'}}
                             />
                             <FaqInsidBox>
                                 {/* Doubt Input */}
@@ -178,6 +179,7 @@ const FaqSection = () => {
                                     placeholder="Ask your doubt..."
                                     value={message}
                                     onChange={handleDoubtChange}
+                                    style={{ color: 'lightgray', fontStyle: 'italic', fontSize:'0.7rem' ,font:'Poppins'}}
                                 />
                                 <SubmitButton onClick={handleSubmission}>
                                     <FontAwesomeIcon icon={faPaperPlane} />

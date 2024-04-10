@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../Components/Navbar'
-import Footer from '../Components/Footer'
+import Footer from '../Components/TeamFooter'
 import TeamSection from '../Components/TeamPage/TeamSection'
 import TeamSidebar from '../Components/TeamPage/TeamSidebar/TeamSidebar'
 import ScrollToTopButton from '../Components/Scroller/Scroller'
