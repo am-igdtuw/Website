@@ -75,7 +75,7 @@ function App() {
             <Route exact path="/loader" element={<Loader />} />
             <Route exact path="/mobileLoader" element={<MobileLoader />} />
           </>
-        )}
+        )
       </Routes>
     </BrowserRouter>
   );

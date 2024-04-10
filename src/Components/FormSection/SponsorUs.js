@@ -103,7 +103,7 @@ const SponsorUsForm = () => {
       <h1 className="heading">Sponsor Us</h1>
 
       <div className="double-slider-page">
-        <div className="left-slider">
+        {/* <div className="left-slider">
           <div className='form-div'>
             <div className='form-container'>
               <h1>Why You Should Sponsor Us</h1>
@@ -111,12 +111,12 @@ const SponsorUsForm = () => {
                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet
                   lorem vel justo varius ullamcorper. Nullam ut lectus eu nulla efficitur
                   tincidunt. Curabitur eu elit in ex aliquam blandit.
-              </p>
+              </p> */}
               {/* <FaInstagram className="instagram-icon" /> */}
-            </div>
+            {/* </div>
           </div>
-        </div>
-        <div className="right-slider">
+        </div> */}
+        {/* <div className="right-slider"> */}
           <div className="form-div">
             <div className="form-container">
                 <form onSubmit={handleSubmit}>
@@ -292,7 +292,7 @@ const SponsorUsForm = () => {
         <div>{/* <img src={image} alt="Description of the image" /> */}</div>
       </div>
         </div>
-      </div>
+      {/* </div> */}
       <ToastContainer />
     </>
   );

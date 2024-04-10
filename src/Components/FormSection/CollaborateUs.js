@@ -94,7 +94,7 @@ const CollaborateUsForm = () => {
 
   return (
     <>
-      <h1 className='heading'>Collaborate Us</h1>
+      <h1 className='heading'>Collaborate With Us</h1>
       <div className="form-div">
         <div className="form-container">
 
