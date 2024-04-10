@@ -64,6 +64,53 @@ const PastEventSectionPseudo = () => {
 <Date></Date>   
 <VerticalTimeline>
 
+  
+
+<VerticalTimelineElement
+className="vertical-timeline-element--education"
+contentStyle={{ background: '#e09f3e', color: '#fff' }}
+date="18 FEBRUARY 2024"
+dateClassName='month-date'
+iconStyle={{ background: '#e09f3e', color: '#fff' }}
+// icon={<SchoolIcon />}
+>  <a href="https://www.instagram.com/p/C2yxgUDS8_t/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer"  className="card-link">
+
+<h3 className="vertical-timeline-element-title">Fleek Deploy: Delhi</h3>
+{/* <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4> */}
+<div style={{ display: 'flex', alignItems: 'center' }} className='innerDiv'>
+  <img className="timeline-img" src="https://res.cloudinary.com/dlx9sj1pl/image/upload/v1712693959/Screenshot_2024-04-10_014915_nepofq.png"></img>
+  <div className="event-description-box">
+  Explored the seamless integration of cutting-edge technologies, with captivating presentations and insightful discussions, we uncovered the
+transformative power of decentralized hosting and management for websites and web
+applications.
+</div>
+</div>
+</a>
+</VerticalTimelineElement>
+
+<VerticalTimelineElement
+className="vertical-timeline-element--education"
+contentStyle={{ background: '#e09f3e', color: '#fff' }}
+date="5-12 FEBRUARY 2024"
+dateClassName='month-date'
+iconStyle={{ background: '#e09f3e', color: '#fff' }}
+// icon={<SchoolIcon />}
+>  <a href="https://www.instagram.com/p/C3DcogPyYN9/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer"  className="card-link">
+
+<h3 className="vertical-timeline-element-title">Starknet X Assetmerkle</h3>
+{/* <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4> */}
+<div style={{ display: 'flex', alignItems: 'center' }} className='innerDiv'>
+  <img className="timeline-img" src="https://res.cloudinary.com/dlx9sj1pl/image/upload/v1712692992/Screenshot_2024-04-10_013236_q0xwi0.png"></img>
+  <div className="event-description-box">
+  
+A hands-on session on Starknet Network will cover Starknet theory, its advantages over other Layer 2 solutions, its architecture, account abstraction and STARKs.   </div>
+</div>
+</a>
+</VerticalTimelineElement>
+
+
+
+
 <VerticalTimelineElement
 className="vertical-timeline-element--education"
 contentStyle={{ background: '#e09f3e', color: '#fff' }}
@@ -232,6 +279,7 @@ iconStyle={{ background: '#e09f3e', color: '#fff' }}
     iconStyle={{ background: '#e09f3e', color: '#fff' }}
     // icon={<SchoolIcon />}
   >
+    <a href="https://www.instagram.com/p/CvZ9Ps1yCk_/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="  target="_blank" rel="noopener noreferrer" className="card-link">
     <h3 className="vertical-timeline-element-title">FastN Session</h3>
     {/* <h4 className="vertical-timeline-element-subtitle">Online Course</h4> */}
     <div style={{ display: 'flex', alignItems: 'center' }} className='innerDiv'>
@@ -240,6 +288,7 @@ iconStyle={{ background: '#e09f3e', color: '#fff' }}
       Assetmantle IGDTUW collaborated with FastN and conducted a Roadshow on 6th August, Sunday from 11:30-6pm The roadshow consisted of enhancing the coding skills using fastN stack to build full - stack web apps. It was a hands-on session and a quiz was conducted in which top 3 winners were awarded with awesome prizes.
     </div>
     </div>
+    </a>
 
       {/* Strategy, Social Media */}
     
@@ -252,6 +301,8 @@ iconStyle={{ background: '#e09f3e', color: '#fff' }}
     iconStyle={{ background: '#e09f3e', color: '#fff' }}
     // icon={<WorkIcon />}
   >
+    <a href="https://www.instagram.com/reel/CpdLN0qMN3D/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="  target="_blank" rel="noopener noreferrer" className="card-link">
+
     <h3 className="vertical-timeline-element-title">BFF Hackathon</h3>
     {/* <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4> */}
     <div style={{ display: 'flex', alignItems: 'center' }} className='innerDiv'>
@@ -260,6 +311,7 @@ iconStyle={{ background: '#e09f3e', color: '#fff' }}
       Our collaboration with DTU AUV brought you a 24 hour offline hackathon in DTU premises on 1st and 2 nd April 2023.Teams joined us to build solution to the problem statements and have it reviewed by seasoned mentors who provided them with proper guidance.  
     </div>
     </div>
+    </a>
 
       {/* User Experience, Visual Design */}
     
@@ -273,6 +325,8 @@ iconStyle={{ background: '#e09f3e', color: '#fff' }}
     iconStyle={{ background: '#e09f3e', color: '#fff' }}
     // icon={<WorkIcon />}
   >
+    <a href="https://www.instagram.com/p/CoeHzBkSLWY/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="  target="_blank" rel="noopener noreferrer" className="card-link">
+
     <h3 className="vertical-timeline-element-title">Intro to Web3 and its Career Scope</h3>
     {/* <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4> */}
     <div style={{ display: 'flex', alignItems: 'center' }} className='innerDiv'>
@@ -283,6 +337,7 @@ iconStyle={{ background: '#e09f3e', color: '#fff' }}
         The event revolved around the subject web3 and the career scope in it. Mr. Sanket Aggarwal, our esteemed speaker, talked about Web 3 and how it is being implemented, along with its differences from the current web iteration, Web2.
     </div>
     </div>
+    </a>
 
       {/* User Experience, Visual Design */}
     
@@ -295,6 +350,8 @@ iconStyle={{ background: '#e09f3e', color: '#fff' }}
     iconStyle={{ background: '#e09f3e', color: '#fff' }}
     // icon={<WorkIcon />}
   >
+    <a href="https://www.instagram.com/p/CoBxdCNynKB/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="  target="_blank" rel="noopener noreferrer" className="card-link">
+
     <h3 className="vertical-timeline-element-title">Find Global Career opp ortunities on Web3 and Metaverse</h3>
     {/* <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4> */}
     <div style={{ display: 'flex', alignItems: 'center' }} className='innerDiv'>
@@ -303,6 +360,7 @@ iconStyle={{ background: '#e09f3e', color: '#fff' }}
       An expedition into the career scope of Web3 and Metaverse with Vas Modinos, the founder of Blockready, a Dubai based blockchain and web3 education platform With over sixty attendees both from BTech and BBA courses in attendance, Mr. Vas Modinos helmed the students through the world of Web3 - he elucidated on the blockchain technology and how it is being deployed for the development of Web3. 
     </div>
     </div>
+    </a>
 
       {/* Creative Direction, User Experience, Visual Design, SEO, Online Marketing */}
     
@@ -319,6 +377,8 @@ iconStyle={{ background: '#e09f3e', color: '#fff' }}
     iconStyle={{ background:"#e09f3e", color: '#fff' }}
     // icon={<WorkIcon />}
   >
+    <a href="https://www.instagram.com/p/CnbUEn8Ss2s/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="  target="_blank" rel="noopener noreferrer" className="card-link">
+
     <h3 className="vertical-timeline-element-title">Orientation and Treasure Hunt</h3>
     {/* <h4 className="vertical-timeline-element-subtitle">"Unlock the Frontend Frontier"</h4> */}
     <div style={{ display: 'flex', alignItems: 'center' }} className='innerDiv'>
@@ -328,6 +388,7 @@ iconStyle={{ background: '#e09f3e', color: '#fff' }}
 
     </div>
     </div>
+    </a>
 
       {/* Creative Direction, User Experience, Visual Design, Project Management, Team Leading */}
     
