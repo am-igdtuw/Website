@@ -50,9 +50,9 @@ function App() {
         containerStyle={{ fontSize: "14px" }}
       ></Toaster>
       <Routes>
-        {showLoader ? (
+        {/* {showLoader ? (
           <Route exact path="/" element={<SpiralCanvas1 />} />
-        ) : (
+        ) : ( */}
           <>
             <Route exact path="/" element={<Home />} />
             <Route exact path="/event" element={<EventPagePseudo />} />
