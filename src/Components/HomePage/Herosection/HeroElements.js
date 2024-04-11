@@ -65,7 +65,7 @@ export const Imgbg = styled.div`
 export const HeroContent = styled.div`
     z-index: 3;
     position: absolute;
-    padding: 8px 10px;
+    padding: 8px 0px;
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -97,6 +97,8 @@ export const HeroH1 = styled.h1`
 
     @media screen and (max-width: 480px){
         font-size: 1.5rem;
+        text-align: center;
+        justify-content: center;
     }
 `
 export const HeroD = styled.span`
@@ -148,7 +150,8 @@ export const HeroBtnWrapper = styled.div`
     margin-top: 0px;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: left;
+    justify-content: left;
     
     // background: radial-gradient(50% 50% at 50% 50%, #FFC640 47.4%, #F2AF13 100%);
 
