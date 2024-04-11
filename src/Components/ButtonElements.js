@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import {Link} from 'react-scroll'
+import { Link } from 'react-scroll'
 
 export const Button = styled(Link)`
     ${'' /* border-radius: 60px;
@@ -25,11 +25,11 @@ export const Button = styled(Link)`
     } */}
 
     border-radius: 60px;
-    background: ${({primary})=> (primary ? '#F2AF13' : '#F2AF13')};
+    background: ${({ primary }) => (primary ? '#F2AF13' : '#F2AF13')};
     white-space: nowrap;
-    color: ${({dark})=> (dark ? '#010606' : '#010606')};
-    padding: ${({big})=> (big? '14px 48px' : '12px 30px')};
-    font-size: ${({fontBig})=> (fontBig ? '28px' : '28px')};
+    color: ${({ dark }) => (dark ? '#010606' : '#010606')};
+    padding: ${({ big }) => (big ? '14px 48px' : '12px 30px')};
+    font-size: ${({ fontBig }) => (fontBig ? '28px' : '28px')};
     outline: none;
     border: 2px solid #403e08;
     box-shadow: 0 3px 0 black, 0px 3px 6px #fff;
@@ -38,8 +38,8 @@ export const Button = styled(Link)`
     width: 391px;
     height: 64px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
     transform: translate3d(0, 0.75em, -1em);
     transition: all 175ms cubic-bezier(0, 0, 1, 1);transition: 0.7s;
 
@@ -57,9 +57,18 @@ export const Button = styled(Link)`
         height: 3.5rem;
     }
 
+    @media screen and (max-width: 769px){
+       justify-content: left;
+    }
+
     @media screen and (max-width: 480px){
         font-size: 1.3rem;
-        width: 18rem;
+        max-width: 100%;
+        margin:0;
         height: 3.2rem;
+        display: flex;
+        align-items : center;
+        justify-content: center;
+
     }
 `
