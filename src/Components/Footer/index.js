@@ -69,7 +69,7 @@ const Footer = () => {
                   placeholder="Your Email..."
                   value={email}
                   onChange={handleEmailChange}
-                  style={{ color: 'lightgray', fontStyle: 'italic', fontSize:'0.7rem' ,font:'Poppins'}}
+                  style={{ color: '#343a40', fontStyle: 'italic', fontSize:'0.7rem' ,font:'Poppins'}}
                 />
                 <SubmitButton type="submit" onClick={handleFormSubmit}>
                   <FaPaperPlane />
