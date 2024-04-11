@@ -15,6 +15,7 @@ const EventHeroSection = () => {
     const navigate = useNavigate();
     const handleCollaborateClick = () => {
         // Redirect to the SponsorUsForm page
+        window.scrollTo(0, 0);
         navigate('/collaboratePage'); 
       };
 
