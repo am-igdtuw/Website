@@ -84,46 +84,6 @@ export const NavMenu = styled.div`
   }
 `;
 
-export const Navitem = styled.div`
-  height: 80px;
-  box-sizing: border-box;
-
-  /* Auto layout */
-
-display: flex;
-justify-content: center;
-flex-direction: row;
-align-items: center;
-${'' /* justify-content: center; */}
-padding: 0px 20px;
-gap: 10px;
-border:0.5px solid #FFC640;
-width:120px;
-height: 34px;
-
-background: linear-gradient(45deg, #000000, #1c1b19);
-border-radius: 22px;
-
-/* Inside auto layout */
-
-flex: none;
-order: 0;
-flex-grow: 0;
-&:hover {
-  background: linear-gradient(45deg, #FFC640, #FFC640);
-  border: 0.5px solid #000000;
-  color: #000000;
-}
-
-&.custom {
-  padding-left: 10px; 
-  padding-right: 10px; 
-}
-
-@media screen and (max-width: 480px){
-  margin: 5px;
- }
-`;
 
 export const NavLinks = styled(Link)`
   width: auto;
@@ -151,6 +111,51 @@ export const NavLinks = styled(Link)`
     color: #000000;
   }
 `;
+
+export const Navitem = styled.div`
+  height: 80px;
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+display: flex;
+justify-content: center;
+flex-direction: row;
+align-items: center;
+${'' /* justify-content: center; */}
+padding: 0px 20px;
+gap: 10px;
+border:0.5px solid #FFC640;
+width:120px;
+height: 34px;
+
+background: linear-gradient(45deg, #000000, #1c1b19);
+border-radius: 22px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+
+&:hover {
+  background: linear-gradient(90deg, #FFC640, #FFC640);
+  border: 0.5px solid #000000;
+  ${NavLinks} {
+    color: #000000;
+  }
+}
+
+&.custom {
+  padding-left: 10px; 
+  padding-right: 10px; 
+}
+
+@media screen and (max-width: 480px){
+  margin: 5px;
+ }
+`;
+
 
 export const MobileIcon = styled.div`
   display: none;
