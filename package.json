@@ -16,6 +16,7 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "@vercel/analytics": "^1.2.2",
     "babel-plugin-macros": "^3.1.0",
     "flowbite": "^2.2.1",
     "flowbite-react": "^0.7.2",
