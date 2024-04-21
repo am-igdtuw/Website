@@ -44,6 +44,8 @@ const Testimonial = () => {
             <Card11 img="https://res.cloudinary.com/duptmanu9/image/upload/v1707140357/blockchain_o4u0ok.png"/>
             <Card12 img="https://res.cloudinary.com/duptmanu9/image/upload/v1707140357/build-with-teszo_fj66i0.png"/>
             <Card13 img="https://res.cloudinary.com/duptmanu9/image/upload/v1707140357/geetika-di_ktiuzk.png"/>
+            <Card14 img="https://res.cloudinary.com/dlx9sj1pl/image/upload/v1712693959/Screenshot_2024-04-10_014915_nepofq.png"/>
+            <Card15 img="https://res.cloudinary.com/dlx9sj1pl/image/upload/v1712692992/Screenshot_2024-04-10_013236_q0xwi0.png"/>
       
           </Slider>
         </ContainerSlider>
@@ -415,4 +417,60 @@ const Card13 = ({ img }) => {
     </AvatarComponent>
   );
 };
+const Card14 = ({ img }) => {
+  return (
+    <AvatarComponent>
+      <AvatarHeading>Fleek Deploy: Delhi</AvatarHeading>
+
+      <Avatar
+        imgProps={{ style: { borderRadius: "50%" } }}
+        src={img}
+        style={{
+          width: 240,
+          height: 240,
+          border: "1px solid lightgray",
+          padding: 7,
+        }}
+      />
+
+      <AvatarContent>
+        Explored cutting-edge tech, showcased transformative decentralized hosting & web management.
+        <a href="/event" style={{ color: yellow[500] }}> Read More...</a>
+        {/* Currently working as a product manager at Quillaudits, Sanket has been working in the blockchain space for past 2 years. ✨✨ */}
+
+      </AvatarContent>
+
+
+    </AvatarComponent>
+  );
+};
+
+const Card15 = ({ img }) => {
+  return (
+    <AvatarComponent>
+      <AvatarHeading>Starknet X Assetmerkle</AvatarHeading>
+
+      <Avatar
+        imgProps={{ style: { borderRadius: "50%" } }}
+        src={img}
+        style={{
+          width: 240,
+          height: 240,
+          border: "1px solid lightgray",
+          padding: 7,
+        }}
+      />
+
+      <AvatarContent>
+        Hands-on Starknet session: Theory, advantages over Layer 2, architecture, account abstraction, and STARKs.
+        <a href="/event" style={{ color: yellow[500] }}> Read More...</a>
+        {/* Currently working as a product manager at Quillaudits, Sanket has been working in the blockchain space for past 2 years. ✨✨ */}
+
+      </AvatarContent>
+
+
+    </AvatarComponent>
+  );
+};
+
 export default Testimonial;
