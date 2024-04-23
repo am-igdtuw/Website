@@ -1,14 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { FaLinkedin, FaInstagram, FaTwitter, FaUser, FaEnvelope, FaPhone, FaBuilding, FaPager, FaPaperPlane, FaNewspaper } from 'react-icons/fa';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import image from '../../images/sponsorImg.jpg';
 import Loader from '../Loader/loader.js';
+import MobileLoader from '../Loader/mobileLoader.js';
 import './form.css';
 
 const SponsorUsForm = () => {
   const [loading, setLoading] = useState(false);
+  const [isMobileView, setIsMobileView] = useState(window.innerWidth <= 768);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -97,7 +99,13 @@ const SponsorUsForm = () => {
 //   const handleSubmit = async (e) => {
 //     // ... (unchanged)
 //   };
-
+useEffect(() => {
+  const handleResize = () => {
+    setIsMobileView(window.innerWidth <= 768);
+  };
+  window.addEventListener("resize", handleResize);
+  return () => window.removeEventListener("resize", handleResize);
+}, []);
   return (
     <>
       <h1 className="heading">Sponsor Us</h1>
@@ -278,7 +286,7 @@ const SponsorUsForm = () => {
                         className="loading-overlay"
                         style={{ display: loading ? "flex" : "none" }}
                     >
-                        <Loader />
+                        {isMobileView ? <MobileLoader /> : <Loader />}
                         <p>Loading...</p>
                     </div>
 
