@@ -287,7 +287,7 @@ useEffect(() => {
                         style={{ display: loading ? "flex" : "none" }}
                     >
                         {isMobileView ? <MobileLoader /> : <Loader />}
-                        <p>Loading...</p>
+                        <p>Loading....</p>
                     </div>
 
                     <input
