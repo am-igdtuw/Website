@@ -43,39 +43,29 @@ function App() {
   }, []);
 
   return (
+    
     <BrowserRouter>
       <Toaster
         position="bottom-center"
         gutter={14}
         containerStyle={{ fontSize: "14px" }}
-      ></Toaster>
+      />
       <Routes>
-        {/* {showLoader ? (
-          <Route exact path="/" element={<SpiralCanvas1 />} />
-        ) : ( */}
+        {showLoader ? (
+          <Route path="/" element={<SpiralCanvas1 />} />
+        ) : (
           <>
-            <Route exact path="/" element={<Home />} />
-            <Route exact path="/event" element={<EventPagePseudo />} />
-            {/* <Route exact path="/eventpseudo" element={<EventPagePseudo/>}/> */}
-            {/* <Route exact path="/blogs" element={<BlogPage/>}/> */}
-            <Route exact path="/faq" element={<FaqPage />} />
-            {/* <Route exact path="/techTeam" element={<TechTeamPage/>}/> */}
-            {/* <Route exact path="/eventTeam" element={<EventTeamPage/>}/> */}
-            {/* <Route exact path="/mediaTeam" element={<MediaTeamPage/>}/> */}
-            {/* <Route exact path="/researchTeam" element={<ResearchTechTeam/>}/>
-        <Route exact path="/outreachTeam" element={<OutreachTeamPage/>}/> */}
-            <Route exact path="/TeamPage" element={<TeamPage />} />
-            <Route exact path="/sponsorPage" element={<SponsorUsForm />} />
-            <Route
-              exact
-              path="/collaboratePage"
-              element={<CollaborateUsForm />}
-            />
-            <Route exact path="/hackday" element={<HackDay />} />
-            <Route exact path="/loader" element={<Loader />} />
-            <Route exact path="/mobileLoader" element={<MobileLoader />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/event" element={<EventPagePseudo />} />
+            <Route path="/faq" element={<FaqPage />} />
+            <Route path="/TeamPage" element={<TeamPage />} />
+            <Route path="/sponsorPage" element={<SponsorUsForm />} />
+            <Route path="/collaboratePage" element={<CollaborateUsForm />} />
+            <Route path="/hackday" element={<HackDay />} />
+            <Route path="/loader" element={<Loader />} />
+            <Route path="/mobileLoader" element={<MobileLoader />} />
           </>
-        )
+        )}
       </Routes>
     </BrowserRouter>
   );

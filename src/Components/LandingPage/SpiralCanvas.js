@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect, useState, useCallback } from "react";
 
 const SpiralCanvas = () => {
     const canvasRef = useRef(null);
@@ -17,11 +17,63 @@ const SpiralCanvas = () => {
         requestsPerFrame: 1,
     });
     const [animateForward, setAnimateForward] = useState(true);
-    const [animationFrame, setAnimationFrame] = useState(null);
+    const animationFrameRef = useRef(null);
+
+    const draw = useCallback(() => {
+        const canvas = canvasRef.current;
+        const ctx = canvas.getContext("2d");
+
+        const width = canvas.width;
+        const height = canvas.height;
+
+        ctx.clearRect(0, 0, width, height);
+        let points = [];
+        let radius = config.radius;
+        let newDR = config.dR;
+
+        if (animateForward) {
+            newDR += config.dRR;
+        } else {
+            newDR -= config.dRR;
+        }
+
+        for (
+            let angle = config.initialAngle;
+            angle <= config.cycles * 2 * Math.PI && radius > 0;
+            angle += config.increment * Math.PI
+        ) {
+            const x = width / 2 + radius * Math.cos(angle);
+            const y = height / 2 + radius * Math.sin(angle);
+            points.push({ x, y });
+            radius -= newDR;
+        }
+
+        ctx.beginPath();
+        ctx.strokeStyle = config.color;
+        ctx.lineWidth = config.lineWidth;
+        ctx.lineCap = "round";
+
+        for (let i = 0; i < points.length - 1; i++) {
+            ctx.moveTo(points[i].x, points[i].y);
+            ctx.lineTo(points[i + 1].x, points[i + 1].y);
+        }
+
+        ctx.stroke();
+        ctx.closePath();
+
+        if (newDR <= config.min_dR) {
+            setAnimateForward(true);
+        } else if (newDR >= config.max_dR) {
+            setAnimateForward(false);
+        }
+
+        setConfig((prevConfig) => ({ ...prevConfig, dR: newDR }));
+
+        animationFrameRef.current = requestAnimationFrame(draw);
+    }, [config, animateForward]);
 
     useEffect(() => {
         const canvas = canvasRef.current;
-        const ctx = canvas.getContext("2d");
 
         const resize = () => {
             // Set canvas dimensions based on container size
@@ -39,67 +91,16 @@ const SpiralCanvas = () => {
         window.addEventListener("resize", resize);
         window.addEventListener("mousemove", mouseMove);
 
-        const draw = () => {
-            if (animationFrame) {
-                cancelAnimationFrame(animationFrame);
-            }
-
-            const width = canvas.width;
-            const height = canvas.height;
-
-            ctx.clearRect(0, 0, width, height);
-            let points = [];
-            let radius = config.radius;
-
-            if (animateForward) {
-                config.dR += config.dRR;
-            } else {
-                config.dR -= config.dRR;
-            }
-
-            for (
-                let angle = config.initialAngle;
-                angle <= config.cycles * 2 * Math.PI && radius > 0;
-                angle += config.increment * Math.PI
-            ) {
-                const x = width / 2 + radius * Math.cos(angle);
-                const y = height / 2 + radius * Math.sin(angle);
-                points.push({ x, y });
-                radius -= config.dR;
-            }
-
-            ctx.beginPath();
-            ctx.strokeStyle = config.color;
-            ctx.lineWidth = config.lineWidth;
-            ctx.lineCap = "round";
-
-            for (let i = 0; i < points.length - 1; i++) {
-                ctx.moveTo(points[i].x, points[i].y);
-                ctx.lineTo(points[i + 1].x, points[i + 1].y);
-            }
-
-            ctx.stroke();
-            ctx.closePath();
-
-            if (config.dR <= config.min_dR) {
-                setAnimateForward(true);
-            } else if (config.dR >= config.max_dR) {
-                setAnimateForward(false);
-            }
-
-            setAnimationFrame(requestAnimationFrame(draw));
-        };
-
-        draw();
+        resize(); // Initial call to set the canvas size and draw
 
         return () => {
             window.removeEventListener("resize", resize);
             window.removeEventListener("mousemove", mouseMove);
-            if (animationFrame) {
-                cancelAnimationFrame(animationFrame);
+            if (animationFrameRef.current) {
+                cancelAnimationFrame(animationFrameRef.current);
             }
         };
-    }, [config, animateForward]);
+    }, [draw]);
 
     return (
         <canvas
