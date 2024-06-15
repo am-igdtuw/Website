@@ -9,7 +9,7 @@ const SpiralCanvas = () => {
         cycles: 100,
         initialAngle: -Math.PI / 2,
         dR: 0,
-        dRR: 0.019,
+        dRR: 0.005,
         min_dR: -15,
         max_dR: 15,
         color: "rgba(255, 255, 0, 2)",
@@ -18,6 +18,7 @@ const SpiralCanvas = () => {
     });
     const [animateForward, setAnimateForward] = useState(true);
     const animationFrameRef = useRef(null);
+    const [logo, setLogo] = useState(null);
 
     const draw = useCallback(() => {
         const canvas = canvasRef.current;
@@ -61,6 +62,15 @@ const SpiralCanvas = () => {
         ctx.stroke();
         ctx.closePath();
 
+        // Draw the logo at the center
+        if (logo) {
+            const logoWidth = 100; // Set the desired width for the logo
+            const logoHeight = 100; // Set the desired height for the logo
+            const logoX = (width - logoWidth) / 2;
+            const logoY = (height - logoHeight) / 2;
+            ctx.drawImage(logo, logoX, logoY, logoWidth, logoHeight);
+        }
+
         if (newDR <= config.min_dR) {
             setAnimateForward(true);
         } else if (newDR >= config.max_dR) {
@@ -70,7 +80,7 @@ const SpiralCanvas = () => {
         setConfig((prevConfig) => ({ ...prevConfig, dR: newDR }));
 
         animationFrameRef.current = requestAnimationFrame(draw);
-    }, [config, animateForward]);
+    }, [config, animateForward, logo]);
 
     useEffect(() => {
         const canvas = canvasRef.current;
@@ -93,6 +103,17 @@ const SpiralCanvas = () => {
 
         resize(); // Initial call to set the canvas size and draw
 
+        // Load the logo image
+        const logoImage = new Image();
+        logoImage.src = "../../../public/image/logo/1bg.png"; 
+        logoImage.onload = () => {
+            console.log("Logo loaded");
+            setLogo(logoImage);
+        };
+        logoImage.onerror = () => {
+            console.error("Failed to load logo image");
+        };
+
         return () => {
             window.removeEventListener("resize", resize);
             window.removeEventListener("mousemove", mouseMove);
@@ -106,8 +127,9 @@ const SpiralCanvas = () => {
         <canvas
             ref={canvasRef}
             style={{
-                width: "100%",
-                height: "100%",
+                marginTop:"-15vh",
+                height:"100vh",
+                width:"100vw",
             }}
         />
     );
