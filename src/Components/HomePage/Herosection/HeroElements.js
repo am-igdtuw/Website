@@ -17,6 +17,7 @@ export const HeroContainer = styled.div`
 
   @media screen and (max-width: 900px) {
     height: 40vh;
+    // margin-top: 50px;
   }
 
   // :before{
@@ -64,6 +65,13 @@ export const HeroContent = styled.div`
   flex-direction: column;
   align-items: left;
   width: 100%;
+  @media screen and (max-width: 900px) {
+    margin-top: 50px;
+    // min-height: 40vh;
+    // height: 40vh;
+    // max-height: 70vh;
+    // padding: 0px;
+  }
 `;
 
 export const HeroH1 = styled.h1`
@@ -85,6 +93,8 @@ export const HeroH1 = styled.h1`
   @media screen and (max-width: 768px) {
     font-size: 2rem;
     font-weight: 600;
+    // height: auto;
+    margin-top: 20px;
   }
 
   @media screen and (max-width: 480px) {
