@@ -174,7 +174,7 @@ export const FooterLogo = styled.div`
 `;
 
 export const InputBox1 = styled.input`
-  padding: 10px;
+  padding: 17px;
   margin: 0px 0px;
   margin-bottom: 5px;
   margin-left: -25px;

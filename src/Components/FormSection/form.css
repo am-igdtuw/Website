@@ -8,7 +8,7 @@ body, h1, form, label, input, textarea, input[type="submit"] {
 
 /* General styling */
 body {
-    background: linear-gradient(51deg, rgba(94, 71, 17, 1) 0%, rgba(22, 21, 17, 1) 100%);
+    background: linear-gradient(51deg, rgb(94, 71, 17) 0%, rgba(22, 21, 17, 1) 100%);
 }
 
 .loading-overlay {
@@ -26,20 +26,50 @@ body {
 }
 
 .form-div {
-    margin-top: 100px;
-    margin-bottom: 250px;
-    margin-left: 0%;
-    margin-right: 0%;
+    display: flex;
+    margin: 100px auto;  /* Centers the form div horizontally */
+    justify-content: center;
+    width: 80%;  /* Adds space on the sides */
+    border-radius: 15px;  /* Add border radius */
+    overflow: hidden;  /* Ensure child elements respect the border radius */
 }
 
-.form-container {
-    max-width: 500px;
-    margin: 0 auto;
+.left-container, .right-container {
+    width: 50%;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: rgba(255, 255, 255, 0.9);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border: 1px solid #ccc;
-    /* border-radius: 11px; */
+    margin: 0; /* No margin between sliders */
+    border-radius: 0;  /* Remove individual border radius */
+}
+
+.left-container {
+    background: linear-gradient(90deg,#3f2516,#8b6508, #B8860B, #cd950c, #eac10b);
+    color: white;
+    text-align: center;
+}
+
+.right-container {
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(90deg, #451952 , #662549, #AE445A,  #B8860B);
+    color: white;
+}
+
+.left-container h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.left-container p {
+    font-size: 18px;
+    margin-bottom: 40px;
 }
 
 h1 {
@@ -63,7 +93,7 @@ form input[type="number"],
 form textarea {
     width: 100%;
     padding: 10px;
-    margin: 8px 0;
+    margin: 4px 0; /* Reduced margin between form elements */
     border: 1px solid #ccc;
     border-radius: 3px;
     font-size: 16px;
@@ -71,28 +101,45 @@ form textarea {
 }
 
 form input[type="submit"] {
-    align-self:  center;
+    align-self: center;
     align-items: center;
     margin-top: 20px;
-    width : 40%;
-    background-color: #f7cc60;
+    width: 40%;
+    background-color: #B8860B;
     color: #fff;
     padding: 6px 10px;
-    margin-left:140px;
+    margin-left: 140px;
     border: none;
     border-radius: 25px;
     font-size: 18px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+
+@media screen and (max-width: 768px) {
+    .form-div {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;  /* Adjusts the width for smaller screens */
+    }
+    .left-container, .right-container {
+        width: 100%;
+        margin: 10px 0; /* Adds space between sliders on small screens */
+        border-radius: 15px;  /* Add border radius for small screens */
+    }
+    form input[type="submit"] {
+        margin-left: 0;
+    }
+}
+
 @media screen and (max-width: 480px) {
     form input[type="submit"] {
-        margin-left:115px;
+        width: 80%;
     }
 }
 
 form input[type="submit"]:hover {
-    background-color: #e2ac09;
+    background-color:  #f7cc60;
 }
 
 form label i {
@@ -113,7 +160,7 @@ form input[type="text"][placeholder="LinkedIn"] {
     border-radius: 3px;
     padding: 10px;
     width: 100%;
-    margin: 8px 0;
+    margin: 4px 0; /* Reduced margin between form elements */
     font-size: 16px;
 }
 
@@ -123,17 +170,6 @@ form label[for="Social_linkedin"] {
     margin-right: 0;
     margin-bottom: 5px;
     display: block;
-}
-
-/* Styling for form container */
-.form-container {
-    background: linear-gradient(90deg, #360242 7%, #b56400 41%);
-    color: white;
-}
-
-.form-container:hover {
-    box-shadow: 4px 4px #fff, 4px 4px 0 0 #fff;
-    transform: translate(-1px, -1px);
 }
 
 .heading {
@@ -152,7 +188,7 @@ h1 {
 /* Form element styling */
 .form-element {
     display: flex;
-    margin-top: 40 px;
+    margin-top: 40px;
     justify-content: center;
 }
 
@@ -160,48 +196,4 @@ h1 {
     margin: auto;
     height: 7%;
     width: 6.5%;
-}
-
-/* Double slider page styling */
-/* .double-slider-page {
-    display: flex;
-    align-items: flex-start;
-} */
-
-/* .left-slider, */
-.right-slider {
-    width: 50%;
-    flex: 1;
-    margin: 0;
-    padding: 0;
-}
-
-/* .left-slider {
-    padding: 50px 50px 50px 0;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.left-slider h1 {
-    font-size: 40px;
-    margin-bottom: 20px;
-} */
-
-/* .left-slider p {
-    font-size: 18px;
-    max-width: 80%;
-    text-align: center;
-    margin-bottom: 20px;
-} */
-
-/* .instagram-icon {
-    font-size: 50px;
-    margin-top: auto;
-} */
-
-.right-slider {
-    display: flex;
-    align-items: center;
 }
