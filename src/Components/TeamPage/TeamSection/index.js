@@ -49,7 +49,7 @@ const TeamPage = () => {
         <TechP>
           <a className='linkiden' href="https://www.linkedin.com/in/anshika-aggarwal-704847249/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
                   <a className='twitter' href="https://twitter.com/kipupwidanshika" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="fa-brands fa-x-twitter" style={{ verticalAlign: 'middle' }}/></a>
-                  <a className='insta' href="" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+                  <a className='insta' href="https://www.instagram.com/agg.anshika007" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
         </TechP>
       )
     },
@@ -101,7 +101,7 @@ const TeamPage = () => {
         <TechP>
              <a className='linkiden' href="https://www.linkedin.com/in/priya-verma-9668b4291/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
                <a className='twitter' href="https://x.com/PriyaVe93285977" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="fa-brands fa-x-twitter" style={{ verticalAlign: 'middle' }}/></a>
-               <a className='insta' href="" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+               <a className='insta' href="https://www.instagram.com/_.priyavermaa" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
          </TechP>
       )
     }
