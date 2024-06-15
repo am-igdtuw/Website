@@ -6,8 +6,8 @@ import Home from "./pages";
 import EventPage from "./pages/event";
 import Loader from "./Components/Loader/loader";
 import MobileLoader from "./Components/Loader/mobileLoader";
-import SpiralCanvas from "./Components/LandingPage/SpiralCanvas";
-import SpiralCanvas1 from "./pages/landing";
+import SpiralCanvas1 from "./Components/LandingPage/SpiralCanvas";
+import SpiralCanvas16 from "./pages/landing";
 
 // import BlogPage from './pages/blogs'
 //import TechTeamPage from './pages/techTeam';
@@ -37,7 +37,7 @@ function App() {
   useEffect(() => {
     const loaderTimeout = setTimeout(() => {
       setShowLoader(false);
-    }, 5000);
+    }, 3000);
 
     return () => clearTimeout(loaderTimeout);
   }, []);
