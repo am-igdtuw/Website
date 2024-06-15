@@ -223,7 +223,7 @@ const TeamPage = () => {
     {
       name: 'Shaivi Goel',
       role: 'EM Lead',
-      imageUrl: 'https://res.cloudinary.com/dlx9sj1pl/image/upload/v1717858468/assetmerkle_Shaivi_p2ims7.jpg', 
+      imageUrl: 'https://res.cloudinary.com/dlx9sj1pl/image/upload/ar_1:1,b_rgb:ffffff,bo_12px_solid_rgb:f2af13,c_fill,g_auto,r_max,w_1000/v1717858468/assetmerkle_Shaivi_p2ims7.jpg', 
       techProfiles : (
         <TechP>
         <a className='linkiden' href="https://www.linkedin.com/in/shaivi-goel-b14160245?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
@@ -544,7 +544,7 @@ const TeamPage = () => {
     {
       name: 'Srishneet Kaur',
       role: 'Research Lead',
-      imageUrl: 'https://res.cloudinary.com/dlx9sj1pl/image/upload/v1717859161/Picture_a8gz7j.png', 
+      imageUrl: 'https://res.cloudinary.com/dlx9sj1pl/image/upload/ar_1:1,b_rgb:ffffff,bo_12px_solid_rgb:f2af13,c_fill,g_auto,r_max,w_1000/v1717859161/Picture_a8gz7j.png', 
       techProfiles : (
         <TechP>
               <a className='linkiden' href="https://www.linkedin.com/in/srishneet-kaur-59a924263" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
@@ -556,7 +556,7 @@ const TeamPage = () => {
     {
       name: 'Sakshi Singh',
       role: 'Research Lead',
-      imageUrl: 'https://res.cloudinary.com/dlx9sj1pl/image/upload/v1717859243/IMG_20240602_235835_ooaqoe.jpg', 
+      imageUrl: 'https://res.cloudinary.com/dlx9sj1pl/image/upload/ar_1:1,b_rgb:ffffff,bo_12px_solid_rgb:f2af13,c_fill,g_auto,r_max,w_1000/v1717859243/IMG_20240602_235835_ooaqoe.jpg', 
       techProfiles : (
         <TechP>
               <a className='linkiden' href="https://www.linkedin.com/in/sakshi-singh-1661b426b/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
@@ -805,7 +805,7 @@ const TeamPage = () => {
     {
         name: 'Anusha Arora',
         role: 'Media Core',
-        imageUrl: 'https://res.cloudinary.com/dlx9sj1pl/image/upload/v1717859478/f0d11246-336f-4aa6-91d9-8b6f7d94a23f_shtsrl.jpg', 
+        imageUrl: 'https://res.cloudinary.com/dlx9sj1pl/image/upload/ar_1:1,b_rgb:ffffff,bo_12px_solid_rgb:f2af13,c_fill,g_auto,r_max,w_1000/v1717859478/f0d11246-336f-4aa6-91d9-8b6f7d94a23f_shtsrl.jpg', 
         techProfiles : (
           <TechP>
               <a className='linkiden' href="https://www.linkedin.com/in/anusha-arora-23a75228a/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
@@ -829,7 +829,7 @@ const TeamPage = () => {
       {
         name: 'Shreya Gupta',
         role: 'Media Core',
-        imageUrl: 'https://res.cloudinary.com/dlx9sj1pl/image/upload/v1717859527/Photo_from_Shreya_Gupta_l7d5tu.jpg', 
+        imageUrl: 'https://res.cloudinary.com/dlx9sj1pl/image/upload/ar_1:1,b_rgb:ffffff,bo_12px_solid_rgb:f2af13,c_fill,g_auto,r_max,w_1000/v1717859527/Photo_from_Shreya_Gupta_l7d5tu.jpg', 
         techProfiles : (
           <TechP>
               <a className='linkiden' href="https://www.linkedin.com/in/shreya-gupta-a783b9270?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
@@ -979,7 +979,7 @@ const TeamPage = () => {
     {
       name: 'Shruti Jha',
       role: 'Outreach Lead',
-      imageUrl: 'https://res.cloudinary.com/dlx9sj1pl/image/upload/v1717859596/picture_for_AM_k08emn.jpg', 
+      imageUrl: 'https://res.cloudinary.com/dlx9sj1pl/image/upload/ar_1:1,b_rgb:ffffff,bo_12px_solid_rgb:f2af13,c_fill,g_auto,r_max,w_1000/v1717859596/picture_for_AM_k08emn.jpg', 
       techProfiles : (
         <TechP>
         <a className='linkiden' href="https://www.linkedin.com/in/shruti-jha-28b4b5255" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
@@ -1005,7 +1005,7 @@ const TeamPage = () => {
     {
       name: 'Sonasha Choudhary',
       role: 'Outreach Core',
-      imageUrl: 'https://res.cloudinary.com/dlx9sj1pl/image/upload/v1717859643/IMG_20240529_004615_328_ojgfpo.jpg',
+      imageUrl: 'https://res.cloudinary.com/dlx9sj1pl/image/upload/ar_1:1,b_rgb:ffffff,bo_12px_solid_rgb:f2af13,c_fill,g_auto,r_max,w_1000/v1717859643/IMG_20240529_004615_328_ojgfpo.jpg',
       techProfiles : (
         <TechP>
             <a className='linkiden' href="https://www.linkedin.com/in/sonasha-choudhary-5a9274298" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
@@ -1017,7 +1017,7 @@ const TeamPage = () => {
       {
       name: 'Naincy Yadav ',
       role: 'Outreach Core',
-      imageUrl: 'https://res.cloudinary.com/dlx9sj1pl/image/upload/v1717859692/pic_3_tljdvx.jpg',
+      imageUrl: 'https://res.cloudinary.com/dlx9sj1pl/image/upload/ar_1:1,b_rgb:ffffff,bo_12px_solid_rgb:f2af13,c_fill,g_auto,r_max,w_1000/v1717859692/pic_3_tljdvx.jpg',
       techProfiles : (
         <TechP>
                <a className='linkiden' href="https://www.linkedin.com/in/naincy-yadav-3a63a7263" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
@@ -1129,7 +1129,7 @@ const TeamPage = () => {
     {
       name: 'Anaya Jain',
       role: 'Co-Ordinator',
-      imageUrl: 'https://res.cloudinary.com/dlx9sj1pl/image/upload/v1717859770/pic_fqkecj.jpg',
+      imageUrl: 'https://res.cloudinary.com/dlx9sj1pl/image/upload/ar_1:1,b_rgb:ffffff,bo_12px_solid_rgb:f2af13,c_fill,g_auto,r_max,w_1000/v1717859770/pic_fqkecj.jpg',
       techProfiles : (
         <TechP>
         <a className='linkiden' href="https://www.linkedin.com/in/anaya-jain-4a5715288/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
