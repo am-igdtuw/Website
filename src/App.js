@@ -8,6 +8,7 @@ import Loader from "./Components/Loader/loader";
 import MobileLoader from "./Components/Loader/mobileLoader";
 import SpiralCanvas1 from "./Components/LandingPage/SpiralCanvas";
 import SpiralCanvas16 from "./pages/landing";
+import Data from "./Components/Form/Data"
 
 // import BlogPage from './pages/blogs'
 //import TechTeamPage from './pages/techTeam';
@@ -19,6 +20,7 @@ import FaqPage from "./pages/faq";
 import TeamPage from "./pages/team";
 import SponsorUsForm from "./pages/sponsorPage";
 import CollaborateUsForm from "./pages/collaborateForm";
+import profilePage from "./pages/profile";
 import HackDay from "./pages/hackDay";
 import EventPagePseudo from "./pages/eventpseudo";
 //import ReactDOM from 'react-dom'
@@ -64,6 +66,8 @@ function App() {
             <Route path="/hackday" element={<HackDay />} />
             <Route path="/loader" element={<Loader />} />
             <Route path="/mobileLoader" element={<MobileLoader />} />
+            <Route path="/profile" element={<Data />} />
+
           </>
         )}
       </Routes>
