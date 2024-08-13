@@ -79,6 +79,11 @@ const Navbar = () => {
                 FAQS
               </NavLinks>
             </Navitem>
+            <Navitem className="custom">
+              <NavLinks to="/profile" onClick={handleLogoClick}>
+                Form
+              </NavLinks>
+            </Navitem>
           </NavMenu>
         </NavbarContainer>
       </Nav>
