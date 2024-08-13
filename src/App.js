@@ -8,7 +8,7 @@ import Loader from "./Components/Loader/loader";
 import MobileLoader from "./Components/Loader/mobileLoader";
 import SpiralCanvas1 from "./Components/LandingPage/SpiralCanvas";
 import SpiralCanvas16 from "./pages/landing";
-import Data from "./Components/Form/Data"
+import Profile from "./pages/profile"
 
 // import BlogPage from './pages/blogs'
 //import TechTeamPage from './pages/techTeam';
@@ -66,7 +66,7 @@ function App() {
             <Route path="/hackday" element={<HackDay />} />
             <Route path="/loader" element={<Loader />} />
             <Route path="/mobileLoader" element={<MobileLoader />} />
-            <Route path="/profile" element={<Data />} />
+            <Route path="/profile" element={<Profile />} />
 
           </>
         )}
