@@ -40,7 +40,7 @@ function App() {
     const loaderTimeout = setTimeout(() => {
       setShowLoader(false);
     }, 3000);
-
+  
     return () => clearTimeout(loaderTimeout);
   }, []);
 
