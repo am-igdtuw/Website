@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
+import { Grid, Typography } from "@mui/material";
 import 'react-toastify/dist/ReactToastify.css';
 import { FaUser, FaEnvelope, FaPhone, FaBuilding } from 'react-icons/fa';
 import Loader from '../Loader/loader.js';
@@ -89,9 +90,47 @@ const ProfilePage = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  const customH1Styles = {
+    background: "-webkit-linear-gradient( 120deg, #D9D9D9 10%, #F8B228 90%)",
+    WebkitBackgroundClip: "text",
+    backgroundClip: "text",
+    backgroundSize: "200%",
+    backgroundPosition: "50% 50%",
+    fontSize: "2.7rem",
+    fontWeight: "600",
+    fontFamily: "Exo 2, sans-serif",
+    color: "transparent",
+    // margin: "0 !important",
+    animation: "gradientAnimation 6s ease-in-out infinite",
+    "@keyframes gradientAnimation": {
+      "0%": {
+        backgroundPosition: "0 50%",
+      },
+      "50%": {
+        backgroundPosition: "100% 50%",
+      },
+      "100%": {
+        backgroundPosition: "0 50%",
+      },
+    },
+    "@media screen and (max-width: 480px)": {
+      fontSize: "2.1rem",
+      fontWeight: "800",
+    },
+  };
+
   return (
     <>
-      <h1 className='heading'>Create Your Profile</h1>
+      <Typography
+                  variant="h4"
+                  color="#ffffe6"
+                  align="center"
+                  marginTop="55px"
+                  sx={customH1Styles}
+                >
+                  Create your Profile
+      </Typography>
+      
       <div className="form-div">
         <div className="form-container">
           <form onSubmit={handleSubmit}>
