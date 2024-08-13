@@ -105,8 +105,8 @@ const CollaborateUsForm = () => {
       <h1 className='heading'>Collaborate With Us</h1>
       <div className="form-div">
         <div className="left-container">
-          <h2>Hello, Friend!</h2>
-          <p>Enter your personal details and start your journey with us</p>
+        <h2>Collaborate with Us</h2>
+          <p>Assetmerkle IGDTUW makes it easy and fun to learn by offering insights from experienced students, building connections within a curious community, and keeping the learning experience engaging and stress-free. We're the most active club on campus, buzzing with events and workshops, including a 24-hour hackathon with over 300 participants from across India. Be part of the trend with Assetmerkle!</p>
           {/* <button className="signup-button">Sign Up</button> */}
         </div>
         <div className="right-container">
