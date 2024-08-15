@@ -102,197 +102,63 @@ const CollaborateUsForm = () => {
 
   return (
     <>
-      <h1 className="heading">Sponsor Us</h1>
-
-      <div className="double-slider-page">
-        {/* <div className="left-slider">
-          <div className='form-div'>
-            <div className='form-container'>
-              <h1>Why You Should Sponsor Us</h1>
-              <p>
-                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet
-                  lorem vel justo varius ullamcorper. Nullam ut lectus eu nulla efficitur
-                  tincidunt. Curabitur eu elit in ex aliquam blandit.
-              </p> */}
-              {/* <FaInstagram className="instagram-icon" /> */}
-            {/* </div>
-          </div>
-        </div> */}
-        {/* <div className="right-slider"> */}
-          <div className="form-div">
-            <div className="form-container">
-                <form onSubmit={handleSubmit}>
-                    <div className="form-element">
-                        <FaUser className="FormIcons" />
-                        <label htmlFor="name">
-                            <i className="fa-solid fa-user"></i>
-                        </label>
-                        <input
-                            type="text"
-                            placeholder="Name"
-                            id="name"
-                            name="name"
-                            value={formData.name}
-                            onChange={handleInputChange}
-                            required
-                        />
-                        <br />
-                    </div>
-
-                    <div className="form-element">
-                        <FaEnvelope className="FormIcons" />
-                            <label htmlFor="email">
-                                 <i className="fa-solid fa-envelope"></i>
-                             </label>
-                            <input
-                                type="email"
-                                placeholder="Email"
-                                id="email"
-                                name="email"
-                                value={formData.email}
-                                onChange={handleInputChange}
-                                required
-                            />
-                        <br />
-                    </div>
-
-                    <div className="form-element">
-                        <FaEnvelope className="FormIcons" />
-                        <label htmlFor="email">
-                            <i className="fa-solid fa-envelope"></i>
-                        </label>
-                        <input
-                            type="email"
-                            placeholder="Alternate Email"
-                            id="altEmail"
-                            name="altEmail"
-                            value={formData.altEmail}
-                            onChange={handleInputChange}
-                        />
-                        <br />
-                    </div>
-
-                    <div className="form-element">
-                        <FaPhone className="FormIcons" />
-                        <label htmlFor="phone_no">
-                            <i className="fa-solid fa-phone"></i>
-                        </label>
-                        <input
-                            type="number"
-                            placeholder="Phone No."
-                            id="phone_no"
-                            name="contactNumber"
-                            value={formData.contactNumber}
-                            onChange={handleInputChange}
-                            min="1000000000"
-                            required
-                        />
-
-                        <br />
-                    </div>
-
-                    <div className="form-element">
-                        <FaBuilding className="FormIcons" />
-                        <label htmlFor="Company/Organisation">
-                            <i className="fa-solid fa-building"></i>
-                        </label>
-                        <input
-                            type="text"
-                            placeholder="Company/Organisation"
-                            id="Company/Organisation"
-                            name="company"
-                            value={formData.company}
-                            onChange={handleInputChange}
-                            required
-                        />
-                        <br />
-                    </div>
-
-                    <div className="form-element">
-                        <FaNewspaper className="FormIcons" />
-                        <label htmlFor="textarea">
-                            <i className="fa-solid fa-memo"></i>
-                        </label>
-                        <textarea
-                            placeholder="Sponsorship related query"
-                            id="textarea"
-                            name="message"
-                            rows="4"
-                            cols="50"
-                            value={formData.message}
-                            onChange={handleInputChange}
-                        ></textarea>
-                        <br />
-                    </div>
-
-                    <div className="form-element">
-                        <FontAwesomeIcon
-                            icon="fa-brands fa-x-twitter "
-                            className="FormIcons"
-                        />
-                        <label htmlFor="twitter_id">
-                            <i className="fa-brands fa-x-twitter"></i>
-                        </label>
-                        <input
-                            type="text"
-                            placeholder="Twitter"
-                            id="twitter_id"
-                            name="twitter"
-                            value={formData.twitter}
-                            onChange={handleInputChange}
-                        />
-                        <br />
-                    </div>
-
-                    <div className="form-element">
-                        <FaInstagram className="FormIcons" />
-                        <label htmlFor="instagram_id">
-                            <i className="fa-brands fa-instagram"></i>
-                        </label>
-                        <input
-                            type="text"
-                            placeholder="Instagram"
-                            id="instagram_id"
-                            name="instagram"
-                            value={formData.instagram}
-                            onChange={handleInputChange}
-                        />
-                        <br />
-                    </div>
-
-                    <div className="form-element">
-                        <FaLinkedin className="FormIcons" />
-                        <label htmlFor="linkedin_id">
-                            <i className="fa-brands fa-linkedin"></i>
-                        </label>
-                        <input
-                            type="text"
-                            placeholder="LinkedIn"
-                            id="linkedin_id"
-                            name="linkedin"
-                            value={formData.linkedin}
-                            onChange={handleInputChange}
-                        />
-                        <br />
-                    </div>
-
-                    <div
-                        className="loading-overlay"
-                        style={{ display: loading ? "flex" : "none" }}
-                    >
-                        {isMobileView ? <MobileLoader /> : <Loader />}
-                        <p>Loading...</p>
-                    </div>
-
-                    <input
-                        type="submit"
-                        value={loading ? "Submitting..." : "Submit"}
-                        disabled={loading}
-                    />
-          </form>
+      <h1 className='heading'>Sponsor Us</h1>
+      <div className="form-div">
+        <div className="left-container">
+        <h2>Sponsor Us</h2>
+          <p>Looking for a way to spread the word about your Web3-related company in tech colleges? Join the Web3 revolution by sponsoring Assetmerkle IGDTUW! Feature your brand in our high-visibility events and Twitter Spaces, engage with passionate future leaders, and collaborate with industry partners. We have previously collaborated with Web3 Samaj, Capex, Rise In, and more. Sponsor us to Support innovation and amplify your brand in the Web3 space.</p>
+          {/* <button className="signup-button">Sign Up</button> */}
         </div>
-        <div>{/* <img src={image} alt="Description of the image" /> */}</div>
-      </div>
+        <div className="right-container">
+          {/* <div className="form-container"> */}
+            <form onSubmit={handleSubmit}>
+              <div className="form-element">
+                <FaUser className='FormIcons' />
+                <label htmlFor="name"><i className="fa-solid fa-user"></i></label>
+                <input type="text" placeholder="Name" id="name" name="name" value={formData.name} onChange={handleInputChange} required /><br />
+              </div>
+              <div className="form-element">
+                <FaEnvelope className='FormIcons' />
+                <label htmlFor="email"><i className="fa-solid fa-envelope"></i></label>
+                <input type="email" placeholder="Email" id="email" name="email" value={formData.email} onChange={handleInputChange} required /><br />
+              </div>
+              <div className="form-element">
+                <FaPhone className='FormIcons' />
+                <label htmlFor="phone_no"><i className="fa-solid fa-phone"></i></label>
+                <input type="number" placeholder="Phone No." id="phone_no" name="contactNumber" value={formData.contactNumber} onChange={handleInputChange} min="1000000000" required /><br />
+              </div>
+              <div className="form-element">
+                <FaBuilding className='FormIcons' />
+                <label htmlFor="Organisation/Company"><i className="fa-solid fa-building"></i></label>
+                <input type="text" placeholder="Organisation/Company" id="Organisation/Company" name="organization" value={formData.organization} onChange={handleInputChange} required /><br />
+              </div>
+              <div className="form-element">
+                <FaNewspaper className='FormIcons' />
+                <label htmlFor="textarea"><i className="fa-solid fa-memo"></i></label>
+                <textarea placeholder="Sponsorship related query." id="textarea" name="message" rows="4" cols="50" value={formData.message} onChange={handleInputChange}></textarea><br />
+              </div>
+              <div className="form-element">
+                <FontAwesomeIcon icon="fa-brands fa-x-twitter " className='FormIcons' />
+                <label htmlFor="twitter_id"><i className="fa-brands fa-x-twitter"></i></label>
+                <input type="text" placeholder="Twitter" id="twitter_id" name="twitter" value={formData.twitter} onChange={handleInputChange} /><br />
+              </div>
+              <div className="form-element">
+                <FaInstagram className='FormIcons' />
+                <label htmlFor="instagram_id"><i className="fa-brands fa-instagram"></i></label>
+                <input type="text" placeholder="Instagram" id="instagram_id" name="instagram" value={formData.instagram} onChange={handleInputChange} /><br />
+              </div>
+              <div className="form-element">
+                <FaLinkedin className='FormIcons' />
+                <label htmlFor="linkedin_id"><i className="fa-brands fa-linkedin"></i></label>
+                <input type="text" placeholder="LinkedIn" id="linkedin_id" name="linkedin" value={formData.linkedin} onChange={handleInputChange} /><br />
+              </div>
+              <div className="loading-overlay" style={{ display: loading ? 'flex' : 'none' }}>
+                {isMobileView ? <MobileLoader /> : <Loader />}
+                <p>Loading...</p>
+              </div>
+              <input type="submit" value={loading ? 'Submitting...' : 'Submit'} disabled={loading} />
+            </form>
+          </div>
         </div>
       {/* </div> */}
       <ToastContainer />

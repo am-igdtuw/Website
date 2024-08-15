@@ -91,27 +91,27 @@ const ProfilePage = () => {
 
   return (
     <>
-      <h1 className='heading'>Create Your Profile</h1>
-      <div className="form-div">
-        <div className="form-container">
+      <h1 className='dheading'>Create Your Profile</h1>
+      <div className="dform-div">
+        <div className="dform-container">
           <form onSubmit={handleSubmit}>
-            <div className="form-element">
-              <FaUser className='form-icon' />
+            <div className="dform-element">
+              <FaUser className='dform-icon' />
               <input type="text" placeholder="Name" id="name" name="name" value={formData.name} onChange={handleInputChange} required />
             </div>
-            <div className="form-element">
+            <div className="dform-element">
               <FaEnvelope className='form-icon' />
               <input type="email" placeholder="Email" id="email" name="email" value={formData.email} onChange={handleInputChange} required />
             </div>
-            <div className="form-element">
-              <FaPhone className='form-icon' />
+            <div className="dform-element">
+              <FaPhone className='dform-icon' />
               <input type="number" placeholder="Phone No." id="phone_no" name="contactNumber" value={formData.contactNumber} onChange={handleInputChange} min="1000000000" required />
             </div>
-            <div className="form-element">
-              <FaBuilding className='form-icon' />
+            <div className="dform-element">
+              <FaBuilding className='dform-icon' />
               <input type="text" placeholder="Branch" id="branch" name="branch" value={formData.branch} onChange={handleInputChange} required />
             </div>
-            <div className="loading-overlay" style={{ display: loading ? 'flex' : 'none' }}>
+            <div className="dloading-overlay" style={{ display: loading ? 'flex' : 'none' }}>
               {isMobileView ? <MobileLoader /> : <Loader />}
               <p>Loading...</p>
             </div>
