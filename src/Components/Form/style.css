@@ -9,9 +9,9 @@ body {
 
 .dheading {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 60px;
   font-size: 2.5em;
-  color: #0073b1;
+  color: #ffffff;
 }
 
 .dform-div {
@@ -22,25 +22,34 @@ body {
 }
 
 .dform-container {
-  background-color: #ffffff;
+  margin-top: -90px;
+  background: linear-gradient(90deg, #451952 , #662549, #AE445A,  #B8860B);;
   padding: 30px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
-  width: 90%;
+  width: 100%;
   max-width: 500px;
 }
 
 .dform-element {
   display: flex;
-  align-items: center;
+  align-items: center; 
   margin-bottom: 20px;
   position: relative;
+}
+
+.dform-icon {
+  font-size: 1.5rem;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  color: #0073b1; 
+  transition: color 0.3s ease; 
 }
 
 .dform-element input {
   width: 100%;
   padding: 15px;
-  margin-left: 10px;
   border: 1px solid #ddd;
   border-radius: 10px;
   transition: all 0.3s ease;
@@ -51,13 +60,12 @@ body {
   box-shadow: 0 0 5px rgba(0, 115, 177, 0.2);
 }
 
-.dform-icon {
-  color: #0073b1;
-  font-size: 1.5em;
+.dform-element input:focus + .dform-icon {
+  color: #004a70; 
 }
 
 input[type="submit"] {
-  background-color: #0073b1;
+  background-color: #B8860B; 
   color: #ffffff;
   padding: 15px 20px;
   border: none;
@@ -69,7 +77,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #005f8d;
+  background-color: #B8860B;
 }
 
 input[type="submit"]:disabled {

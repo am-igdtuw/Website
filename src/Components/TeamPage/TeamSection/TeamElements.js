@@ -187,7 +187,7 @@ export const TeamListWrapper = styled.div`
     flex-wrap: wrap;
     grid-template-columns: repeat(4, minmax(320px, 1fr));
     gap: 1rem;
-    width: 80rem;
+    width: 60rem;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
