@@ -100,12 +100,12 @@ const ProfilePage = () => {
               <input type="text" placeholder="Name" id="name" name="name" value={formData.name} onChange={handleInputChange} required />
             </div>
             <div className="dform-element">
-              <FaEnvelope className='form-icon' />
-              <input type="email" placeholder="Email" id="email" name="email" value={formData.email} onChange={handleInputChange} required />
-            </div>
-            <div className="dform-element">
               <FaPhone className='dform-icon' />
               <input type="number" placeholder="Phone No." id="phone_no" name="contactNumber" value={formData.contactNumber} onChange={handleInputChange} min="1000000000" required />
+            </div>
+            <div className="dform-element">
+              <FaEnvelope className='dform-icon' />
+              <input type="text" placeholder="Email" id="email" name="email" value={formData.email} onChange={handleInputChange} required />
             </div>
             <div className="dform-element">
               <FaBuilding className='dform-icon' />
