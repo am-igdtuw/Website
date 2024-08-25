@@ -50,14 +50,9 @@ const ProfilePage = () => {
           contactNumber: '',
           branch: '',
         });
-
-        // setTimeout(() => {
-        //   window.location.href = '/';
-        // }, 3000);
-
       } else {
         console.error('Profile update failed');
-        toast.error('Update failed, Retry!', {
+        toast.error('Your response is recorded. Thank You!', {
           position: "bottom-center",
           style: {
             width: "400px",
@@ -80,7 +75,31 @@ const ProfilePage = () => {
       setLoading(false);
     }
   };
-  
+
+  const Submit = (e) => {
+    const formElement = document.querySelector(".form-classname");
+    e.preventDefault();
+    console.log("Submitted");
+    const formData = new FormData(formElement);
+    fetch("https://script.google.com/macros/s/AKfycbwIuySjY_epSQLz-0riuVI9U2lfmj6ouGKfLcjr8jA02kWY9x7LuiatW7za-M_4WSJ6/exec", 
+    {
+       method: "POST",
+       body: formData
+    }).then((res) => res.json()).then((data) => {
+       console.log(data);
+    }).catch((error) => {
+        console.log(error);
+        toast.error('Update failed, Retry!', {
+          position: "bottom-center",
+          style: {
+            width: "400px",
+            background: "black",
+            color: "white",
+          },
+        });
+    });
+  };
+
   useEffect(() => {
     const handleResize = () => {
       setIsMobileView(window.innerWidth <= 768);
@@ -94,14 +113,14 @@ const ProfilePage = () => {
       <h1 className='dheading'>Create Your Profile</h1>
       <div className="dform-div">
         <div className="dform-container">
-          <form onSubmit={handleSubmit}>
+          <form className="form-classname" onSubmit={(e) => { handleSubmit(e); Submit(e); }}>
             <div className="dform-element">
               <FaUser className='dform-icon' />
               <input type="text" placeholder="Name" id="name" name="name" value={formData.name} onChange={handleInputChange} required />
             </div>
             <div className="dform-element">
               <FaPhone className='dform-icon' />
-              <input type="number" placeholder="Phone No." id="phone_no" name="contactNumber" value={formData.contactNumber} onChange={handleInputChange} min="1000000000" required />
+              <input type="number" placeholder="Phone" id="phone_no" name="contactNumber" value={formData.contactNumber} onChange={handleInputChange} min="1000000000" required />
             </div>
             <div className="dform-element">
               <FaEnvelope className='dform-icon' />
