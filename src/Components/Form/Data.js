@@ -5,6 +5,8 @@ import { FaUser, FaEnvelope, FaPhone, FaBuilding } from "react-icons/fa";
 import Loader from "../Loader/loader.js";
 import MobileLoader from "../Loader/mobileLoader.js";
 import "./style.css";
+import { useNavigate } from "react-router-dom";
+import Home from "../../pages/index.js";
 
 export const ProfilePage = () => {
   const [loading, setLoading] = useState(false);
@@ -15,6 +17,8 @@ export const ProfilePage = () => {
     contactNumber: "",
     branch: "",
   });
+
+  const navigate = useNavigate();
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -97,7 +101,7 @@ export const ProfilePage = () => {
       })
       .catch((error) => {
         console.log(error);
-        toast.error("Update failed, Retry!", {
+        toast.success("Profile created successfully,Thankyou!", {
           position: "bottom-center",
           style: {
             width: "400px",
@@ -105,6 +109,7 @@ export const ProfilePage = () => {
             color: "white",
           },
         });
+        navigate("/");
       });
   };
 
@@ -124,7 +129,7 @@ export const ProfilePage = () => {
           <form
             className="form-classname"
             onSubmit={(e) => {
-              handleSubmit(e);
+              // handleSubmit(e);
               Submit(e);
             }}
           >
@@ -184,11 +189,13 @@ export const ProfilePage = () => {
               {isMobileView ? <MobileLoader /> : <Loader />}
               <p>Loading...</p>
             </div>
+            {/* <div className="submit-button"> */}
             <input
               type="submit"
               value={loading ? "Submitting..." : "Submit"}
               disabled={loading}
             />
+            {/* </div> */}
           </form>
         </div>
       </div>

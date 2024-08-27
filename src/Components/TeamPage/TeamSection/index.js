@@ -1,20 +1,27 @@
-import React, { useEffect } from 'react'
+import React, { useEffect } from "react";
 
-import TeamMemberCard from './TeamMemberCard';
-import { TeamContainer,TechP, TeamHead, TeamWrapper, TeamListWrapper,TeamListWrapper2, TeamName} from './TeamElements';
-import { FaLinkedin,FaInstagram } from 'react-icons/fa';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import TeamMemberCard from "./TeamMemberCard";
+import {
+  TeamContainer,
+  TechP,
+  TeamHead,
+  TeamWrapper,
+  TeamListWrapper,
+  TeamListWrapper2,
+  TeamName,
+} from "./TeamElements";
+import { FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { useLocation } from 'react-router-dom';
-import { scroller } from 'react-scroll';
+import { useLocation } from "react-router-dom";
+import { scroller } from "react-scroll";
 
 const TeamPage = () => {
-
   // const advisor = [
   //   {
   //     name: 'Unnati Chabra',
   //     role: 'Founder',
-  //     imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_12px_solid_rgb:F2AF13,b_rgb:262c35/v1688969490/Asset%20Mantle%20-%20Team%202023/Leads/WhatsApp_Image_2023-07-10_at_11.31.50_pfiaub.jpg', 
+  //     imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_12px_solid_rgb:F2AF13,b_rgb:262c35/v1688969490/Asset%20Mantle%20-%20Team%202023/Leads/WhatsApp_Image_2023-07-10_at_11.31.50_pfiaub.jpg',
   //     techProfiles: (
   //       <TechP>
   //         <a className='linkiden' href="https://www.linkedin.com/in/unnati-chhabra" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
@@ -24,91 +31,239 @@ const TeamPage = () => {
   //     )
   //   },
   // ];
-  
+
   const president = [
     {
-      name: 'Shreya Gupta',
-      role: 'President',
-      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1688491042/Asset%20Mantle%20-%20Team%202023/Content/Shreya%20gupta.png', 
-      techProfiles : (
+      name: "Shreya Gupta",
+      role: "President",
+      imageUrl:
+        "https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1688491042/Asset%20Mantle%20-%20Team%202023/Content/Shreya%20gupta.png",
+      techProfiles: (
         <TechP>
-          <a className='linkiden' href="https://www.linkedin.com/in/shreya-gupta-0b6821255/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-          <a className='twitter' href="https://x.com/shregupta89?mx=2" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="fa-brands fa-x-twitter" style={{ verticalAlign: 'middle' }} /></a>
-          <a className='insta' href="https://www.instagram.com/_shreyaguptaa_/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+          <a
+            className="linkiden"
+            href="https://www.linkedin.com/in/shreya-gupta-0b6821255/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            className="twitter"
+            href="https://x.com/shregupta89?mx=2"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon="fa-brands fa-x-twitter"
+              style={{ verticalAlign: "middle" }}
+            />
+          </a>
+          <a
+            className="insta"
+            href="https://www.instagram.com/_shreyaguptaa_/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram />
+          </a>
         </TechP>
-      )
+      ),
     },
-    
   ];
   const vicePresident = [
     {
-      name: 'Anshika Aggarwal',
-      role: 'Vice President',
-      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1688489576/Asset%20Mantle%20-%20Team%202023/Outreachy/Anshika%20Aggarwal.jpg', 
-      techProfiles : (
+      name: "Anshika Aggarwal",
+      role: "Vice President",
+      imageUrl:
+        "https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1688489576/Asset%20Mantle%20-%20Team%202023/Outreachy/Anshika%20Aggarwal.jpg",
+      techProfiles: (
         <TechP>
-          <a className='linkiden' href="https://www.linkedin.com/in/anshika-aggarwal-704847249/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-                  <a className='twitter' href="https://twitter.com/kipupwidanshika" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="fa-brands fa-x-twitter" style={{ verticalAlign: 'middle' }}/></a>
-                  <a className='insta' href="https://www.instagram.com/agg.anshika007" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+          <a
+            className="linkiden"
+            href="https://www.linkedin.com/in/anshika-aggarwal-704847249/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            className="twitter"
+            href="https://twitter.com/kipupwidanshika"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon="fa-brands fa-x-twitter"
+              style={{ verticalAlign: "middle" }}
+            />
+          </a>
+          <a
+            className="insta"
+            href="https://www.instagram.com/agg.anshika007"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram />
+          </a>
         </TechP>
-      )
+      ),
     },
     {
-      name: 'Sakshi Mishra',
-      role: 'Vice President',
-      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1688491032/Asset%20Mantle%20-%20Team%202023/Content/Sakshi.jpg', 
-      techProfiles : (
+      name: "Sakshi Mishra",
+      role: "Vice President",
+      imageUrl:
+        "https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1688491032/Asset%20Mantle%20-%20Team%202023/Content/Sakshi.jpg",
+      techProfiles: (
         <TechP>
-          <a className='linkiden' href="https://linkedin.com/in/sakshi-mishra-86618a24b" rel="noopener noreferrer"><FaLinkedin /></a>
-                  <a className='twitter' href="https://x.com/sakshimiishra" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="fa-brands fa-x-twitter" style={{ verticalAlign: 'middle' }}/></a>
-                  <a className='insta' href="https://www.instagram.com/miishrasakshii/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+          <a
+            className="linkiden"
+            href="https://linkedin.com/in/sakshi-mishra-86618a24b"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            className="twitter"
+            href="https://x.com/sakshimiishra"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon="fa-brands fa-x-twitter"
+              style={{ verticalAlign: "middle" }}
+            />
+          </a>
+          <a
+            className="insta"
+            href="https://www.instagram.com/miishrasakshii/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram />
+          </a>
         </TechP>
-      )
+      ),
     },
   ];
   const techTeamLead = [
     {
-      name: 'Vidushi Agarwal ',
-      role: 'Technical Lead',
-      imageUrl: 'https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695661648/Asset_Mantle/Vidushi_Picture_yy5rkb.jpg', 
-      techProfiles : (
+      name: "Vidushi Agarwal ",
+      role: "Technical Lead",
+      imageUrl:
+        "https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695661648/Asset_Mantle/Vidushi_Picture_yy5rkb.jpg",
+      techProfiles: (
         <TechP>
-            <a className='linkiden' href="https://www.linkedin.com/in/vidushi-agarwal-a95885256" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-            <a className='twitter' href="https://x.com/Vidushit143?t=eQzBXgOJkB9VSD-3whT7WQ&s=09" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="fa-brands fa-x-twitter" style={{ verticalAlign: 'middle' }}/></a>
-            <a className='insta' href="https://www.instagram.com/agarwal.vidu/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+          <a
+            className="linkiden"
+            href="https://www.linkedin.com/in/vidushi-agarwal-a95885256"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            className="twitter"
+            href="https://x.com/Vidushit143?t=eQzBXgOJkB9VSD-3whT7WQ&s=09"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon="fa-brands fa-x-twitter"
+              style={{ verticalAlign: "middle" }}
+            />
+          </a>
+          <a
+            className="insta"
+            href="https://www.instagram.com/agarwal.vidu/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram />
+          </a>
         </TechP>
-      )
-    }
-  ]
+      ),
+    },
+  ];
   const techTeamCore = [
     {
-      name: 'Manya',
-      role: 'Technical Core',
-      imageUrl: 'https://res.cloudinary.com/duptmanu9/image/upload/ar_1:1,b_rgb:ffffff,bo_12px_solid_rgb:f2af13,c_fill,g_auto,r_max,w_1000/v1717849294/Profile-Manya_xf4ehi.jpg', 
-      techProfiles : (
+      name: "Manya",
+      role: "Technical Core",
+      imageUrl:
+        "https://res.cloudinary.com/duptmanu9/image/upload/ar_1:1,b_rgb:ffffff,bo_12px_solid_rgb:f2af13,c_fill,g_auto,r_max,w_1000/v1717849294/Profile-Manya_xf4ehi.jpg",
+      techProfiles: (
         <TechP>
-             <a className='linkiden' href="https://www.linkedin.com/in/manya35?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-               <a className='twitter' href="https://twitter.com/hi_manya_" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="fa-brands fa-x-twitter" style={{ verticalAlign: 'middle' }}/></a>
-               <a className='insta' href="https://www.instagram.com/simpformanya/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-         </TechP>
-      )
+          <a
+            className="linkiden"
+            href="https://www.linkedin.com/in/manya35?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            className="twitter"
+            href="https://twitter.com/hi_manya_"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon="fa-brands fa-x-twitter"
+              style={{ verticalAlign: "middle" }}
+            />
+          </a>
+          <a
+            className="insta"
+            href="https://www.instagram.com/simpformanya/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram />
+          </a>
+        </TechP>
+      ),
     },
     {
-      name: 'Priya Verma',
-      role: 'Technical Core',
-      imageUrl: 'https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695670585/Asset_Mantle/priya_eu7avc.jpg', 
-      techProfiles : (
+      name: "Priya Verma",
+      role: "Technical Core",
+      imageUrl:
+        "https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695670585/Asset_Mantle/priya_eu7avc.jpg",
+      techProfiles: (
         <TechP>
-             <a className='linkiden' href="https://www.linkedin.com/in/priya-verma-9668b4291/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-               <a className='twitter' href="https://x.com/PriyaVe93285977" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="fa-brands fa-x-twitter" style={{ verticalAlign: 'middle' }}/></a>
-               <a className='insta' href="https://www.instagram.com/_.priyavermaa" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-         </TechP>
-      )
-    }
+          <a
+            className="linkiden"
+            href="https://www.linkedin.com/in/priya-verma-9668b4291/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            className="twitter"
+            href="https://x.com/PriyaVe93285977"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon="fa-brands fa-x-twitter"
+              style={{ verticalAlign: "middle" }}
+            />
+          </a>
+          <a
+            className="insta"
+            href="https://www.instagram.com/_.priyavermaa"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram />
+          </a>
+        </TechP>
+      ),
+    },
     // {
     //   name: 'Mansi',
     //   role: 'Technical Core',
-    //   imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693146647/Asset%20Mantle%20-%20Team%202023/Technical/mansi_naqlkc.png', 
+    //   imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693146647/Asset%20Mantle%20-%20Team%202023/Technical/mansi_naqlkc.png',
     //   techProfiles : (
     //     <TechP>
     //       <a className='linkiden' href="https://www.linkedin.com/in/mansi-jangra-33a77622a" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
@@ -120,7 +275,7 @@ const TeamPage = () => {
     // {
     //   name: 'Sneha Chauhan',
     //   role: 'Technical Core',
-    //   imageUrl: 'https://res.cloudinary.com/dx0dgujbj/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1688875544/My%20Image/Untitled_design_1_bqfeyo.png', 
+    //   imageUrl: 'https://res.cloudinary.com/dx0dgujbj/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1688875544/My%20Image/Untitled_design_1_bqfeyo.png',
     //   techProfiles : (
     //     <TechP>
     //          <a className='linkiden' href="https://www.linkedin.com/in/sneha-chauhan-986a21213/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
@@ -129,21 +284,20 @@ const TeamPage = () => {
     //    </TechP>
     //   )
     // }
-
-  ]
-    // {
-    //   name: 'Manjusha Iyer',
-    //   role: 'Co-Ordinator',
-    //   imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1688527494/Asset%20Mantle%20-%20Team%202023/Technical/Manjusha%20Iyer.jpg', 
-    //   techProfiles : (
-    //     <TechP>
-    //        <a className='linkiden' href="https://www.linkedin.com/in/manjusha-iyer-83b4a01a7/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-    //            <a className='twitter' href=" https://twitter.com/ManjushaIyer" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
-    //            <a className='insta' href="https://www.instagram.com/iyermanjusha/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-    //     </TechP>
-    //   )
-    // },
-    const techTeamCoordinator = [
+  ];
+  // {
+  //   name: 'Manjusha Iyer',
+  //   role: 'Co-Ordinator',
+  //   imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1688527494/Asset%20Mantle%20-%20Team%202023/Technical/Manjusha%20Iyer.jpg',
+  //   techProfiles : (
+  //     <TechP>
+  //        <a className='linkiden' href="https://www.linkedin.com/in/manjusha-iyer-83b4a01a7/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+  //            <a className='twitter' href=" https://twitter.com/ManjushaIyer" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+  //            <a className='insta' href="https://www.instagram.com/iyermanjusha/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+  //     </TechP>
+  //   )
+  // },
+  const techTeamCoordinator = [
     // {
     //   name: 'Apoorva ',
     //   role: 'Co-Ordinator',
@@ -155,35 +309,85 @@ const TeamPage = () => {
     //            <a className='insta' href="https://www.instagram.com/verve_infinite/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
     //      </TechP>
     //   )
-      // },
-      {
-        name: 'Himanshi',
-        role: 'Co-Ordinator',
-        imageUrl: 'https://res.cloudinary.com/duptmanu9/image/upload/ar_1:1,b_rgb:ffffff,bo_12px_solid_rgb:f2af13,c_fill,g_auto,r_max,w_1000/v1717850607/profile_1_lvlohv.jpg', 
-        techProfiles : (
-          <TechP>
-               <a className='linkiden' href="https://www.linkedin.com/in/himanshi-prajapati-070bb6280/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-                 <a className='twitter' href="https://x.com/hiihimanshi?t=5HDh3fRWuO6yNIsPeDF5OQ&s=09" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="fa-brands fa-x-twitter" style={{ verticalAlign: 'middle' }}/></a>
-                 <a className='insta' href="" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-           </TechP>
-        )
-      },
+    // },
     {
-      name: 'Advitiya Sharma',
-      role: 'Co-Ordinator',
-      imageUrl: 'https://res.cloudinary.com/duptmanu9/image/upload/ar_1:1,b_rgb:ffffff,bo_12px_solid_rgb:f2af13,c_fill,g_auto,r_max,w_1000/v1717850875/WhatsApp_Image_2024-06-08_at_18.14.01_654e905c_ip4rvt.jpg', 
-      techProfiles : (
+      name: "Himanshi",
+      role: "Co-Ordinator",
+      imageUrl:
+        "https://res.cloudinary.com/duptmanu9/image/upload/ar_1:1,b_rgb:ffffff,bo_12px_solid_rgb:f2af13,c_fill,g_auto,r_max,w_1000/v1717850607/profile_1_lvlohv.jpg",
+      techProfiles: (
         <TechP>
-             <a className='linkiden' href="https://www.linkedin.com/in/advitiya993/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-               <a className='twitter' href="" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="fa-brands fa-x-twitter" style={{ verticalAlign: 'middle' }}/></a>
-               <a className='insta' href="https://instagram.com/advitiya__?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-         </TechP>
-      )
+          <a
+            className="linkiden"
+            href="https://www.linkedin.com/in/himanshi-prajapati-070bb6280/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            className="twitter"
+            href="https://x.com/hiihimanshi?t=5HDh3fRWuO6yNIsPeDF5OQ&s=09"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon="fa-brands fa-x-twitter"
+              style={{ verticalAlign: "middle" }}
+            />
+          </a>
+          <a
+            className="insta"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram />
+          </a>
+        </TechP>
+      ),
+    },
+    {
+      name: "Advitiya Sharma",
+      role: "Co-Ordinator",
+      imageUrl:
+        "https://res.cloudinary.com/duptmanu9/image/upload/ar_1:1,b_rgb:ffffff,bo_12px_solid_rgb:f2af13,c_fill,g_auto,r_max,w_1000/v1717850875/WhatsApp_Image_2024-06-08_at_18.14.01_654e905c_ip4rvt.jpg",
+      techProfiles: (
+        <TechP>
+          <a
+            className="linkiden"
+            href="https://www.linkedin.com/in/advitiya993/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            className="twitter"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon="fa-brands fa-x-twitter"
+              style={{ verticalAlign: "middle" }}
+            />
+          </a>
+          <a
+            className="insta"
+            href="https://instagram.com/advitiya__?igshid=OGQ5ZDc2ODk2ZA=="
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram />
+          </a>
+        </TechP>
+      ),
     },
     // {
     //   name: 'Manya',
     //   role: 'Co-Ordinator',
-    //   imageUrl: 'https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695661632/Asset_Mantle/Screenshot_2023-09-23_160127_gazttb.png', 
+    //   imageUrl: 'https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695661632/Asset_Mantle/Screenshot_2023-09-23_160127_gazttb.png',
     //   techProfiles : (
     //     <TechP>
     //          <a className='linkiden' href="http://www.linkedin.com/in/manya-455796284" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
@@ -195,7 +399,7 @@ const TeamPage = () => {
     // {
     //   name: 'Mehek Prabhakar',
     //   role: 'Co-Ordinator',
-    //   imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1688491388/Asset%20Mantle%20-%20Team%202023/Technical/Mehek%20Prabhakar.webp', 
+    //   imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1688491388/Asset%20Mantle%20-%20Team%202023/Technical/Mehek%20Prabhakar.webp',
     //   techProfiles : (
     //     <TechP>
     //                 <a className='linkiden' href="#" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
@@ -204,14 +408,13 @@ const TeamPage = () => {
     //       </TechP>
     //   )
     // },
-        
   ];
 
   const eventsTeamLead = [
     // {
     //   name: 'Hiteshi Dattatrey',
     //   role: 'EM Lead',
-    //   imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_12px_solid_rgb:F2AF13,b_rgb:262c35/v1688488848/Asset%20Mantle%20-%20Team%202023/Leads/Hiteshi%20Dattatrey.jpg', 
+    //   imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_12px_solid_rgb:F2AF13,b_rgb:262c35/v1688488848/Asset%20Mantle%20-%20Team%202023/Leads/Hiteshi%20Dattatrey.jpg',
     //   techProfiles : (
     //     <TechP>
     //           <a className='linkiden' href="https://www.linkedin.com/in/hiteshi-dattatrey-48117422a/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
@@ -221,72 +424,196 @@ const TeamPage = () => {
     //   )
     // },
     {
-      name: 'Shaivi Goel',
-      role: 'EM Lead',
-      imageUrl: 'https://res.cloudinary.com/dlx9sj1pl/image/upload/ar_1:1,b_rgb:ffffff,bo_12px_solid_rgb:f2af13,c_fill,g_auto,r_max,w_1000/v1717858468/assetmerkle_Shaivi_p2ims7.jpg', 
-      techProfiles : (
+      name: "Shaivi Goel",
+      role: "EM Lead",
+      imageUrl:
+        "https://res.cloudinary.com/dlx9sj1pl/image/upload/ar_1:1,b_rgb:ffffff,bo_12px_solid_rgb:f2af13,c_fill,g_auto,r_max,w_1000/v1717858468/assetmerkle_Shaivi_p2ims7.jpg",
+      techProfiles: (
         <TechP>
-        <a className='linkiden' href="https://www.linkedin.com/in/shaivi-goel-b14160245?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-       <a className='twitter' href="https://x.com/shaizvanchutney?t=4-LRIbOvFydced2iuv_oLQ&s=09" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="fa-brands fa-x-twitter" style={{ verticalAlign: 'middle' }}/></a>
-       <a className='insta' href="https://www.instagram.com/shaivigoel_/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-       </TechP> 
-      )
+          <a
+            className="linkiden"
+            href="https://www.linkedin.com/in/shaivi-goel-b14160245?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            className="twitter"
+            href="https://x.com/shaizvanchutney?t=4-LRIbOvFydced2iuv_oLQ&s=09"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon="fa-brands fa-x-twitter"
+              style={{ verticalAlign: "middle" }}
+            />
+          </a>
+          <a
+            className="insta"
+            href="https://www.instagram.com/shaivigoel_/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram />
+          </a>
+        </TechP>
+      ),
     },
     {
-      name: 'Sripriya Agarwal ',
-      role: 'EM Lead',
-      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1688489578/Asset%20Mantle%20-%20Team%202023/Outreachy/Sripriya%20Agarwal.jpg', 
-      techProfiles : (
+      name: "Sripriya Agarwal ",
+      role: "EM Lead",
+      imageUrl:
+        "https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1688489578/Asset%20Mantle%20-%20Team%202023/Outreachy/Sripriya%20Agarwal.jpg",
+      techProfiles: (
         <TechP>
-        <a className='linkiden' href="https://www.linkedin.com/in/sripriya-agarwal-483475261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-       <a className='twitter' href="https://x.com/Agarwa1Sripriya?t=JxikcfXG9ffcnonwhLDxhw&s=09" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="fa-brands fa-x-twitter" style={{ verticalAlign: 'middle' }}/></a>
-       <a className='insta' href="https://www.instagram.com/sripriyaagarwal16/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-       </TechP> 
-      )
-    }
-  ]
+          <a
+            className="linkiden"
+            href="https://www.linkedin.com/in/sripriya-agarwal-483475261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            className="twitter"
+            href="https://x.com/Agarwa1Sripriya?t=JxikcfXG9ffcnonwhLDxhw&s=09"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon="fa-brands fa-x-twitter"
+              style={{ verticalAlign: "middle" }}
+            />
+          </a>
+          <a
+            className="insta"
+            href="https://www.instagram.com/sripriyaagarwal16/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram />
+          </a>
+        </TechP>
+      ),
+    },
+  ];
   const eventsTeamCore = [
-    
     {
-      name: 'Palak',
-      role: 'EM Core',
-      imageUrl: 'https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695670259/Asset_Mantle/IMG_20230921_135918_jfazmg.jpg', 
-      techProfiles : (
+      name: "Palak",
+      role: "EM Core",
+      imageUrl:
+        "https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695670259/Asset_Mantle/IMG_20230921_135918_jfazmg.jpg",
+      techProfiles: (
         <TechP>
-        <a className='linkiden' href="https://www.linkedin.com/in/palak-bansal-3b6666283?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-       <a className='twitter' href="https://twitter.com/palakbansl26" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="fa-brands fa-x-twitter" style={{ verticalAlign: 'middle' }}/></a>
-       <a className='insta' href="https://instagram.com/palak_16876" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-       </TechP> 
-      )
+          <a
+            className="linkiden"
+            href="https://www.linkedin.com/in/palak-bansal-3b6666283?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            className="twitter"
+            href="https://twitter.com/palakbansl26"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon="fa-brands fa-x-twitter"
+              style={{ verticalAlign: "middle" }}
+            />
+          </a>
+          <a
+            className="insta"
+            href="https://instagram.com/palak_16876"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram />
+          </a>
+        </TechP>
+      ),
     },
     {
-      name: 'Avni',
-      role: 'EM Core',
-      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1688490160/Asset%20Mantle%20-%20Team%202023/EM/Avni%20Singh.jpg', 
-      techProfiles : (
+      name: "Avni",
+      role: "EM Core",
+      imageUrl:
+        "https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1688490160/Asset%20Mantle%20-%20Team%202023/EM/Avni%20Singh.jpg",
+      techProfiles: (
         <TechP>
-            <a className='linkiden' href="https://www.linkedin.com/in/avni-singh-723700259" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-              <a className='twitter' href="https://twitter.com/avnisingh023" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="fa-brands fa-x-twitter"style={{ verticalAlign: 'middle' }} /></a>
-              <a className='insta' href="https://www.instagram.com/avnii.singh_/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-            </TechP>
-      )
+          <a
+            className="linkiden"
+            href="https://www.linkedin.com/in/avni-singh-723700259"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            className="twitter"
+            href="https://twitter.com/avnisingh023"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon="fa-brands fa-x-twitter"
+              style={{ verticalAlign: "middle" }}
+            />
+          </a>
+          <a
+            className="insta"
+            href="https://www.instagram.com/avnii.singh_/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram />
+          </a>
+        </TechP>
+      ),
     },
     {
-      name: 'Arshita ',
-      role: 'EM Core',
-      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693723631/Asset%20Mantle%20-%20Team%202023/EM/IMG-20230802-WA0008_ulxyfi.jpg', 
-      techProfiles : (
+      name: "Arshita ",
+      role: "EM Core",
+      imageUrl:
+        "https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693723631/Asset%20Mantle%20-%20Team%202023/EM/IMG-20230802-WA0008_ulxyfi.jpg",
+      techProfiles: (
         <TechP>
-            <a className='linkiden' href="https://www.linkedin.com/in/arshita-%F0%9F%91%A9%F0%9F%8F%BB%E2%80%8D%F0%9F%92%BB-3446aa256" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-              <a className='twitter' href="https://twitter.com/Arshita64?t=nS5iEK-qpFkQk6o3-Zz8kA&s=09" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="fa-brands fa-x-twitter" style={{ verticalAlign: 'middle' }}/></a>
-              <a className='insta' href="https://instagram.com/arshita_k22?igshid=MzNlNGNkZWQ4Mg==" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-            </TechP>
-      )
+          <a
+            className="linkiden"
+            href="https://www.linkedin.com/in/arshita-%F0%9F%91%A9%F0%9F%8F%BB%E2%80%8D%F0%9F%92%BB-3446aa256"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            className="twitter"
+            href="https://twitter.com/Arshita64?t=nS5iEK-qpFkQk6o3-Zz8kA&s=09"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon="fa-brands fa-x-twitter"
+              style={{ verticalAlign: "middle" }}
+            />
+          </a>
+          <a
+            className="insta"
+            href="https://instagram.com/arshita_k22?igshid=MzNlNGNkZWQ4Mg=="
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram />
+          </a>
+        </TechP>
+      ),
     },
     // {
     //   name: 'Gunjan Vaishnavi Jangra',
     //   role: 'EM Core',
-    //   imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693723634/Asset%20Mantle%20-%20Team%202023/EM/Picture_kcxbsj.jpg', 
+    //   imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693723634/Asset%20Mantle%20-%20Team%202023/EM/Picture_kcxbsj.jpg',
     //   techProfiles : (
     //     <TechP>
     //         <a className='linkiden' href="https://www.linkedin.com/in/gunjanvaishnavijangra/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
@@ -295,12 +622,12 @@ const TeamPage = () => {
     //         </TechP>
     //   )
     // }
-  ]
+  ];
   const eventsTeamCoordinater = [
     // {
     //   name: 'Manasi Duggal ',
     //   role: 'Co-Ordinator',
-    //   imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1688490161/Asset%20Mantle%20-%20Team%202023/EM/Manasi%20Duggal.jpg', 
+    //   imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1688490161/Asset%20Mantle%20-%20Team%202023/EM/Manasi%20Duggal.jpg',
     //   techProfiles : (
     //     <TechP>
     //         <a className='linkiden' href="https://www.linkedin.com/in/manasi-duggal-7b62911a7" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
@@ -312,7 +639,7 @@ const TeamPage = () => {
     // {
     //   name: 'Riya Gupta ',
     //   role: 'Co-Ordinator',
-    //   imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693723636/Asset%20Mantle%20-%20Team%202023/EM/Riya_bouigi.jpg', 
+    //   imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693723636/Asset%20Mantle%20-%20Team%202023/EM/Riya_bouigi.jpg',
     //   techProfiles : (
     //     <TechP>
     //         <a className='linkiden' href="https://www.linkedin.com/in/riya-gupta-79170226b/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
@@ -322,21 +649,46 @@ const TeamPage = () => {
     //   )
     // },
     {
-      name: 'Saie Pawar ',
-      role: 'Co-Ordinator',
-      imageUrl: 'https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695669972/Asset_Mantle/IMG_20230917_200559_a8g8mn.jpg', 
-      techProfiles : (
+      name: "Saie Pawar ",
+      role: "Co-Ordinator",
+      imageUrl:
+        "https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695669972/Asset_Mantle/IMG_20230917_200559_a8g8mn.jpg",
+      techProfiles: (
         <TechP>
-            <a className='linkiden' href="https://www.linkedin.com/in/saie-pawar-96b27a262" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-              <a className='twitter' href="" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="fa-brands fa-x-twitter" style={{ verticalAlign: 'middle' }}/></a>
-              <a className='insta' href="https://instagram.com/_.saiee?igshid=MzMyNGUyNmU2YQ==" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-            </TechP>
-      )
+          <a
+            className="linkiden"
+            href="https://www.linkedin.com/in/saie-pawar-96b27a262"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            className="twitter"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon="fa-brands fa-x-twitter"
+              style={{ verticalAlign: "middle" }}
+            />
+          </a>
+          <a
+            className="insta"
+            href="https://instagram.com/_.saiee?igshid=MzMyNGUyNmU2YQ=="
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram />
+          </a>
+        </TechP>
+      ),
     },
     // {
     //   name: 'Kashish Rastogi ',
     //   role: 'Co-Ordinator',
-    //   imageUrl: 'https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695671019/Asset_Mantle/08501172023_page-0001_semeng.jpg', 
+    //   imageUrl: 'https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695671019/Asset_Mantle/08501172023_page-0001_semeng.jpg',
     //   techProfiles : (
     //     <TechP>
     //         <a className='linkiden' href="http://www.linkedin.com/in/kashish-rastogi-7a189b27a" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
@@ -348,7 +700,7 @@ const TeamPage = () => {
     // {
     //   name: 'Ananya Pal ',
     //   role: 'Co-Ordinator',
-    //   imageUrl: 'https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695670797/Asset_Mantle/photo_p86dpd.jpg', 
+    //   imageUrl: 'https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695670797/Asset_Mantle/photo_p86dpd.jpg',
     //   techProfiles : (
     //     <TechP>
     //         <a className='linkiden' href="https://www.linkedin.com/in/ananya-pal-294a5a289" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
@@ -360,7 +712,7 @@ const TeamPage = () => {
     // {
     //   name: 'Vaneeta Alhawat',
     //   role: 'Co-Ordinator',
-    //   imageUrl: 'https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695670799/Asset_Mantle/IMG_20230923_150836_ymvc66.jpg', 
+    //   imageUrl: 'https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695670799/Asset_Mantle/IMG_20230923_150836_ymvc66.jpg',
     //   techProfiles : (
     //     <TechP>
     //         <a className='linkiden' href="http://www.linkedin.com/in/vaneeta-ahlawat-947920288" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
@@ -372,7 +724,7 @@ const TeamPage = () => {
     // {
     //   name: 'Bhoomi Aggarwal',
     //   role: 'Co-Ordinator',
-    //   imageUrl: 'https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695670798/Asset_Mantle/Phoooootoooooo_qaqioa.jpg', 
+    //   imageUrl: 'https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695670798/Asset_Mantle/Phoooootoooooo_qaqioa.jpg',
     //   techProfiles : (
     //     <TechP>
     //         <a className='linkiden' href="https://www.linkedin.com/in/bhoomi-aggarwal-078937287" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
@@ -384,7 +736,7 @@ const TeamPage = () => {
     // {
     //   name: 'Priya Verma',
     //   role: 'Co-Ordinator',
-    //   imageUrl: 'https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695670585/Asset_Mantle/priya_eu7avc.jpg', 
+    //   imageUrl: 'https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695670585/Asset_Mantle/priya_eu7avc.jpg',
     //   techProfiles : (
     //     <TechP>
     //         <a className='linkiden' href="https://www.linkedin.com/in/priya-verma-9668b4291" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
@@ -396,7 +748,7 @@ const TeamPage = () => {
     // {
     //   name: 'Manasvi Mittal',
     //   role: 'Co-Ordinator',
-    //   imageUrl: 'https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695670587/Asset_Mantle/Snapchat-247253325_bcnbbu.jpg', 
+    //   imageUrl: 'https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695670587/Asset_Mantle/Snapchat-247253325_bcnbbu.jpg',
     //   techProfiles : (
     //     <TechP>
     //         <a className='linkiden' href="https://www.linkedin.com/in/manasvi-mittal-62b83528a" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
@@ -408,7 +760,7 @@ const TeamPage = () => {
     // {
     //   name: 'Shraddha Sharma',
     //   role: 'Co-Ordinator',
-    //   imageUrl: 'https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695670588/Asset_Mantle/Half_pic_kogn40.jpg', 
+    //   imageUrl: 'https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695670588/Asset_Mantle/Half_pic_kogn40.jpg',
     //   techProfiles : (
     //     <TechP>
     //         <a className='linkiden' href="https://www.linkedin.com/in/shraddha-sharma-648a5b270" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
@@ -420,7 +772,7 @@ const TeamPage = () => {
     // {
     //   name: 'Shruti Pathak',
     //   role: 'Co-Ordinator',
-    //   imageUrl: 'https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695670408/Asset_Mantle/IMG-20230517-WA0008_nn9cxz.jpg', 
+    //   imageUrl: 'https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695670408/Asset_Mantle/IMG-20230517-WA0008_nn9cxz.jpg',
     //   techProfiles : (
     //     <TechP>
     //         <a className='linkiden' href="https://www.linkedin.com/in/shruti-pathak-83417328a" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
@@ -432,7 +784,7 @@ const TeamPage = () => {
     // {
     //   name: 'Manya Sachdeva',
     //   role: 'Co-Ordinator',
-    //   imageUrl: 'https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695670409/Asset_Mantle/10501172023_wbmxuj.jpg', 
+    //   imageUrl: 'https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695670409/Asset_Mantle/10501172023_wbmxuj.jpg',
     //   techProfiles : (
     //     <TechP>
     //         <a className='linkiden' href="https://www.linkedin.com/in/manya-kaur-sachdeva-b74069288" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
@@ -456,7 +808,7 @@ const TeamPage = () => {
     // {
     //   name: 'Garima Gupta',
     //   role: 'Co-Ordinator',
-    //   imageUrl: 'https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695670411/Asset_Mantle/IMG-20230808-WA0008_gyotyv.jpg', 
+    //   imageUrl: 'https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695670411/Asset_Mantle/IMG-20230808-WA0008_gyotyv.jpg',
     //   techProfiles : (
     //     <TechP>
     //         <a className='linkiden' href="https://www.linkedin.com/in/garima-gupta-a327a2285" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
@@ -468,7 +820,7 @@ const TeamPage = () => {
     // {
     //   name: 'Ekta',
     //   role: 'Co-Ordinator',
-    //   imageUrl: 'https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695670246/Asset_Mantle/IMG-20230114-WA0014_rmrlrf.jpg', 
+    //   imageUrl: 'https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695670246/Asset_Mantle/IMG-20230114-WA0014_rmrlrf.jpg',
     //   techProfiles : (
     //     <TechP>
     //         <a className='linkiden' href="https://www.linkedin.com/in/ekta-singh-184a1224b" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
@@ -478,21 +830,46 @@ const TeamPage = () => {
     //   )
     // },
     {
-      name: 'Ridhima Choudhary',
-      role: 'Co-Ordinator',
-      imageUrl: 'https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695670256/Asset_Mantle/IMG-20230921-WA0002_oxxzcp.jpg', 
-      techProfiles : (
+      name: "Ridhima Choudhary",
+      role: "Co-Ordinator",
+      imageUrl:
+        "https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695670256/Asset_Mantle/IMG-20230921-WA0002_oxxzcp.jpg",
+      techProfiles: (
         <TechP>
-            <a className='linkiden' href="https://www.linkedin.com/in/ridhima-choudhary-774a8b287" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-              <a className='twitter' href="" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="fa-brands fa-x-twitter" style={{ verticalAlign: 'middle' }}/></a>
-              <a className='insta' href="https://instagram.com/rridhimaaaa?igshid=MzNlNGNkZWQ4Mg==" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-            </TechP>
-      )
+          <a
+            className="linkiden"
+            href="https://www.linkedin.com/in/ridhima-choudhary-774a8b287"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            className="twitter"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon="fa-brands fa-x-twitter"
+              style={{ verticalAlign: "middle" }}
+            />
+          </a>
+          <a
+            className="insta"
+            href="https://instagram.com/rridhimaaaa?igshid=MzNlNGNkZWQ4Mg=="
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram />
+          </a>
+        </TechP>
+      ),
     },
     // {
     //   name: 'Palak',
     //   role: 'Co-Ordinator',
-    //   imageUrl: 'https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695670259/Asset_Mantle/IMG_20230921_135918_jfazmg.jpg', 
+    //   imageUrl: 'https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695670259/Asset_Mantle/IMG_20230921_135918_jfazmg.jpg',
     //   techProfiles : (
     //     <TechP>
     //         <a className='linkiden' href="https://www.linkedin.com/in/palak-bansal-3b6666283" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
@@ -502,21 +879,46 @@ const TeamPage = () => {
     //   )
     // },
     {
-      name: 'Kejal Garg',
-      role: 'Co-Ordinator',
-      imageUrl: 'https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695669972/Asset_Mantle/IMG-20230903-WA0030_v3nykf.jpg', 
-      techProfiles : (
+      name: "Kejal Garg",
+      role: "Co-Ordinator",
+      imageUrl:
+        "https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695669972/Asset_Mantle/IMG-20230903-WA0030_v3nykf.jpg",
+      techProfiles: (
         <TechP>
-            <a className='linkiden' href="https://www.linkedin.com/in/kejal-garg-2369b0280" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-              <a className='twitter' href="" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="fa-brands fa-x-twitter" style={{ verticalAlign: 'middle' }}/></a>
-              <a className='insta' href="https://instagram.com/kejalgarg?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-            </TechP>
-      )
+          <a
+            className="linkiden"
+            href="https://www.linkedin.com/in/kejal-garg-2369b0280"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            className="twitter"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon="fa-brands fa-x-twitter"
+              style={{ verticalAlign: "middle" }}
+            />
+          </a>
+          <a
+            className="insta"
+            href="https://instagram.com/kejalgarg?igshid=OGQ5ZDc2ODk2ZA=="
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram />
+          </a>
+        </TechP>
+      ),
     },
     // {
     //   name: 'Khushi',
     //   role: 'Co-Ordinator',
-    //   imageUrl: 'https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695669971/Asset_Mantle/SI_20221009_144020_kw0ttp.jpg', 
+    //   imageUrl: 'https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695669971/Asset_Mantle/SI_20221009_144020_kw0ttp.jpg',
     //   techProfiles : (
     //     <TechP>
     //         <a className='linkiden' href="" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
@@ -526,62 +928,136 @@ const TeamPage = () => {
     //   )
     // },
     {
-      name: 'Deepika',
-      role: 'Co-Ordinator',
-      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693723636/Asset%20Mantle%20-%20Team%202023/EM/Riya_bouigi.jpg', 
-      techProfiles : (
+      name: "Deepika",
+      role: "Co-Ordinator",
+      imageUrl:
+        "https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693723636/Asset%20Mantle%20-%20Team%202023/EM/Riya_bouigi.jpg",
+      techProfiles: (
         <TechP>
-            <a className='linkiden' href="https://www.linkedin.com/in/deepika-3903a5288" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-              <a className='twitter' href="" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="fa-brands fa-x-twitter"style={{ verticalAlign: 'middle' }} /></a>
-              <a className='insta' href="https://instagram.com/itsmedeepikaonly?igshid=NzZlODBkYWE4Ng==" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-            </TechP>
-      )
+          <a
+            className="linkiden"
+            href="https://www.linkedin.com/in/deepika-3903a5288"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            className="twitter"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon="fa-brands fa-x-twitter"
+              style={{ verticalAlign: "middle" }}
+            />
+          </a>
+          <a
+            className="insta"
+            href="https://instagram.com/itsmedeepikaonly?igshid=NzZlODBkYWE4Ng=="
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram />
+          </a>
+        </TechP>
+      ),
     },
-        
   ];
 
   const researchTeamLead = [
     {
-      name: 'Srishneet Kaur',
-      role: 'Research Lead',
-      imageUrl: 'https://res.cloudinary.com/dlx9sj1pl/image/upload/ar_1:1,b_rgb:ffffff,bo_12px_solid_rgb:f2af13,c_fill,g_auto,r_max,w_1000/v1717859161/Picture_a8gz7j.png', 
-      techProfiles : (
+      name: "Srishneet Kaur",
+      role: "Research Lead",
+      imageUrl:
+        "https://res.cloudinary.com/dlx9sj1pl/image/upload/ar_1:1,b_rgb:ffffff,bo_12px_solid_rgb:f2af13,c_fill,g_auto,r_max,w_1000/v1717859161/Picture_a8gz7j.png",
+      techProfiles: (
         <TechP>
-              <a className='linkiden' href="https://www.linkedin.com/in/srishneet-kaur-59a924263" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-              <a className='twitter' href="https://x.com/skm85636356?t=kd8SjHAG3Lb_m5KpbPOXSw&s=09" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="fa-brands fa-x-twitter"style={{ verticalAlign: 'middle' }} /></a>
-              <a className='insta' href="https://www.instagram.com/call_me_kaurr/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-            </TechP>
-      )
+          <a
+            className="linkiden"
+            href="https://www.linkedin.com/in/srishneet-kaur-59a924263"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            className="twitter"
+            href="https://x.com/skm85636356?t=kd8SjHAG3Lb_m5KpbPOXSw&s=09"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon="fa-brands fa-x-twitter"
+              style={{ verticalAlign: "middle" }}
+            />
+          </a>
+          <a
+            className="insta"
+            href="https://www.instagram.com/call_me_kaurr/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram />
+          </a>
+        </TechP>
+      ),
     },
     {
-      name: 'Sakshi Singh',
-      role: 'Research Lead',
-      imageUrl: 'https://res.cloudinary.com/dlx9sj1pl/image/upload/ar_1:1,b_rgb:ffffff,bo_12px_solid_rgb:f2af13,c_fill,g_auto,r_max,w_1000/v1717859243/IMG_20240602_235835_ooaqoe.jpg', 
-      techProfiles : (
+      name: "Sakshi Singh",
+      role: "Research Lead",
+      imageUrl:
+        "https://res.cloudinary.com/dlx9sj1pl/image/upload/ar_1:1,b_rgb:ffffff,bo_12px_solid_rgb:f2af13,c_fill,g_auto,r_max,w_1000/v1717859243/IMG_20240602_235835_ooaqoe.jpg",
+      techProfiles: (
         <TechP>
-              <a className='linkiden' href="https://www.linkedin.com/in/sakshi-singh-1661b426b/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-              <a className='twitter' href="https://x.com/Sak_2518" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="fa-brands fa-x-twitter"style={{ verticalAlign: 'middle' }} /></a>
-              <a className='insta' href="https://www.instagram.com/_sakshi2518_/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-            </TechP>
-      )
-    }
-  ]
-    // {
-    //   name: 'Aarna Singhal',
-    //   role: 'Research Core',
-    //   imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1688491031/Asset%20Mantle%20-%20Team%202023/Content/Aarna%20Singhal.jpg', 
-    //   techProfiles : (
-    //     <TechP>
-    //            <a className='linkiden' href="https://www.linkedin.com/in/aarnasinghal" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-    //           <a className='twitter' href="https://twitter.com/aarnasinghal09" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
-    //           <a className='insta' href="https://www.instagram.com/aarnasinghal09/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a></TechP>
-    //   )
-    // },
-    const researchTeamCore = [
+          <a
+            className="linkiden"
+            href="https://www.linkedin.com/in/sakshi-singh-1661b426b/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            className="twitter"
+            href="https://x.com/Sak_2518"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon="fa-brands fa-x-twitter"
+              style={{ verticalAlign: "middle" }}
+            />
+          </a>
+          <a
+            className="insta"
+            href="https://www.instagram.com/_sakshi2518_/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram />
+          </a>
+        </TechP>
+      ),
+    },
+  ];
+  // {
+  //   name: 'Aarna Singhal',
+  //   role: 'Research Core',
+  //   imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1688491031/Asset%20Mantle%20-%20Team%202023/Content/Aarna%20Singhal.jpg',
+  //   techProfiles : (
+  //     <TechP>
+  //            <a className='linkiden' href="https://www.linkedin.com/in/aarnasinghal" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+  //           <a className='twitter' href="https://twitter.com/aarnasinghal09" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+  //           <a className='insta' href="https://www.instagram.com/aarnasinghal09/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a></TechP>
+  //   )
+  // },
+  const researchTeamCore = [
     // {
     //   name: 'Shreya gupta ',
     //   role: 'Research Core',
-    //   imageUrl: '', 
+    //   imageUrl: '',
     //   techProfiles : (
     //     <TechP>
     //         <a className='linkiden' href="https://www.linkedin.com/in/shreya-gupta-0b6821255" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
@@ -591,45 +1067,120 @@ const TeamPage = () => {
     //   )
     // },
     {
-      name: 'Jiya',
-      role: 'Research Core',
-      imageUrl: 'https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695756496/ji_o1zqw3.jpg', 
-      techProfiles : (
+      name: "Jiya",
+      role: "Research Core",
+      imageUrl:
+        "https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695756496/ji_o1zqw3.jpg",
+      techProfiles: (
         <TechP>
-            <a className='linkiden' href="https://www.linkedin.com/in/jiya-sharma-6a6011244" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-              <a className='twitter' href="https://x.com/JiyaSharmaidk?s=20" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="fa-brands fa-x-twitter" style={{ verticalAlign: 'middle' }} /></a>
-              <a className='insta' href="https://www.instagram.com/jiyasharma7535/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-            </TechP>
-      )
+          <a
+            className="linkiden"
+            href="https://www.linkedin.com/in/jiya-sharma-6a6011244"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            className="twitter"
+            href="https://x.com/JiyaSharmaidk?s=20"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon="fa-brands fa-x-twitter"
+              style={{ verticalAlign: "middle" }}
+            />
+          </a>
+          <a
+            className="insta"
+            href="https://www.instagram.com/jiyasharma7535/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram />
+          </a>
+        </TechP>
+      ),
     },
     {
-        name: 'Mehak Garg',
-        role: 'Research Core',
-        imageUrl: 'https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695756709/MehakGarg_kjuwuh.jpg', 
-        techProfiles : (
-          <TechP>
-              <a className='linkiden' href="https://www.linkedin.com/in/mehak-garg-084642282" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-                <a className='twitter' href="" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="fa-brands fa-x-twitter" style={{ verticalAlign: 'middle' }} /></a>
-                <a className='insta' href="https://www.instagram.com/mehak.garg05/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-              </TechP>
-        )
-      },
-      {
-          name: 'Anjali Sharma',
-          role: 'Research Core',
-          imageUrl: 'https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695756710/Picture_ltwkdc.jpg', 
-          techProfiles : (
-            <TechP>
-                <a className='linkiden' href="https://www.linkedin.com/in/anjali-sharma-159054288" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-                  <a className='twitter' href="https://x.com/anjalii64?t=KX6szUTdgD3h1Kgv3eSERA&s=09" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="fa-brands fa-x-twitter" style={{ verticalAlign: 'middle' }} /></a>
-                  <a className='insta' href="https://instagram.com/thatpixelmiss?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-                </TechP>
-          )
-        },
+      name: "Mehak Garg",
+      role: "Research Core",
+      imageUrl:
+        "https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695756709/MehakGarg_kjuwuh.jpg",
+      techProfiles: (
+        <TechP>
+          <a
+            className="linkiden"
+            href="https://www.linkedin.com/in/mehak-garg-084642282"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            className="twitter"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon="fa-brands fa-x-twitter"
+              style={{ verticalAlign: "middle" }}
+            />
+          </a>
+          <a
+            className="insta"
+            href="https://www.instagram.com/mehak.garg05/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram />
+          </a>
+        </TechP>
+      ),
+    },
+    {
+      name: "Anjali Sharma",
+      role: "Research Core",
+      imageUrl:
+        "https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695756710/Picture_ltwkdc.jpg",
+      techProfiles: (
+        <TechP>
+          <a
+            className="linkiden"
+            href="https://www.linkedin.com/in/anjali-sharma-159054288"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            className="twitter"
+            href="https://x.com/anjalii64?t=KX6szUTdgD3h1Kgv3eSERA&s=09"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon="fa-brands fa-x-twitter"
+              style={{ verticalAlign: "middle" }}
+            />
+          </a>
+          <a
+            className="insta"
+            href="https://instagram.com/thatpixelmiss?igshid=OGQ5ZDc2ODk2ZA=="
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram />
+          </a>
+        </TechP>
+      ),
+    },
     // {
     //   name: 'Megha yadav',
     //   role: 'Research Core',
-    //   imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1688541471/Asset%20Mantle%20-%20Team%202023/Content/Megha%20Yadav.jpg', 
+    //   imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1688541471/Asset%20Mantle%20-%20Team%202023/Content/Megha%20Yadav.jpg',
     //   techProfiles : (
     //     <TechP>
     //         <a className='linkiden' href="https://www.linkedin.com/in/megha-yadav-021851245" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
@@ -638,12 +1189,12 @@ const TeamPage = () => {
     //         </TechP>
     //   )
     // }
-  ]
+  ];
   const researchTeamCoordinator = [
     // {
     //   name: 'Sakshi ',
     //   role: 'Co-Ordinator',
-    //   imageUrl: '', 
+    //   imageUrl: '',
     //   techProfiles : (
     //     <TechP>
     //     <a className='linkiden' href="https://www.linkedin.com/in/sakshi-mishra-86618a24b" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
@@ -655,7 +1206,7 @@ const TeamPage = () => {
     // {
     //   name: 'Anushree Bondia',
     //   role: 'Co-Ordinator',
-    //   imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1688491031/Asset%20Mantle%20-%20Team%202023/Content/Anushree%20Bondia.jpg', 
+    //   imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1688491031/Asset%20Mantle%20-%20Team%202023/Content/Anushree%20Bondia.jpg',
     //   techProfiles : (
     //     <TechP>
     //         <a className='linkiden' href="https://www.linkedin.com/in/anushree-bondia-b16139219" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
@@ -667,7 +1218,7 @@ const TeamPage = () => {
     // {
     //   name: 'Jiya',
     //   role: 'Co-Ordinator',
-    //   imageUrl: 'https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695756496/ji_o1zqw3.jpg', 
+    //   imageUrl: 'https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695756496/ji_o1zqw3.jpg',
     //   techProfiles : (
     //     <TechP>
     //         <a className='linkiden' href="https://www.linkedin.com/in/jiya-sharma-6a6011244" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
@@ -679,7 +1230,7 @@ const TeamPage = () => {
     // {
     //   name: 'Anushka Rai',
     //   role: 'Co-Ordinator',
-    //   imageUrl: 'https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695756496/IMG_20221226_003849_525_zvtlvo.jpg', 
+    //   imageUrl: 'https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695756496/IMG_20221226_003849_525_zvtlvo.jpg',
     //   techProfiles : (
     //     <TechP>
     //         <a className='linkiden' href="https://www.linkedin.com/in/anushkaraii" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
@@ -691,7 +1242,7 @@ const TeamPage = () => {
     // {
     //   name: 'Samiksha Singh',
     //   role: 'Co-Ordinator',
-    //   imageUrl: 'https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695756497/ME_baast7.jpg', 
+    //   imageUrl: 'https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695756497/ME_baast7.jpg',
     //   techProfiles : (
     //     <TechP>
     //         <a className='linkiden' href="https://www.linkedin.com/in/samiksha-singh-08sam08" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
@@ -703,7 +1254,7 @@ const TeamPage = () => {
     // {
     //   name: 'Neha Junewal',
     //   role: 'Co-Ordinator',
-    //   imageUrl: 'https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695756710/Photo_page-0001_jtozfj.jpg', 
+    //   imageUrl: 'https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695756710/Photo_page-0001_jtozfj.jpg',
     //   techProfiles : (
     //     <TechP>
     //         <a className='linkiden' href="https://www.linkedin.com/in/neha-junewal-5baa91287" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
@@ -715,7 +1266,7 @@ const TeamPage = () => {
     // {
     //   name: 'Mehak Garg',
     //   role: 'Co-Ordinator',
-    //   imageUrl: 'https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695756709/MehakGarg_kjuwuh.jpg', 
+    //   imageUrl: 'https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695756709/MehakGarg_kjuwuh.jpg',
     //   techProfiles : (
     //     <TechP>
     //         <a className='linkiden' href="https://www.linkedin.com/in/mehak-garg-084642282" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
@@ -727,7 +1278,7 @@ const TeamPage = () => {
     // {
     //   name: 'Anusha Arora',
     //   role: 'Co-Ordinator',
-    //   imageUrl: '', 
+    //   imageUrl: '',
     //   techProfiles : (
     //     <TechP>
     //         <a className='linkiden' href="https://www.linkedin.com/in/anusha-arora-23a75228a/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
@@ -739,7 +1290,7 @@ const TeamPage = () => {
     // {
     //   name: 'Anjali Sharma',
     //   role: 'Co-Ordinator',
-    //   imageUrl: 'https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695756710/Picture_ltwkdc.jpg', 
+    //   imageUrl: 'https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695756710/Picture_ltwkdc.jpg',
     //   techProfiles : (
     //     <TechP>
     //         <a className='linkiden' href="https://www.linkedin.com/in/anjali-sharma-159054288" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
@@ -748,35 +1299,84 @@ const TeamPage = () => {
     //         </TechP>
     //   )
     // },
-        
   ];
 
   const mediaTeamLead = [
     {
-      name: 'Ayushi Gupta',
-      role: 'Media Lead',
-      imageUrl: '', 
-      techProfiles : (
+      name: "Ayushi Gupta",
+      role: "Media Lead",
+      imageUrl:
+        "https://res.cloudinary.com/dpeurcgui/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1724788566/ayushi_media_pic_jnx8in.jpg",
+      techProfiles: (
         <TechP>
-              <a className='linkiden' href="https://www.linkedin.com/in/ayushi-gupta-2b6a03262/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-              <a className='twitter' href="" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="fa-brands fa-x-twitter" style={{ verticalAlign: 'middle' }} /></a>
-              <a className='insta' href="https://www.instagram.com/_ayushii_guptaa/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-            </TechP>
-      )
+          <a
+            className="linkiden"
+            href="https://www.linkedin.com/in/ayushi-gupta-2b6a03262/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            className="twitter"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon="fa-brands fa-x-twitter"
+              style={{ verticalAlign: "middle" }}
+            />
+          </a>
+          <a
+            className="insta"
+            href="https://www.instagram.com/_ayushii_guptaa/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram />
+          </a>
+        </TechP>
+      ),
     },
     {
-      name: 'Jiya Malik ',
-      role: 'Media Lead',
-      imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693724868/Asset%20Mantle%20-%20Team%202023/Graphics%20and%20Media/Photo_kgni52.jpg',
-      techProfiles : (
+      name: "Jiya Malik ",
+      role: "Media Lead",
+      imageUrl:
+        "https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1693724868/Asset%20Mantle%20-%20Team%202023/Graphics%20and%20Media/Photo_kgni52.jpg",
+      techProfiles: (
         <TechP>
-            <a className='linkiden' href="https://www.linkedin.com/in/jiya-malik-689774253" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-              <a className='twitter' href="https://twitter.com/Jiyamalik183245" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="fa-brands fa-x-twitter" style={{ verticalAlign: 'middle' }}  /></a>
-              <a className='insta' href="https://www.instagram.com/jiya.malik06/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-            </TechP>
-      )
-    }
-  ]
+          <a
+            className="linkiden"
+            href="https://www.linkedin.com/in/jiya-malik-689774253"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            className="twitter"
+            href="https://twitter.com/Jiyamalik183245"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon="fa-brands fa-x-twitter"
+              style={{ verticalAlign: "middle" }}
+            />
+          </a>
+          <a
+            className="insta"
+            href="https://www.instagram.com/jiya.malik06/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram />
+          </a>
+        </TechP>
+      ),
+    },
+  ];
   const mediaTeamCore = [
     // {
     //   name: 'Deepakshi',
@@ -803,42 +1403,117 @@ const TeamPage = () => {
     //   )
     // }
     {
-        name: 'Anusha Arora',
-        role: 'Media Core',
-        imageUrl: 'https://res.cloudinary.com/dlx9sj1pl/image/upload/ar_1:1,b_rgb:ffffff,bo_12px_solid_rgb:f2af13,c_fill,g_auto,r_max,w_1000/v1717859478/f0d11246-336f-4aa6-91d9-8b6f7d94a23f_shtsrl.jpg', 
-        techProfiles : (
-          <TechP>
-              <a className='linkiden' href="https://www.linkedin.com/in/anusha-arora-23a75228a/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-                <a className='twitter' href="" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="fa-brands fa-x-twitter" style={{ verticalAlign: 'middle' }} /></a>
-                <a className='insta' href="" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-              </TechP>
-        )
-      },
-      {
-        name: 'Tripti Jaiswal',
-        role: 'Media Core',
-        imageUrl: 'https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1688490606/Asset%20Mantle%20-%20Team%202023/Graphics%20and%20Media/Tripti%20Jaiswal.jpg',
-        techProfiles : (
-          <TechP>
-          <a className='linkiden' href="https://www.linkedin.com/in/tripti-jaiswal-898472257/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-            <a className='twitter' href="https://twitter.com/triptijaiswall" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="fa-brands fa-x-twitter" style={{ verticalAlign: 'middle' }} /></a>
-            <a className='insta' href="https://www.instagram.com/triptiijaiswal/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-          </TechP>
-        )
-      },
-      {
-        name: 'Shreya Gupta',
-        role: 'Media Core',
-        imageUrl: 'https://res.cloudinary.com/dlx9sj1pl/image/upload/ar_1:1,b_rgb:ffffff,bo_12px_solid_rgb:f2af13,c_fill,g_auto,r_max,w_1000/v1717859527/Photo_from_Shreya_Gupta_l7d5tu.jpg', 
-        techProfiles : (
-          <TechP>
-              <a className='linkiden' href="https://www.linkedin.com/in/shreya-gupta-a783b9270?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-                <a className='twitter' href="https://x.com/S_hreya17?t=asc6_ZPHG5vM-_S7HCGeIQ&s=09" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="fa-brands fa-x-twitter" style={{ verticalAlign: 'middle' }} /></a>
-                <a className='insta' href="https://www.instagram.com/s_hreya173?igsh=MWNoenZ5eHBzNm1kbA==" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-              </TechP>
-        )
-      },
-  ]
+      name: "Anusha Arora",
+      role: "Media Core",
+      imageUrl:
+        "https://res.cloudinary.com/dlx9sj1pl/image/upload/ar_1:1,b_rgb:ffffff,bo_12px_solid_rgb:f2af13,c_fill,g_auto,r_max,w_1000/v1717859478/f0d11246-336f-4aa6-91d9-8b6f7d94a23f_shtsrl.jpg",
+      techProfiles: (
+        <TechP>
+          <a
+            className="linkiden"
+            href="https://www.linkedin.com/in/anusha-arora-23a75228a/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            className="twitter"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon="fa-brands fa-x-twitter"
+              style={{ verticalAlign: "middle" }}
+            />
+          </a>
+          <a
+            className="insta"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram />
+          </a>
+        </TechP>
+      ),
+    },
+    {
+      name: "Tripti Jaiswal",
+      role: "Media Core",
+      imageUrl:
+        "https://res.cloudinary.com/djv5kc7as/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1688490606/Asset%20Mantle%20-%20Team%202023/Graphics%20and%20Media/Tripti%20Jaiswal.jpg",
+      techProfiles: (
+        <TechP>
+          <a
+            className="linkiden"
+            href="https://www.linkedin.com/in/tripti-jaiswal-898472257/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            className="twitter"
+            href="https://twitter.com/triptijaiswall"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon="fa-brands fa-x-twitter"
+              style={{ verticalAlign: "middle" }}
+            />
+          </a>
+          <a
+            className="insta"
+            href="https://www.instagram.com/triptiijaiswal/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram />
+          </a>
+        </TechP>
+      ),
+    },
+    {
+      name: "Shreya Gupta",
+      role: "Media Core",
+      imageUrl:
+        "https://res.cloudinary.com/dlx9sj1pl/image/upload/ar_1:1,b_rgb:ffffff,bo_12px_solid_rgb:f2af13,c_fill,g_auto,r_max,w_1000/v1717859527/Photo_from_Shreya_Gupta_l7d5tu.jpg",
+      techProfiles: (
+        <TechP>
+          <a
+            className="linkiden"
+            href="https://www.linkedin.com/in/shreya-gupta-a783b9270?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            className="twitter"
+            href="https://x.com/S_hreya17?t=asc6_ZPHG5vM-_S7HCGeIQ&s=09"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon="fa-brands fa-x-twitter"
+              style={{ verticalAlign: "middle" }}
+            />
+          </a>
+          <a
+            className="insta"
+            href="https://www.instagram.com/s_hreya173?igsh=MWNoenZ5eHBzNm1kbA=="
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram />
+          </a>
+        </TechP>
+      ),
+    },
+  ];
   const mediaTeamCoordinator = [
     // {
     //   name: 'Pooja',
@@ -889,15 +1564,15 @@ const TeamPage = () => {
     //   )
     // },
     // {
-      // name: 'Mansi Sachdeva',
-      // role: 'Co-Ordinator',
-      // imageUrl: '',
-      // techProfiles : (
-      //   <TechP>
-      //   <a className='linkiden' href="https://www.linkedin.com/in/mansi-sachdeva-a81a93250" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-      //     <a className='twitter' href="https://x.com/MansiSachd73909?t=p4UF0IS0IGFpf8rmQ4Gxsg&s=08" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="fa-brands fa-x-twitter" style={{ verticalAlign: 'middle' }} /></a>
-      //     <a className='insta' href="https://instagram.com/me.mansi17?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-        // {/* </TechP>
+    // name: 'Mansi Sachdeva',
+    // role: 'Co-Ordinator',
+    // imageUrl: '',
+    // techProfiles : (
+    //   <TechP>
+    //   <a className='linkiden' href="https://www.linkedin.com/in/mansi-sachdeva-a81a93250" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+    //     <a className='twitter' href="https://x.com/MansiSachd73909?t=p4UF0IS0IGFpf8rmQ4Gxsg&s=08" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="fa-brands fa-x-twitter" style={{ verticalAlign: 'middle' }} /></a>
+    //     <a className='insta' href="https://instagram.com/me.mansi17?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+    // {/* </TechP>
     //   )
     // },
     // {
@@ -972,23 +1647,47 @@ const TeamPage = () => {
     //     </TechP>
     //   )
     // },
-        
   ];
 
   const outreachTeamLead = [
     {
-      name: 'Shruti Jha',
-      role: 'Outreach Lead',
-      imageUrl: 'https://res.cloudinary.com/dlx9sj1pl/image/upload/ar_1:1,b_rgb:ffffff,bo_12px_solid_rgb:f2af13,c_fill,g_auto,r_max,w_1000/v1717859596/picture_for_AM_k08emn.jpg', 
-      techProfiles : (
+      name: "Shruti Jha",
+      role: "Outreach Lead",
+      imageUrl:
+        "https://res.cloudinary.com/dlx9sj1pl/image/upload/ar_1:1,b_rgb:ffffff,bo_12px_solid_rgb:f2af13,c_fill,g_auto,r_max,w_1000/v1717859596/picture_for_AM_k08emn.jpg",
+      techProfiles: (
         <TechP>
-        <a className='linkiden' href="https://www.linkedin.com/in/shruti-jha-28b4b5255" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-        <a className='twitter' href="https://x.com/Shruti_Jha6?t=jyKDKRQ06iwFe8gtuk_5fw&s=08" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="fa-brands fa-x-twitter" style={{ verticalAlign: 'middle' }} /></a>
-        <a className='insta' href="https://www.instagram.com/shuru_iti/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-      </TechP>
-      )
-    }
-  ]
+          <a
+            className="linkiden"
+            href="https://www.linkedin.com/in/shruti-jha-28b4b5255"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            className="twitter"
+            href="https://x.com/Shruti_Jha6?t=jyKDKRQ06iwFe8gtuk_5fw&s=08"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon="fa-brands fa-x-twitter"
+              style={{ verticalAlign: "middle" }}
+            />
+          </a>
+          <a
+            className="insta"
+            href="https://www.instagram.com/shuru_iti/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram />
+          </a>
+        </TechP>
+      ),
+    },
+  ];
   const outreachTeamCore = [
     // {
     //   name: 'Tanisha Bansal ',
@@ -1003,31 +1702,80 @@ const TeamPage = () => {
     //   )
     // },
     {
-      name: 'Sonasha Choudhary',
-      role: 'Outreach Core',
-      imageUrl: 'https://res.cloudinary.com/dlx9sj1pl/image/upload/ar_1:1,b_rgb:ffffff,bo_12px_solid_rgb:f2af13,c_fill,g_auto,r_max,w_1000/v1717859643/IMG_20240529_004615_328_ojgfpo.jpg',
-      techProfiles : (
+      name: "Sonasha Choudhary",
+      role: "Outreach Core",
+      imageUrl:
+        "https://res.cloudinary.com/dlx9sj1pl/image/upload/ar_1:1,b_rgb:ffffff,bo_12px_solid_rgb:f2af13,c_fill,g_auto,r_max,w_1000/v1717859643/IMG_20240529_004615_328_ojgfpo.jpg",
+      techProfiles: (
         <TechP>
-            <a className='linkiden' href="https://www.linkedin.com/in/sonasha-choudhary-5a9274298" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-              <a className='twitter' href="https://twitter.com/Sonasha99" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="fa-brands fa-x-twitter" style={{ verticalAlign: 'middle' }} /></a>
-              <a className='insta' href="https://www.instagram.com/sonashaaa_08/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-            </TechP>
-      )
+          <a
+            className="linkiden"
+            href="https://www.linkedin.com/in/sonasha-choudhary-5a9274298"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            className="twitter"
+            href="https://twitter.com/Sonasha99"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon="fa-brands fa-x-twitter"
+              style={{ verticalAlign: "middle" }}
+            />
+          </a>
+          <a
+            className="insta"
+            href="https://www.instagram.com/sonashaaa_08/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram />
+          </a>
+        </TechP>
+      ),
     },
-      {
-      name: 'Naincy Yadav ',
-      role: 'Outreach Core',
-      imageUrl: 'https://res.cloudinary.com/dlx9sj1pl/image/upload/ar_1:1,b_rgb:ffffff,bo_12px_solid_rgb:f2af13,c_fill,g_auto,r_max,w_1000/v1717859692/pic_3_tljdvx.jpg',
-      techProfiles : (
+    {
+      name: "Naincy Yadav ",
+      role: "Outreach Core",
+      imageUrl:
+        "https://res.cloudinary.com/dlx9sj1pl/image/upload/ar_1:1,b_rgb:ffffff,bo_12px_solid_rgb:f2af13,c_fill,g_auto,r_max,w_1000/v1717859692/pic_3_tljdvx.jpg",
+      techProfiles: (
         <TechP>
-               <a className='linkiden' href="https://www.linkedin.com/in/naincy-yadav-3a63a7263" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-              <a className='twitter' href="https://x.com/@yd_naincy005" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="fa-brands fa-x-twitter" style={{ verticalAlign: 'middle' }} /></a>
-              <a className='insta' href="" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-              </TechP>
-      )
-    }
-    
-  ]
+          <a
+            className="linkiden"
+            href="https://www.linkedin.com/in/naincy-yadav-3a63a7263"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            className="twitter"
+            href="https://x.com/@yd_naincy005"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon="fa-brands fa-x-twitter"
+              style={{ verticalAlign: "middle" }}
+            />
+          </a>
+          <a
+            className="insta"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram />
+          </a>
+        </TechP>
+      ),
+    },
+  ];
   const outreachTeamCoordinator = [
     // {
     //   name: 'Aiman ',
@@ -1102,16 +1850,41 @@ const TeamPage = () => {
     //   )
     // },
     {
-      name: 'Pari Gupta',
-      role: 'Co-Ordinator',
-      imageUrl: 'https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695672367/Asset_Mantle/WhatsApp_Image_2023-09-21_at_11.38.40_PM_cuzz00.jpg',
-      techProfiles : (
+      name: "Pari Gupta",
+      role: "Co-Ordinator",
+      imageUrl:
+        "https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695672367/Asset_Mantle/WhatsApp_Image_2023-09-21_at_11.38.40_PM_cuzz00.jpg",
+      techProfiles: (
         <TechP>
-        <a className='linkiden' href="www.linkedin.com/in/pari-gupta-05401b283" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-          <a className='twitter' href="https://x.com/PariGupta784429?t=eOzwwLXUZplJKdPoZv0yGw&s=09" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="fa-brands fa-x-twitter" style={{ verticalAlign: 'middle' }} /></a>
-          <a className='insta' href="https://instagram.com/pariig3?igshid=NzZlODBkYWE4Ng==" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+          <a
+            className="linkiden"
+            href="www.linkedin.com/in/pari-gupta-05401b283"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            className="twitter"
+            href="https://x.com/PariGupta784429?t=eOzwwLXUZplJKdPoZv0yGw&s=09"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon="fa-brands fa-x-twitter"
+              style={{ verticalAlign: "middle" }}
+            />
+          </a>
+          <a
+            className="insta"
+            href="https://instagram.com/pariig3?igshid=NzZlODBkYWE4Ng=="
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram />
+          </a>
         </TechP>
-      )
+      ),
     },
     // {
     //   name: 'Sanya Solanki',
@@ -1125,43 +1898,92 @@ const TeamPage = () => {
     //     </TechP>
     //   )
     // },
-   
+
     {
-      name: 'Anaya Jain',
-      role: 'Co-Ordinator',
-      imageUrl: 'https://res.cloudinary.com/dlx9sj1pl/image/upload/ar_1:1,b_rgb:ffffff,bo_12px_solid_rgb:f2af13,c_fill,g_auto,r_max,w_1000/v1717859770/pic_fqkecj.jpg',
-      techProfiles : (
+      name: "Anaya Jain",
+      role: "Co-Ordinator",
+      imageUrl:
+        "https://res.cloudinary.com/dlx9sj1pl/image/upload/ar_1:1,b_rgb:ffffff,bo_12px_solid_rgb:f2af13,c_fill,g_auto,r_max,w_1000/v1717859770/pic_fqkecj.jpg",
+      techProfiles: (
         <TechP>
-        <a className='linkiden' href="https://www.linkedin.com/in/anaya-jain-4a5715288/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-          <a className='twitter' href="https://twitter.com/AnayaJa48981116" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="fa-brands fa-x-twitter" style={{ verticalAlign: 'middle' }} /></a>
-          <a className='insta' href="https://www.instagram.com/10.anayajain/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+          <a
+            className="linkiden"
+            href="https://www.linkedin.com/in/anaya-jain-4a5715288/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            className="twitter"
+            href="https://twitter.com/AnayaJa48981116"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon="fa-brands fa-x-twitter"
+              style={{ verticalAlign: "middle" }}
+            />
+          </a>
+          <a
+            className="insta"
+            href="https://www.instagram.com/10.anayajain/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram />
+          </a>
         </TechP>
-      )
+      ),
     },
     {
-      name: 'Vaishnavi ',
-      role: 'Co-Ordinator',
-      imageUrl: 'https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695672368/Asset_Mantle/WhatsApp_Image_2023-09-25_at_13.34.49_ff4qef.jpg',
-      techProfiles : (
+      name: "Vaishnavi ",
+      role: "Co-Ordinator",
+      imageUrl:
+        "https://res.cloudinary.com/dzwfmydmx/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695672368/Asset_Mantle/WhatsApp_Image_2023-09-25_at_13.34.49_ff4qef.jpg",
+      techProfiles: (
         <TechP>
-               <a className='linkiden' href="https://www.linkedin.com/in/vaishnavi-kataria-bb91b5288/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-              <a className='twitter' href="https://x.com/vaishnaviv69071" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="fa-brands fa-x-twitter" style={{ verticalAlign: 'middle' }} /></a>
-              <a className='insta' href="https://www.instagram.com/vaishnavikataria1510/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-              </TechP>
-      )
+          <a
+            className="linkiden"
+            href="https://www.linkedin.com/in/vaishnavi-kataria-bb91b5288/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            className="twitter"
+            href="https://x.com/vaishnaviv69071"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon="fa-brands fa-x-twitter"
+              style={{ verticalAlign: "middle" }}
+            />
+          </a>
+          <a
+            className="insta"
+            href="https://www.instagram.com/vaishnavikataria1510/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram />
+          </a>
+        </TechP>
+      ),
     },
-        
   ];
 
   const location = useLocation();
-  const teamNameQueryParam = new URLSearchParams(location.search).get('team');
+  const teamNameQueryParam = new URLSearchParams(location.search).get("team");
 
   useEffect(() => {
     if (teamNameQueryParam) {
       const decodedTeamName = decodeURIComponent(teamNameQueryParam);
       setTimeout(() => {
         scroller.scrollTo(`${decodedTeamName}Section`, {
-          duration: 50, 
+          duration: 50,
           // smooth: true,
         });
       }, 500);
@@ -1169,10 +1991,9 @@ const TeamPage = () => {
   }, [teamNameQueryParam]);
 
   return (
-
     <TeamContainer>
-    <TeamHead>MEET THE TEAM</TeamHead>
-    {/* <TeamWrapper id="founderSection">
+      <TeamHead>MEET THE TEAM</TeamHead>
+      {/* <TeamWrapper id="founderSection">
       <TeamName>
         Founding Member
       </TeamName>
@@ -1192,10 +2013,8 @@ const TeamPage = () => {
       </TeamWrapper> */}
 
       <TeamWrapper id="President">
-      <TeamName>
-        President
-      </TeamName>
-      <TeamListWrapper2>
+        <TeamName>President</TeamName>
+        <TeamListWrapper2>
           {president.map((member, index) => (
             <TeamMemberCard
               key={index}
@@ -1209,10 +2028,8 @@ const TeamPage = () => {
       </TeamWrapper>
 
       <TeamWrapper id="Vice President">
-      <TeamName>
-        Vice President
-      </TeamName>
-      <TeamListWrapper2>
+        <TeamName>Vice President</TeamName>
+        <TeamListWrapper2>
           {vicePresident.map((member, index) => (
             <TeamMemberCard
               key={index}
@@ -1226,15 +2043,13 @@ const TeamPage = () => {
       </TeamWrapper>
 
       <TeamWrapper id="emTeamSection">
-      <TeamName>
-        Event Management Team
-      </TeamName>
-      {/* lead */}
-      <TeamName>
-        <br></br>
-        Leads
-      </TeamName>
-      <TeamListWrapper>
+        <TeamName>Event Management Team</TeamName>
+        {/* lead */}
+        <TeamName>
+          <br></br>
+          Leads
+        </TeamName>
+        <TeamListWrapper>
           {eventsTeamLead.map((member, index) => (
             <TeamMemberCard
               key={index}
@@ -1247,10 +2062,8 @@ const TeamPage = () => {
         </TeamListWrapper>
 
         {/* core */}
-        <TeamName>
-        Cores
-      </TeamName>
-      <TeamListWrapper>
+        <TeamName>Cores</TeamName>
+        <TeamListWrapper>
           {eventsTeamCore.map((member, index) => (
             <TeamMemberCard
               key={index}
@@ -1262,31 +2075,27 @@ const TeamPage = () => {
           ))}
         </TeamListWrapper>
         {/* Co-ordinator */}
+        <TeamName>Co-ordinators</TeamName>
+        <TeamListWrapper>
+          {eventsTeamCoordinater.map((member, index) => (
+            <TeamMemberCard
+              key={index}
+              name={member.name}
+              role={member.role}
+              imageUrl={member.imageUrl}
+              techProfiles={member.techProfiles}
+            />
+          ))}
+        </TeamListWrapper>
+      </TeamWrapper>
+      {/* --------- */}
+      <TeamWrapper id="mediaTeamSection">
+        <TeamName>Graphics and Media Team</TeamName>
         <TeamName>
-        Co-ordinators
+          <br></br>
+          Lead
         </TeamName>
         <TeamListWrapper>
-            {eventsTeamCoordinater.map((member, index) => (
-              <TeamMemberCard
-                key={index}
-                name={member.name}
-                role={member.role}
-                imageUrl={member.imageUrl}
-                techProfiles={member.techProfiles}
-              />
-            ))}
-          </TeamListWrapper>
-      </TeamWrapper>
-{/* --------- */}
-      <TeamWrapper id="mediaTeamSection">
-      <TeamName>
-        Graphics and Media Team
-      </TeamName>
-      <TeamName>
-        <br></br>
-        Lead
-      </TeamName>
-      <TeamListWrapper>
           {mediaTeamLead.map((member, index) => (
             <TeamMemberCard
               key={index}
@@ -1298,12 +2107,9 @@ const TeamPage = () => {
           ))}
         </TeamListWrapper>
 
-
         {/* core */}
-        <TeamName>
-        Cores
-      </TeamName>
-      <TeamListWrapper>
+        <TeamName>Cores</TeamName>
+        <TeamListWrapper>
           {mediaTeamCore.map((member, index) => (
             <TeamMemberCard
               key={index}
@@ -1315,34 +2121,30 @@ const TeamPage = () => {
           ))}
         </TeamListWrapper>
         {/* Co-ordinator */}
-        <TeamName>
-        Co-ordinators
-        </TeamName>
+        <TeamName>Co-ordinators</TeamName>
         <TeamListWrapper>
-            {mediaTeamCoordinator.map((member, index) => (
-              <TeamMemberCard
-                key={index}
-                name={member.name}
-                role={member.role}
-                imageUrl={member.imageUrl}
-                techProfiles={member.techProfiles}
-              />
-            ))}
-          </TeamListWrapper>
+          {mediaTeamCoordinator.map((member, index) => (
+            <TeamMemberCard
+              key={index}
+              name={member.name}
+              role={member.role}
+              imageUrl={member.imageUrl}
+              techProfiles={member.techProfiles}
+            />
+          ))}
+        </TeamListWrapper>
       </TeamWrapper>
-      
+
       {/* ---------- */}
 
       <TeamWrapper id="contentTeamSection">
-      <TeamName>
-        Research and Content Team
-      </TeamName>
-      {/* lead */}
-      <TeamName>
-        <br></br>
-        Lead
-      </TeamName>
-      <TeamListWrapper>
+        <TeamName>Research and Content Team</TeamName>
+        {/* lead */}
+        <TeamName>
+          <br></br>
+          Lead
+        </TeamName>
+        <TeamListWrapper>
           {researchTeamLead.map((member, index) => (
             <TeamMemberCard
               key={index}
@@ -1354,12 +2156,9 @@ const TeamPage = () => {
           ))}
         </TeamListWrapper>
 
-
         {/* core */}
-        <TeamName>
-        Cores
-      </TeamName>
-      <TeamListWrapper>
+        <TeamName>Cores</TeamName>
+        <TeamListWrapper>
           {researchTeamCore.map((member, index) => (
             <TeamMemberCard
               key={index}
@@ -1371,32 +2170,28 @@ const TeamPage = () => {
           ))}
         </TeamListWrapper>
         {/* Co-ordinator */}
-        <TeamName>
-        Co-ordinators
-        </TeamName>
+        <TeamName>Co-ordinators</TeamName>
         <TeamListWrapper>
-            {researchTeamCoordinator.map((member, index) => (
-              <TeamMemberCard
-                key={index}
-                name={member.name}
-                role={member.role}
-                imageUrl={member.imageUrl}
-                techProfiles={member.techProfiles}
-              />
-            ))}
-          </TeamListWrapper>
+          {researchTeamCoordinator.map((member, index) => (
+            <TeamMemberCard
+              key={index}
+              name={member.name}
+              role={member.role}
+              imageUrl={member.imageUrl}
+              techProfiles={member.techProfiles}
+            />
+          ))}
+        </TeamListWrapper>
       </TeamWrapper>
 
       <TeamWrapper id="outreachTeamSection">
-      <TeamName>
-        Outreach Team
-      </TeamName>
-      {/* lead */}
-      <TeamName>
-        <br></br>
-        Lead
-      </TeamName>
-      <TeamListWrapper>
+        <TeamName>Outreach Team</TeamName>
+        {/* lead */}
+        <TeamName>
+          <br></br>
+          Lead
+        </TeamName>
+        <TeamListWrapper>
           {outreachTeamLead.map((member, index) => (
             <TeamMemberCard
               key={index}
@@ -1408,12 +2203,9 @@ const TeamPage = () => {
           ))}
         </TeamListWrapper>
 
-
         {/* core */}
-        <TeamName>
-        Cores
-      </TeamName>
-      <TeamListWrapper>
+        <TeamName>Cores</TeamName>
+        <TeamListWrapper>
           {outreachTeamCore.map((member, index) => (
             <TeamMemberCard
               key={index}
@@ -1425,33 +2217,29 @@ const TeamPage = () => {
           ))}
         </TeamListWrapper>
         {/* Co-ordinator */}
-        <TeamName>
-        Co-ordinators
-        </TeamName>
+        <TeamName>Co-ordinators</TeamName>
         <TeamListWrapper>
-            {outreachTeamCoordinator.map((member, index) => (
-              <TeamMemberCard
-                key={index}
-                name={member.name}
-                role={member.role}
-                imageUrl={member.imageUrl}
-                techProfiles={member.techProfiles}
-              />
-            ))}
-          </TeamListWrapper>
+          {outreachTeamCoordinator.map((member, index) => (
+            <TeamMemberCard
+              key={index}
+              name={member.name}
+              role={member.role}
+              imageUrl={member.imageUrl}
+              techProfiles={member.techProfiles}
+            />
+          ))}
+        </TeamListWrapper>
       </TeamWrapper>
 
       <TeamWrapper id="techTeamSection">
-      <TeamName>
-        Technical Team
-      </TeamName>
+        <TeamName>Technical Team</TeamName>
 
-      {/* lead */}
-      <TeamName>
-        <br></br>
-        Lead
-      </TeamName>
-      <TeamListWrapper>
+        {/* lead */}
+        <TeamName>
+          <br></br>
+          Lead
+        </TeamName>
+        <TeamListWrapper>
           {techTeamLead.map((member, index) => (
             <TeamMemberCard
               key={index}
@@ -1463,12 +2251,9 @@ const TeamPage = () => {
           ))}
         </TeamListWrapper>
 
-
         {/* core */}
-        <TeamName>
-        Cores
-      </TeamName>
-      <TeamListWrapper>
+        <TeamName>Cores</TeamName>
+        <TeamListWrapper>
           {techTeamCore.map((member, index) => (
             <TeamMemberCard
               key={index}
@@ -1480,24 +2265,21 @@ const TeamPage = () => {
           ))}
         </TeamListWrapper>
         {/* Co-ordinator */}
-        <TeamName>
-        Co-ordinators
-        </TeamName>
+        <TeamName>Co-ordinators</TeamName>
         <TeamListWrapper>
-            {techTeamCoordinator.map((member, index) => (
-              <TeamMemberCard
-                key={index}
-                name={member.name}
-                role={member.role}
-                imageUrl={member.imageUrl}
-                techProfiles={member.techProfiles}
-              />
-            ))}
-          </TeamListWrapper>
+          {techTeamCoordinator.map((member, index) => (
+            <TeamMemberCard
+              key={index}
+              name={member.name}
+              role={member.role}
+              imageUrl={member.imageUrl}
+              techProfiles={member.techProfiles}
+            />
+          ))}
+        </TeamListWrapper>
       </TeamWrapper>
+    </TeamContainer>
+  );
+};
 
-      </TeamContainer>
-  )
-}
-
-export default TeamPage
+export default TeamPage;
