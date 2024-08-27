@@ -1,6 +1,6 @@
 /* Global Styles */
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: #f4f7f6;
   margin: 0;
   padding: 0;
@@ -23,7 +23,7 @@ body {
 
 .dform-container {
   margin-top: -90px;
-  background: linear-gradient(90deg, #451952 , #662549, #AE445A,  #B8860B);;
+  background: linear-gradient(90deg, #451952, #662549, #ae445a, #b8860b);
   padding: 30px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
@@ -33,7 +33,7 @@ body {
 
 .dform-element {
   display: flex;
-  align-items: center; 
+  align-items: center;
   margin-bottom: 20px;
   position: relative;
 }
@@ -43,8 +43,8 @@ body {
   margin-right: 10px;
   display: flex;
   align-items: center;
-  color: white; 
-  transition: color 0.3s ease; 
+  color: white;
+  transition: color 0.3s ease;
 }
 
 .dform-element input {
@@ -61,11 +61,11 @@ body {
 }
 
 .dform-element input:focus + .dform-icon {
-  color: #004a70; 
+  color: #004a70;
 }
 
 input[type="submit"] {
-  background-color: #B8860B; 
+  background-color: #b8860b;
   color: #ffffff;
   padding: 15px 20px;
   border: none;
@@ -74,10 +74,11 @@ input[type="submit"] {
   font-size: 1.2em;
   width: 100%;
   transition: background-color 0.3s ease;
+  margin-left: 50px;
 }
 
 input[type="submit"]:hover {
-  background-color: #B8860B;
+  background-color: #b8860b;
 }
 
 input[type="submit"]:disabled {
@@ -104,13 +105,28 @@ input[type="submit"]:disabled {
 @media (max-width: 768px) {
   .dform-container {
     padding: 20px;
+    width: 95%;
+    margin-top: -70px;
   }
 
   .dform-element input {
     padding: 10px;
   }
-
-  input[type="submit"] {
-    padding: 10px 15px;
+  .dform-div {
+    height: 60vh;
   }
+  input[type="submit"] {
+    /* padding: 10px; */
+    font-size: 0.9em;
+    margin-left: 50px !important;
+  }
+
+  .dheading {
+    font-size: 1.8em;
+    margin-top: 120px;
+  }
+  /* .submit-button {
+    width: 80%;
+    margin-left: 100px;
+  } */
 }

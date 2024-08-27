@@ -41,17 +41,14 @@ const Navbar = () => {
       >
         <NavbarContainer>
           {/* css for proflie icon is written in app.css */}
-          <div className="profile-icon">
-            <Profile />
-          </div>
+          {/* <div className="profile-icon"> */}
+          {/* <Profile /> */}
+          {/* </div> */}
           <NavImg>
             <Link to="/" onClick={handleLogoClick}>
               <img src={Logo2} height={44} alt="Logo" />
             </Link>
-            <NavLogo>
-              AssetMerkle
-              {/* <SubLogo>Student Chapter IGDTUW</SubLogo> */}
-            </NavLogo>
+            <NavLogo>AssetMerkle</NavLogo>
           </NavImg>
 
           <MobileIcon onClick={toggle}>
