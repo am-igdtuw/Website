@@ -17,20 +17,9 @@ export const HeroContainer = styled.div`
 
   @media screen and (max-width: 900px) {
     height: 40vh;
-    // margin-top: 50px;
+    top: 0; /* Changed to remove extra space for smaller screens */
+    margin-left: 0; /* Adjusted for smaller screens */
   }
-
-  // :before{
-  //     content: '';
-  //     position: absolute;
-  //     top: 0;
-  //     left: 0;
-  //     right: 0;
-  //     bottom: 0;
-  //     background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 100%),
-  //     linear-gradient(180deg, rgba(0,0,0,0.2) 0%, transparent 100%);
-  //     z-index: 2;
-  // }
 `;
 
 export const HeroBg = styled.div`
@@ -41,7 +30,6 @@ export const HeroBg = styled.div`
   left: 0;
   height: 100%;
   overflow: hidden;
-  // background-image: url(${bg});
   @media screen and (max-width: 480px) {
     background: #000;
   }
@@ -52,9 +40,7 @@ export const Imgbg = styled.div`
   margin-right: 0px;
   top: -770.06px;
   position: absolute;
-
   left: 154.28px;
-  //background-image: url(${bg});
 `;
 
 export const HeroContent = styled.div`
@@ -63,24 +49,17 @@ export const HeroContent = styled.div`
   padding: 8px 0px;
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: center; /* Centered content */
   width: 100%;
   @media screen and (max-width: 900px) {
     margin-top: 50px;
-    // min-height: 40vh;
-    // height: 40vh;
-    // max-height: 70vh;
-    // padding: 0px;
+    align-items: center; /* Centered content for smaller screens */
   }
 `;
 
 export const HeroH1 = styled.h1`
-  /* color: #fff;
-    font-size: 32rem;
-     */
-  text-align: left;
+  text-align: center; /* Centered text */
   margin-bottom: 20px;
-  //font-family: 'Poppins', sans-serif;
   font-family: "Exo 2", sans-serif;
   color: #fffdfa;
   font-style: normal;
@@ -93,34 +72,33 @@ export const HeroH1 = styled.h1`
   @media screen and (max-width: 768px) {
     font-size: 2rem;
     font-weight: 600;
-    // height: auto;
     margin-top: 20px;
   }
 
   @media screen and (max-width: 480px) {
     font-size: 1.5rem;
-    text-align: center;
+    text-align: center; /* Centered text for smaller screens */
     justify-content: center;
   }
 `;
+
 export const HeroD = styled.span`
   color: #ffc640;
-  //font-family: 'Poppins', sans-serif;
   font-family: "Exo 2", sans-serif;
   font-style: normal;
 `;
+
 export const HeroP = styled.p`
   width: 100%;
   max-width: 640px;
   margin-top: 1.5rem;
   box-sizing: border-box;
-  //font-family: 'Poppins', sans-serif;
   font-family: "Exo 2", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
   line-height: 28px;
-  text-align: left;
+  text-align: center; /* Centered text */
   background: linear-gradient(
     180deg,
     rgba(255, 198, 64, 0.6) 0%,
@@ -151,10 +129,8 @@ export const HeroBtnWrapper = styled.div`
   margin-top: 0px;
   display: flex;
   flex-direction: row;
-  align-items: left;
-  justify-content: left;
-
-  // background: radial-gradient(50% 50% at 50% 50%, #FFC640 47.4%, #F2AF13 100%);
+  align-items: center; /* Centered buttons */
+  justify-content: center; /* Centered buttons */
 `;
 
 export const Heroimg = styled.img`
@@ -188,7 +164,7 @@ export const CubeWrapper = styled.div`
   position: absolute;
   top: 70%;
   left: 50%;
-  transform: translateX(-50%, -50%);
+  transform: translateX(-50%);
   width: 180px;
   height: 150px;
   perspective: 800px;
@@ -255,24 +231,46 @@ export const CubeWrapper = styled.div`
   }
 `;
 
-// social media links
 export const SocialIcons = styled.div`
   padding: 3rem 0rem;
-  margin-left: 10px;
-  margin-bottom: 20px;
+  ${"" /* margin-left: 10px; */}
+  ${"" /* margin-bottom: 20px; */}
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  width: 150px;
-  z-index: 2;
+  width: 100px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 768px) {
+    width: 100%; /* Full width on smaller screens */
+    justify-content: center; /* Center icons */
+    gap: 15px; /* Spacing between icons */
+  }
+
+  @media screen and (max-width: 480px) {
+    padding: 2rem 0rem; /* Reduced padding for mobile */
+    width: 100%;
+    justify-content: center;
+    gap: 10px; /* Adjusted gap for mobile */
+  }
 `;
 
 export const SocialIconsLink = styled.a`
   color: #fff;
-  z-index: 2;
+
+  ${"" /* z-index: 2; */}
   font-size: 36px;
+  margin: 0 10px;
   &:hover {
     color: #ffc640;
     transition: 0.3s ease-out;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 32px;
+    margin: 0 8px;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 30px; /* Adjust icon size for smaller screens */
+    margin: 0 6px; /* Adjusted margin for smaller screens */
   }
 `;

@@ -11,18 +11,30 @@ import { Container } from "@mui/system";
 import { Grid, Typography } from "@mui/material";
 import { Button } from "../../ButtonElements";
 import { FaWhatsapp } from "react-icons/fa";
+import { VscAccount } from "react-icons/vsc";
 //import bg from '../../images/bg.svg'
 //import DynamicBackground from './DynamicBg';
 import { FaLinkedin, FaInstagram } from "react-icons/fa";
 import { SocialIconsLink, SocialIcons } from "./HeroElements";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { ProfilePage } from "../../Form/Data";
 
 const HeroSection = () => {
   const [hover, setHover] = useState(false);
+  const [showComponent, setShowComponent] = useState(false);
+
+  function showForm() {
+    setShowComponent(!showComponent);
+    window.open("/profile", "_blank");
+  }
 
   const onHover = () => {
     setHover(!hover);
   };
+
+  // const openFormInNewTab = () => {
+  //   window.open("/profile", "_blank");
+  // };
 
   const joinGroup = () => {
     const watsGroupLink = "https://chat.whatsapp.com/KUvfa2sCnYO8Z8GZ1llj2H";
@@ -91,6 +103,8 @@ const HeroSection = () => {
 
   return (
     <>
+      {showComponent && <ProfilePage></ProfilePage>}
+
       <Container maxWidth="lg" sx={{ position: "relative" }}>
         <Grid container alignItems="center" justifyContent="space-around">
           <Grid
@@ -107,6 +121,7 @@ const HeroSection = () => {
                 <Typography
                   variant="h3"
                   color="#ffffe6"
+                  // sx={{ ...customH1Styles, fontSize: "5rem" }}
                   // align={}
                   sx={customH1Styles}
                 >
@@ -119,14 +134,14 @@ const HeroSection = () => {
                     onMouseLeave={onHover}
                     primary="true"
                     dark="true"
-                    onClick={joinGroup}
+                    onClick={showForm}
                     style={{
                       fontFamily: "Exo 2, sans-serif",
                       fontWeight: 600,
                     }}
                   >
-                    <Heroimg as={FaWhatsapp} />
-                    JOIN COMMUNITY
+                    <Heroimg as={VscAccount} />
+                    LOGIN/SIGN UP
                   </Button>
                 </HeroBtnWrapper>
                 <SocialIcons>
@@ -136,6 +151,13 @@ const HeroSection = () => {
                     area-label="Instagram"
                   >
                     <FaInstagram />
+                  </SocialIconsLink>
+                  <SocialIconsLink
+                    href="https://chat.whatsapp.com/KUvfa2sCnYO8Z8GZ1llj2H"
+                    target="_blank"
+                    area-label="Whatsapp"
+                  >
+                    <FaWhatsapp style={{ verticalAlign: "middle" }} />
                   </SocialIconsLink>
                   <SocialIconsLink
                     href="https://twitter.com/AM_igdtuw"

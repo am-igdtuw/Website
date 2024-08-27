@@ -12,6 +12,7 @@ import {
   NavLogo,
 } from "./NavbarElements";
 import { Link } from "react-router-dom";
+import Profile from "./Profile";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,6 +40,10 @@ const Navbar = () => {
         }}
       >
         <NavbarContainer>
+          {/* css for proflie icon is written in app.css */}
+          <div className="profile-icon">
+            <Profile />
+          </div>
           <NavImg>
             <Link to="/" onClick={handleLogoClick}>
               <img src={Logo2} height={44} alt="Logo" />
@@ -50,7 +55,7 @@ const Navbar = () => {
           </NavImg>
 
           <MobileIcon onClick={toggle}>
-            {isOpen ? <FaTimes /> : <FaBars />} 
+            {isOpen ? <FaTimes /> : <FaBars />}
           </MobileIcon>
           <NavMenu isOpen={isOpen}>
             <Navitem>
@@ -77,11 +82,6 @@ const Navbar = () => {
             <Navitem className="custom">
               <NavLinks to="/faq" onClick={handleLogoClick}>
                 FAQS
-              </NavLinks>
-            </Navitem>
-            <Navitem className="custom">
-              <NavLinks to="/profile" onClick={handleLogoClick}>
-                Form
               </NavLinks>
             </Navitem>
           </NavMenu>
