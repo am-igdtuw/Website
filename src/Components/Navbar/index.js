@@ -48,10 +48,7 @@ const Navbar = () => {
             <Link to="/" onClick={handleLogoClick}>
               <img src={Logo2} height={44} alt="Logo" />
             </Link>
-            <NavLogo>
-              AssetMerkle
-              {/* <SubLogo>Student Chapter IGDTUW</SubLogo> */}
-            </NavLogo>
+            <NavLogo>AssetMerkle</NavLogo>
           </NavImg>
 
           <MobileIcon onClick={toggle}>
