@@ -1,10 +1,11 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
- //import {Link as LinkS} from 'react-scroll'
+//import {Link as LinkS} from 'react-scroll'
 
 export const Nav = styled.nav`
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  background-color: ${(props) => (props.scroll > 0 ? "#FFFFFF40" : "transparent")};
+  background-color: ${(props) =>
+    props.scroll > 0 ? "#FFFFFF40" : "transparent"};
   height: 80px;
   margin-top: -80px;
   display: flex;
@@ -33,25 +34,30 @@ export const NavbarContainer = styled.div`
   width: 100%;
   padding: 0 24px;
   max-width: 1100px;
+
+  @media screen and (max-width: 960px) {
+    justify-content: start;
+  }
 `;
 
 export const NavImg = styled.div`
   display: flex;
   align-items: center;
+  margin-left: 10px;
 `;
 
 export const NavLogo = styled.h1`
   height: auto;
   width: 150px;
   color: #fff;
-  justify-self: flex-start;  
+  justify-self: flex-start;
   font-size: 1.5rem;
   display: flex;
-  flex-direction:column; 
+  flex-direction: column;
   margin-left: 10px;
   margin-top: 14px;
-  font-weight: bold;  
-  text-decoration: none; 
+  font-weight: bold;
+  text-decoration: none;
 `;
 
 export const NavMenu = styled.div`
@@ -61,7 +67,7 @@ export const NavMenu = styled.div`
   padding: 16px 50px 0px 90px;
   gap: 21px;
 
-  flex:none;
+  flex: none;
   order: 1;
   flex-grow: 0;
 
@@ -74,16 +80,15 @@ export const NavMenu = styled.div`
     gap: 15px;
     margin-top: 44px;
     width: 100%;
-    height: auto; 
+    height: auto;
     position: absolute;
-    top: ${({ isOpen }) => (isOpen ? '35px' : '-80vh')};
+    top: ${({ isOpen }) => (isOpen ? "35px" : "-80vh")};
     left: 0;
     transition: 0.3s ease-in-out;
-    background-color: #0D0A03;
+    background-color: #0d0a03;
     z-index: 99; // Set a lower z-index value
   }
 `;
-
 
 export const NavLinks = styled(Link)`
   width: auto;
@@ -96,8 +101,8 @@ export const NavLinks = styled(Link)`
   font-weight: 600;
   font-size: 14px;
   line-height: 22px;
-  color: #FFC640;
-  ${'' /* flex: none; */}
+  color: #ffc640;
+  ${"" /* flex: none; */}
   align-items: center;
   justify-content: center;
   order: 0;
@@ -118,44 +123,43 @@ export const Navitem = styled.div`
 
   /* Auto layout */
 
-display: flex;
-justify-content: center;
-flex-direction: row;
-align-items: center;
-${'' /* justify-content: center; */}
-padding: 0px 20px;
-gap: 10px;
-border:0.5px solid #FFC640;
-width:120px;
-height: 34px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  ${"" /* justify-content: center; */}
+  padding: 0px 20px;
+  gap: 10px;
+  border: 0.5px solid #ffc640;
+  width: 120px;
+  height: 34px;
 
-background: linear-gradient(45deg, #000000, #1c1b19);
-border-radius: 22px;
+  background: linear-gradient(45deg, #000000, #1c1b19);
+  border-radius: 22px;
 
-/* Inside auto layout */
+  /* Inside auto layout */
 
-flex: none;
-order: 0;
-flex-grow: 0;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 
-&:hover {
-  background: linear-gradient(90deg, #FFC640, #FFC640);
-  border: 0.5px solid #000000;
-  ${NavLinks} {
-    color: #000000;
+  &:hover {
+    background: linear-gradient(90deg, #ffc640, #ffc640);
+    border: 0.5px solid #000000;
+    ${NavLinks} {
+      color: #000000;
+    }
   }
-}
 
-&.custom {
-  padding-left: 10px; 
-  padding-right: 10px; 
-}
+  &.custom {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 
-@media screen and (max-width: 480px){
-  margin: 5px;
- }
+  @media screen and (max-width: 480px) {
+    margin: 5px;
+  }
 `;
-
 
 export const MobileIcon = styled.div`
   display: none;
@@ -173,8 +177,6 @@ export const MobileIcon = styled.div`
   }
 `;
 
-
-
 // import styled from 'styled-components';
 // import { Link as LinkR } from 'react-router-dom'
 // //import {Link as LinkS} from 'react-scroll'
@@ -186,7 +188,7 @@ export const MobileIcon = styled.div`
 // align-items: center;
 // //width: 100%;
 // top: 0px;
-// position: sticky; 
+// position: sticky;
 // height: 80px;
 // top: 0;
 // z-index: 19;
@@ -234,21 +236,20 @@ export const MobileIcon = styled.div`
 //   height: auto;
 //   width: 150px;
 //   color: #fff;
-//   justify-self: flex-start;  
+//   justify-self: flex-start;
 //   font-size: 1.5rem;
 //   display: flex;
-//   flex-direction:column; 
+//   flex-direction:column;
 //   margin-left: 6px;
 //   margin-top: 5px;
-//   font-weight: bold;  
-//   text-decoration: none;  
+//   font-weight: bold;
+//   text-decoration: none;
 // `
 // export const MobileIcon = styled.div`
 //   display: none;
 //   align-items: center;
 //   margin-bottom: 65px;
-  
-  
+
 //   @media screen and (max-width: 768px){
 //     display: block;
 //     position: absolute;
@@ -272,7 +273,6 @@ export const MobileIcon = styled.div`
 // width: auto;
 // height: 45px;
 
-
 // /* Inside auto layout */
 
 // flex: none;
@@ -288,7 +288,7 @@ export const MobileIcon = styled.div`
 //     gap: 15px;
 //     margin-top: 44px;
 //     width: 100%;
-//     height: auto; 
+//     height: auto;
 //     position: absolute;
 //     top: ${({ isOpen }) => (isOpen ? '40px' : '-80vh')};
 //     left: 0;
@@ -310,7 +310,7 @@ export const MobileIcon = styled.div`
 //   // height: 14px;
 //   // display: flex;
 //   // justify-content: flex-start;
-//   //  margin-top: 0px; 
+//   //  margin-top: 0px;
 //   // font-weight: 100;
 //   // font-size: 10px;
 //   // color: #FFF;
@@ -325,7 +325,7 @@ export const MobileIcon = styled.div`
 // `;
 
 // export const Navitem = styled.li`
- 
+
 // box-sizing: border-box;
 
 // /* Auto layout */
@@ -356,8 +356,8 @@ export const MobileIcon = styled.div`
 // }
 
 // &.custom {
-//   padding-left: 10px; 
-//   padding-right: 10px; 
+//   padding-left: 10px;
+//   padding-right: 10px;
 // }
 // @media screen and (max-width: 480px){
 //   margin: 5px;
@@ -380,7 +380,6 @@ export const MobileIcon = styled.div`
 //  padding-bottom: 20px;
 // }
 // `;
-
 
 // export const NavLinks = styled(LinkR)`
 
