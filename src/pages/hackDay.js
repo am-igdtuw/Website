@@ -8,16 +8,26 @@ import Prize from "../Components/HackDay/Prizes/prize";
 import FAQH from "../Components/HackDay/Faq Hackday/index";
 import HomeSidebar from "../Components/HomePage/homepage-sidebar/Homesidebar";
 import Sidebar from "../Components/HackDay/Sidebar";
+import Navhack from "../Components/HackDay/Navhack";
+import Sidehack from "../Components/HackDay/Sidehack";
+import './hackday.css';
+
 const ProbStatementPage = () => {
   return (
-    <div>
+    <div className="app-container">
       <Navbar />
-      {/* <ProbStatement /> */}
-      {/* <HomeSidebar /> */}
-      <About />
-      <Banner />
-      <Prize />
-      <FAQH />
+      <Navhack />
+      <div className="main-content">
+        <Sidehack />
+        <div className="content">
+          {/* <ProbStatement /> */}
+          {/* <HomeSidebar /> */}
+          <About />
+          <Banner />
+          <Prize />
+          <FAQH />
+        </div>
+      </div>
       <Sidebar />
       <Footer />
     </div>

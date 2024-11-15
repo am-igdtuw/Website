@@ -1,0 +1,50 @@
+.navbar {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 4rem;
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar a {
+  text-decoration: none;
+  background-color: #1e1e1e;
+  border-radius: 20px;
+  color: #f0e68c;
+  font-size: 1rem;
+  padding: 0.6rem 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.navbar a:hover {
+  background-color: #3e3e3e;
+  transform: scale(1.05);
+}
+
+.navbar a.active {
+  font-weight: bold;
+  color: #f39c12;
+  background-color: #222;
+  border: 2px solid #f39c12;
+}
+
+.title {
+  font-weight: bold;
+  background: linear-gradient(90deg, #f39c12, #f7c471);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center;
+  padding: 1.5rem 0;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
+  margin: 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.title:hover {
+  transform: scale(1.05);
+}
