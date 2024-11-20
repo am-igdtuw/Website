@@ -11,6 +11,7 @@ import Sidebar from "../Components/HackDay/Sidebar";
 import Navhack from "../Components/HackDay/Navhack";
 import Sidehack from "../Components/HackDay/Sidehack";
 import './hackday.css';
+import SubmissionFormat from "../Components/HackDay/SubmissionFormat";
 
 const ProbStatementPage = () => {
   return (
@@ -26,6 +27,7 @@ const ProbStatementPage = () => {
           <Banner />
           <Prize />
           <FAQH />
+          <SubmissionFormat/>
         </div>
       </div>
       <Sidebar />
