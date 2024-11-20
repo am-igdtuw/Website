@@ -64,6 +64,27 @@ const PastEventSectionPseudo = () => {
 <Date></Date>   
 <VerticalTimeline>
 
+<VerticalTimelineElement
+className="vertical-timeline-element--education"
+contentStyle={{ background: '#e09f3e', color: '#fff' }}
+date="13 SEPTEMBER 2024"
+dateClassName='month-date'
+iconStyle={{ background: '#e09f3e', color: '#fff' }}
+// icon={<SchoolIcon />}
+>  <a href="https://www.instagram.com/p/C_fIOVIsNpc/" target="_blank" rel="noopener noreferrer"  className="card-link">
+
+<h3 className="vertical-timeline-element-title">The Graph Workshop</h3>
+{/* <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4> */}
+<div style={{ display: 'flex', alignItems: 'center' }} className='innerDiv'>
+  <img className="timeline-img" src="https://res.cloudinary.com/dlx9sj1pl/image/upload/v1730999849/Screenshot_2024-11-07_224113_emm0uy.png"></img>
+  <div className="event-description-box">
+  A beginner-friendly introduction to Web3 and The Graph. Dived into blockchain basics, 
+  learnt about subgraphs, and enjoyed exclusive swags, a GRT airdrop, and networking opportunities.
+
+</div>
+</div>
+</a>
+</VerticalTimelineElement>
   
 
 <VerticalTimelineElement
