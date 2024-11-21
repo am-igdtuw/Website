@@ -10,15 +10,17 @@ body {
   
   .sponsors-title {
     display: flex;
+    border-left: 7px solid goldenrod;
     align-items: center;
     gap: 10px;
-    font-size: 24px;
+    font-size: 4em;
     color: #ede8e8e4;
+    margin-bottom: 50px;
   }
   
   .sponsors-title span {
     display: inline-block;
-    width: 5px;
+    width: 10px;
     height: 100%;
     background-color: #ffcc00;
     border-radius: 10px;
@@ -35,7 +37,7 @@ body {
     display: flex;
     align-items: center;
     gap: 2px;
-    width: calc(50% - 10px);
+    width: calc(30% - 10px);
     padding: 10px;
     background-color: #fff;
     border: 1px solid #ccc;
@@ -43,8 +45,8 @@ body {
   }
   
   .sponsor-image {
-    width: 65px;
-    height: 65px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     overflow: hidden;
   }
@@ -62,10 +64,11 @@ body {
   }
   
   .sponsor-name {
+    font-size: 2em;
     font-weight: bold;
   }
   
   .sponsor-role {
-    font-size: 0.85em;
+    font-size: 1.5em;
     color: #777;
   }

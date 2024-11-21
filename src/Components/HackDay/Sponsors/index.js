@@ -39,7 +39,7 @@ const Sponsors = () => {
     <div className="sponsors">
       <div className="sponsors-title">
         <span></span>
-        <h3>Sponsors</h3>
+        <h1>Sponsors</h1>
       </div>
       <div className="sponsors-grid">
         {sponsorsData.map((sponsor, index) => (
