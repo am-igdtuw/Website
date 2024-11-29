@@ -1,0 +1,63 @@
+/* RewardsList.css */
+
+
+.rewards-list {
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    color: white;
+    
+  }
+  
+  .rewards-list h2 {
+    border-left: 5px solid rgb(218, 147, 40); /* Yellow */
+    padding-left: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+
+  .reward-grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .reward {
+    width: 300px;
+    border-radius: 25px;
+    padding: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background-color: white;
+  }
+  
+  .reward-amount {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    border-left: 1.5px solid black;
+    align-items: center;
+    color: #333;
+  }
+  
+  .amount {
+    color: black;;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  
+  .place {
+    color: #333;
+    font-weight: normal;
+    margin-left: 15px;
+  }
+  
+  .reward-track {
+    width: 25%;
+    /* margin: 8px; */
+    font-size: 12px;
+    color: #777;
+  }
+  
