@@ -39,17 +39,18 @@ const Sponsors = () => {
     <div className="sponsors">
       <div className="sponsors-title">
         <span></span>
-        <h1>Sponsors</h1>
+        Sponsors
       </div>
+      
       <div className="sponsors-grid">
         {sponsorsData.map((sponsor, index) => (
-          <div key={index} className="sponsor-card">
+          <div className="sponsor-card" key={index}>
             <div className="sponsor-image">
               <img src={sponsor.image} alt={sponsor.name} />
             </div>
             <div className="sponsor-info">
-              <p className="sponsor-name">{sponsor.name}</p>
-              <p className="sponsor-role">{sponsor.role}</p>
+              <div className="sponsor-name">{sponsor.name}</div>
+              <div className="sponsor-role">{sponsor.role}</div>
             </div>
           </div>
         ))}
