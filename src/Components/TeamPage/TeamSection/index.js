@@ -347,43 +347,43 @@ const TeamPage = () => {
         </TechP>
       ),
     },
-    {
-      name: "Advitiya Sharma",
-      role: "Coordinator",
-      imageUrl:
-        "https://res.cloudinary.com/duptmanu9/image/upload/ar_1:1,b_rgb:ffffff,bo_12px_solid_rgb:f2af13,c_fill,g_auto,r_max,w_1000/v1717850875/WhatsApp_Image_2024-06-08_at_18.14.01_654e905c_ip4rvt.jpg",
-      techProfiles: (
-        <TechP>
-          <a
-            className="linkiden"
-            href="https://www.linkedin.com/in/advitiya993/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaLinkedin />
-          </a>
-          <a
-            className="twitter"
-            href="/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon
-              icon="fa-brands fa-x-twitter"
-              style={{ verticalAlign: "middle" }}
-            />
-          </a>
-          <a
-            className="insta"
-            href="https://instagram.com/advitiya__?igshid=OGQ5ZDc2ODk2ZA=="
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaInstagram />
-          </a>
-        </TechP>
-      ),
-    },
+    // {
+    //   name: "Advitiya Sharma",
+    //   role: "Coordinator",
+    //   imageUrl:
+    //     "https://res.cloudinary.com/duptmanu9/image/upload/ar_1:1,b_rgb:ffffff,bo_12px_solid_rgb:f2af13,c_fill,g_auto,r_max,w_1000/v1717850875/WhatsApp_Image_2024-06-08_at_18.14.01_654e905c_ip4rvt.jpg",
+    //   techProfiles: (
+    //     <TechP>
+    //       <a
+    //         className="linkiden"
+    //         href="https://www.linkedin.com/in/advitiya993/"
+    //         target="_blank"
+    //         rel="noopener noreferrer"
+    //       >
+    //         <FaLinkedin />
+    //       </a>
+    //       <a
+    //         className="twitter"
+    //         href="/"
+    //         target="_blank"
+    //         rel="noopener noreferrer"
+    //       >
+    //         <FontAwesomeIcon
+    //           icon="fa-brands fa-x-twitter"
+    //           style={{ verticalAlign: "middle" }}
+    //         />
+    //       </a>
+    //       <a
+    //         className="insta"
+    //         href="https://instagram.com/advitiya__?igshid=OGQ5ZDc2ODk2ZA=="
+    //         target="_blank"
+    //         rel="noopener noreferrer"
+    //       >
+    //         <FaInstagram />
+    //       </a>
+    //     </TechP>
+    //   ),
+    // },
     {
       name: "Anamika Garg",
       role: "Coordinator",
