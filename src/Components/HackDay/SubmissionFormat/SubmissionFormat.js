@@ -18,7 +18,7 @@ export const MainHeading = styled.h1`
   font-weight: 750;
   padding-left: 10px;
   // color:black;
-  margin : 10px 0px 29px 0px;
+  margin : 5px 0px 20px 0px;
 `;
 
 export const TrackCon = styled.div`
