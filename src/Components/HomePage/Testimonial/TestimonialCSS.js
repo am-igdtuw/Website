@@ -2,17 +2,17 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   width: 100%;
-  height: 110vh;
+  min-height: 60vh;
   ${"" /* display: flex; */}
   flex-direction: column;
   justify-content: center;
   @media screen and (max-width: 480px) {
-    height: 120vh;
+    min-height: 120vh;
   }
 `;
 export const HomeContainer = styled.div`
   display: flex;
-  height: 1200px;
+  min-height: 100px;
   justify-content: center;
   ${"" /* margin-top: 30px; */}
   margin-bottom: 80px;
@@ -28,6 +28,7 @@ export const Heading = styled.div`
   text-align: center;
   justify-content: center;
   display: flex;
+  min-height : 180px;
   padding: 50px 50px;
   padding-top: 20px;
   width: auto;
@@ -46,7 +47,7 @@ export const Heading = styled.div`
 
 export const ContainerSlider = styled.div`
   width: 65%;
-  height: 400px;
+  min-height: 300px;
   margin-top: 100px;
   margin-bottom: 100px;
 `;

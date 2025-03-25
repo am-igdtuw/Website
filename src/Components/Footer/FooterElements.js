@@ -36,6 +36,8 @@ export const FooterLinksContainer = styled.div`
 `;
 export const FooterLinksWrapper = styled.div`
   display: flex;
+  justify-content : center;
+  align-items:center;
   flex-wrap: wrap;
   z-index: 2;
 
@@ -80,7 +82,7 @@ export const FooterLink = styled(Link)`
   text-decoration: none;
   margin-bottom: 0.5rem;
   margin-left: 24px;
-  font-size: 14px;
+  font-size: 17px;
   z-index: 2;
   font-size: 16px;
 

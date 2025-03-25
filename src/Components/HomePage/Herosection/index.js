@@ -106,13 +106,13 @@ const HeroSection = () => {
       {showComponent && <ProfilePage></ProfilePage>}
 
       <Container maxWidth="lg" sx={{ position: "relative" }}>
-        <Grid container alignItems="center" justifyContent="space-around">
+        <Grid container alignItems="center" justifyContent="center">
           <Grid
             item
             xs={10}
-            md={6}
-            py={6}
-            sx={{ backgroundColor: "transparent" }}
+            md={7}
+            py={2}
+            sx={{ backgroundColor: "transparent"  , height : '300px'}}
           >
             <HeroContainer>
               <HeroContent>

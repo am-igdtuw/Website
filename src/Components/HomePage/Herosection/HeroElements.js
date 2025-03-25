@@ -9,11 +9,11 @@ export const HeroContainer = styled.div`
   align-items: center;
   text-align: left;
   padding: 0 30px;
-  height: 70vh;
+  min-height: 60vh;
   position: relative;
   overflow: hidden;
-  margin-left: 10px;
-  top: 50px;
+  // margin-left: 10px;
+  top: 0px;
 
   @media screen and (max-width: 900px) {
     height: 40vh;
@@ -72,7 +72,7 @@ export const HeroH1 = styled.h1`
   @media screen and (max-width: 768px) {
     font-size: 2rem;
     font-weight: 600;
-    margin-top: 20px;
+    margin-top: -100px;
   }
 
   @media screen and (max-width: 480px) {
