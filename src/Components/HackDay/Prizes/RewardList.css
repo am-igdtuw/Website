@@ -1,0 +1,131 @@
+.rewards-list {
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  color: white;
+
+}
+
+.rewards-list h2 {
+  border-left: 5px solid rgb(218, 147, 40);
+  /* Yellow */
+  padding-left: 10px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.reward-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.reward {
+  width: 340px;
+  height: 110px;
+  border-radius: 25px;
+  border: black 1px solid;
+  padding: 15px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  background-color: white;
+}
+
+.reward-amount {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  border-left: 1.5px solid black;
+  align-items: center;
+  color: #333;
+}
+
+.amount {
+  color: black;
+  ;
+  font-weight: bold;
+  font-size: 15px;
+  margin: 4px;
+}
+
+.place {
+  color: #333;
+  font-weight: normal;
+  margin-left: 15px;
+}
+
+.reward-track {
+  width: 25%;
+  /* margin: 8px; */
+  font-size: 12px;
+  color: #777;
+}
+
+.criteria {
+  width: 340px;
+  height: 80px;
+  color: #777;
+  border-radius: 25px;
+  padding: 15px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  background-color: white;
+  font-size: 12px;
+}
+
+.reward01 {
+  height: 240px;
+  width: 390px;
+  gap: 20px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.track-heading {
+  color: black;
+  margin: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-weight: 600;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 350px) {
+  .reward {
+    width: 90%; /* Full width on mobile */
+    height: auto; /* Adjust height */
+    flex-direction: column;
+  }
+
+  .reward-amount {
+    width: 100%; /* Full width on mobile */
+    flex-direction: row; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .reward-track {
+    width: 100%; /* Full width on mobile */
+    font-size: 14px; /* Slightly larger font size */
+  }
+
+  .criteria {
+    width: 90%; /* Full width on mobile */
+  }
+
+  .reward01 {
+    width: 100%; /* Full width on mobile */
+    height: auto; /* Adjust height */
+  }
+
+  .track-heading {
+    margin-bottom: 15px; /* Adjusted space for mobile */
+  }
+}
+

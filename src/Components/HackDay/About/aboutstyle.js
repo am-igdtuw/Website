@@ -13,6 +13,7 @@ export const AboutContent = styled.div`
     margin: 2rem 10rem;
     display: inline-block;
     width: 55%
+    display: none
 `
 
 export const AboutH1 = styled.h1`
