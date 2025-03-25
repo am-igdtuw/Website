@@ -22,7 +22,7 @@ const Navhack = () => {
   }, []);
 
   return (
-    <nav>
+    <div style={{position:'fixed', width:'100vw', zIndex:'99999', backdropFilter:'blur(30px)'}}>
       <div>
         <h1 className='title'> HACKDAY </h1>
       </div>
@@ -34,7 +34,7 @@ const Navhack = () => {
         <a href="#faq" className={activeSection === 'faq' ? 'active' : ''}>FAQs</a>
         <a href="#sub" className={activeSection === 'sub' ? 'active' : ''}>Submission Format</a>
       </nav>
-    </nav>
+    </div>
   );
 };
 

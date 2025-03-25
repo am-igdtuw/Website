@@ -1,14 +1,14 @@
 .sidebar {
   width: 20%;
-  padding: 1.5rem;
-  position: sticky;
-  top: 13rem;
-  height: 65vh;
-  background-color: #1e1e1e;
-  color: #fff;
-  box-shadow: 4px 0 15px rgba(0, 0, 0, 0.2);
-  border-radius: 15%;
-  transition: transform 0.3s ease, width 0.3s ease;
+    padding: 1.5rem;
+    position: fixed;
+    margin-top: 186px;
+    height: 65vh;
+    background-color: #1e1e1e;
+    color: #fff;
+    box-shadow: 4px 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 1%;
+    transition: transform 0.3s ease, width 0.3s ease;
 }
 
 .sidebar:hover {
