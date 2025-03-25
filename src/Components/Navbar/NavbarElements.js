@@ -3,17 +3,19 @@ import { Link } from "react-router-dom";
 //import {Link as LinkS} from 'react-scroll'
 
 export const Nav = styled.nav`
+  width : 100vw;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   background-color: ${(props) =>
     props.scroll > 0 ? "#FFFFFF40" : "transparent"};
+  backdrop-filter : blur(30px);
   height: 80px;
   margin-top: -80px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1rem;
-  position: sticky;
-  top: 0;
+  position: fixed;
+  // top: 0;
   z-index: 19;
 
   @media screen and (max-width: 960px) {
@@ -21,7 +23,7 @@ export const Nav = styled.nav`
     overflow: visible;
     padding-top: 20px;
     padding-left: 10px;
-    position: sticky; // Change to 'relative' for mobile
+    position: fixed; // Change to 'relative' for mobile
     z-index: 100; // Set a higher z-index value
   }
 `;
@@ -63,10 +65,10 @@ export const NavLogo = styled.h1`
 export const NavMenu = styled.div`
   display: flex;
   align-items: center;
-  margin-right: -24px;
-  padding: 16px 50px 0px 90px;
+  justify-content : center;
+  // margin-right: -24px;
+  padding: 0px 50px 0px 20px;
   gap: 21px;
-
   flex: none;
   order: 1;
   flex-grow: 0;
