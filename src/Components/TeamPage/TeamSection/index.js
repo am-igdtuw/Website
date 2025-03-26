@@ -1,3 +1,4 @@
+//TeamPage/TeamSection/Index.js
 import React, { useEffect } from "react";
 
 import TeamMemberCard from "./TeamMemberCard";
@@ -2273,6 +2274,34 @@ const TeamPage = () => {
         </TechP>
       ),
     },
+    {
+      name: "Priyanshi",
+      role: "Media Core",
+      imageUrl: "https://res.cloudinary.com/dalgvlhes/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695672367/priyanshi_cuuz7x.jpg",
+      techProfiles: (
+        <TechP>
+          <a
+            className="linkedin"
+            href="www.linkedin.com/in/priyanshi-roy-a67825201"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            className="twitter"
+            href="https://x.com/phiandrho"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon="fa-brands fa-x-twitter" style={{ verticalAlign: "middle" }} />
+          </a>
+          <a className="insta" href="/" target="_blank" rel="noopener noreferrer">
+            <FaInstagram />
+          </a>
+        </TechP>
+      ),
+    },
   ];
   const mediaTeamCoordinator = [
     // {
@@ -2498,34 +2527,34 @@ const TeamPage = () => {
         </TechP>
       ),
     },
-    {
-      name: "Priyanshi",
-      role: "Coordinator",
-      imageUrl: "https://res.cloudinary.com/dalgvlhes/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695672367/priyanshi_cuuz7x.jpg",
-      techProfiles: (
-        <TechP>
-          <a
-            className="linkedin"
-            href="www.linkedin.com/in/priyanshi-roy-a67825201"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaLinkedin />
-          </a>
-          <a
-            className="twitter"
-            href="https://x.com/phiandrho"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon icon="fa-brands fa-x-twitter" style={{ verticalAlign: "middle" }} />
-          </a>
-          <a className="insta" href="/" target="_blank" rel="noopener noreferrer">
-            <FaInstagram />
-          </a>
-        </TechP>
-      ),
-    },
+    // {
+    //   name: "Priyanshi",
+    //   role: "Coordinator",
+    //   imageUrl: "https://res.cloudinary.com/dalgvlhes/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_10px_solid_rgb:F2AF13,b_rgb:262c35/v1695672367/priyanshi_cuuz7x.jpg",
+    //   techProfiles: (
+    //     <TechP>
+    //       <a
+    //         className="linkedin"
+    //         href="www.linkedin.com/in/priyanshi-roy-a67825201"
+    //         target="_blank"
+    //         rel="noopener noreferrer"
+    //       >
+    //         <FaLinkedin />
+    //       </a>
+    //       <a
+    //         className="twitter"
+    //         href="https://x.com/phiandrho"
+    //         target="_blank"
+    //         rel="noopener noreferrer"
+    //       >
+    //         <FontAwesomeIcon icon="fa-brands fa-x-twitter" style={{ verticalAlign: "middle" }} />
+    //       </a>
+    //       <a className="insta" href="/" target="_blank" rel="noopener noreferrer">
+    //         <FaInstagram />
+    //       </a>
+    //     </TechP>
+    //   ),
+    // },
     {
       name: "Tanisha Ojha",
       role: "Coordinator",
