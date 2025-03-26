@@ -1,27 +1,72 @@
+/* Navbar Container */
+.nav-container {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 99999;
+  backdrop-filter: blur(30px);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hide navbar when scrolling down */
+.hidden {
+  transform: translateY(-100%);
+}
+
+/* Show navbar when scrolling up */
+.visible {
+  transform: translateY(0);
+}
+
+/* Menu Button */
+.show-navbar-btn {
+  position: fixed;
+  top: 100px;
+  left: 10px;
+  z-index: 100000;
+  background-color: #1e1e1e;
+  color: #f1bd42;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.show-navbar-btn:hover {
+  background-color: #3e3e3e;
+}
+
+/* Navbar */
 .navbar {
   display: flex;
-  /* gap: 1.5rem; */
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
   padding: 1rem 2rem;
-  /* position: sticky; */
-  /* top: 4rem; */
-  z-index: 10;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 1.5rem;
 }
 
 .navbar a {
   text-decoration: none;
   background-color: #1e1e1e;
-  border-radius: 20px;
-  color: #f0e68c;
-  font-size: 1rem;
-  padding: 0.6rem 1rem;
+  border-radius: 25px;
+  color: #f1bd42;
+  font-size: 1.1rem;
+  padding: 0.7rem 1.4rem;
   transition: background-color 0.3s ease, transform 0.2s ease;
+  white-space: nowrap;
+  margin: 0 0.74rem;
 }
 
 .navbar a:hover {
   background-color: #3e3e3e;
-  transform: scale(1.05);
+  transform: scale(1.08);
 }
 
 .navbar a.active {
@@ -31,21 +76,32 @@
   border: 2px solid #f39c12;
 }
 
-.title {
-  font-weight: bold;
-  background: linear-gradient(90deg, #f39c12, #f7c471);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  text-align: center;
-  padding: 1.5rem 0;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
-  margin: 0;
-  transition: transform 0.3s ease-in-out;
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .navbar a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.6rem 1rem;
+    margin: 0.5rem 0;
+  }
 }
 
-.title:hover {
-  transform: scale(1.05);
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0.8rem;
+  }
+
+  .navbar a {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.8rem;
+  }
 }

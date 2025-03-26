@@ -1,9 +1,8 @@
 // import styled from 'styled-components'
 
-
 // export const HeroContainer = styled.div`
 // display: grid;
-// grid-template-columns: repeat(2, 1fr);  
+// grid-template-columns: repeat(2, 1fr);
 // justify-content: center;
 // align-items: center;
 // padding: 0 30px;
@@ -21,7 +20,6 @@
 //     bottom: 0;
 //     z-index: 2;
 //   }
-
 
 //   @media screen and (max-width: 1024px) {
 //     ${'' /* font-size: 48px; */}
@@ -41,7 +39,6 @@
 //   }
 
 // `;
-
 
 // export const HeroContent = styled.div`
 //   z-index: 3;
@@ -73,15 +70,15 @@
 //  display: grid;
 //   grid-template-columns: repeat(2, 1fr);
 // <<<<<<< HEAD
-//   gap: 20px;  
-//   width: 100%; 
+//   gap: 20px;
+//   width: 100%;
 
 //   @media screen and (max-width: 768px){
-//     grid-template-columns: 1fr; 
+//     grid-template-columns: 1fr;
 //   }
 
 //   @media screen and (max-width: 480px){
-//     grid-template-columns: 1fr;  
+//     grid-template-columns: 1fr;
 // =======
 //   gap: 20px;  // Adjust the gap between columns if needed
 //   width: 100%;  // Adjust for responsiveness
@@ -105,7 +102,7 @@
 // @media screen and (max-width: 480px){
 //   padding: 10px 0px;
 // }
-    
+
 // `
 // export const Title = styled.div`
 //   border-radius: 24px 24px 0px 0px;
@@ -138,7 +135,7 @@
 //   &:hover {
 //     background: #e99d0b;
 //   }
-  
+
 // `;
 
 // export const Content = styled.div`

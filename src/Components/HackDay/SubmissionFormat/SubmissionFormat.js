@@ -1,5 +1,4 @@
-import styled from "styled-components"
-
+import styled from "styled-components";
 
 export const Container = styled.div`
   min-height: 100vh;
@@ -9,7 +8,7 @@ export const Container = styled.div`
   align-items: flex-start;
   flex-direction: column;
   padding-left: 30px;
-  color : white;
+  color: white;
 `;
 
 export const MainHeading = styled.h1`
@@ -18,7 +17,7 @@ export const MainHeading = styled.h1`
   font-weight: 750;
   padding-left: 10px;
   // color:black;
-  margin : 5px 0px 20px 0px;
+  margin: 5px 0px 20px 0px;
 `;
 
 export const TrackCon = styled.div`
@@ -28,14 +27,15 @@ export const TrackCon = styled.div`
   align-items: flex-start;
   gap: 10px;
   margin-bottom: 20px;
-  margin-bottom : 10px;
+  margin-bottom: 10px;
 `;
 
 export const TrackHeading = styled.h2`
   font-size: 1.5rem;
   padding: 2px;
   text-decoration: underline;
-  background: rgba(59, 130, 246, 0.5);
+  ${"" /* background: rgba(59, 130, 246, 0.5); */}
+  color:rgb(255, 166, 0);
   font-weight: 650;
 `;
 

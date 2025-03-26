@@ -1,0 +1,117 @@
+.timeline-container {
+  max-width: 800px;
+  margin: 40px 0px;
+  padding: 30px; /* Remove extra padding */
+  background: none; /* Remove background */
+  box-shadow: none; /* Remove shadow */
+  border: none; /* Remove border */
+}
+
+.timeline-title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Ensure left alignment */
+  border-left: 7px solid goldenrod;
+  padding-left: 10px; /* Adds spacing after border */
+  font-size: 1.9rem;
+  color: white;
+  margin-bottom: 50px;
+  width: 100%; /* Makes it full-width */
+}
+
+.timeline {
+  position: relative;
+  padding-left: 30px;
+  border-left: 3px solid #facc15;
+  margin-left: 5vw;
+}
+
+/* Timeline event styling */
+.timeline-event {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.timeline-event::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: #facc15;
+  border-radius: 50%;
+  position: absolute;
+  left: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Styling for event details */
+.timeline-date {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffcc00;
+  min-width: 100px; /* Keeps date aligned */
+}
+
+.timeline-details {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(67, 58, 6, 0.317);
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: #f5f5f5;
+}
+
+.timeline-time {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ff9900;
+  min-width: 100px; /* Keeps time aligned */
+  text-align: right;
+}
+
+.timeline-description {
+  font-size: 16px;
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .timeline-event {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    padding-left: 15px;
+  }
+
+  .timeline-event::before {
+    left: -6px;
+    width: 10px;
+    height: 10px;
+  }
+
+  .timeline-date {
+    font-size: 16px;
+  }
+
+  .timeline-details {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 6px 10px;
+  }
+
+  .timeline-time,
+  .timeline-description {
+    font-size: 14px;
+    min-width: unset;
+    text-align: left;
+  }
+}

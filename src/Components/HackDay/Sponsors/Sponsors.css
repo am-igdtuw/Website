@@ -1,3 +1,4 @@
+/* Global Styles */
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
@@ -5,38 +6,58 @@ body {
 }
 
 .sponsors {
-  padding: 20px;
+  padding: 30px;
+  text-align: center;
 }
 
+/* Title Styling */
 .sponsors-title {
   display: flex;
-  border-left: 7px solid goldenrod;
   align-items: center;
-  gap: 10px;
+  justify-content: flex-start; /* Ensure left alignment */
+  border-left: 7px solid goldenrod;
+  padding-left: 10px; /* Adds spacing after border */
   font-size: 1.9rem;
   color: white;
   margin-bottom: 50px;
+  width: 100%; /* Makes it full-width */
 }
 
+.sponsors-title span {
+  width: 5px;
+  height: 25px;
+  background: goldenrod;
+}
+
+/* Grid Layout */
 .sponsors-grid {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(250px, 1fr)
+  ); /* Dynamic Grid */
   gap: 20px;
   justify-content: center;
 }
 
+/* Sponsor Card */
 .sponsor-card {
   display: flex;
   align-items: center;
   gap: 15px;
-  width: calc(30% - 10px);
   padding: 15px;
   background-color: #fff;
   border: 1px solid #ccc;
-  border-radius: 50px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
 }
 
+.sponsor-card:hover {
+  transform: scale(1.05);
+}
+
+/* Sponsor Image */
 .sponsor-image {
   width: 80px;
   height: 80px;
@@ -51,48 +72,103 @@ body {
   object-fit: cover;
 }
 
+/* Sponsor Info */
 .sponsor-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  text-align: left;
 }
 
 .sponsor-name {
   font-size: 1.2rem;
   font-weight: bold;
+  color: #121212;
 }
 
 .sponsor-role {
-  font-size: 0.8rem;
-  color: #3d3a3a;
+  font-size: 0.9rem;
+  color: #555;
 }
 
-/* Mobile Responsive Styles */
-@media screen and (max-width: 768px) {
+/* Responsive Styles */
+@media (max-width: 1024px) {
   .sponsors-title {
-    font-size: 1.5rem;
-    margin-bottom: 30px;
+    font-size: 1.8rem;
   }
-  
+
   .sponsors-grid {
     gap: 15px;
   }
-  
+
   .sponsor-card {
-    width: 100%;
+    flex-direction: column;
+    text-align: center;
     padding: 10px;
   }
-  
+
+  .sponsor-image {
+    width: 70px;
+    height: 70px;
+  }
+
+  .sponsor-name {
+    font-size: 1.1rem;
+  }
+
+  .sponsor-role {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .sponsors-title {
+    font-size: 1.5rem;
+  }
+
+  .sponsors-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .sponsor-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
   .sponsor-image {
     width: 60px;
     height: 60px;
   }
-  
+
   .sponsor-name {
     font-size: 1rem;
   }
-  
+
   .sponsor-role {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .sponsors-title {
+    font-size: 1.3rem;
+  }
+
+  .sponsors-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sponsor-card {
+    padding: 10px;
+  }
+
+  .sponsor-image {
+    width: 50px;
+    height: 50px;
+  }
+
+  .sponsor-name {
+    font-size: 0.9rem;
+  }
+
+  .sponsor-role {
+    font-size: 0.75rem;
   }
 }

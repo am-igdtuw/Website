@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
+import React, { useState } from "react";
+import styled from "styled-components";
 
 export const HeroContainer = styled.div`
   display: flex;
@@ -11,11 +11,11 @@ export const HeroContainer = styled.div`
   z-index: 1;
 
   @media screen and (max-width: 1024px) {
-    padding: 50px 30px;
+    padding: 50px 20px;
   }
 
   @media screen and (max-width: 768px) {
-    padding: 50px 20px;
+    padding: 40px 15px;
   }
 
   @media screen and (max-width: 480px) {
@@ -27,10 +27,10 @@ export const HeroContent = styled.div`
   z-index: 3;
   max-width: 1200px;
   width: 100%;
-  padding: 8px 24px;
+  padding: 8px 0px;
   display: flex;
   flex-direction: column;
-  
+
   @media screen and (max-width: 480px) {
     padding: 8px 10px;
   }
@@ -45,6 +45,10 @@ export const HeroH1 = styled.h1`
   color: white;
   margin-bottom: 30px;
   align-self: flex-start;
+
+  @media screen and (max-width: 768px) {
+    font-size: 1.7rem;
+  }
 
   @media screen and (max-width: 480px) {
     font-size: 1.5rem;
@@ -66,7 +70,7 @@ export const Item = styled.div`
 export const Title = styled.div`
   border-radius: 24px 24px 0px 0px;
   padding: 16px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 1rem;
   display: flex;
@@ -94,7 +98,7 @@ export const Title = styled.div`
 
   @media screen and (max-width: 480px) {
     padding: 12px;
-    
+
     h2 {
       font-size: 14px;
     }
@@ -105,44 +109,55 @@ export const Content = styled.div`
   color: white;
   padding: 24px;
   font-weight: 500;
-  font-family: 'Poppins', sans-serif;
-  height: ${({ selected }) => (selected ? 'auto' : '0')};
-  opacity: ${({ selected }) => (selected ? '1' : '0')};
+  font-family: "Poppins", sans-serif;
+  height: ${({ selected }) => (selected ? "auto" : "0")};
+  opacity: ${({ selected }) => (selected ? "1" : "0")};
   overflow: hidden;
   transition: all 0.5s ease-in-out;
   border-radius: 0px 0px 24px 24px;
-  background: linear-gradient(90deg, rgba(255, 198, 64, 0.5) 0%, rgba(169, 169, 169, 0.67) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 198, 64, 0.5) 0%,
+    rgba(169, 169, 169, 0.67) 100%
+  );
   font-size: 14px;
 
   @media screen and (max-width: 480px) {
     padding: 16px;
+    font-size: 13px;
   }
 `;
 
 const data = [
   {
-    question: 'When was AssetMerkle IGDTUW established?',
-    answer: 'AssetMerkle IGDTUW was established in January 2023 at IGDTUW'
+    question: "When was AssetMerkle IGDTUW established?",
+    answer: "AssetMerkle IGDTUW was established in January 2023 at IGDTUW",
   },
   {
-    question: 'What is AssetMerkle?',
-    answer: 'AssetMerkle IGDTUW is the first Web3-based club at IGDTUW. Our society intends to provide a platform for students to familiarize themselves with the professional world and gain practical experience in blockchain and Web3 technology.'
+    question: "What is AssetMerkle?",
+    answer:
+      "AssetMerkle IGDTUW is the first Web3-based club at IGDTUW. Our society intends to provide a platform for students to familiarize themselves with the professional world and gain practical experience in blockchain and Web3 technology.",
   },
   {
-    question: 'What is the aim of AssetMerkle IGDTUW?',
-    answer: 'Our aim is to bridge the gap between academic learning and real-world challenges in the field of blockchain and Web3 technology. With the growing importance of Web3 technology in the industry, we believe it is crucial for students to gain practical skills in this field.'
+    question: "What is the aim of AssetMerkle IGDTUW?",
+    answer:
+      "Our aim is to bridge the gap between academic learning and real-world challenges in the field of blockchain and Web3 technology. With the growing importance of Web3 technology in the industry, we believe it is crucial for students to gain practical skills in this field.",
   },
   {
-    question: 'Can I be a part of AssetMerkle IGDTUW?',
-    answer: 'Yes, you can join our WhatsApp community and be a part of AssetMerkle IGDTUW.'
+    question: "Can I be a part of AssetMerkle IGDTUW?",
+    answer:
+      "Yes, you can join our WhatsApp community and be a part of AssetMerkle IGDTUW.",
   },
   {
-    question: 'I am from BBA, can I still be a part of this community?',
-    answer: 'Absolutely! AssetMerkle encourages participation from individuals of all academic backgrounds, including BBA, and values the diverse skills they bring to the community.'
+    question: "I am from BBA, can I still be a part of this community?",
+    answer:
+      "Absolutely! AssetMerkle encourages participation from individuals of all academic backgrounds, including BBA, and values the diverse skills they bring to the community.",
   },
   {
-    question: 'I know nothing about web3, can I be a part of AssetMerkle IGDTUW?',
-    answer: 'Certainly! AssetMerkle IGDTUW welcomes individuals with varying levels of knowledge, and if you are new to web3, we have got you covered. We offer mentor sessions, workshops, and other resources to help clear up your doubts and ensure that everyone, regardless of their background, can actively participate and learn within our community.'
+    question:
+      "I know nothing about web3, can I be a part of AssetMerkle IGDTUW?",
+    answer:
+      "Certainly! AssetMerkle IGDTUW welcomes individuals with varying levels of knowledge, and if you are new to web3, we have got you covered. We offer mentor sessions, workshops, and other resources to help clear up your doubts and ensure that everyone, regardless of their background, can actively participate and learn within our community.",
   },
 ];
 
@@ -157,17 +172,15 @@ const FAQHackday = () => {
     <HeroContainer>
       <HeroContent>
         <HeroH1>FAQs</HeroH1>
-        
+
         <Accordian>
           {data.map((item, i) => (
             <Item key={i}>
               <Title onClick={() => toggle(i)}>
                 <h2>{item.question}</h2>
-                <span>{selected === i ? '-' : '+'}</span>
+                <span>{selected === i ? "-" : "+"}</span>
               </Title>
-              <Content selected={selected === i}>
-                {item.answer}
-              </Content>
+              <Content selected={selected === i}>{item.answer}</Content>
             </Item>
           ))}
         </Accordian>

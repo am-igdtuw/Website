@@ -37,11 +37,8 @@ const sponsorsData = [
 const Sponsors = () => {
   return (
     <div className="sponsors">
-      <div className="sponsors-title">
-        <span></span>
-        Sponsors
-      </div>
-      
+      <div className="sponsors-title">Sponsors</div>
+
       <div className="sponsors-grid">
         {sponsorsData.map((sponsor, index) => (
           <div className="sponsor-card" key={index}>
