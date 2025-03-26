@@ -3,34 +3,33 @@ import "./Sponsors.css";
 
 const sponsorsData = [
   {
-    name: "Orflax",
-    role: "Reimagine Track Partners",
+    name: ".xyz",
     image:
-      "https://assets.hackquest.io/hackathons/45c9549b-5760-4961-bc45-422c82131436/WrhtOFMbc5RvNZEzOL-mp.png",
-  },
-  {
-    name: "Skillarena",
-    role: "Talent Partners",
-    image:
-      "https://assets.hackquest.io/hackathons/45c9549b-5760-4961-bc45-422c82131436/S2EIOqkxR31V_xRdyKazz.jpeg",
+      "https://res.cloudinary.com/duptmanu9/image/upload/v1743010841/xyz-logo-color_hhvfct.png",
   },
   {
     name: "Interview Buddy",
-    role: "Interview Preparation Partners",
     image:
-      "https://assets.hackquest.io/hackathons/45c9549b-5760-4961-bc45-422c82131436/WuQ8CX4xipP-6wrwYzTae.png",
+      "https://res.cloudinary.com/duptmanu9/image/upload/v1743010841/interview_buddy_ddjgmr.png",
   },
   {
-    name: "HackQuest",
-    role: "Platform Partners",
+    name: "Aptos",
     image:
-      "https://assets.hackquest.io/hackathons/45c9549b-5760-4961-bc45-422c82131436/MnHPfLWJ0ZD2IPlH2Gj04.jpg",
+      "https://res.cloudinary.com/duptmanu9/image/upload/v1743010842/Aptos_cg6rqg.png",
   },
   {
-    name: "Squareboat",
-    role: "In-kind Sponsors",
+    name: "1stopai",
     image:
       "https://assets.hackquest.io/hackathons/45c9549b-5760-4961-bc45-422c82131436/1-sYcHUpWh36IjlAXz3UK.jpeg",
+  },
+  {
+    name: "Bitgo",
+    image:
+      "https://res.cloudinary.com/duptmanu9/image/upload/v1743010841/bitgo_do4pik.png",
+  },{
+    name: "Eazydiner",
+    image:
+      "https://res.cloudinary.com/duptmanu9/image/upload/v1743010841/eazydiner_athbld.jpg",
   },
 ];
 
