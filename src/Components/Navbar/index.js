@@ -1,3 +1,4 @@
+//NavBar/Index.js
 import React, { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa"; // Import the close icon as well
 import Logo2 from "../../images/logo.png";
@@ -79,6 +80,11 @@ const Navbar = () => {
             <Navitem className="custom">
               <NavLinks to="/faq" onClick={handleLogoClick}>
                 FAQS
+              </NavLinks>
+            </Navitem>
+            <Navitem className="custom">
+              <NavLinks to="/Hackday" onClick={handleLogoClick}>
+                AM Hacks
               </NavLinks>
             </Navitem>
           </NavMenu>

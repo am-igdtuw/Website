@@ -1,3 +1,4 @@
+//HackDay/Faq HackDay/Index.js
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
@@ -121,29 +122,45 @@ export const Content = styled.div`
 
 const data = [
   {
-    question: 'When was AssetMerkle IGDTUW established?',
-    answer: 'AssetMerkle IGDTUW was established in January 2023 at IGDTUW'
+    question: 'How do I register?',
+    answer: 'Hop on Devfolio, hit "Apply now," fill in your details, and you are in! Build or join a team and get ready for the ultimate hackathon experience.'
   },
   {
-    question: 'What is AssetMerkle?',
-    answer: 'AssetMerkle IGDTUW is the first Web3-based club at IGDTUW. Our society intends to provide a platform for students to familiarize themselves with the professional world and gain practical experience in blockchain and Web3 technology.'
+    question: "I haven't participated in a hackathon before. Can I still join?",
+    answer: 'Absolutely! Whether you are a pro or a newbie, it’s all about learning and having fun.'
   },
   {
-    question: 'What is the aim of AssetMerkle IGDTUW?',
-    answer: 'Our aim is to bridge the gap between academic learning and real-world challenges in the field of blockchain and Web3 technology. With the growing importance of Web3 technology in the industry, we believe it is crucial for students to gain practical skills in this field.'
+    question: 'Can team members be from different colleges?',
+    answer: 'Yes! Team up with anyone, anywhere.'
   },
   {
-    question: 'Can I be a part of AssetMerkle IGDTUW?',
-    answer: 'Yes, you can join our WhatsApp community and be a part of AssetMerkle IGDTUW.'
+    question: "I don't have a team. What should I do?",
+    answer: 'No worries! Join our Discord and WhatsApp channel, meet participants, and find your dream team.'
   },
   {
-    question: 'I am from BBA, can I still be a part of this community?',
-    answer: 'Absolutely! AssetMerkle encourages participation from individuals of all academic backgrounds, including BBA, and values the diverse skills they bring to the community.'
+    question: 'Why should a fresher join?',
+    answer: 'It’s a vibe! Meet cool people, learn new skills, build projects, and have fun.'
   },
   {
-    question: 'I know nothing about web3, can I be a part of AssetMerkle IGDTUW?',
-    answer: 'Certainly! AssetMerkle IGDTUW welcomes individuals with varying levels of knowledge, and if you are new to web3, we have got you covered. We offer mentor sessions, workshops, and other resources to help clear up your doubts and ensure that everyone, regardless of their background, can actively participate and learn within our community.'
+    question: 'Whom can I contact if I have further questions?',
+    answer: 'Ping our POCs or drop your queries on Discord!'
   },
+  {
+    question: 'Does the hackathon have a theme?',
+    answer: 'Along with Web3, we’ve got AI tracks too. Explore what you love!'
+  },
+  {
+    question: 'Where will the hackathon take place?',
+    answer: 'This is a hybrid mode hackathon. The shortlisted teams will be invited for the final round in Delhi NCR.'
+  },
+  {
+    question: 'Is there support available during the hackathon?',
+    answer: 'Yes, we will have mentors, AMAs, and community support to help you throughout the hackathon.'
+  },
+  {
+    question: 'Can we submit old projects for the hackathon?',
+    answer: 'No, only projects built during the hackathon are allowed. Reused projects will lead to disqualification.'
+  }
 ];
 
 const FAQHackday = () => {
