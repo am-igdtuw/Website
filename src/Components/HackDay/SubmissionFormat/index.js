@@ -15,7 +15,7 @@ const SubmissionFormat = () => {
         <MainHeading>Submission Format</MainHeading>
 
         <TrackCon>
-          <TrackHeading>Ideathon Submission Format</TrackHeading>
+          <TrackHeading>Hackathon Submission Format</TrackHeading>
           <List>
             <ListItem>
               {" "}
@@ -37,7 +37,7 @@ const SubmissionFormat = () => {
           </List>
         </TrackCon>
 
-        <TrackCon>
+        {/* <TrackCon>
           <TrackHeading>Ideathon Submission Format</TrackHeading>
           <List>
             <ListItem>
@@ -58,9 +58,9 @@ const SubmissionFormat = () => {
             </ListItem>
             <ListItem>Prototype link(view access to everyone)</ListItem>
           </List>
-        </TrackCon>
+        </TrackCon> */}
 
-        <TrackCon>
+        {/* <TrackCon>
           <TrackHeading>Ideathon Submission Format</TrackHeading>
           <List>
             <ListItem>
@@ -81,7 +81,7 @@ const SubmissionFormat = () => {
             </ListItem>
             <ListItem>Prototype link(view access to everyone)</ListItem>
           </List>
-        </TrackCon>
+        </TrackCon> */}
       </Container>
     </>
   );
