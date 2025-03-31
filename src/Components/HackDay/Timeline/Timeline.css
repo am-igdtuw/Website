@@ -9,19 +9,19 @@
 
 .timeline-title {
   display: flex;
+  text-decoration: underline;
   align-items: center;
-  justify-content: flex-start; /* Ensure left alignment */
+  justify-content: flex-start; 
   border-left: 7px solid goldenrod;
-  padding-left: 10px; /* Adds spacing after border */
+  padding-left: 10px; 
   font-size: 1.9rem;
   color: white;
   margin-bottom: 50px;
-  width: 100%; /* Makes it full-width */
+  width: 100%; 
 }
 
 .timeline {
   position: relative;
-  padding-left: 30px;
   border-left: 3px solid #facc15;
   margin-left: 5vw;
 }

@@ -38,6 +38,7 @@ export const HeroContent = styled.div`
 `;
 
 export const HeroH1 = styled.h1`
+  text-decoration: underline;
   display: flex;
   align-items: center;
   border-left: 7px solid goldenrod;
@@ -131,6 +132,10 @@ export const Content = styled.div`
 
 const data = [
   {
+    question: "How many members can participate in a team?",
+    answer:'Minimum 2 and Maximum 4'
+  },
+  {
     question: "How do I register?",
     answer:
       'Hop on Devfolio, hit "Apply now," fill in your details, and you are in! Build or join a team and get ready for the ultimate hackathon experience.',
@@ -177,6 +182,7 @@ const data = [
     answer:
       "No, only projects built during the hackathon are allowed. Reused projects will lead to disqualification.",
   },
+
 ];
 
 const FAQHackday = () => {
