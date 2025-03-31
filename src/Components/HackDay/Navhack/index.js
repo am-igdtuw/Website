@@ -43,25 +43,28 @@ const Navhack = () => {
   return (
     <>
       {/* Button to show navbar when hidden */}
-      {!isNavbarVisible && (
+      {/* {!isNavbarVisible && (
         <button
           className="show-navbar-btn"
           onClick={() => setIsNavbarVisible(true)}
         >
           ☰
         </button>
-      )}
+      )} */}
 
       {/* Navbar */}
-      {isNavbarVisible && (
+      {/* {isNavbarVisible && ( */}
         <div className="nav-container">
-          <h1 className="title">HACKDAY</h1>
+          <h1 className="title">AM Hacks 2025</h1>
           <nav className="navbar">
             <a
               href="#desc"
               className={activeSection === "desc" ? "active" : ""}
             >
               Description
+            </a>
+            <a href="#themes" className={activeSection === "sub" ? "active" : ""}>
+              Themes
             </a>
             <a
               href="#timeline"
@@ -78,12 +81,10 @@ const Navhack = () => {
             <a href="#faq" className={activeSection === "faq" ? "active" : ""}>
               FAQs
             </a>
-            <a href="#sub" className={activeSection === "sub" ? "active" : ""}>
-              Submission Format
-            </a>
           </nav>
         </div>
-      )}
+      )
+      {/* } */}
     </>
   );
 };

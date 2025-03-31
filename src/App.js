@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Toaster } from "react-hot-toast";
 import "./App.css";
-import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages";
-import EventPage from "./pages/event";
+// import EventPage from "./pages/event";
 import Loader from "./Components/Loader/loader";
 import MobileLoader from "./Components/Loader/mobileLoader";
-import SpiralCanvas1 from "./Components/LandingPage/SpiralCanvas";
-import SpiralCanvas16 from "./pages/landing";
+// import SpiralCanvas1 from "./Components/LandingPage/SpiralCanvas";
+// import SpiralCanvas16 from "./pages/landing";
 import Profile from "./pages/profile";
 
 // import BlogPage from './pages/blogs'
@@ -20,7 +20,7 @@ import FaqPage from "./pages/faq";
 import TeamPage from "./pages/team";
 import SponsorUsForm from "./pages/sponsorPage";
 import CollaborateUsForm from "./pages/collaborateForm";
-import profilePage from "./pages/profile";
+// import profilePage from "./pages/profile";
 import HackDay from "./pages/hackDay";
 import EventPagePseudo from "./pages/eventpseudo";
 //import ReactDOM from 'react-dom'
@@ -34,15 +34,6 @@ library.add(fas, faXTwitter);
 //window.CRISP_WEBSITE_ID="e79efdd2-abee-4a1e-b868-c7929585ebd9";
 
 function App() {
-  // const [showLoader, setShowLoader] = useState(true);
-
-  // useEffect(() => {
-  //   const loaderTimeout = setTimeout(() => {
-  //     setShowLoader(false);
-  //   }, 3000);
-
-  //   return () => clearTimeout(loaderTimeout);
-  // }, []);
 
   return (
     <BrowserRouter>
@@ -52,9 +43,6 @@ function App() {
         containerStyle={{ fontSize: "14px" }}
       />
       <Routes>
-        {/* {showLoader ? (
-          <Route path="/" element={<SpiralCanvas1 />} />
-        ) : ( */}
         <>
           <Route path="/" element={<Home />} />
           <Route path="/event" element={<EventPagePseudo />} />
@@ -62,12 +50,11 @@ function App() {
           <Route path="/TeamPage" element={<TeamPage />} />
           <Route path="/sponsorPage" element={<SponsorUsForm />} />
           <Route path="/collaboratePage" element={<CollaborateUsForm />} />
-          <Route path="/hackday" element={<HackDay />} />
+          <Route path="/amhacks" element={<HackDay />} />
           <Route path="/loader" element={<Loader />} />
           <Route path="/mobileLoader" element={<MobileLoader />} />
           <Route path="/profile" element={<Profile />} />
         </>
-        {/* )} */}
       </Routes>
     </BrowserRouter>
   );

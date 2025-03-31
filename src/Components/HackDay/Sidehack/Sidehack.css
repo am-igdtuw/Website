@@ -44,9 +44,9 @@
 .sidebar-toggle {
   display: none;
   position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 1000;
+  top: 80px;
+  left: 20px;
+  z-index: 100000;
   background-color: #1e1e1e;
   color: #f39c12;
   border: none;

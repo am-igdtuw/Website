@@ -1,7 +1,7 @@
 /* Navbar Container */
 .nav-container {
   position: fixed;
-  top: 0;
+  /* top: 0; */
   width: 100vw;
   z-index: 99999;
   backdrop-filter: blur(30px);
@@ -9,14 +9,14 @@
 }
 
 /* Hide navbar when scrolling down */
-.hidden {
+/* .hidden {
   transform: translateY(-100%);
-}
+} */
 
 /* Show navbar when scrolling up */
-.visible {
+/* .visible {
   transform: translateY(0);
-}
+} */
 
 /* Menu Button */
 .show-navbar-btn {
@@ -45,7 +45,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -77,12 +77,12 @@
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
     align-items: center;
     padding: 1rem;
-    gap: 1rem;
+    gap: 0.4rem;
   }
 
   .navbar a {
@@ -90,7 +90,7 @@
     width: 100%;
     text-align: center;
     font-size: 1rem;
-    padding: 0.6rem 1rem;
+    padding: 0.2rem 1rem;
     margin: 0.5rem 0;
   }
 }
@@ -103,5 +103,25 @@
   .navbar a {
     font-size: 0.9rem;
     padding: 0.5rem 0.8rem;
+  }
+} */
+
+@media (max-width: 768px) {
+  .navbar{
+    display: flex;
+    flex-direction: row;
+    gap: 0.4rem;
+    flex-wrap: nowrap; /* Use 'nowrap' instead of 'unset' */
+    overflow-x: auto;
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #ba8b44 #a1762a;
+    padding: 1%;
+  }
+  
+  .title{
+    font-size: 2rem;
+  }
+  .navbar a{
+    font-size: 0.6rem;
   }
 }

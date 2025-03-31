@@ -12,7 +12,7 @@ const Sidebar = () => {
     <>
       {/* Mobile toggle button */}
       <button className="sidebar-toggle" onClick={toggleSidebar}>
-        <span className="toggle-icon">{isOpen ? '×' : '☰'}</span>
+        <span className="toggle-icon">{isOpen ? '->' : '<-'}</span>
       </button>
 
       <aside className={`sidebar ${isOpen ? 'open' : ''}`}>
@@ -22,9 +22,9 @@ const Sidebar = () => {
         <h3>Hosted by</h3>
         <p>AssetMerkle IGDTUW</p>
         <h3>Hackathon Mode</h3>
-        <p>OFFLINE</p>
+        <p>HYBRID</p>
         <h3>Venue</h3>
-        <p>Event Location</p>
+        <p>TBD: DELHI NCR</p>
       </aside>
     </>
   );

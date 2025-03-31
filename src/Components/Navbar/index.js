@@ -13,7 +13,7 @@ import {
   NavLogo,
 } from "./NavbarElements";
 import { Link } from "react-router-dom";
-import Profile from "./Profile";
+// import Profile from "./Profile";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -41,10 +41,6 @@ const Navbar = () => {
         }}
       >
         <NavbarContainer>
-          {/* css for proflie icon is written in app.css */}
-          {/* <div className="profile-icon"> */}
-          {/* <Profile /> */}
-          {/* </div> */}
           <NavImg>
             <Link to="/" onClick={handleLogoClick}>
               <img src={Logo2} height={44} alt="Logo" />
@@ -72,18 +68,13 @@ const Navbar = () => {
                 TEAM
               </NavLinks>
             </Navitem>
-            {/* <Navitem className="custom">
-              <NavLinks to="/collaboratePage" onClick={handleLogoClick}>
-                COLLABORATE
-              </NavLinks>
-            </Navitem> */}
             <Navitem className="custom">
               <NavLinks to="/faq" onClick={handleLogoClick}>
                 FAQS
               </NavLinks>
             </Navitem>
             <Navitem className="custom">
-              <NavLinks to="/Hackday" onClick={handleLogoClick}>
+              <NavLinks to="/amhacks" onClick={handleLogoClick}>
                 AM Hacks
               </NavLinks>
             </Navitem>
