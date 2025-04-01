@@ -6,12 +6,8 @@ const Timeline = () => {
     { date: "21 March", time: "12:00 AM", event: "Registration begins" },
     { date: "1 April", time: "11:59 PM", event: "Registration ends" },
     { date: "4 April", time: "12:00 AM", event: "Hackathon begins" },
-    { date: "5 April", time: "12:00 PM", event: "Hackathon ends" },
-    {
-      date: "6 April",
-      time: "10:00 AM - 5:00 PM",
-      event: "Offline Presentation Round",
-    },
+    { date: "6 April", time: "12:00 PM", event: "Hackathon ends" },
+    { date: "7 April", time: "9:00 AM - 5:00 PM", event: "Offline Presentation Round" },
   ];
 
   return (
