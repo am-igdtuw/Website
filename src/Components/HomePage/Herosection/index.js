@@ -25,7 +25,7 @@ const HeroSection = () => {
 
   function showForm() {
     setShowComponent(!showComponent);
-    window.open("/profile", "_blank");
+    window.open("/amhacks", "_blank");
   }
 
   const onHover = () => {
@@ -129,7 +129,7 @@ const HeroSection = () => {
                 </Typography>
                 <HeroBtnWrapper>
                   <Button
-                    to="signup"
+                    to="amhacks"
                     onMouseEnter={onHover}
                     onMouseLeave={onHover}
                     primary="true"
@@ -140,8 +140,8 @@ const HeroSection = () => {
                       fontWeight: 600,
                     }}
                   >
-                    <Heroimg as={VscAccount} />
-                    LOGIN/SIGN UP
+                    {/* <Heroimg as={VscAccount} /> */}
+                    Register in AM Hacks
                   </Button>
                 </HeroBtnWrapper>
                 <SocialIcons>
